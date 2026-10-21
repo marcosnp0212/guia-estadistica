@@ -1,12 +1,31 @@
 # Plan de estudio
 
-Tu plan se hace solo con tus fechas. Dime cuándo es el examen, qué días estudias y qué temas entran, y la guía reparte lo que te queda entre los días que tienes. Cada día mezcla teoría y ejercicios del mismo tema, y los últimos días son para los simulacros.
+Pon el día del examen y los días que estudias, y la guía te reparte el trabajo día a día. Hay dos planes y **eliges tú**:
 
-El plan se **recalcula cada día con lo que ya has hecho**: lo que marcas como hecho (con las comprobaciones, «Ya lo sé hacer» o «Lo he resuelto») desaparece de los días que vienen. Si un día no puedes, no pasa nada: mañana el plan se reparte otra vez.
+- **Exprés**, para cuando quedan pocos días. Son unas 13 horas. Cada tema se estudia en este orden: el vídeo, el repaso exprés, «Comprueba que sabes hacer», los ejercicios clave del boletín y las preguntas del examen modelo de ese tema. Al final van la respuesta corta del modelo, las preguntas de Excel sin ordenador y el simulacro tipo test. Después lo corriges y refuerzas el tema que peor te haya salido.
+- **Completo**, para cuando tienes tiempo. Es toda la guía: la teoría entera de cada tema, todos los ejercicios del boletín, las prácticas y los simulacros.
 
-Si quedan pocos días y el plan completo no cabe, pasa solo a **modo exprés**. **Entra lo mismo**: el vídeo, el repaso, los ejercicios clave del boletín y las preguntas del examen modelo de cada tema, y al final la respuesta corta, las preguntas de Excel sin ordenador y el simulacro tipo test. Lo único que cambia es cuántas horas toca cada día. Cada tarea tiene su casilla: márcala al terminarla. Lo de hoy no cambia aunque vayas tachando; lo que quede se reparte entre los días siguientes. Si prefieres el plan completo, se puede cambiar con un clic.
+Si no eliges, la guía te recomienda uno según los días que te quedan. Con el exprés, **entra lo mismo** aunque empieces cinco días antes o dos: solo cambia cuántas horas toca cada día.
+
+El plan se **recalcula cada día con lo que ya has hecho**. Lo que marcas como hecho desaparece de los días que vienen. Lo de hoy no cambia aunque vayas tachando. Si un día no puedes, no pasa nada: mañana el plan se reparte otra vez.
 
 ::: {.plan-app}
+:::
+
+::: {custom-style="Idea"}
+**🧠 Bloques cortos.** Estudia en bloques de 25 minutos y descansa 5. Cada dos horas, un descanso largo, de 20 o 30 minutos, lejos de la pantalla. Al terminar cada tarea, márcala: ver cómo se va llenando la lista ayuda a seguir.
+:::
+
+::: {custom-style="Ojo"}
+**⚠️ Si solo tienes dos días.** Con el exprés salen unas 6 horas y media al día. Son días largos, pero se puede. Parte cada día en tres tandas (mañana, tarde y noche) con un descanso largo entre ellas. No te saltes los ejercicios: son lo que más se parece a las cuentas del examen.
+:::
+
+::: {custom-style="Truco"}
+**💡 Si un día te cuesta concentrarte leyendo,** empieza por el vídeo del tema que toca. Y si te atascas más de 10 minutos en un ejercicio, abre el paso siguiente de la solución y sigue desde ahí.
+:::
+
+::: {custom-style="Truco"}
+**💡 Si los porcentajes o la calculadora te dan miedo,** marca «Parte 0 (base)»: el plan añade antes el [repaso de base](#parte-0.-repaso-de-base-números-y-calculadora).
 :::
 
 ::: {custom-style="Truco"}

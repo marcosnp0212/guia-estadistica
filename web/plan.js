@@ -93,7 +93,7 @@ function xpBlocks(temas){
   return out;
 }
 function trapItem(key){var s=byId('las-15-trampas-del-test');if(!s)return null;var id='xp:tr:'+key;
-  return{id:id,sec:s,title:'Las 15 trampas, tapando la respuesta',min:10,kind:key==='prev'?'trp':'xp',done:function(){return !!get(id,false);}};}
+  return{id:id,sec:s,title:'Las 15 trampas, tapando la respuesta',min:10,kind:'xp',done:function(){return !!get(id,false);}};}
 /* reparte en n días seguidos, sin partir tareas ni cambiar el orden */
 function xpSplit(items,n){
   var plan=[];for(var i=0;i<n;i++)plan.push([]);if(!n)return plan;
@@ -115,9 +115,9 @@ function interleave(teo,pr){
   for(var i=0;i<n;i++){out.push(teo[i]);while(j<m&&(j+1)/m<=(i+1)/n){out.push(pr[j]);j++;}}
   while(j<m){out.push(pr[j]);j++;}return out;
 }
-function xpSchedule(seq,days,E,S){
+function xpSchedule(seq,days,E,S,info){
   var t0=today(),pend=seq.filter(function(u){return !u.done();});
-  var res={days:[],seq:seq,pend:pend,doneN:seq.length-pend.length,E:E,S:S,repaso:null,perDay:0,extra:[],expres:true};
+  var res={days:[],seq:seq,pend:pend,doneN:seq.length-pend.length,E:E,S:S,repaso:null,perDay:0,extra:[],expres:true,info:info};
   if(!days.length)return res;
   var isT=+days[0]===+t0,snap=get('xp:hoy',null),fixed=[];
   if(isT&&snap&&snap.d===iso(t0))fixed=seq.filter(function(u){return snap.k.indexOf(u.id)>-1;});
@@ -132,6 +132,7 @@ function xpSchedule(seq,days,E,S){
   res.perDay=Math.round(left/days.length);
   return res;
 }
+function planMode(c){return c.mode||(c.full?'full':'auto');}
 function schedule(){
   var c=cfg(),E=parseD(c.exam);if(!E)return null;
   var S=parseD(c.start)||today();var t0=today();if(S<t0)S=t0;
@@ -142,12 +143,14 @@ function schedule(){
   U.groups.forEach(function(g){var teo=g.teo.filter(inc),pr=g.pr.filter(inc);seq=seq.concat(interleave(teo,pr));});
   var nTem=c.temas.length;
   U.exam.forEach(function(u){if(u.kind==='exq'||nTem>=Math.min(3,ALLTEMAS.length))seq.push(u);});
-  var expres=false;
-  if(!c.full&&days.length){var tmin=seq.filter(function(u){return !u.done();}).reduce(function(a,u){return a+u.min;},0);
-    if(tmin/days.length>180){var xs=xpBlocks(c.temas);if(xs&&xs.length){seq=(c.base?U.base:[]).concat(xs);expres=true;}}}
-  if(expres)return xpSchedule(seq,days,E,S);
+  /* el alumno elige el plan; si no ha elegido, se recomienda el exprés cuando el completo pasa de 3 h al día */
+  var xs=xpBlocks(c.temas)||[],xseq=(c.base?U.base:[]).concat(xs);
+  function left(q){return q.filter(function(u){return !u.done();}).reduce(function(a,u){return a+u.min;},0);}
+  var info={rec:xs.length&&(!days.length||left(seq)/days.length>180)?'xp':'full',mode:planMode(c),hFull:left(seq),hXp:left(xseq)};
+  var expres=xs.length>0&&(info.mode==='auto'?info.rec:info.mode)==='xp';
+  if(expres)return xpSchedule(xseq,days,E,S,info);
   var pend=seq.filter(function(u){return !u.done();}),doneN=seq.length-pend.length;
-  var res={days:[],seq:seq,pend:pend,doneN:doneN,E:E,S:S,repaso:null,perDay:0,extra:[],expres:expres};
+  var res={days:[],seq:seq,pend:pend,doneN:doneN,E:E,S:S,repaso:null,perDay:0,extra:[],expres:false,info:info};
   if(!days.length)return res;
   if(days.length>=4&&!expres){res.repaso=days.pop();}
   var bigs=pend.filter(function(u){return u.big;}),norm=pend.filter(function(u){return !u.big;});
@@ -163,7 +166,7 @@ function schedule(){
 /* ---- 4. Pintar ---- */
 function itemHtml(u){var d=u.done(),ck='';
   if(u.kind==='xp'){var au=!!(u.auto&&u.auto());ck='<label class="pl-chk" title="'+(au?'Hecho en la guía':'Márcalo cuando lo termines')+'"><input type="checkbox" data-x="'+esc(u.id)+'"'+(d?' checked':'')+(au?' disabled':'')+' aria-label="Hecho: '+esc(u.title)+'"></label>';}
-  return'<li class="pl-it'+(d?' done':'')+(ck?' xp':'')+(u.kind==='trp'?' trp':'')+'">'+ck+'<a href="#'+u.sec.id+'" data-u="'+esc(u.id)+'">'+esc(u.title)+'</a><span class="pl-min">'+u.min+' min</span></li>';}
+  return'<li class="pl-it'+(d?' done':'')+(ck?' xp':'')+'">'+ck+'<a href="#'+u.sec.id+'" data-u="'+esc(u.id)+'">'+esc(u.title)+'</a><span class="pl-min">'+u.min+' min</span></li>';}
 function allItems(r){var a=r.seq.slice();(r.days||[]).forEach(function(d){d.items.forEach(function(u){if(a.indexOf(u)<0)a.push(u);});});return a;}
 function bindLinks(root,r){var all=allItems(r);function find(id){return all.filter(function(x){return x.id===id;})[0];}
   [].forEach.call(root.querySelectorAll('a[data-u]'),function(a){a.addEventListener('click',function(e){e.preventDefault();
@@ -176,13 +179,17 @@ function paint(){
     var h='<div class="pl-cfg"><div class="pl-row"><label>Día del examen<input type="date" class="pl-exam" value="'+(c.exam||'')+'"></label><label>Empiezo <span class="opt">(si no, hoy)</span><input type="date" class="pl-start" value="'+(c.start||'')+'"></label></div>'+
       '<div class="pl-row"><span class="pl-lab">Días que estudio</span><div class="chips">'+DCI.map(function(d,i){return'<button type="button" class="chip'+(c.days.indexOf(d)>-1?' on':'')+'" data-day="'+d+'" aria-pressed="'+(c.days.indexOf(d)>-1)+'">'+DC[i]+'</button>';}).join('')+'</div></div>'+
       '<div class="pl-row"><span class="pl-lab">Qué entra</span><div class="chips">'+ALLTEMAS.map(function(t){return'<button type="button" class="chip'+(c.temas.indexOf(t)>-1?' on':'')+'" data-tema="'+t+'" aria-pressed="'+(c.temas.indexOf(t)>-1)+'">Tema '+t+'</button>';}).join('')+
-      '<button type="button" class="chip'+(c.base?' on':'')+'" data-base="1" aria-pressed="'+c.base+'">Parte 0 (base)</button></div></div></div>';
+      '<button type="button" class="chip'+(c.base?' on':'')+'" data-base="1" aria-pressed="'+c.base+'">Parte 0 (base)</button></div></div>';
+    var cur=r?(r.expres?'xp':'full'):(planMode(c)==='full'?'full':'xp');
+    h+='<div class="pl-row"><span class="pl-lab">Qué plan quiero</span><div class="chips">'+[['xp','Exprés'],['full','Completo']].map(function(m){
+        return'<button type="button" class="chip'+(cur===m[0]?' on':'')+'" data-mode="'+m[0]+'" aria-pressed="'+(cur===m[0])+'">'+m[1]+(r&&r.info.rec===m[0]?' · recomendado':'')+'</button>';}).join('')+'</div></div>'+
+      '<p class="pl-mode">'+(cur==='xp'?'<b>Exprés.</b> Lo imprescindible de cada tema: vídeo, repaso exprés, ejercicios clave del boletín y preguntas del examen modelo. Al final, la respuesta corta, Excel sin ordenador y el simulacro tipo test.':'<b>Completo.</b> Toda la guía: la teoría entera de cada tema, todos los ejercicios del boletín, las prácticas y los simulacros.')+
+      (r?' Te quedan unas <b>'+hm(cur==='xp'?r.info.hXp:r.info.hFull)+'</b> de estudio.':'')+'</p></div>';
     if(!r){h+='<p class="pl-empty">Pon el día del examen y aquí aparecerá tu plan, día a día.</p>';}
     else{
       var left=r.pend.length,tot=r.seq.length;
       h+='<div class="pl-sum"><div class="meter"><span style="width:'+(tot?Math.round(r.doneN/tot*100):0)+'%"></span></div><p>Llevas <b>'+r.doneN+' de '+tot+'</b> tareas. Faltan <b>'+Math.max(0,Math.round((r.E-today())/864e5))+'</b> días para el examen'+(r.days.length?'; te salen unos <b>'+(r.expres?hm(r.perDay):r.perDay+' minutos')+'</b> por día de estudio'+(r.expres?', sin contar los descansos.':'.'):'.')+'</p>'+
-                (r.expres?'<p class="pl-note"><b>Modo exprés.</b> Con pocos días, el plan usa el repaso exprés: vídeo, repaso, ejercicios clave del boletín y examen modelo de cada tema, y al final el simulacro. Entra todo; solo cambia cuántas horas toca cada día. Marca cada tarea al terminarla. <button type="button" class="link-btn pl-full">Prefiero el plan completo</button></p>'+
-                  (r.days.length===1?'<p class="pl-warn"><b>Solo te queda un día.</b> No da para todo con calma. Sigue el orden de la lista: cada tarea que hagas suma.</p>':(r.perDay>300?'<p class="pl-warn"><b>Son días largos.</b> Parte cada día en tres tandas (mañana, tarde y noche), con bloques de 25 minutos y un descanso largo entre tandas.</p>':'')):(c.full?'<p class="pl-note">Plan completo. <button type="button" class="link-btn pl-xp">Volver al modo exprés</button></p>':''))+(!r.expres&&r.perDay>150?'<p class="pl-warn"><b>¿Poco tiempo?</b> Si el examen está muy cerca, usa el <a href="#repaso-exprés-el-examen-en-pocos-días">Repaso exprés</a>: lo imprescindible en unas 2 horas al día.</p><p class="pl-warn">Son muchos minutos al día. Si puedes, añade días de estudio. Si no, quita la Parte 0 si ya la dominas, y marca como hecho lo que ya sepas hacer («Ya lo sé hacer»): el plan se reparte solo con lo que queda.</p>':'')+'</div>';
+                (r.expres?(r.days.length===1?'<p class="pl-warn"><b>Solo te queda un día.</b> No da para todo con calma. Sigue el orden de la lista: cada tarea que hagas suma.</p>':(r.perDay>300?'<p class="pl-warn"><b>Son días largos.</b> Parte cada día en tres tandas (mañana, tarde y noche), con bloques de 25 minutos y un descanso largo entre tandas.</p>':'')):(r.perDay>150?'<p class="pl-warn"><b>Son muchos minutos al día.</b> Si no te da, elige el plan <b>Exprés</b>. Si prefieres seguir con el completo, añade días de estudio o marca como hecho lo que ya sepas hacer («Ya lo sé hacer»): el plan se reparte solo con lo que queda.</p>':''))+'</div>';
       if(r.extra&&r.extra.length)h+='<p class="pl-note">No caben todos los simulacros. Si te sobra tiempo, haz también: '+r.extra.map(function(u){return'<a href="#'+u.sec.id+'" data-u="'+esc(u.id)+'">'+esc(u.title.replace(/^Examen · /,''))+'</a>';}).join(', ')+'.</p>';
       if(!left)h+='<p class="pl-empty">¡Lo tienes todo hecho! Repasa la chuleta y repite el simulacro que peor te saliera.</p>';
       var t0=today();
@@ -194,15 +201,14 @@ function paint(){
     app.innerHTML=h;
     app.querySelector('.pl-exam').addEventListener('change',function(e){var c=cfg();c.exam=e.target.value;saveCfg(c);paint();});
     app.querySelector('.pl-start').addEventListener('change',function(e){var c=cfg();c.start=e.target.value;saveCfg(c);paint();});
-    [].forEach.call(app.querySelectorAll('.pl-full,.pl-xp'),function(b){b.addEventListener('click',function(){var c=cfg();c.full=b.classList.contains('pl-full');saveCfg(c);paint();});});
     [].forEach.call(app.querySelectorAll('.chip'),function(b){b.addEventListener('click',function(){var c=cfg();
       if(b.hasAttribute('data-day')){var d=+b.getAttribute('data-day'),i=c.days.indexOf(d);if(i>-1){if(c.days.length>1)c.days.splice(i,1);}else c.days.push(d);}
       else if(b.hasAttribute('data-tema')){var t=+b.getAttribute('data-tema'),j=c.temas.indexOf(t);if(j>-1){if(c.temas.length>1)c.temas.splice(j,1);}else c.temas.push(t);}
+      else if(b.hasAttribute('data-mode')){c.mode=b.getAttribute('data-mode');delete c.full;}
       else c.base=!c.base;saveCfg(c);paint();});});
     if(r)bindLinks(app,r);
   }
   paintToday(r);
-  paintPreview();
 }
 function paintToday(r){
   var box=document.querySelector('.today');if(!box)return;var h;
@@ -219,20 +225,6 @@ function paintToday(r){
   var ei=box.querySelector('.td-exam');if(ei)ei.addEventListener('change',function(){var c=cfg();c.exam=ei.value;saveCfg(c);paint();});
   if(r)bindLinks(box,r);
   [].forEach.call(box.querySelectorAll('a.td-go'),function(a){a.addEventListener('click',function(e){var t=document.getElementById('plan-de-estudio');if(t){e.preventDefault();A.goTo(t);}});});
-}
-/* ---- 5. Vista previa en el repaso exprés: cómo queda con 2, 3, 4 o 5 días ---- */
-function paintPreview(){
-  var box=doc.querySelector('.plan-xp');if(!box)return;var all=xpBlocks();if(!all)return;
-  if(!box._n){var r=schedule();box._n=r&&r.expres?clamp(r.days.length,2,5):4;}var n=box._n;
-  var plan=xpSplit(all,n).map(function(items,i){if(i>0)items=[trapItem('prev')].concat(items);return{items:items,min:items.reduce(function(a,u){return a+u.min;},0)};});
-  var tot=plan.reduce(function(a,d){return a+d.min;},0);
-  var h='<div class="pl-row"><span class="pl-lab">¿Cuántos días tienes?</span><div class="chips">'+[2,3,4,5].map(function(k){return'<button type="button" class="chip'+(k===n?' on':'')+'" data-n="'+k+'" aria-pressed="'+(k===n)+'">'+k+' días</button>';}).join('')+'</div></div>'+
-    '<p class="pl-note">Con '+n+' días: unas <b>'+hm(tot/n)+'</b> al día, sin contar los descansos.</p>'+
-    '<ol class="pl-days">'+plan.map(function(d,i){return'<li class="pl-day"><div class="pl-dh"><span class="pl-date">Día '+(i+1)+(i===n-1?' (el último antes del examen)':'')+'</span><span class="pl-m">'+hm(d.min)+'</span></div><ul>'+d.items.map(itemHtml).join('')+'</ul></li>';}).join('')+
-    '<li class="pl-day pl-rep"><div class="pl-dh"><span class="pl-date">Mañana del examen</span><span class="pl-m">15 min</span></div><ul><li class="pl-it"><a href="#las-15-trampas-del-test">Una última vuelta a las 15 trampas. Nada nuevo.</a></li></ul></li></ol>';
-  box.innerHTML=h;
-  [].forEach.call(box.querySelectorAll('.chip[data-n]'),function(b){b.addEventListener('click',function(){box._n=+b.getAttribute('data-n');paintPreview();});});
-  bindLinks(box,{seq:all,days:plan});
 }
 var tm;function later(){clearTimeout(tm);tm=setTimeout(paint,300);}
 document.addEventListener('change',function(e){if(e.target.closest&&(e.target.closest('.done-chk')||e.target.closest('.sec-foot')||e.target.closest('label.can')))later();});

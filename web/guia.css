@@ -545,6 +545,7 @@ input[type=text].cq,.cq-in input,.ask input,.pr-work input{font:inherit;font-fam
 .pl-row input[type=date]{font:inherit;padding:6px 8px;border:1.5px solid var(--rule);border-radius:8px;background:var(--sheet);color:var(--ink)}
 .pl-lab{font-weight:650;font-size:.9rem;min-width:8.5rem}
 .pl-row .opt{font-weight:400;color:var(--ink-3)}
+.pl-mode{margin:0;font-size:.92rem;color:var(--ink-2)}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font:inherit;font-size:.86rem;font-weight:650;padding:6px 11px;border-radius:999px;border:1.5px solid var(--rule);background:var(--sheet);color:var(--ink-2);cursor:pointer}
 .chip.on{background:var(--c,var(--t1));border-color:var(--c,var(--t1));color:#fff}
@@ -574,10 +575,6 @@ input[type=text].cq,.cq-in input,.ask input,.pr-work input{font:inherit;font-fam
 .pl-it.xp.done::before{content:none}
 .pl-chk{flex:none;display:inline-flex;align-self:center;cursor:pointer}
 .pl-chk input{width:18px;height:18px;margin:0;accent-color:var(--ok);cursor:pointer}
-.plan-xp{margin:1rem 0}
-.plan-xp .pl-row{margin:.4rem 0}
-.plan-xp .pl-date{text-transform:none}
-.pl-it.trp{padding-left:28px}
 .today .td-list{margin:.3rem 0 .6rem}
 
 /* ===== Vídeos ===== */

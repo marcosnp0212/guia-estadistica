@@ -4,58 +4,7 @@
 **🧠 Si te quedan pocos días, empieza aquí.** El examen es como el modelo de la profesora: 30 preguntas tipo test y 10 de respuesta corta. Casi todo consiste en **saber qué es cada cosa, qué fórmula va en cada caso y qué trampa evitar**. No hace falta leer la guía entera. Aquí tienes lo imprescindible de cada tema, explicado con calma y con un ejemplo. Si algo no se entiende, al final de cada tema hay un enlace al apartado completo.
 :::
 
-## El plan
-
-Da igual si empiezas cinco días antes o dos: **lo que hay que estudiar es lo mismo**. Lo único que cambia es cuántas horas toca cada día. En total son unas **13 horas**.
-
-Cada tema se estudia siempre igual, en este orden:
-
-1. **El vídeo.** Te lo cuenta con voz y animaciones. Puedes ponerlo a 1,25×.
-2. **El repaso** de esta página. Lo imprescindible, con un ejemplo.
-3. **«Comprueba que sabes hacer».** La lista del final del tema: marca lo que ya sabes.
-4. **Los ejercicios clave del boletín.** Son las cuentas que más se parecen a las del examen. Intenta cada paso antes de verlo.
-5. **Las preguntas del examen modelo** de ese tema. Decide tu respuesta antes de abrir la solución.
-
-Cuando terminas los cuatro temas, llega la parte final: la respuesta corta del modelo, las preguntas de Excel sin ordenador y el simulacro tipo test con reloj. Después lo corriges y refuerzas el tema que peor te haya salido.
-
-| Parte | Qué hay | Tiempo |
-|:---|:---|---:|
-| **Tema 1** | Cómo es el examen, vídeo, repaso, comprobación, 5 ejercicios y preguntas 1 a 10 del modelo | 3 h 30 min |
-| **Tema 2** | Vídeo, repaso, comprobación, 1 ejercicio y preguntas 11 a 15 | 1 h 15 min |
-| **Tema 3** | Vídeo, repaso, comprobación, 3 ejercicios y preguntas 16 a 23 | 2 h 05 min |
-| **Tema 4** | Vídeo, repaso, comprobación, 4 ejercicios y preguntas 24 a 30 | 2 h 30 min |
-| **Final** | Respuesta corta (P1 a P10), Excel sin ordenador, simulacro, corrección y refuerzo | 3 h 45 min |
-| **Cada día, desde el segundo** | Las 15 trampas, tapando la respuesta | 10 min |
-
-Repartido entre los días que tengas, sin contar los descansos:
-
-| Si tienes… | Te toca al día |
-|:---|---:|
-| 5 días | unas 2 h 45 min |
-| 4 días | unas 3 h 25 min |
-| 3 días | unas 4 h 30 min |
-| 2 días | unas 6 h 40 min |
-
-Aquí puedes ver qué toca cada día. Para que lo reparta con tus fechas y vaya tachando lo que haces, pon el día del examen en el [Plan de estudio](#plan-de-estudio).
-
-::: {.plan-xp}
-:::
-
-::: {custom-style="Idea"}
-**🧠 Bloques cortos.** Estudia en bloques de 25 minutos y descansa 5. Cada dos horas, un descanso largo, de 20 o 30 minutos, lejos de la pantalla. Al terminar cada tarea, márcala: ver cómo se va llenando la lista ayuda a seguir.
-:::
-
-::: {custom-style="Ojo"}
-**⚠️ Si solo tienes dos días.** Son días largos, pero se puede. Parte cada día en tres tandas (mañana, tarde y noche) con un descanso largo entre ellas. No te saltes los ejercicios: son lo que más se parece a las cuentas del examen.
-:::
-
-::: {custom-style="Truco"}
-**💡 Si un día te cuesta concentrarte leyendo,** empieza por el vídeo del tema que toca. Y si te atascas más de 10 minutos en un ejercicio, abre el paso siguiente de la solución y sigue desde ahí.
-:::
-
-::: {custom-style="Truco"}
-**💡 Si los porcentajes o la calculadora te dan miedo,** dedica antes 30 minutos a la [Parte 0](#parte-0.-repaso-de-base-números-y-calculadora). En el Plan de estudio puedes añadirla con el botón «Parte 0 (base)».
-:::
+**¿Qué hago cada día?** Pon la fecha del examen en el [Plan de estudio](#plan-de-estudio) y elige el plan **Exprés**. Te reparte este repaso, los ejercicios clave del boletín, el examen modelo y el simulacro entre los días que tengas.
 
 ## Tema 1: lo imprescindible
 

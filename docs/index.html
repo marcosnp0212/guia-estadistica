@@ -13708,7 +13708,7 @@ var webOK=/^https?:$/.test(location.protocol);
   box.querySelector('.vid-card').addEventListener('click',function(){
     set('vid:'+id,true);
     if(!webOK){window.open(url,'_blank','noopener');return;}
-    var f=el('div','vid-frame');f.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0" title="'+esc(v[1])+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+    var f=el('div','vid-frame');f.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&vq=hd1080" title="'+esc(v[1])+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';
     box.replaceChild(f,box.querySelector('.vid-card'));
   });
 });

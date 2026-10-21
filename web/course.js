@@ -334,7 +334,7 @@ var TS=D.tests||{};
     var temaOk={1:[0,0],2:[0,0],3:[0,0],4:[0,0]};var nOk=0,nShort=0;
     box.appendChild(el('h4','ts-h','Parte 1 · Tipo test'));
     S.tests.forEach(function(q,i){
-      var w=el('div','ts-q');w.innerHTML='<p class="ts-qq"><b>'+(i+1)+'.</b> '+esc(q.q)+'</p>';var ops=el('div','ts-ops');
+      var w=el('div','ts-q');w.innerHTML='<p class="ts-qq"><b>'+(i+1)+'.</b> '+esc(q.q)+'</p>'+(q.q_es?'<p class="ts-es" lang="es">'+esc(q.q_es)+'</p>':'');var ops=el('div','ts-ops');
       var mine=a.mc[i];
       q.opts.forEach(function(o,k){var b=el('button','ts-op'+(mine===k?' sel':''),'<span class="ts-l">'+L[k]+'</span><span>'+esc(o)+'</span>');b.type='button';
         if(done){b.disabled=true;if(k===q.ok)b.classList.add('right');else if(mine===k)b.classList.add('wrong');}
@@ -347,14 +347,14 @@ var TS=D.tests||{};
     });
     box.appendChild(el('h4','ts-h','Parte 2 · Respuesta corta'));
     S.cortas.forEach(function(q,i){
-      var w=el('div','ts-q');w.innerHTML='<p class="ts-qq"><b>P'+(i+1)+'.</b> '+esc(q.q)+'</p>';
+      var w=el('div','ts-q');w.innerHTML='<p class="ts-qq"><b>P'+(i+1)+'.</b> '+esc(q.q)+'</p>'+(q.q_es?'<p class="ts-es" lang="es">'+esc(q.q_es)+'</p>':'');
       var inp=q.kind==='open'?el('textarea','ts-ta'):el('input','ts-in');if(q.kind!=='open'){inp.type='text';if(q.kind!=='text')inp.inputMode='decimal';}
       inp.value=a.sh[i]||'';inp.setAttribute('aria-label','Respuesta P'+(i+1));
       if(done)inp.readOnly=true;else inp.addEventListener('input',function(){a.sh[i]=inp.value;save();upd();});
       w.appendChild(inp);
       if(done){
         if(q.kind==='open'){
-          var m=el('div','ts-model','<p><b>Respuesta modelo:</b> '+esc(q.model)+'</p><p class="ts-self-q">Compárala con la tuya. ¿La tenías bien?</p>');
+          var m=el('div','ts-model','<p><b>Respuesta modelo:</b> '+esc(q.model)+'</p>'+(q.model_es?'<p lang="es"><b>En español:</b> '+esc(q.model_es)+'</p>':'')+'<p class="ts-self-q">Compárala con la tuya. ¿La tenías bien?</p>');
           var sv=a.self[i];var y=el('button','btn btn-sm'+(sv===true?'':' ghost'),'Sí, la tenía bien'),n=el('button','btn btn-sm'+(sv===false?'':' ghost'),'No');y.type=n.type='button';
           y.addEventListener('click',function(){a.self[i]=true;save();draw();});n.addEventListener('click',function(){a.self[i]=false;save();draw();});
           m.appendChild(y);m.appendChild(n);w.appendChild(m);if(sv===true){nShort++;w.classList.add('ok');}else if(sv===false)w.classList.add('bad');

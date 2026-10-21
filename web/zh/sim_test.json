@@ -1,0 +1,611 @@
+{
+ "S4": {
+  "tests": [
+   {
+    "tema": 1,
+    "q": "你有一张频数表：取值 xᵢ 在 A2:A6，频数 nᵢ 在 B2:B6，均值在 D1。哪个公式给出方差 S²？",
+    "opts": [
+     "=VAR.P(B2:B6)",
+     "=VAR.S(A2:A6)",
+     "=SUMAPRODUCTO(A2:A6^2;B2:B6)/SUMA(B2:B6)-D1^2",
+     "=SUMAPRODUCTO(A2:A6;B2:B6)/SUMA(B2:B6)-D1^2"
+    ],
+    "ok": 2,
+    "exp": "这是实用公式 S² = Σxᵢ²nᵢ / n − x̄²。频数表不能用 VAR.S 和 VAR.P：它们会把每个取值只算一次。C 忘了平方。",
+    "where": "1.7（方差）",
+    "q_es": "Tienes una tabla de frecuencias con los valores xᵢ en A2:A6, las frecuencias nᵢ en B2:B6 y la media en D1. ¿Qué fórmula da la varianza S²?"
+   },
+   {
+    "tema": 1,
+    "q": "哪个 Excel 函数算准方差（除以 n − 1 的那个）？",
+    "opts": [
+     "VAR.S",
+     "DESVEST.P",
+     "COVARIANZA.P",
+     "VAR.P"
+    ],
+    "ok": 0,
+    "exp": "VAR.S 除以 n − 1（准方差）。VAR.P 除以 n（方差）。DESVEST 是它们的平方根。",
+    "where": "1.7（准方差）",
+    "q_es": "¿Qué función de Excel calcula la cuasivarianza (la que divide entre n − 1)?"
+   },
+   {
+    "tema": 1,
+    "q": "“子女人数”和“学历（小学、中学、大学）”分别是：",
+    "opts": [
+     "连续型数量变量和名义型分类变量",
+     "离散型数量变量和有序型分类变量",
+     "连续型数量变量和有序型分类变量",
+     "离散型数量变量和名义型分类变量"
+    ],
+    "ok": 1,
+    "exp": "子女是数出来的（0, 1, 2…）：离散型。学历是有顺序的词：有序型。",
+    "where": "1.2",
+    "q_es": "«Número de hijos» y «nivel de estudios (primaria, secundaria, universitaria)» son, respectivamente:"
+   },
+   {
+    "tema": 1,
+    "q": "X 的均值是 10，标准差是 3。如果 Y = 2X − 5，那么：",
+    "opts": [
+     "ȳ = 15 y S²ᵧ = 12",
+     "ȳ = 20 y Sᵧ = 6",
+     "ȳ = 15 y Sᵧ = 6",
+     "ȳ = 15 y Sᵧ = 1"
+    ],
+    "ok": 2,
+    "exp": "ȳ = 2·10 − 5 = 15。标准差只受乘法影响：Sᵧ = 2·3 = 6（方差是 4·9 = 36）。−5 不改变离散程度。",
+    "where": "1.5 和 1.7（平移和缩放）",
+    "q_es": "X tiene media 10 y desviación típica 3. Si Y = 2X − 5, entonces:"
+   },
+   {
+    "tema": 1,
+    "q": "工资：1200、1300、1350、1400 和 9000 €。哪个指标最能代表“典型”工资？",
+    "opts": [
+     "极差（rango）",
+     "均值（media）",
+     "中位数（mediana）",
+     "变异系数（CV）"
+    ],
+    "ok": 2,
+    "exp": "9000 是异常值，把均值拉到了 2850 €。中位数（1350 €）是稳健的，不会被拉走。",
+    "where": "1.5（用哪个？）",
+    "q_es": "Salarios: 1200, 1300, 1350, 1400 y 9000 €. ¿Qué medida representa mejor el salario «típico»?"
+   },
+   {
+    "tema": 1,
+    "q": "区间 0–10 有 20 个数据，10–40 有 30 个数据。众数区间是哪个？",
+    "opts": [
+     "两个都是，因为打平了",
+     "不知道均值就没法判断",
+     "10–40，因为数据更多",
+     "0–10，因为它的密度是 2，另一个是 1"
+    ],
+    "ok": 3,
+    "exp": "组距不同：要比较密度。20/10 = 2，30/30 = 1。0–10 胜出。",
+    "where": "1.5（区间数据的众数）",
+    "q_es": "Intervalos 0–10 con 20 datos y 10–40 con 30 datos. ¿Cuál es el intervalo modal?"
+   },
+   {
+    "tema": 1,
+    "q": "A 组：均值 50，S = 5。B 组：均值 10，S = 2。哪个更均匀？",
+    "opts": [
+     "A，因为它的 CV 是 0,10，B 是 0,20",
+     "不能比较，因为均值不同",
+     "两个一样",
+     "B，因为它的 S 更小"
+    ],
+    "ok": 0,
+    "exp": "均值不同时比较 CV：A = 5/50 = 0,10，B = 2/10 = 0,20。CV 越小越均匀：A。",
+    "where": "1.7（CV）",
+    "q_es": "Grupo A: media 50 y S = 5. Grupo B: media 10 y S = 2. ¿Cuál es más homogéneo?"
+   },
+   {
+    "tema": 1,
+    "q": "把一家公司的方差按部门分解，“组间”方差占总方差的 5%。这说明：",
+    "opts": [
+     "有错误，因为组间方差总是更大",
+     "各部门的均值差别很大",
+     "组内方差是 5%",
+     "几乎所有变异都在各部门内部：各部门的均值非常接近"
+    ],
+    "ok": 3,
+    "exp": "如果“组间”只有 5%，各组均值几乎没有分开。95% 的差异在各组内部。",
+    "where": "1.7（分组）",
+    "q_es": "Al descomponer la varianza de una empresa por departamentos, la varianza «entre» es el 5 % de la total. Eso significa que:"
+   },
+   {
+    "tema": 1,
+    "q": "一个分布的均值是 30，中位数是 25。最可能的是：",
+    "opts": [
+     "正偏（尾巴在右边，CA > 0）",
+     "负偏",
+     "对称",
+     "平峰"
+    ],
+    "ok": 0,
+    "exp": "少数几个大值把均值往上拉，使它高于中位数：尾巴在右边。",
+    "where": "1.8",
+    "q_es": "Una distribución tiene media 30 y mediana 25. Lo más probable es que:"
+   },
+   {
+    "tema": 1,
+    "q": "在箱线图里，C₁ = 20，C₃ = 30。47 是异常值吗？",
+    "opts": [
+     "是，因为上界是 30 + 1,5·10 = 45",
+     "只有均值小于 25 时才是",
+     "不是，因为界限是 30 + 10 = 40，而 47 离它很近",
+     "不是，因为它小于 50"
+    ],
+    "ok": 0,
+    "exp": "IQR = 30 − 20 = 10。上界 = 30 + 15 = 45。47 > 45，所以是异常值。",
+    "where": "1.10",
+    "q_es": "En un diagrama de caja, C₁ = 20 y C₃ = 30. ¿Es atípico un dato de 47?"
+   },
+   {
+    "tema": 2,
+    "q": "在列联表里，fᵢⱼ 是：",
+    "opts": [
+     "nᵢ. · n.ⱼ",
+     "nᵢⱼ / n",
+     "nᵢ. / n",
+     "nᵢⱼ / nᵢ."
+    ],
+    "ok": 1,
+    "exp": "联合相对频数是联合绝对频数除以总数。nᵢⱼ / nᵢ. 是条件频数。",
+    "where": "2.1",
+    "q_es": "En una tabla de doble entrada, fᵢⱼ es:"
+   },
+   {
+    "tema": 2,
+    "q": "n = 100。A 行合计 40，“是（Sí）”这一列合计 50。如果 X 和 Y 独立，格子（A，Sí）里的期望频数是多少？",
+    "opts": [
+     "2000",
+     "90",
+     "45",
+     "20"
+    ],
+    "ok": 3,
+    "exp": "期望频数 = nᵢ. · n.ⱼ / n = 40 · 50 / 100 = 20。如果表里这一格是 20（而且每一格都对得上），它们就是独立的。",
+    "where": "2.4",
+    "q_es": "n = 100. La fila A suma 40 y la columna «Sí» suma 50. Si X e Y fueran independientes, ¿qué frecuencia esperaríamos en la casilla (A, Sí)?"
+   },
+   {
+    "tema": 2,
+    "q": "条件分布 Y | X = A 怎么得到：",
+    "opts": [
+     "把边缘频数相乘",
+     "把 A 列加起来",
+     "用 A 行除以它的合计 nᵢ.",
+     "用 A 行除以 n"
+    ],
+    "ok": 2,
+    "exp": "以 X = A 为条件，就是只看 A 这一行，按这一行的百分比来分：除以这一行的合计。",
+    "where": "2.3",
+    "q_es": "La distribución condicionada Y | X = A se obtiene:"
+   },
+   {
+    "tema": 2,
+    "q": "哪种图适合两个分类变量？",
+    "opts": [
+     "散点图",
+     "箱线图",
+     "直方图",
+     "堆积条形图或马赛克图"
+    ],
+    "ok": 3,
+    "exp": "两个分类变量：簇状或堆积条形图，或者马赛克图。散点图是给两个数量变量用的。",
+    "where": "2.1（图形）",
+    "q_es": "¿Qué gráfico es adecuado para dos variables cualitativas?"
+   },
+   {
+    "tema": 2,
+    "q": "如果 Y 的条件分布随 X 的取值变化很大：",
+    "opts": [
+     "X 和 Y 之间有关系（相关）",
+     "边缘分布相等",
+     "协方差是 0",
+     "两个变量独立"
+    ],
+    "ok": 0,
+    "exp": "如果知道 X 会改变你对 Y 的预期，它们就有关系。独立时，所有条件分布都相同。",
+    "where": "2.3 和 2.4",
+    "q_es": "Si las distribuciones condicionadas de Y cambian mucho según el valor de X:"
+   },
+   {
+    "tema": 3,
+    "q": "在散点图里，点从左到右往下走。那么：",
+    "opts": [
+     "S_XY > 0",
+     "S_XY < 0 y r < 0",
+     "r = 0",
+     "R² < 0"
+    ],
+    "ok": 1,
+    "exp": "往下走，关系是反向的：协方差、斜率和 r 都是负的。R² 永远不是负的。",
+    "where": "3.1 和 3.2",
+    "q_es": "En una nube de puntos, los puntos bajan de izquierda a derecha. Entonces:"
+   },
+   {
+    "tema": 3,
+    "q": "皮尔逊线性相关系数的公式是哪个？",
+    "opts": [
+     "r = S_XY / (Sₓ · Sᵧ)",
+     "r = S²_XY",
+     "r = S_XY / S²ₓ",
+     "r = Sₓ · Sᵧ / S_XY"
+    ],
+    "ok": 0,
+    "exp": "r = 协方差除以两个标准差的乘积。S_XY / S²ₓ 是斜率 b。",
+    "where": "3.4",
+    "q_es": "¿Cuál es la fórmula del coeficiente de correlación lineal de Pearson?"
+   },
+   {
+    "tema": 3,
+    "q": "x̄ = 5，ȳ = 20，S²ₓ = 4，S_XY = 8。Y 对 X 的回归直线是：",
+    "opts": [
+     "Ŷ = 2 + 10X",
+     "Ŷ = 10 + 2X",
+     "Ŷ = 20 + 2X",
+     "Ŷ = 10 + 0,5X"
+    ],
+    "ok": 1,
+    "exp": "b = 8/4 = 2。a = 20 − 2·5 = 10。Ŷ = 10 + 2X。",
+    "where": "3.3",
+    "q_es": "x̄ = 5, ȳ = 20, S²ₓ = 4 y S_XY = 8. La recta de Y sobre X es:"
+   },
+   {
+    "tema": 3,
+    "q": "在直线 Ŷ = 300 + 3X 里，3 的意思是：",
+    "opts": [
+     "Y 是 X 的 3 倍",
+     "X = 0 时 Y 等于 3",
+     "直线解释了 3%",
+     "X 每多一个单位，Y 平均增加 3 个单位"
+    ],
+    "ok": 3,
+    "exp": "斜率是 X 每多一个单位时 Y 平均变化多少。300 是 X = 0 时的值。",
+    "where": "3.3",
+    "q_es": "En la recta Ŷ = 300 + 3X, el 3 significa que:"
+   },
+   {
+    "tema": 3,
+    "q": "如果 r = 0：",
+    "opts": [
+     "斜率是 1",
+     "没有线性关系，但可能有曲线关系",
+     "直线是完美的",
+     "X 和 Y 之间没有任何关系"
+    ],
+    "ok": 1,
+    "exp": "r 只衡量线性关系。U 形关系的 r 可能是 0。",
+    "where": "3.4",
+    "q_es": "Si r = 0:"
+   },
+   {
+    "tema": 3,
+    "q": "R² = 0,64，直线的斜率是负的。r 等于多少？",
+    "opts": [
+     "0,64",
+     "0,8",
+     "−0,8",
+     "−0,64"
+    ],
+    "ok": 2,
+    "exp": "r = ±√0,64 = ±0,8，正负号和斜率一样：−0,8。",
+    "where": "3.4 和 3.6",
+    "q_es": "R² = 0,64 y la pendiente de la recta es negativa. ¿Cuánto vale r?"
+   },
+   {
+    "tema": 3,
+    "q": "X 对 Y 的直线的斜率是：",
+    "opts": [
+     "b′ = S_XY / S²ₓ",
+     "b′ = S_XY / S²ᵧ",
+     "b′ = r · S²ₓ",
+     "b′ = S²ᵧ / S_XY"
+    ],
+    "ok": 1,
+    "exp": "X 对 Y 的直线要除以 Y 的方差（在这条直线里起解释作用的变量）。",
+    "where": "3.3",
+    "q_es": "La pendiente de la recta de X sobre Y es:"
+   },
+   {
+    "tema": 3,
+    "q": "Ŷ = 500 + 20X，X = 12 时预测值是多少？",
+    "opts": [
+     "6240",
+     "740",
+     "760",
+     "520"
+    ],
+    "ok": 1,
+    "exp": "500 + 20·12 = 500 + 240 = 740。",
+    "where": "3.5",
+    "q_es": "Con Ŷ = 500 + 20X, ¿qué valor se predice para X = 12?"
+   },
+   {
+    "tema": 4,
+    "q": "一个价格指数是 92（基期 = 100）。这说明：",
+    "opts": [
+     "价格下降了 92%",
+     "价格上涨了 92%",
+     "价格是 92 €",
+     "价格下降了 8%"
+    ],
+    "ok": 3,
+    "exp": "92 − 100 = −8：和基期相比下降了 8%。",
+    "where": "4.1",
+    "q_es": "Un índice de precios vale 92 (base = 100). Significa que:"
+   },
+   {
+    "tema": 4,
+    "q": "一个价格涨了 10%，第二年又涨了 20%。一共涨了：",
+    "opts": [
+     "15 %",
+     "30 %",
+     "32 %",
+     "2 %"
+    ],
+    "ok": 2,
+    "exp": "百分比要相乘：1,10 · 1,20 = 1,32 → +32%。",
+    "where": "4.3（连锁）",
+    "q_es": "Un precio sube un 10 % y al año siguiente un 20 %. En total ha subido:"
+   },
+   {
+    "tema": 4,
+    "q": "以 2020 年为基期，2022 年的指数是 125，2024 年是 150。以 2022 年为基期，2024 年的指数是多少？",
+    "opts": [
+     "150",
+     "25",
+     "187,5",
+     "120"
+    ],
+    "ok": 3,
+    "exp": "换基期：150 / 125 · 100 = 120。",
+    "where": "4.4",
+    "q_es": "Con base 2020, el índice de 2022 es 125 y el de 2024 es 150. ¿Cuánto vale el de 2024 con base 2022?"
+   },
+   {
+    "tema": 4,
+    "q": "某个量每个季度增长 3%。等价的年变化率是：",
+    "opts": [
+     "12 %",
+     "(1,03)⁴ − 1 ≈ 12,55 %",
+     "0,75 %",
+     "(1,03)^(1/4) − 1 ≈ 0,74 %"
+    ],
+    "ok": 1,
+    "exp": "一年是 4 个季度连起来：1,03⁴ − 1 = 12,55%。直接相加（12%）是陷阱。",
+    "where": "4.5",
+    "q_es": "Una magnitud crece un 3 % cada trimestre. Su tasa anual equivalente es:"
+   },
+   {
+    "tema": 4,
+    "q": "帕氏价格指数用什么加权：",
+    "opts": [
+     "当期的数量（qₜ）",
+     "基期的数量（q₀）",
+     "基期的价格",
+     "两个指数的平均"
+    ],
+    "ok": 0,
+    "exp": "帕氏指数用当期的篮子：Σpₜqₜ / Σp₀qₜ。拉氏指数用基期的篮子。",
+    "where": "4.6",
+    "q_es": "El índice de Paasche de precios pondera con:"
+   },
+   {
+    "tema": 4,
+    "q": "名义工资涨了 5%，IPC 涨了 3%。实际工资：",
+    "opts": [
+     "涨了 8%",
+     "涨了 1,94%",
+     "跌了 2%",
+     "涨了 2%"
+    ],
+    "ok": 1,
+    "exp": "实际 = 1,05 / 1,03 − 1 = 0,0194 → +1,94%。直接相减（2%）只是近似，不是精确的计算。",
+    "where": "4.7",
+    "q_es": "Un salario nominal sube un 5 % y el IPC sube un 3 %. El salario real:"
+   },
+   {
+    "tema": 4,
+    "q": "费希尔指数是：",
+    "opts": [
+     "拉氏和帕氏指数的几何平均",
+     "拉氏和帕氏指数的算术平均",
+     "拉氏和帕氏指数的商",
+     "两个里较大的那个"
+    ],
+    "ok": 0,
+    "exp": "F = √(L · P)。它在两者之间。",
+    "where": "4.6",
+    "q_es": "El índice de Fisher es:"
+   }
+  ],
+  "cortas": [
+   {
+    "q": "什么是有序型分类变量？举一个例子。",
+    "kind": "open",
+    "model": "这种变量的取值是类别（是词，不是数），而且这些类别有自然的顺序。例子：满意度（低、中、高）或学历。",
+    "where": "1.2",
+    "q_es": "¿Qué es una variable cualitativa ordinal? Pon un ejemplo.",
+    "model_es": "Es una variable que toma categorías (palabras, no números) que tienen un orden natural. Ejemplo: nivel de satisfacción (bajo, medio, alto) o nivel de estudios."
+   },
+   {
+    "q": "数据：4, 6, 8, 10, 12。算方差 S²（除以 n）。",
+    "kind": "num",
+    "key": 8,
+    "dec": 2,
+    "alts": [
+     [
+      10,
+      "你除以了 n − 1：那是准方差。"
+     ],
+     [
+      72,
+      "你还没有减去均值的平方（8² = 64）。"
+     ]
+    ],
+    "explain": "x̄ = 40/5 = 8。Σx² = 16 + 36 + 64 + 100 + 144 = 360。S² = 360/5 − 64 = 8。",
+    "where": "1.7",
+    "q_es": "Datos: 4, 6, 8, 10, 12. Calcula la varianza S² (dividiendo entre n)."
+   },
+   {
+    "q": "区间 0–10 有 8 个数据，10–30 有 12 个数据。众数区间的密度是多少？",
+    "kind": "num",
+    "key": 0.8,
+    "dec": 2,
+    "alts": [
+     [
+      0.6,
+      "那是 10–30 的密度。比较一下：8/10 = 0,8 更大。"
+     ],
+     [
+      12,
+      "那是频数。题目问的是密度（频数除以组距）。"
+     ]
+    ],
+    "explain": "密度：8/10 = 0,8，12/20 = 0,6。众数区间是 0–10，密度 0,8。",
+    "where": "1.5",
+    "q_es": "Intervalos 0–10 con 8 datos y 10–30 con 12 datos. ¿Cuál es la densidad del intervalo modal?"
+   },
+   {
+    "q": "A 组：10 人，均值 20，方差 4。B 组：30 人，均值 24，方差 9。算总方差。",
+    "kind": "num",
+    "key": 10.75,
+    "dec": 2,
+    "alts": [
+     [
+      3,
+      "那只是组间方差。还要加上组内方差。"
+     ],
+     [
+      7.75,
+      "那只是组内方差。还要加上组间方差。"
+     ],
+     [
+      6.5,
+      "你把方差简单平均了。要按人数加权，再加上组间方差。"
+     ]
+    ],
+    "explain": "总均值 = (200 + 720)/40 = 23。组内 = (4·10 + 9·30)/40 = 7,75。组间 = ((20−23)²·10 + (24−23)²·30)/40 = 3。总方差 = 10,75。",
+    "where": "1.7",
+    "q_es": "Grupo A: 10 personas, media 20, varianza 4. Grupo B: 30 personas, media 24, varianza 9. Calcula la varianza total."
+   },
+   {
+    "q": "在箱线图里，C₁ = 12，C₃ = 20。超过多少的数据是异常值（上界）？",
+    "kind": "num",
+    "key": 32,
+    "dec": 1,
+    "alts": [
+     [
+      28,
+      "你加的是 IQR（8），应该加 1,5 · IQR = 12。"
+     ],
+     [
+      8,
+      "那是 IQR。接下来：C₃ + 1,5 · IQR。"
+     ]
+    ],
+    "explain": "IQR = 20 − 12 = 8。上界 = 20 + 1,5·8 = 32。",
+    "where": "1.10",
+    "q_es": "En un diagrama de caja, C₁ = 12 y C₃ = 20. ¿Cuál es el límite superior a partir del cual un dato es atípico?"
+   },
+   {
+    "q": "如果 r = 0,6，直线解释了 Y 的变异的百分之几？（写百分数的数字）",
+    "kind": "pct",
+    "key": 0.36,
+    "dec": 2,
+    "alts": [
+     [
+      0.6,
+      "那是 r。被解释的百分比是 R² = r²。"
+     ]
+    ],
+    "explain": "R² = 0,6² = 0,36 → 36%。",
+    "where": "3.4",
+    "q_es": "Si r = 0,6, ¿qué porcentaje de la variabilidad de Y explica la recta? (escribe el número del %)"
+   },
+   {
+    "q": "写出计算相关系数 r 的 Excel 函数名（西班牙语版）。",
+    "kind": "text",
+    "key": "COEF.DE.CORREL",
+    "accept": [
+     "COEF.DE.CORREL",
+     "PEARSON"
+    ],
+    "alts": [
+     [
+      "COEFICIENTE.R2",
+      "它算的是 R²，不是 r。"
+     ],
+     [
+      "COVARIANZA.P",
+      "它算的是协方差。"
+     ],
+     [
+      "PENDIENTE",
+      "它算的是斜率 b。"
+     ]
+    ],
+    "explain": "=COEF.DE.CORREL(A2:A11;B2:B11)。PEARSON 也一样。（英文版：CORREL。）",
+    "where": "3.4",
+    "q_es": "Escribe el nombre de la función de Excel que calcula el coeficiente de correlación r."
+   },
+   {
+    "q": "直线是 Ŷ = 2 + 0,5X，x̄ = 10。ȳ 等于多少？",
+    "kind": "num",
+    "key": 7,
+    "dec": 2,
+    "alts": [
+     [
+      5,
+      "你忘了加截距：2 + 0,5·10。"
+     ]
+    ],
+    "explain": "直线经过 (x̄, ȳ)：ȳ = 2 + 0,5·10 = 7。",
+    "where": "3.6",
+    "q_es": "La recta es Ŷ = 2 + 0,5X y x̄ = 10. ¿Cuánto vale ȳ?"
+   },
+   {
+    "q": "一项投资三年里先涨 10%，再跌 5%，再涨 8%。年平均变化率是多少？（用 %）",
+    "kind": "pct",
+    "key": 0.04115,
+    "dec": 2,
+    "alts": [
+     [
+      0.04333,
+      "那是各变化率的算术平均。要用几何平均：(1,10·0,95·1,08)^(1/3) − 1。"
+     ],
+     [
+      0.1286,
+      "那是三年的总变化率。接下来开三次方再减 1。"
+     ]
+    ],
+    "explain": "1,10 · 0,95 · 1,08 = 1,1286。开三次方：1,0412。平均变化率：每年 4,12%。在 Excel 里：=MEDIA.GEOM(1,10;0,95;1,08)-1。",
+    "where": "4.5",
+    "tol": 0.0004,
+    "q_es": "Una inversión crece un 10 %, baja un 5 % y crece un 8 % en tres años. ¿Cuál es la tasa media anual? (en %)"
+   },
+   {
+    "q": "名义工资是 1800 €，IPC（以 1 为基数）是 1,20。实际工资是多少？",
+    "kind": "num",
+    "key": 1500,
+    "dec": 0,
+    "alts": [
+     [
+      2160,
+      "你乘了。平减要除以 IPC。"
+     ],
+     [
+      15,
+      "IPC 以 1 为基数时不用除以 100。"
+     ]
+    ],
+    "explain": "实际 = 1800 / 1,20 = 基期的 1500 €。",
+    "where": "4.7",
+    "q_es": "Un salario nominal es de 1800 € y el IPC (en base 1) vale 1,20. ¿Cuál es el salario real?"
+   }
+  ]
+ }
+}

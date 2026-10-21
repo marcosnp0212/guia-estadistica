@@ -366,5 +366,441 @@
    "why": {},
    "data": null
   }
+ ],
+ "preguntas-de-excel-sin-ordenador": [
+  {
+   "type": "mc",
+   "q": "数据在 A2:A31。哪个公式给出均值？",
+   "opts": [
+    "=PROMEDIO(A2;A31)",
+    "=MEDIA(A2:A31)",
+    "=PROMEDIO(A2:A31)",
+    "=SUMA(A2:A31)"
+   ],
+   "ok": 2,
+   "explain": "用 PROMEDIO，区域用冒号（:）写。",
+   "why": {
+    "0": "用分号（;）只取了 A2 和 A31 两个格子，不是整个区域。区域要用冒号写。"
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "哪个函数给出讲义里的方差 S²（除以 n 的那个）？",
+   "opts": [
+    "VAR.S",
+    "DESVEST.P",
+    "COVARIANZA.P",
+    "VAR.P"
+   ],
+   "ok": 3,
+   "explain": ".P = población（总体），除以 n。就是课上的 S²。",
+   "why": {
+    "0": "VAR.S 除以 n − 1：是准方差 s²。",
+    "1": "DESVEST.P 是标准差（方差的平方根）。"
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "那准标准差 s（除以 n − 1）呢？",
+   "opts": [
+    "DESVEST.P",
+    "DESVEST.S",
+    "RAIZ",
+    "VAR.S"
+   ],
+   "ok": 1,
+   "explain": "DESVEST.S：样本（Sample）的标准差，除以 n − 1。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "=CONTAR.SI(A2:A31;3) 返回什么？",
+   "opts": [
+    "一共有几个数据",
+    "第三个数据",
+    "有几个格子等于 3",
+    "前 3 个数据的和"
+   ],
+   "ok": 2,
+   "explain": "CONTAR.SI 数有几个格子满足条件：这里是等于 3。就是取值 3 的 nᵢ。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "E2 里是 =CONTAR.SI(A2:A31;D2)，你把它往下拖。会怎样？",
+   "opts": [
+    "Excel 出现 #¡VALOR! 错误",
+    "区域移动成 A3:A32、A4:A33……，计数就错了",
+    "一切正常",
+    "只有 D2 会变"
+   ],
+   "ok": 1,
+   "explain": "没有 $，往下拖时全都会动。要固定区域：$A$2:$A$31。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "$A$2 里的 $ 有什么用？",
+   "opts": [
+    "用来做乘法",
+    "用来把一列加起来",
+    "让这个格子在拖动公式时不变",
+    "让数字显示成欧元"
+   ],
+   "ok": 2,
+   "explain": "$ 固定列和行：复制公式时，它还是指向 A2。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "在频数表里，=B2/$B$8 中的 $B$8 代表什么？",
+   "opts": [
+    "第 8 行的频数",
+    "最大的值",
+    "均值",
+    "总数 n，每一行都要用同一个"
+   ],
+   "ok": 3,
+   "explain": "fᵢ = nᵢ ÷ n，分母永远是 n：所以要固定它。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "如果 A 是取值，B 是频数，=SUMAPRODUCTO(A2:A6;B2:B6)/SUMA(B2:B6) 算的是什么？",
+   "opts": [
+    "中位数",
+    "频数表的均值",
+    "取值的和",
+    "方差"
+   ],
+   "ok": 1,
+   "explain": "SUMAPRODUCTO 算 Σxᵢ·nᵢ，SUMA 给出 n：Σxᵢnᵢ ÷ n = x̄。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "=CUARTIL.INC(A2:A31;3) 返回……",
+   "opts": [
+    "第三个数据",
+    "第 3 百分位数",
+    "第三四分位数 C₃",
+    "数据的 3%"
+   ],
+   "ok": 2,
+   "explain": "第二个数表示哪个四分位数：1、2（中位数）或 3。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "怎么求 A2:A31 的第 90 百分位数？",
+   "opts": [
+    "=PERCENTIL.INC(A2:A31;90)",
+    "=PERCENTIL(90)",
+    "=CUARTIL.INC(A2:A31;90)",
+    "=PERCENTIL.INC(A2:A31;0,9)"
+   ],
+   "ok": 3,
+   "explain": "百分比要写成小数：0,9。",
+   "why": {
+    "0": "Excel 要的是小数形式的百分位（在 0 和 1 之间）。写 90 会出错。"
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "Excel 算出 C₃ = 2,25，用讲义的步骤你算出 2,5。怎么回事？",
+   "opts": [
+    "要用均值",
+    "两个都对：Excel 算四分位数用的是另一种方法",
+    "Excel 错了",
+    "肯定是你算错了"
+   ],
+   "ok": 1,
+   "explain": "CUARTIL.INC 会插值；讲义的步骤不插值。在纸上用讲义的步骤；如果题目给的是电脑输出，就用它的数字。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "零散数据的众数用哪个函数？",
+   "opts": [
+    "CONTAR.SI",
+    "MEDIANA",
+    "MAX",
+    "MODA.UNO"
+   ],
+   "ok": 3,
+   "explain": "MODA.UNO 返回出现次数最多的值。（英文版：MODE.SNGL。）",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "数据在区间里时，Excel 能用表格加 =MEDIANA 算中位数吗？",
+   "opts": [
+    "只有区间宽度一样时才能",
+    "能，用 =MEDIANA.INTERVALO",
+    "不能：分组的表要用单元格把讲义的公式写出来",
+    "能，永远能"
+   ],
+   "ok": 2,
+   "explain": "MEDIANA 只能用于零散数据。有区间时，要用单元格引用写出 Lᵢ₋₁ + (n/2 − Nᵢ₋₁)/nᵢ · aᵢ。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "=FRECUENCIA(A2:A81;C2:C5) 做什么？",
+   "opts": [
+    "算相对频数",
+    "给数据排序",
+    "用 C2:C5 里的上限，数出每个区间里有几个数据",
+    "算众数"
+   ],
+   "ok": 2,
+   "explain": "它数的是 ≤ 每个上限、并且 > 前一个上限的数据：(a, b] 区间。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "用 Excel 的哪个工具可以根据数据做出列联表？",
+   "opts": [
+    "条件格式（Formato condicional）",
+    "排序和筛选（Ordenar y filtrar）",
+    "散点图（Gráfico de dispersión）",
+    "数据透视表（Tabla dinámica）"
+   ],
+   "ok": 3,
+   "explain": "插入（Insertar）→ 数据透视表（Tabla dinámica）：一个变量放在“行（Filas）”，另一个放在“列（Columnas）”，其中一个放在“值（Valores）”（计数）。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "在数据透视表里，怎么看每一行的百分比（Y | X）？",
+   "opts": [
+    "值显示方式（Mostrar valores como）→ 行汇总的百分比（% del total de filas）",
+    "值显示方式 → 总计的百分比（% del total general）",
+    "设置单元格格式（Formato de celdas）→ 百分比",
+    "插入（Insertar）→ 图表"
+   ],
+   "ok": 0,
+   "explain": "行汇总的百分比：每一行加起来是 100%。这就是条件分布 Y | X。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "做“如果独立”的那张表时，你写 =$E3*B$6 然后拖动。为什么 $ 只加一半？",
+   "opts": [
+    "让每个格子用它那一行的合计（E 列）和它那一列的合计（第 6 行）",
+    "和不加 $ 一样",
+    "为了好看",
+    "为了不独立时出错"
+   ],
+   "ok": 0,
+   "explain": "$E 固定行合计所在的列；$6 固定列合计所在的行。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "哪个函数给出课上的协方差 S_XY（除以 n）？",
+   "opts": [
+    "VAR.P",
+    "COVARIANZA.P",
+    "COVARIANZA.M",
+    "COEF.DE.CORREL"
+   ],
+   "ok": 1,
+   "explain": ".P 除以 n，和讲义一样。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "X 在 A2:A11，Y 在 B2:B11。哪个给出 Y 对 X 的直线的斜率？",
+   "opts": [
+    "=COEF.DE.CORREL(A2:A11;B2:B11)",
+    "=PENDIENTE(B2:B11;A2:A11)",
+    "=INTERSECCION.EJE(B2:B11;A2:A11)",
+    "=PENDIENTE(A2:A11;B2:B11)"
+   ],
+   "ok": 1,
+   "explain": "先写 Y，再写 X。",
+   "why": {
+    "3": "反过来写，得到的是 X 对 Y 的直线的斜率。",
+    "2": "这个给出的是截距 a。"
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "=INTERSECCION.EJE(B2:B11;A2:A11) 返回什么？",
+   "opts": [
+    "均值点",
+    "斜率 b",
+    "r 的值",
+    "直线的截距 a"
+   ],
+   "ok": 3,
+   "explain": "它是 X = 0 时 Y 的值：截距 a。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "哪个公式能预测 X = 11 时的 Y？",
+   "opts": [
+    "=PRONOSTICO.LINEAL(11;B2:B11;A2:A11)",
+    "=PENDIENTE(11)",
+    "=PRONOSTICO.LINEAL(B2:B11;A2:A11;11)",
+    "=PROMEDIO(B2:B11)*11"
+   ],
+   "ok": 0,
+   "explain": "顺序：X 的值，然后是 Y，然后是 X。（英文版：FORECAST.LINEAR。）",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "哪个函数直接给出 R²？",
+   "opts": [
+    "COEF.DE.CORREL",
+    "COEFICIENTE.R2",
+    "VAR.P",
+    "PENDIENTE"
+   ],
+   "ok": 1,
+   "explain": "COEFICIENTE.R2(Y;X)。也可以把 COEF.DE.CORREL 平方。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "在散点图里，怎么画出直线并显示 R²？",
+   "opts": [
+    "数据（Datos）→ 排序（Ordenar）",
+    "插入（Insertar）→ 直线",
+    "设置单元格格式",
+    "右键点一个点 → 添加趋势线（Agregar línea de tendencia）→ 线性（Lineal），勾选“显示公式（Presentar ecuación）”和“显示 R 平方值（R cuadrado）”"
+   ],
+   "ok": 3,
+   "explain": "趋势线会把方程和 R² 写在图上。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "工资在 B2:B12，基期在第 2 行。算指数时，拖动之前在 C2 里写什么？",
+   "opts": [
+    "=$B2/B2*100",
+    "=B2/$B$2*100",
+    "=B2*100",
+    "=B2/B2*100"
+   ],
+   "ok": 1,
+   "explain": "用 $B$2 固定基期，这样每一行都除以它。",
+   "why": {
+    "3": "没有 $，往下拖时每一年都会除以自己：结果全是 100。"
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "设置成 % 格式后，=B3/B2-1 算的是什么？",
+   "opts": [
+    "均值",
+    "B2 到 B3 的变化率",
+    "指数",
+    "以欧元计的差额"
+   ],
+   "ok": 1,
+   "explain": "V₁/V₀ − 1 = 变化率。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "在 Excel 里，和每年 6% 等价的月变化率怎么写？",
+   "opts": [
+    "=RAIZ(1,06)/12",
+    "=1,06^1/12-1",
+    "=6/12",
+    "=1,06^(1/12)-1"
+   ],
+   "ok": 3,
+   "explain": "开 12 次方就是 (1/12) 次幂，要加括号。",
+   "why": {
+    "1": "没有括号，Excel 会先算 1,06¹，再除以 12。"
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "哪个函数给出 A1:A3 的几何平均数？",
+   "opts": [
+    "MEDIA.GEOM",
+    "PROMEDIO",
+    "RAIZ",
+    "PRODUCTO"
+   ],
+   "ok": 0,
+   "explain": "MEDIA.GEOM 把数相乘再开 n 次方。也可以写 =PRODUCTO(A1:A3)^(1/3)。（英文版：GEOMEAN。）",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "p₀ 在 B 列，q₀ 在 C 列，pₜ 在 D 列。拉氏价格指数是哪个公式？",
+   "opts": [
+    "=SUMAPRODUCTO(D2:D6;C2:C6)/SUMAPRODUCTO(B2:B6;C2:C6)*100",
+    "=SUMAPRODUCTO(D2:D6;B2:B6)/SUMA(C2:C6)*100",
+    "=SUMA(D2:D6)/SUMA(B2:B6)*100",
+    "=PROMEDIO(D2:D6)/PROMEDIO(B2:B6)*100"
+   ],
+   "ok": 0,
+   "explain": "Σpₜq₀ / Σp₀q₀ × 100：分子分母用同样的数量（q₀）。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "工资在 B2，IPC 在 C2（以 100 为基数）。哪个公式给出实际工资？",
+   "opts": [
+    "=B2-C2",
+    "=B2*C2/100",
+    "=C2/B2*100",
+    "=B2/C2*100"
+   ],
+   "ok": 3,
+   "explain": "平减就是除以 IPC（IPC 以 100 为基数时再乘以 100）。",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "Excel 在一个格子里显示 #¡DIV/0!。这是什么意思？",
+   "opts": [
+    "数太大了",
+    "你在除以一个空格子或者等于 0 的格子",
+    "少了一个括号",
+    "这个函数不存在"
+   ],
+   "ok": 1,
+   "explain": "通常是没加 $ 就拖动：分母移到了一个空格子。",
+   "why": {},
+   "data": null
+  }
  ]
 }

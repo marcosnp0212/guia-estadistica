@@ -59,7 +59,7 @@ function weakS4(){
   var S=((window.GUIA_DATA||{}).tests||{}).S4;if(!S||!get('ts-res:S4',null))return null;var a=get('ts:S4',null)||{mc:{}};
   var by={},bad={};
   S.tests.forEach(function(q,i){var t=q.tema;by[t]=by[t]||[0,0];by[t][1]++;
-    if(a.mc[i]===q.ok)by[t][0]++;else{bad[t]=bad[t]||[];var w=String(q.where).split(' ')[0];if(bad[t].indexOf(w)<0)bad[t].push(w);}});
+    if(a.mc[i]===q.ok)by[t][0]++;else{bad[t]=bad[t]||[];var w=String(q.where).split(/[\s（(]/)[0];if(bad[t].indexOf(w)<0)bad[t].push(w);}});
   var t=Object.keys(by).sort(function(x,y){return by[x][0]/by[x][1]-by[y][0]/by[y][1];})[0];
   return{t:+t,ok:by[t][0],n:by[t][1],where:(bad[t]||[]).sort()};
 }

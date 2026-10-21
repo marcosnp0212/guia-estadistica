@@ -13,7 +13,7 @@ La profesora enseñó en clase este modelo de parcial. Es la mejor pista que ten
 **🧠 Qué se ve en el modelo.** Pocas cuentas largas y mucha **teoría**: definiciones, fórmulas y saber interpretar. Las cuentas que hay son cortas: un CV, un R², un IQR, una predicción. Las trampas típicas son las de siempre: sumar porcentajes en vez de multiplicarlos, confundir intervalo modal con el de más frecuencia o creer que r = 0 significa "ninguna relación".
 :::
 
-**Cómo usar este apartado.** Lee cada pregunta, **decide tu respuesta antes** de abrir la solución y después pulsa «Ver la solución». Cada solución explica por qué es esa y por qué no son las otras, y te dice dónde está en la guía. Cuando lo tengas, haz el **Simulacro 4**, que es igual pero con preguntas nuevas y se corrige solo.
+**Cómo usar este apartado.** Lee cada pregunta, **decide tu respuesta antes** de abrir la solución y después pulsa «Ver la solución». Cada solución explica por qué es esa y por qué no son las otras, y te dice dónde está en la guía. Cuando lo tengas, haz el **Simulacro tipo test**, que es igual pero con preguntas nuevas y se corrige solo.
 
 ## Tipo test: Tema 1 (preguntas 1 a 10)
 

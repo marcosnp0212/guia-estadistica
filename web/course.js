@@ -302,9 +302,9 @@ var PRNAME={1:'Variable discreta',2:'Datos en intervalos',3:'Grupos y cambios de
 var VID={t1:['qFxCvatJA7s','Tema 1. Una variable','35 min'],b12:['rRuCQaWuUSg','Boletín de los Temas 1 y 2','28 min'],t2:['bZ2RDTQ483I','Tema 2. Dos variables','9 min'],t3:['HULRqZML5gU','Tema 3. Regresión y correlación','12 min'],b3:['XRN-ahfALUc','Boletín del Tema 3','10 min'],t4:['25iXVSxnfoU','Tema 4. Números índices','12 min'],b4:['Evhy1CFN7HU','Boletín del Tema 4','11 min']};
 var webOK=/^https?:$/.test(location.protocol);
 [].slice.call(doc.querySelectorAll('.video')).forEach(function(box){
-  var v=VID[box.getAttribute('data-v')];if(!v)return;var id=v[0],url='https://youtu.be/'+id;
+  var vk=box.getAttribute('data-v'),v=VID[vk];if(!v)return;var id=v[0],url='https://youtu.be/'+id;if(!document.getElementById('video-'+vk))box.id='video-'+vk;
   var seen=get('vid:'+id,false);
-  box.innerHTML='<button type="button" class="vid-card"><span class="vid-th"><img loading="lazy" alt="" src="https://i.ytimg.com/vi/'+id+'/hqdefault.jpg" onerror="this.remove()"><span class="vid-play" aria-hidden="true"></span></span><span class="vid-tx"><span class="vid-k">Vídeo'+(seen?' · ya visto':'')+'</span><span class="vid-t">'+esc(v[1])+'</span><span class="vid-m">'+v[2]+' · voz, subtítulos y animaciones</span></span></button><p class="vid-alt"><a href="'+url+'" target="_blank" rel="noopener">Abrir en YouTube</a></p>';
+  box.innerHTML='<button type="button" class="vid-card"><span class="vid-th"><img loading="lazy" alt="" src="https://i.ytimg.com/vi/'+id+'/mqdefault.jpg" onerror="this.remove()"><span class="vid-play" aria-hidden="true"></span></span><span class="vid-tx"><span class="vid-k">Vídeo del '+(/^b/.test(vk)?'boletín':'tema')+' · '+v[2]+(seen?' · visto ✔':'')+'</span><span class="vid-t">'+esc(v[1])+'</span><span class="vid-m">Con voz, subtítulos y animaciones. Buen punto de partida antes de leer.</span></span></button><p class="vid-alt"><a href="'+url+'" target="_blank" rel="noopener">Abrir en YouTube</a></p>';
   box.querySelector('.vid-card').addEventListener('click',function(){
     set('vid:'+id,true);
     if(!webOK){window.open(url,'_blank','noopener');return;}
@@ -387,6 +387,12 @@ var TS=D.tests||{};
   draw();
 });
 
+/* ---------- 2d. Zonas del índice y enlaces de la portada ---------- */
+[['tema-1.-análisis-descriptivo-de-una-variable','Aprender'],['repaso-exprés-el-examen-en-3-días','Examen'],['chuleta-de-fórmulas','Herramientas'],['por-si-el-examen-fuera-con-ordenador','Por si acaso']].forEach(function(z){
+  var a=document.querySelector('.toc a[href="#'+z[0]+'"]');if(!a)return;var li=a.closest('li');var lab=el('li','zone',z[1]);lab.setAttribute('aria-hidden','true');li.parentNode.insertBefore(lab,li);if(z[1]==='Por si acaso')li.classList.add('psa');});
+(function(){var on=false;[].forEach.call(document.querySelectorAll('.toc > ul > li'),function(li){if(li.classList.contains('zone')){on=/Examen|Herramientas/.test(li.textContent);return;}if(on)li.classList.add('notab');});})();
+[].forEach.call(document.querySelectorAll('.hero a[href^="#"]'),function(a){a.addEventListener('click',function(e){var t=document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));if(!t)return;e.preventDefault();A.goTo(t);});});
+
 /* ---------- 3. Comprobaciones de cada apartado ---------- */
 var CH=D.checks||{};
 Object.keys(CH).forEach(function(id){
@@ -436,9 +442,8 @@ var tmr;window.addEventListener('scroll',function(){clearTimeout(tmr);tmr=setTim
   if(cur)set('last',cur.id);},400);},{passive:true});
 var hero=document.querySelector('.hero');var last=get('last',null);
 if(hero&&last&&document.getElementById(last)){
-  var ls=document.getElementById(last);var c=el('a','cont','<span class="cont-k">Seguir donde lo dejaste</span><span class="cont-t">'+esc(A.tabOf(ls)+A.secTitle(ls))+'</span>');c.href='#'+last;
-  c.addEventListener('click',function(e){e.preventDefault();A.goTo(ls);});
-  var lede=hero.querySelector('.hero-lede');lede.parentNode.insertBefore(c,lede.nextSibling);
+  var ls=document.getElementById(last);
+  var lc=hero.querySelector('.n-learn');if(lc){lc.href='#'+last;lc.querySelector('b').textContent='Seguir donde lo dejaste';lc.querySelector('.n-d').textContent=A.tabOf(ls)+A.secTitle(ls);lc.querySelector('.n-go').textContent='Continuar →';}
 }
 
 /* ---------- 6. Enlaces del plan a prácticas y simulacros ---------- */

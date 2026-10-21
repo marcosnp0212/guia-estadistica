@@ -582,6 +582,38 @@ details[open]{padding-bottom:.4rem}
 .ts-model .btn{margin-left:0}
 .ts-cnt{font-weight:600}
 .doc figure img,.doc p>img{max-width:min(100%,900px)!important;height:auto}
+
+.hero{padding:12px 0 40px}
+.hero .hero-lede{max-width:44rem;margin-bottom:8px}
+.hero-meta{font-size:.85rem;color:var(--ink-3);margin:0 0 30px}
+.hero-q{font-size:.78rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
+.need{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0 0 34px}
+.need-c{display:flex;flex-direction:column;gap:6px;background:var(--sheet);border:2px solid var(--nc);border-radius:16px;padding:18px 20px;color:var(--ink);text-decoration:none;transition:transform .15s,box-shadow .15s}
+.need-c:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.need-c b{font-size:1.15rem;line-height:1.25}
+.n-ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:1.3rem;background:var(--nb)}
+.n-d{color:var(--ink-2);font-size:.93rem;line-height:1.45;flex:1}
+.n-go{font-weight:700;font-size:.92rem;color:var(--nc)}
+.n-rep{--nc:var(--warn);--nb:var(--warn-soft)} .n-learn{--nc:var(--t1);--nb:var(--t1-soft)} .n-exam{--nc:var(--ink);--nb:var(--tx-soft)}
+.binder{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 22px}
+.divider:hover{transform:none}
+.divider a{color:inherit;text-decoration:none}
+.divider .dn{text-decoration:none}
+.divider .q{display:block}
+.divider .q:hover{color:var(--c)}
+.divider .dl{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:.88rem}
+.divider .dl a{color:var(--c);font-weight:650}
+.divider .dl a:hover{text-decoration:underline}
+.today{border:1px solid var(--rule);box-shadow:none;padding:12px 16px 14px}
+@media (max-width:820px){.need,.binder{grid-template-columns:1fr}}
+
+.toc li.zone{font-size:.7rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);padding:16px 22px 4px;pointer-events:none}
+.toc li.psa > a{color:var(--ink-2);font-weight:600}
+
+.video{max-width:40rem}
+.vid-th{width:200px}
+.vid-k{color:var(--c)}
+.toc li.notab > a .tab{display:none}
 </style>
 </head>
 <body data-guide="alumna">
@@ -605,62 +637,11 @@ details[open]{padding-bottom:.4rem}
   </div>
   <nav class="toc">
 <ul>
-<li><a href="#antes-de-empezar" id="toc-antes-de-empezar"><span class="ht">Antes de empezar</span></a>
+<li><a href="#cómo-usar-esta-guía" id="toc-cómo-usar-esta-guía"><span class="ht">Cómo usar esta guía</span></a>
 <ul>
 <li><a href="#cómo-está-hecha-esta-guía" id="toc-cómo-está-hecha-esta-guía">Cómo está hecha esta guía</a></li>
-<li><a href="#los-vídeos" id="toc-los-vídeos">Los vídeos</a></li>
 <li><a href="#cómo-estudiar-con-esta-guía" id="toc-cómo-estudiar-con-esta-guía">Cómo estudiar con esta
 guía</a></li>
-</ul></li>
-<li><a href="#repaso-exprés-el-examen-en-3-días" id="toc-repaso-exprés-el-examen-en-3-días"><span class="ht">Repaso
-exprés: el examen en 3 días</span></a>
-<ul>
-<li><a href="#el-plan-de-3-días" id="toc-el-plan-de-3-días">El plan de 3
-días</a></li>
-<li><a href="#tema-1-en-10-minutos" id="toc-tema-1-en-10-minutos">Tema 1
-en 10 minutos</a></li>
-<li><a href="#tema-2-en-5-minutos" id="toc-tema-2-en-5-minutos">Tema 2
-en 5 minutos</a></li>
-<li><a href="#tema-3-en-10-minutos" id="toc-tema-3-en-10-minutos">Tema 3
-en 10 minutos</a></li>
-<li><a href="#tema-4-en-10-minutos" id="toc-tema-4-en-10-minutos">Tema 4
-en 10 minutos</a></li>
-<li><a href="#las-15-trampas-del-test" id="toc-las-15-trampas-del-test">Las 15 trampas del test</a></li>
-</ul></li>
-<li><a href="#parte-0.-caja-de-herramientas" id="toc-parte-0.-caja-de-herramientas"><span class="tab">Parte
-0</span><span class="ht">Caja de herramientas</span></a>
-<ul>
-<li><a href="#el-orden-de-las-operaciones" id="toc-el-orden-de-las-operaciones"><span class="secnum">0.1</span><span class="ht">El orden de las
-operaciones</span></a></li>
-<li><a href="#decimales-y-redondeo" id="toc-decimales-y-redondeo"><span class="secnum">0.2</span><span class="ht">Decimales y
-redondeo</span></a></li>
-<li><a href="#fracciones-y-divisiones" id="toc-fracciones-y-divisiones"><span class="secnum">0.3</span><span class="ht">Fracciones y divisiones</span></a></li>
-<li><a href="#porcentajes" id="toc-porcentajes"><span class="secnum">0.4</span><span class="ht">Porcentajes</span></a></li>
-<li><a href="#potencias-el-al-cuadrado" id="toc-potencias-el-al-cuadrado"><span class="secnum">0.5</span><span class="ht">Potencias (el “al cuadrado”)</span></a></li>
-<li><a href="#raíz-cuadrada" id="toc-raíz-cuadrada"><span class="secnum">0.6</span><span class="ht">Raíz cuadrada</span></a></li>
-<li><a href="#el-símbolo-σ-sumatorio" id="toc-el-símbolo-σ-sumatorio"><span class="secnum">0.7</span><span class="ht">El símbolo Σ (sumatorio)</span></a></li>
-<li><a href="#los-subíndices" id="toc-los-subíndices"><span class="secnum">0.8</span><span class="ht">Los subíndices</span></a></li>
-<li><a href="#los-intervalos-y-sus-corchetes" id="toc-los-intervalos-y-sus-corchetes"><span class="secnum">0.9</span><span class="ht">Los intervalos y sus
-corchetes</span></a></li>
-<li><a href="#la-calculadora" id="toc-la-calculadora"><span class="secnum">0.10</span><span class="ht">La
-calculadora</span></a></li>
-</ul></li>
-<li><a href="#parte-0-bis.-excel-desde-cero" id="toc-parte-0-bis.-excel-desde-cero"><span class="tab">Parte 0
-bis</span><span class="ht">Excel desde cero</span></a>
-<ul>
-<li><a href="#lo-básico-de-una-hoja" id="toc-lo-básico-de-una-hoja"><span class="secnum">0.11</span><span class="ht">Lo básico de una hoja</span></a></li>
-<li><a href="#escribir-una-fórmula" id="toc-escribir-una-fórmula"><span class="secnum">0.12</span><span class="ht">Escribir una
-fórmula</span></a></li>
-<li><a href="#arrastrar-una-fórmula-copiar-hacia-abajo" id="toc-arrastrar-una-fórmula-copiar-hacia-abajo"><span class="secnum">0.13</span><span class="ht">Arrastrar una fórmula (copiar
-hacia abajo)</span></a></li>
-<li><a href="#fijar-una-celda-con-referencia-absoluta" id="toc-fijar-una-celda-con-referencia-absoluta"><span class="secnum">0.14</span><span class="ht">Fijar una celda con $
-(referencia absoluta)</span></a></li>
-<li><a href="#las-funciones-que-vas-a-usar" id="toc-las-funciones-que-vas-a-usar"><span class="secnum">0.15</span><span class="ht">Las funciones que vas a
-usar</span></a></li>
-<li><a href="#insertar-un-gráfico" id="toc-insertar-un-gráfico"><span class="secnum">0.16</span><span class="ht">Insertar un
-gráfico</span></a></li>
-<li><a href="#tabla-dinámica-para-contar-por-categorías" id="toc-tabla-dinámica-para-contar-por-categorías"><span class="secnum">0.17</span><span class="ht">Tabla dinámica (para contar
-por categorías)</span></a></li>
 </ul></li>
 <li><a href="#tema-1.-análisis-descriptivo-de-una-variable" id="toc-tema-1.-análisis-descriptivo-de-una-variable"><span class="tab">Tema 1</span><span class="ht">Análisis descriptivo de una
 variable</span></a>
@@ -843,6 +824,21 @@ IPC</span></a></li>
 <li><a href="#práctica-8.-laspeyres-paasche-y-deflactar" id="toc-práctica-8.-laspeyres-paasche-y-deflactar"><span class="num">8</span><span class="ht">Laspeyres, Paasche y
 deflactar</span></a></li>
 </ul></li>
+<li><a href="#repaso-exprés-el-examen-en-3-días" id="toc-repaso-exprés-el-examen-en-3-días"><span class="ht">Repaso
+exprés: el examen en 3 días</span></a>
+<ul>
+<li><a href="#el-plan-de-3-días" id="toc-el-plan-de-3-días">El plan de 3
+días</a></li>
+<li><a href="#tema-1-en-10-minutos" id="toc-tema-1-en-10-minutos">Tema 1
+en 10 minutos</a></li>
+<li><a href="#tema-2-en-5-minutos" id="toc-tema-2-en-5-minutos">Tema 2
+en 5 minutos</a></li>
+<li><a href="#tema-3-en-10-minutos" id="toc-tema-3-en-10-minutos">Tema 3
+en 10 minutos</a></li>
+<li><a href="#tema-4-en-10-minutos" id="toc-tema-4-en-10-minutos">Tema 4
+en 10 minutos</a></li>
+<li><a href="#las-15-trampas-del-test" id="toc-las-15-trampas-del-test">Las 15 trampas del test</a></li>
+</ul></li>
 <li><a href="#examen-modelo-de-la-profesora" id="toc-examen-modelo-de-la-profesora"><span class="tab">Examen</span><span class="ht">El modelo de la
 profesora</span></a>
 <ul>
@@ -860,13 +856,21 @@ examen</a></li>
 </ul></li>
 <li><a href="#simulacros-de-examen" id="toc-simulacros-de-examen"><span class="tab">Examen</span><span class="ht">Simulacros</span></a>
 <ul>
-<li><a href="#simulacro-4-tipo-test-como-el-de-la-profesora" id="toc-simulacro-4-tipo-test-como-el-de-la-profesora">Simulacro 4 (tipo
-test, como el de la profesora)</a></li>
-<li><a href="#simulacro-1" id="toc-simulacro-1">Simulacro 1</a></li>
-<li><a href="#simulacro-2" id="toc-simulacro-2">Simulacro 2</a></li>
-<li><a href="#simulacro-3-en-papel" id="toc-simulacro-3-en-papel">Simulacro 3 (en papel)</a></li>
+<li><a href="#simulacro-tipo-test" id="toc-simulacro-tipo-test">Simulacro tipo test</a></li>
+<li><a href="#simulacro-en-papel" id="toc-simulacro-en-papel">Simulacro
+en papel</a></li>
 <li><a href="#preguntas-de-excel-sin-ordenador" id="toc-preguntas-de-excel-sin-ordenador">Preguntas de Excel sin
 ordenador</a></li>
+</ul></li>
+<li><a href="#chuleta-de-fórmulas" id="toc-chuleta-de-fórmulas"><span class="ht">Chuleta de fórmulas</span></a>
+<ul>
+<li><a href="#tema-1.-una-variable" id="toc-tema-1.-una-variable">Tema
+1. Una variable</a></li>
+<li><a href="#tema-2.-dos-variables" id="toc-tema-2.-dos-variables">Tema
+2. Dos variables</a></li>
+<li><a href="#tema-3.-regresión" id="toc-tema-3.-regresión">Tema 3.
+Regresión</a></li>
+<li><a href="#tema-4.-números-índices-1" id="toc-tema-4.-números-índices-1">Tema 4. Números índices</a></li>
 </ul></li>
 <li><a href="#qué-me-están-pidiendo-traductor-de-enunciados" id="toc-qué-me-están-pidiendo-traductor-de-enunciados"><span class="ht">¿Qué me están pidiendo? Traductor de enunciados</span></a>
 <ul>
@@ -878,64 +882,86 @@ una variable</a></li>
 regresión</a></li>
 <li><a href="#tema-4-números-índices" id="toc-tema-4-números-índices">Tema 4: números índices</a></li>
 </ul></li>
-<li><a href="#tus-archivos-para-el-examen" id="toc-tus-archivos-para-el-examen"><span class="ht">Tus archivos para
-el examen</span></a>
+<li><a href="#lista-para-el-examen" id="toc-lista-para-el-examen"><span class="ht">Lista para el examen</span></a></li>
+<li><a href="#plan-de-estudio" id="toc-plan-de-estudio"><span class="ht">Plan de estudio</span></a></li>
+<li><a href="#parte-0.-repaso-de-base-números-y-calculadora" id="toc-parte-0.-repaso-de-base-números-y-calculadora"><span class="tab">Parte 0</span><span class="ht">Repaso de base: números y
+calculadora</span></a>
 <ul>
-<li><a href="#las-prácticas-de-clase" id="toc-las-prácticas-de-clase">Las prácticas de clase</a></li>
-<li><a href="#tu-solucionario" id="toc-tu-solucionario">Tu
-solucionario</a></li>
+<li><a href="#el-orden-de-las-operaciones" id="toc-el-orden-de-las-operaciones"><span class="secnum">0.1</span><span class="ht">El orden de las
+operaciones</span></a></li>
+<li><a href="#decimales-y-redondeo" id="toc-decimales-y-redondeo"><span class="secnum">0.2</span><span class="ht">Decimales y
+redondeo</span></a></li>
+<li><a href="#fracciones-y-divisiones" id="toc-fracciones-y-divisiones"><span class="secnum">0.3</span><span class="ht">Fracciones y divisiones</span></a></li>
+<li><a href="#porcentajes" id="toc-porcentajes"><span class="secnum">0.4</span><span class="ht">Porcentajes</span></a></li>
+<li><a href="#potencias-el-al-cuadrado" id="toc-potencias-el-al-cuadrado"><span class="secnum">0.5</span><span class="ht">Potencias (el “al cuadrado”)</span></a></li>
+<li><a href="#raíz-cuadrada" id="toc-raíz-cuadrada"><span class="secnum">0.6</span><span class="ht">Raíz cuadrada</span></a></li>
+<li><a href="#el-símbolo-σ-sumatorio" id="toc-el-símbolo-σ-sumatorio"><span class="secnum">0.7</span><span class="ht">El símbolo Σ (sumatorio)</span></a></li>
+<li><a href="#los-subíndices" id="toc-los-subíndices"><span class="secnum">0.8</span><span class="ht">Los subíndices</span></a></li>
+<li><a href="#los-intervalos-y-sus-corchetes" id="toc-los-intervalos-y-sus-corchetes"><span class="secnum">0.9</span><span class="ht">Los intervalos y sus
+corchetes</span></a></li>
+<li><a href="#la-calculadora" id="toc-la-calculadora"><span class="secnum">0.10</span><span class="ht">La
+calculadora</span></a></li>
+</ul></li>
+<li><a href="#parte-0-bis.-excel-desde-cero" id="toc-parte-0-bis.-excel-desde-cero"><span class="tab">Parte 0
+bis</span><span class="ht">Excel desde cero</span></a>
+<ul>
+<li><a href="#lo-básico-de-una-hoja" id="toc-lo-básico-de-una-hoja"><span class="secnum">0.11</span><span class="ht">Lo básico de una hoja</span></a></li>
+<li><a href="#escribir-una-fórmula" id="toc-escribir-una-fórmula"><span class="secnum">0.12</span><span class="ht">Escribir una
+fórmula</span></a></li>
+<li><a href="#arrastrar-una-fórmula-copiar-hacia-abajo" id="toc-arrastrar-una-fórmula-copiar-hacia-abajo"><span class="secnum">0.13</span><span class="ht">Arrastrar una fórmula (copiar
+hacia abajo)</span></a></li>
+<li><a href="#fijar-una-celda-con-referencia-absoluta" id="toc-fijar-una-celda-con-referencia-absoluta"><span class="secnum">0.14</span><span class="ht">Fijar una celda con $
+(referencia absoluta)</span></a></li>
+<li><a href="#las-funciones-que-vas-a-usar" id="toc-las-funciones-que-vas-a-usar"><span class="secnum">0.15</span><span class="ht">Las funciones que vas a
+usar</span></a></li>
+<li><a href="#insertar-un-gráfico" id="toc-insertar-un-gráfico"><span class="secnum">0.16</span><span class="ht">Insertar un
+gráfico</span></a></li>
+<li><a href="#tabla-dinámica-para-contar-por-categorías" id="toc-tabla-dinámica-para-contar-por-categorías"><span class="secnum">0.17</span><span class="ht">Tabla dinámica (para contar
+por categorías)</span></a></li>
 </ul></li>
 <li><a href="#descargas" id="toc-descargas"><span class="ht">Descargas</span></a></li>
-<li><a href="#chuleta-de-fórmulas" id="toc-chuleta-de-fórmulas"><span class="ht">Chuleta de fórmulas</span></a>
+<li><a href="#por-si-el-examen-fuera-con-ordenador" id="toc-por-si-el-examen-fuera-con-ordenador"><span class="ht">Por si el
+examen fuera con ordenador</span></a>
 <ul>
-<li><a href="#tema-1.-una-variable" id="toc-tema-1.-una-variable">Tema
-1. Una variable</a></li>
-<li><a href="#tema-2.-dos-variables" id="toc-tema-2.-dos-variables">Tema
-2. Dos variables</a></li>
-<li><a href="#tema-3.-regresión" id="toc-tema-3.-regresión">Tema 3.
-Regresión</a></li>
-<li><a href="#tema-4.-números-índices-1" id="toc-tema-4.-números-índices-1">Tema 4. Números índices</a></li>
+<li><a href="#simulacro-con-excel-1" id="toc-simulacro-con-excel-1">Simulacro con Excel 1</a></li>
+<li><a href="#simulacro-con-excel-2" id="toc-simulacro-con-excel-2">Simulacro con Excel 2</a></li>
+<li><a href="#tus-archivos-para-el-examen" id="toc-tus-archivos-para-el-examen">Tus archivos para el
+examen</a></li>
+<li><a href="#lista-de-comprobación-del-examen-con-excel" id="toc-lista-de-comprobación-del-examen-con-excel">Lista de
+comprobación del examen con Excel</a></li>
 </ul></li>
-<li><a href="#el-examen-en-papel-lista-de-comprobación" id="toc-el-examen-en-papel-lista-de-comprobación"><span class="ht">El
-examen en papel: lista de comprobación</span></a></li>
-<li><a href="#el-examen-con-excel-lista-de-comprobación" id="toc-el-examen-con-excel-lista-de-comprobación"><span class="ht">El
-examen con Excel: lista de comprobación</span></a></li>
-<li><a href="#plan-de-estudio" id="toc-plan-de-estudio"><span class="ht">Plan de estudio</span></a></li>
 </ul>
   </nav>
 </aside>
 <div class="scrim" hidden></div>
 <main id="contenido">
 <header class="hero">
-  <h1 class="hero-title">Estadística con Excel, desde cero</h1>
-  <p class="hero-lede">Todo lo que entra en el examen, explicado paso a paso: a mano, con calculadora, y en Excel. Aprendes qué cálculo toca y cómo explicar el resultado con una frase.</p>
+  <h1 class="hero-title">Estadística, desde cero</h1>
+  <p class="hero-lede">Los Temas 1 a 4, explicados paso a paso: a mano con calculadora y en Excel, con vídeos, ejercicios resueltos y simulacros que se corrigen solos.</p>
+  <p class="hero-meta">RRLL y RRHH · UVigo · Material de estudio no oficial · Actualizado el 21/10/2026</p>
+  <p class="hero-q">¿Qué necesitas?</p>
+  <div class="need">
+    <a class="need-c n-rep" href="#repaso-exprés-el-examen-en-3-días"><span class="n-ic" aria-hidden="true">⚡</span><b>Tengo el examen en pocos días</b><span class="n-d">Lo imprescindible de cada tema, las 15 trampas del test y un plan de 3 días.</span><span class="n-go">Ir al repaso exprés →</span></a>
+    <a class="need-c n-learn" href="#tema-1.-análisis-descriptivo-de-una-variable"><span class="n-ic" aria-hidden="true">📘</span><b>Quiero entenderlo bien</b><span class="n-d">Tema a tema: vídeo, teoría, ejercicios del boletín y prácticas.</span><span class="n-go">Empezar por el Tema 1 →</span></a>
+    <a class="need-c n-exam" href="#examen-modelo-de-la-profesora"><span class="n-ic" aria-hidden="true">📝</span><b>Quiero practicar el examen</b><span class="n-d">El examen modelo de la profesora, resuelto, y un simulacro tipo test con nota.</span><span class="n-go">Ir al examen →</span></a>
+  </div>
+  <p class="hero-q">Los temas</p>
+  <div class="binder">
+    <div class="divider t1"><a class="dn" href="#tema-1.-análisis-descriptivo-de-una-variable">Tema 1</a><div class="dt"><a class="q" href="#tema-1.-análisis-descriptivo-de-una-variable">Una variable</a><span class="d">Tablas, media, mediana, dispersión y diagramas de caja</span><span class="dl"><a class="vid-btn" href="#video-t1">▶ Vídeo · 35 min</a><a href="#boletín-de-ejercicios-de-los-temas-1-y-2-resuelto">Ejercicios</a><a href="#prácticas-de-los-temas-1-y-2">Prácticas</a></span></div></div>
+    <div class="divider t2"><a class="dn" href="#tema-2.-análisis-descriptivo-de-dos-variables">Tema 2</a><div class="dt"><a class="q" href="#tema-2.-análisis-descriptivo-de-dos-variables">Dos variables</a><span class="d">Tablas de doble entrada, condicionadas e independencia</span><span class="dl"><a class="vid-btn" href="#video-t2">▶ Vídeo · 9 min</a><a href="#boletín-de-ejercicios-de-los-temas-1-y-2-resuelto">Ejercicios</a><a href="#prácticas-de-los-temas-1-y-2">Prácticas</a></span></div></div>
+    <div class="divider t3"><a class="dn" href="#tema-3.-regresión-y-correlación">Tema 3</a><div class="dt"><a class="q" href="#tema-3.-regresión-y-correlación">Regresión y correlación</a><span class="d">Nube de puntos, recta de regresión, r y R²</span><span class="dl"><a class="vid-btn" href="#video-t3">▶ Vídeo · 12 min</a><a href="#boletín-del-tema-3-resuelto">Ejercicios</a><a href="#prácticas-del-tema-3">Prácticas</a></span></div></div>
+    <div class="divider t4"><a class="dn" href="#tema-4.-números-índices">Tema 4</a><div class="dt"><a class="q" href="#tema-4.-números-índices">Números índices</a><span class="d">Tasas, IPC, Laspeyres y Paasche, deflactar</span><span class="dl"><a class="vid-btn" href="#video-t4">▶ Vídeo · 12 min</a><a href="#boletín-del-tema-4-resuelto">Ejercicios</a><a href="#prácticas-del-tema-4">Prácticas</a></span></div></div>
+  </div>
   <div class="today" hidden></div>
-  <nav class="binder" aria-label="Partes de la guía">
-    <a class="divider t0" href="#parte-0.-caja-de-herramientas"><span class="dn">Antes</span><span class="dt"><span class="q">Lo que necesitas antes de empezar</span><span class="d">Porcentajes, potencias, raíces y Excel desde la primera celda</span></span></a>
-    <a class="divider t1" href="#tema-1.-análisis-descriptivo-de-una-variable"><span class="dn">Tema 1</span><span class="dt"><span class="q">¿Cómo resumo un montón de datos?</span><span class="d">Tablas, gráficos, media, mediana, dispersión y diagramas de caja</span></span></a>
-    <a class="divider t2" href="#tema-2.-análisis-descriptivo-de-dos-variables"><span class="dn">Tema 2</span><span class="dt"><span class="q">¿Tienen que ver dos variables entre sí?</span><span class="d">Tablas de doble entrada, condicionadas e independencia</span></span></a>
-    <a class="divider t3" href="#tema-3.-regresión-y-correlación"><span class="dn">Tema 3</span><span class="dt"><span class="q">¿Puedo predecir una con la otra?</span><span class="d">Nube de puntos, recta de regresión, correlación y R²</span></span></a>
-    <a class="divider t4" href="#tema-4.-números-índices"><span class="dn">Tema 4</span><span class="dt"><span class="q">¿Cuánto ha cambiado algo con el tiempo?</span><span class="d">Índices, tasas, IPC y euros reales</span></span></a>
-  </nav>
-  <p class="hero-links">
-    <a href="#repaso-exprés-el-examen-en-3-días"><b>⚡ Repaso exprés (3 días)</b></a>
-    <a href="#los-vídeos">Los vídeos</a>
-    <a href="#examen-modelo-de-la-profesora">El examen modelo</a>
-    <a href="#simulacro-4-tipo-test-como-el-de-la-profesora">Simulacro tipo test</a>
-    <a href="#plan-de-estudio">Mi plan de estudio</a>
-    <a href="#qué-me-están-pidiendo-traductor-de-enunciados">¿Qué me están pidiendo?</a>
-    <a href="#chuleta-de-fórmulas">Chuleta de fórmulas</a>
-    <a href="#el-examen-con-excel-lista-de-comprobación">Lista para el examen</a>
-  </p>
 </header>
 <article class="doc">
-<section id="antes-de-empezar" class="level1 t0">
-<h1 class="t0"><span class="ht">Antes de empezar</span></h1>
+<section id="cómo-usar-esta-guía" class="level1 tx">
+<h1 class="tx"><span class="ht">Cómo usar esta guía</span></h1>
 <section id="cómo-está-hecha-esta-guía" class="level2">
 <h2>Cómo está hecha esta guía</h2>
-<p>Esta guía está pensada para ti, que empiezas desde cero. No hace
-falta que recuerdes nada del instituto. Todo lo que vamos a usar se
-explica aquí, paso a paso.</p>
+<p>Esta guía está pensada para empezar desde cero. No hace falta que
+recuerdes nada del instituto. Todo lo que vamos a usar se explica aquí,
+paso a paso.</p>
 <p>La estadística de esta asignatura no es “matemáticas difíciles”. Es,
 sobre todo, <strong>ordenar datos, contar, sumar, dividir y saber qué
 significa cada número</strong>. Aprenderás a hacerlo de dos formas:
@@ -993,68 +1019,36 @@ La idea
 <p>Lo que de verdad importa entender del apartado.</p>
 </div>
 </section>
-<section id="los-vídeos" class="level2">
-<h2>Los vídeos</h2>
-<p>Cada tema y cada boletín tiene un vídeo con voz, subtítulos y
-animaciones que lo explica todo: la teoría, cómo se hace a mano con
-calculadora, cómo se hace en Excel y qué frase escribir en el examen.
-Son unas 2 horas en total. El vídeo de cada tema está también al
-principio de su apartado.</p>
-<p><strong>Orden recomendado:</strong> cada tema y, justo después, su
-boletín.</p>
-<div class="video" data-v="t1">
-
-</div>
-<div class="video" data-v="b12">
-
-</div>
-<div class="video" data-v="t2">
-
-</div>
-<div class="video" data-v="t3">
-
-</div>
-<div class="video" data-v="b3">
-
-</div>
-<div class="video" data-v="t4">
-
-</div>
-<div class="video" data-v="b4">
-
-</div>
-<div class="co co-truco">
-<div class="co-t">
-Para verlos mejor
-</div>
-<p>Si vas rápida, ponlos a 1,25× (rueda de ajustes de YouTube). Si algo
-no lo pillas, para el vídeo y búscalo en la guía: el vídeo sigue el
-mismo orden.</p>
-</div>
-</section>
 <section id="cómo-estudiar-con-esta-guía" class="level2">
 <h2>Cómo estudiar con esta guía</h2>
-<p>La guía está pensada para que puedas estudiar <strong>sola</strong>,
-a tu ritmo. Cada apartado sigue el mismo camino:</p>
+<p>La guía tiene cuatro zonas, que están también en el índice de la
+izquierda:</p>
+<ul>
+<li><strong>Aprender.</strong> Los cuatro temas. Cada uno empieza con su
+<strong>vídeo</strong> (voz, subtítulos y animaciones) y sigue con la
+teoría, los ejercicios del boletín resueltos y las prácticas que se
+corrigen solas.</li>
+<li><strong>Examen.</strong> El repaso exprés para los últimos días, el
+examen modelo de la profesora resuelto y los simulacros con nota.</li>
+<li><strong>Herramientas.</strong> La chuleta de fórmulas, el traductor
+de enunciados, el plan de estudio, la lista para el examen, un repaso de
+base (porcentajes, calculadora y Excel desde cero) y las descargas.</li>
+<li><strong>Por si acaso.</strong> Lo que haría falta si el examen fuera
+con ordenador.</li>
+</ul>
+<p>Cada apartado de un tema sigue el mismo camino:</p>
 <ol type="1">
-<li><strong>Lee</strong> la explicación y haz el ejemplo tú: primero a
-mano, con papel y calculadora, y después en Excel.</li>
+<li><strong>Lee</strong> la explicación y haz el ejemplo: primero a
+mano, con papel y calculadora; después, si quieres, en Excel.</li>
 <li><strong>Comprueba</strong> que lo has entendido: al final del
 apartado hay dos o tres preguntas cortas que se corrigen al momento. Si
 aciertas todas, el apartado queda marcado como hecho.</li>
-<li>Pulsa <strong>Siguiente apartado</strong> y sigue.</li>
+<li>Pulsa <strong>Siguiente</strong> y sigue.</li>
 </ol>
-<p>Al terminar cada bloque de temas hay <strong>prácticas</strong>:
-ejercicios con datos nuevos que se corrigen al momento. Cada práctica
-tiene tres niveles, de más ayuda a ninguna: los dos primeros se hacen en
-una hoja de cálculo dentro de la guía y el tercero en tu Excel, como en
-el examen. Al final hay dos <strong>simulacros</strong> de examen con
-reloj y nota.</p>
-<p>El <strong>plan de estudio</strong> se adapta a tus fechas: eliges
-cuándo empiezas, cuándo es el examen y qué temas entran, y te dice qué
-toca cada día. La portada te recuerda dónde lo dejaste.</p>
-<p>Bloques cortos: mejor 25 minutos concentrada que dos horas mirando la
-pantalla. Haz una pausa de 5 minutos entre bloques.</p>
+<p>El progreso se guarda solo en este navegador: cada persona tiene el
+suyo. La portada recuerda dónde lo dejaste.</p>
+<p>Mejor bloques cortos: 25 minutos con atención valen más que dos horas
+mirando la pantalla. Haz una pausa de 5 minutos entre bloques.</p>
 <div class="co co-truco">
 <div class="co-t">
 Si te atascas
@@ -1073,777 +1067,6 @@ abre solo el paso siguiente e intenta seguir tú.</li>
 el siguiente apartado. Muchas veces se entiende al ver el siguiente. Tus
 notas quedan reunidas en «Mis notas».</li>
 </ol>
-</div>
-<div class="co co-idea">
-<div class="co-t">
-La idea
-</div>
-<p>El examen puede ser en papel, con preguntas cortas, ejercicios a mano
-y preguntas sobre Excel. Por eso cada apartado tiene las dos versiones.
-Lo importante es lo mismo en las dos: saber qué te piden, qué cálculo
-hacer y explicar el resultado con una frase.</p>
-</div>
-</section>
-</section>
-<section id="repaso-exprés-el-examen-en-3-días" class="level1 tx">
-<h1 class="tx"><span class="ht">Repaso exprés: el examen en 3
-días</span></h1>
-<div class="co co-idea">
-<div class="co-t">
-Si te quedan pocos días, empieza aquí
-</div>
-<p>El examen es como el modelo de la profesora: 30 preguntas tipo test y
-10 cortas, casi todo de <strong>saber qué es cada cosa, qué fórmula va y
-qué trampa evitar</strong>. No hace falta leer la guía entera. Esto es
-lo mínimo que tienes que saber, tema a tema. Si algo no lo entiendes,
-pincha en el enlace del tema y lee solo ese trozo.</p>
-</div>
-<section id="el-plan-de-3-días" class="level2">
-<h2>El plan de 3 días</h2>
-<div class="tw">
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Día</th>
-<th style="text-align: left;">Qué hacer</th>
-<th style="text-align: right;">Tiempo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Día 1</strong></td>
-<td style="text-align: left;">Lee el <strong>Repaso exprés de los Temas
-1 y 2</strong> (aquí abajo). Después, el <strong>examen modelo,
-preguntas 1 a 15</strong>: intenta cada una antes de abrir la
-solución.</td>
-<td style="text-align: right;">2 h</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Día 2</strong></td>
-<td style="text-align: left;"><strong>Repaso exprés de los Temas 3 y
-4</strong>. Después, el <strong>examen modelo, preguntas 16 a 30 y P1 a
-P10</strong>. Si te sobra tiempo, el vídeo del Tema 3 o del 4 a
-1,25×.</td>
-<td style="text-align: right;">2 h 30</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Día 3</strong></td>
-<td style="text-align: left;"><strong>Simulacro 4</strong> con reloj (90
-min). Al entregar, lee la explicación de cada fallo y vuelve a leer en
-este repaso el tema que peor te haya salido. Antes de dormir, la
-<strong>chuleta</strong>.</td>
-<td style="text-align: right;">2 h 30</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Mañana del examen</strong></td>
-<td style="text-align: left;">Solo la lista <strong>“Las 15
-trampas”</strong> de abajo. Nada nuevo.</td>
-<td style="text-align: right;">15 min</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>El plan de estudio largo (más abajo, en «Plan de estudio») es para
-cuando hay semanas. Para estos 3 días, sigue esta tabla.</p>
-</section>
-<section id="tema-1-en-10-minutos" class="level2">
-<h2>Tema 1 en 10 minutos</h2>
-<p><strong>Variables.</strong> Cualitativa (palabras):
-<strong>nominal</strong> sin orden (departamento) u
-<strong>ordinal</strong> con orden (satisfacción baja/media/alta).
-Cuantitativa (números): <strong>discreta</strong> si se cuenta (hijos) o
-<strong>continua</strong> si se mide (salario, altura).</p>
-<p><strong>Parámetro</strong> = medida de la población.
-<strong>Estadístico</strong> = la misma medida en una muestra.</p>
-<p><strong>Centro.</strong></p>
-<ul>
-<li>Media: x̄ = Σxᵢnᵢ / n. En Excel con tabla:
-<code>=SUMAPRODUCTO(x;n)/SUMA(n)</code>.</li>
-<li>Mediana: el dato del medio. <strong>Robusta</strong>: no le afectan
-los atípicos. Con atípicos o asimetría fuerte, mejor mediana o
-<strong>media truncada</strong> (<code>=MEDIA.ACOTADA</code>).</li>
-<li>Moda: el más repetido. <strong>Con intervalos de distinto ancho, el
-intervalo modal es el de mayor densidad dᵢ = nᵢ / aᵢ</strong>, no el de
-más datos. En el histograma, en el eje vertical va la densidad.</li>
-</ul>
-<p><strong>Dispersión.</strong></p>
-<ul>
-<li>Varianza S² = Σxᵢ²nᵢ / n − x̄² (<code>=VAR.P</code>). Cuasivarianza:
-entre n − 1 (<code>=VAR.S</code>). Desviación típica S = √S².</li>
-<li><strong>CV = S / x̄.</strong> Sin unidades. Sirve para comparar
-grupos con medias o unidades distintas: <strong>menor CV, más
-homogéneo</strong>.</li>
-<li>IQR = C₃ − C₁. <strong>Atípicos:</strong> por debajo de C₁ − 1,5·IQR
-o por encima de C₃ + 1,5·IQR.</li>
-<li><strong>Varianza total = dentro + entre.</strong> Dentro = Σ S²ᵢ nᵢ
-/ n. Entre = Σ (x̄ᵢ − x̄)² nᵢ / n. Si “entre” es grande, los grupos son
-muy distintos.</li>
-</ul>
-<p><strong>Cambio Y = aX + b:</strong> ȳ = a·x̄ + b · S²ᵧ = a²·S²ₓ · Sᵧ =
-|a|·Sₓ. Sumar b no cambia la dispersión.</p>
-<p><strong>Forma.</strong> CA &gt; 0: cola a la derecha (media &gt;
-mediana). CA &lt; 0: cola a la izquierda. CA = 0: simétrica. Curtosis
-&gt; 0 leptocúrtica (apuntada), &lt; 0 platicúrtica.</p>
-<p><strong>Diagrama de caja.</strong> Mediana cerca del borde de abajo
-de la caja y bigote de arriba largo → asimetría positiva.</p>
-<p><strong>Tipificar:</strong> z = (x − x̄) / S. En Excel,
-<code>=(A2-$B$1)/$B$2</code>: el dato sin dólares, la media y S con
-dólares.</p>
-<p><a href="#tema-1.-análisis-descriptivo-de-una-variable">Ir al Tema 1
-completo</a></p>
-</section>
-<section id="tema-2-en-5-minutos" class="level2">
-<h2>Tema 2 en 5 minutos</h2>
-<ul>
-<li><strong>Conjunta</strong> nᵢⱼ: la casilla. Relativa: fᵢⱼ = nᵢⱼ /
-n.</li>
-<li><strong>Marginal:</strong> los totales. nᵢ. = suma de la fila i; n.ⱼ
-= suma de la columna j.</li>
-<li><strong>Condicionada</strong> Y | X = xᵢ: coges la fila de xᵢ y la
-divides entre su total.</li>
-<li><strong>Independencia:</strong> fᵢⱼ = fᵢ. · f.ⱼ <strong>en
-todas</strong> las casillas. Equivale a que <strong>todas las
-condicionadas son iguales entre sí e iguales a la marginal</strong>.
-Ejemplo: si el 70 % del total tiene jornada completa y son
-independientes, el 70 % de los hombres también.</li>
-<li>Frecuencia esperada si fueran independientes: nᵢ. · n.ⱼ / n.</li>
-<li><strong>Gráficos:</strong> barras agrupadas o apiladas y mosaico
-(dos cualitativas). En el <strong>mosaico</strong>, el
-<strong>ancho</strong> de cada columna es la frecuencia marginal.</li>
-</ul>
-<p><a href="#tema-2.-análisis-descriptivo-de-dos-variables">Ir al Tema 2
-completo</a></p>
-</section>
-<section id="tema-3-en-10-minutos" class="level2">
-<h2>Tema 3 en 10 minutos</h2>
-<ul>
-<li><strong>Nube de puntos</strong> que sube → relación directa (S_XY
-&gt; 0). Que baja → inversa (S_XY &lt; 0).</li>
-<li><strong>Covarianza:</strong> S_XY = Σxᵢyᵢ / n − x̄·ȳ (con tabla,
-Σxᵢyⱼnᵢⱼ / n − x̄·ȳ). Solo mira su <strong>signo</strong>: su tamaño
-depende de las unidades.</li>
-<li><strong>Recta de Y sobre X:</strong> Ŷ = a + bX, con <strong>b =
-S_XY / S²ₓ</strong> y <strong>a = ȳ − b·x̄</strong>. b = lo que sube Y de
-media por cada unidad más de X.</li>
-<li><strong>Recta de X sobre Y:</strong> b′ = S_XY / S²ᵧ. Las dos rectas
-<strong>se cortan en (x̄, ȳ)</strong>.</li>
-<li><strong>Si S_XY = 0:</strong> Ŷ = ȳ (horizontal) y X̂ = x̄ (vertical).
-No hay relación lineal.</li>
-<li><strong>r = S_XY / (Sₓ·Sᵧ):</strong> entre −1 y 1, <strong>sin
-unidades</strong> (no cambia si pasas de euros a miles de euros), mismo
-signo que b. <strong>r = 0 no es “ninguna relación”</strong>: solo que
-no es lineal.</li>
-<li><strong>R² = r²:</strong> el % de la variabilidad de Y que explica
-la recta. Si r = −0,85, R² = 0,7225 → 72,25 %.</li>
-<li><strong>Predecir:</strong> sustituir X en la recta. Con Salario =
-1390 + 78,5·Antigüedad y 10 años: 1390 + 785 = 2175 €. <strong>No
-predigas fuera del rango de los datos</strong> (extrapolar).</li>
-<li><strong>Pasa por las medias:</strong> ȳ = a + b·x̄. Útil en los
-ejercicios “sin datos”.</li>
-<li>Excel: <code>=PENDIENTE(Y;X)</code>,
-<code>=INTERSECCION.EJE(Y;X)</code>, <code>=COEF.DE.CORREL(X;Y)</code>,
-<code>=COEFICIENTE.R2(Y;X)</code>. Siempre primero la Y.</li>
-</ul>
-<p><a href="#tema-3.-regresión-y-correlación">Ir al Tema 3
-completo</a></p>
-</section>
-<section id="tema-4-en-10-minutos" class="level2">
-<h2>Tema 4 en 10 minutos</h2>
-<ul>
-<li><strong>Índice simple</strong> = valor / valor del año base × 100.
-<strong>Índice − 100 = variación en %</strong>: 125,4 → +25,4 %; 92 → −8
-%.</li>
-<li><strong>Tasa de variación</strong> = nuevo / viejo − 1.</li>
-<li><strong>Los porcentajes se multiplican, nunca se suman:</strong> +10
-% y +20 % = 1,10·1,20 = +32 %.</li>
-<li><strong>Inversión:</strong> I(al revés) = 1 / I (en tanto por uno).
-<strong>Encadenamiento:</strong> se multiplican.</li>
-<li><strong>Cambio de base:</strong> cada índice entre el del nuevo año
-base, × 100.</li>
-<li><strong>Tasa media:</strong> media <strong>geométrica</strong>:
-ⁿ√((1+t₁)(1+t₂)…) − 1. En Excel, <code>=MEDIA.GEOM(rango)-1</code> o
-<code>=PRODUCTO(rango)^(1/n)-1</code>.</li>
-<li><strong>De anual a mensual:</strong> (1 + t)^(1/12) − 1. 6 % anual →
-0,487 % mensual. <strong>De mensual a anual:</strong> (1 + t)¹² −
-1.</li>
-<li><strong>Laspeyres:</strong> pondera con las cantidades del
-<strong>año base</strong> (q₀); tiende a <strong>sobreestimar</strong>
-la subida de precios. <strong>Paasche:</strong> cantidades del
-<strong>año actual</strong> (qₜ). <strong>Fisher:</strong> √(L·P).</li>
-<li><strong>Deflactar:</strong> valor real = nominal / IPC (en tanto por
-uno), o nominal / IPC × 100 si el IPC está en base 100. Real sube = 1,05
-/ 1,03 − 1, no 5 − 3.</li>
-</ul>
-<p><a href="#tema-4.-números-índices">Ir al Tema 4 completo</a></p>
-</section>
-<section id="las-15-trampas-del-test" class="level2">
-<h2>Las 15 trampas del test</h2>
-<ol type="1">
-<li>Intervalos de distinto ancho → moda por <strong>densidad</strong>,
-no por frecuencia.</li>
-<li>Varianza = entre n (VAR.P). Cuasivarianza = entre n − 1
-(VAR.S).</li>
-<li>¿Te dan S o S²? Para la pendiente necesitas la
-<strong>varianza</strong>.</li>
-<li>El CV compara grupos con medias o unidades distintas; S sola
-no.</li>
-<li>La suma de las desviaciones a la media es siempre
-<strong>0</strong>.</li>
-<li>Sumar una constante no cambia la varianza ni S; multiplicar por a
-multiplica S² por a².</li>
-<li>Total = dentro <strong>+</strong> entre (se suman).</li>
-<li>CA &gt; 0 = cola a la <strong>derecha</strong>.</li>
-<li>Atípicos: <strong>1,5 · IQR</strong> por fuera de C₁ y C₃.</li>
-<li>Independencia: condicionadas = marginal, en <strong>todas</strong>
-las casillas.</li>
-<li>r = 0 → no hay relación <strong>lineal</strong> (puede haber curva).
-r no cambia con las unidades.</li>
-<li>R² es r al cuadrado: el signo desaparece. r lleva el signo de la
-pendiente.</li>
-<li>b = S_XY / S²ₓ (la X abajo); a = ȳ − b·x̄.</li>
-<li>Los porcentajes se <strong>multiplican</strong>; la tasa media es la
-<strong>geométrica</strong>; 6 % anual no es 0,5 % al mes.</li>
-<li>Laspeyres = cantidades del año <strong>base</strong>; deflactar =
-<strong>dividir</strong> entre el IPC.</li>
-</ol>
-<div class="co co-truco">
-<div class="co-t">
-En el test
-</div>
-<p>Lee las 4 opciones antes de elegir. Muchas veces dos se descartan
-solas: “es negativo cuando…”, “siempre positiva”, “suman cero”, “tienden
-a infinito”. Si dudas entre dos, busca cuál dice algo
-<strong>imposible</strong> (un CV negativo, un R² mayor que 1, una
-varianza negativa).</p>
-</div>
-</section>
-</section>
-<section id="parte-0.-caja-de-herramientas" class="level1 t0">
-<h1 class="t0"><span class="tab">Parte 0</span><span class="ht">Caja de
-herramientas</span></h1>
-<p>Antes de entrar en la estadística, repasamos las pocas operaciones
-que vamos a usar. Si alguna ya la dominas, salta a la siguiente.</p>
-<section id="el-orden-de-las-operaciones" class="level2">
-<h2><span class="secnum">0.1</span><span class="ht">El orden de las
-operaciones</span></h2>
-<p>Cuando una cuenta tiene varias operaciones, no se hacen de izquierda
-a derecha sin más. Se sigue este orden:</p>
-<ol type="1">
-<li>Primero lo que está <strong>entre paréntesis</strong>.</li>
-<li>Después las <strong>potencias y raíces</strong> (el “al cuadrado”,
-la raíz).</li>
-<li>Después <strong>multiplicaciones y divisiones</strong>.</li>
-<li>Por último <strong>sumas y restas</strong>.</li>
-</ol>
-<p>Ejemplo: 2 + 3 × 4 = 2 + 12 = <strong>14</strong> (no 20, porque la
-multiplicación va antes).</p>
-<p>Ejemplo: (2 + 3) × 4 = 5 × 4 = <strong>20</strong> (el paréntesis
-manda).</p>
-<div class="co co-ojo">
-<div class="co-t">
-Ojo
-</div>
-<p>Excel sigue exactamente este mismo orden. Si escribes
-<code>=2+3*4</code> te da 14. Si quieres que sume primero, tienes que
-poner paréntesis: <code>=(2+3)*4</code>. Muchos errores en el examen
-vienen de un paréntesis olvidado, sobre todo al dividir:
-<code>=A1+A2/2</code> no es lo mismo que <code>=(A1+A2)/2</code>.</p>
-</div>
-</section>
-<section id="decimales-y-redondeo" class="level2">
-<h2><span class="secnum">0.2</span><span class="ht">Decimales y
-redondeo</span></h2>
-<p>En España (y en tu Excel) los decimales se escriben con
-<strong>coma</strong>: 0,477. En los apuntes de la profesora a veces
-aparecen con punto (0.477) porque están hechos con un programa en
-inglés. Es lo mismo.</p>
-<p>Para redondear a 2 decimales, mira la tercera cifra decimal. Si es 0,
-1, 2, 3 o 4, la segunda cifra se queda igual. Si es 5, 6, 7, 8 o 9, la
-segunda cifra sube uno.</p>
-<ul>
-<li>1,2521 → la tercera cifra es 2 → se queda
-<strong>1,25</strong>.</li>
-<li>0,4772 → la tercera cifra es 7 → sube → <strong>0,48</strong>.</li>
-<li>2,3456 → la tercera cifra es 5 → sube → <strong>2,35</strong>.</li>
-</ul>
-<p>En Excel: <code>=REDONDEAR(A1;2)</code> redondea el contenido de A1 a
-2 decimales. También puedes dejar el número como está y usar los botones
-de “Aumentar/Disminuir decimales” de la pestaña Inicio, que solo cambian
-lo que se ve.</p>
-<div class="co co-truco">
-<div class="co-t">
-Truco
-</div>
-<p>No redondees a mitad de un ejercicio. Deja que Excel trabaje con
-todos los decimales y redondea solo el resultado final. Si redondeas
-antes, el resultado final se desvía un poco.</p>
-</div>
-</section>
-<section id="fracciones-y-divisiones" class="level2">
-<h2><span class="secnum">0.3</span><span class="ht">Fracciones y
-divisiones</span></h2>
-<p>Una fracción es una división. 3/4 significa 3 ÷ 4 = 0,75.</p>
-<p>En estadística casi todo es “algo dividido entre el total”. Por
-ejemplo, si 21 de 44 personas no tienen hermanos, la proporción es 21/44
-= 0,477.</p>
-</section>
-<section id="porcentajes" class="level2">
-<h2><span class="secnum">0.4</span><span class="ht">Porcentajes</span></h2>
-<p>Un porcentaje es una proporción multiplicada por 100.</p>
-<ul>
-<li>Proporción 0,477 → porcentaje <strong>47,7 %</strong>.</li>
-<li>Porcentaje 12 % → proporción <strong>0,12</strong>.</li>
-</ul>
-<p>Para pasar de % a número decimal, divide entre 100. Para pasar de
-decimal a %, multiplica por 100.</p>
-<p><strong>Subir un porcentaje.</strong> Subir un 5 % es multiplicar por
-1,05. Subir un 20 % es multiplicar por 1,20. Bajar un 10 % es
-multiplicar por 0,90. Bajar un 2 % es multiplicar por 0,98.</p>
-<div class="co co-truco">
-<div class="co-t">
-Truco
-</div>
-<p>“Subir un 3 %” = “multiplicar por 1 + 0,03 = 1,03”. “Bajar un 3 %” =
-“multiplicar por 1 − 0,03 = 0,97”. Esto lo usarás muchísimo en el Tema
-4.</p>
-</div>
-</section>
-<section id="potencias-el-al-cuadrado" class="level2">
-<h2><span class="secnum">0.5</span><span class="ht">Potencias (el “al
-cuadrado”)</span></h2>
-<p>Elevar al cuadrado es multiplicar un número por sí mismo: 5² = 5 × 5
-= 25.</p>
-<p>Un número negativo al cuadrado da positivo: (−3)² = (−3) × (−3) = 9.
-Esto es importante para la varianza.</p>
-<p>En Excel, el cuadrado se escribe con el símbolo <code>^</code>
-(acento circunflejo, tecla a la derecha de la P, y se pulsa con
-Mayúsculas): <code>=5^2</code> da 25. Para que salga el símbolo a veces
-hay que pulsar la tecla y luego la barra espaciadora.</p>
-</section>
-<section id="raíz-cuadrada" class="level2">
-<h2><span class="secnum">0.6</span><span class="ht">Raíz
-cuadrada</span></h2>
-<p>La raíz cuadrada es lo contrario del cuadrado: √25 = 5, porque 5² =
-25.</p>
-<p>En Excel: <code>=RAIZ(25)</code> da 5.</p>
-<p>Hay otras raíces (cúbica, raíz 12…). Las usarás en el Tema 4. Una
-raíz se puede escribir como potencia de una fracción: la raíz cúbica de
-8 es 8^(1/3) = 2. En Excel: <code>=8^(1/3)</code>.</p>
-</section>
-<section id="el-símbolo-σ-sumatorio" class="level2">
-<h2><span class="secnum">0.7</span><span class="ht">El símbolo Σ
-(sumatorio)</span></h2>
-<p>Σ es la letra griega “sigma” mayúscula. Solo significa <strong>“suma
-todo esto”</strong>.</p>
-<p>Si ves Σ xᵢ, lee: “suma todos los valores x”. Si ves Σ xᵢ·nᵢ, lee:
-“multiplica cada valor por su frecuencia y suma todos esos
-resultados”.</p>
-<p>En Excel, Σ es la función <code>=SUMA( )</code>.</p>
-</section>
-<section id="los-subíndices" class="level2">
-<h2><span class="secnum">0.8</span><span class="ht">Los
-subíndices</span></h2>
-<p>La letra pequeña de abajo (el subíndice) solo sirve para numerar. x₁
-es el primer valor, x₂ el segundo… xᵢ significa “un valor cualquiera, el
-que toque”. No es una operación.</p>
-</section>
-<section id="los-intervalos-y-sus-corchetes" class="level2">
-<h2><span class="secnum">0.9</span><span class="ht">Los intervalos y sus
-corchetes</span></h2>
-<p>Un intervalo es un tramo de números. Los corchetes y paréntesis dicen
-si los extremos entran o no:</p>
-<div class="tw">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Se escribe</th>
-<th style="text-align: left;">Se lee</th>
-<th style="text-align: center;">¿Entra el 10?</th>
-<th style="text-align: center;">¿Entra el 20?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">[10, 20]</td>
-<td style="text-align: left;">de 10 a 20, ambos incluidos</td>
-<td style="text-align: center;">Sí</td>
-<td style="text-align: center;">Sí</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">(10, 20]</td>
-<td style="text-align: left;">más de 10 y hasta 20</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Sí</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">[10, 20)</td>
-<td style="text-align: left;">desde 10 y menos de 20</td>
-<td style="text-align: center;">Sí</td>
-<td style="text-align: center;">No</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Corchete [ ]</strong> = el número entra. <strong>Paréntesis (
-)</strong> = el número no entra.</p>
-<p><strong>Amplitud</strong> de un intervalo = extremo de arriba −
-extremo de abajo. La amplitud de (10, 20] es 20 − 10 = 10.</p>
-<p><strong>Marca de clase</strong> = el punto medio del intervalo =
-(abajo + arriba) / 2. La marca de clase de (10, 20] es (10 + 20)/2 =
-15.</p>
-</section>
-<section id="la-calculadora" class="level2">
-<h2><span class="secnum">0.10</span><span class="ht">La
-calculadora</span></h2>
-<p>En un examen en papel, la calculadora hace las cuentas y tú haces la
-tabla. Con una calculadora científica normal basta.</p>
-<p><strong>Lo que más vas a usar:</strong></p>
-<div class="tw">
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Para</th>
-<th style="text-align: left;">Tecla</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Elevar al cuadrado</td>
-<td style="text-align: left;">x²</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Raíz cuadrada</td>
-<td style="text-align: left;">√</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Otra potencia (por ejemplo, ³ o ⁴)</td>
-<td style="text-align: left;">^ (o xʸ, o x■)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Raíz n-ésima (para tasas medias)</td>
-<td style="text-align: left;">ˣ√ (normalmente con SHIFT) o elevar a
-(1/n)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Usar el último resultado</td>
-<td style="text-align: left;">Ans</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Guardar un número</td>
-<td style="text-align: left;">STO (o SHIFT + RCL) y una letra</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="co co-truco">
-<div class="co-t">
-Truco: no redondees a mitad de cuenta
-</div>
-<p>Si un resultado lo vas a volver a usar (la media para la varianza,
-por ejemplo), no lo copies redondeado: usa Ans o guárdalo en una
-memoria. Redondea solo el resultado final, a 2 o 3 decimales.</p>
-</div>
-<section id="el-modo-estadístico-para-comprobar" class="level3">
-<h3>El modo estadístico: para comprobar</h3>
-<p>Casi todas las calculadoras científicas tienen un modo
-<strong>estadístico</strong> (se llama STAT, SD o Estadística, según el
-modelo). Metes los datos y te da la media y la desviación típica
-directamente. <strong>No sustituye a la tabla</strong> (en el examen hay
-que enseñar los pasos), pero sirve para <strong>comprobar</strong> que
-no te has equivocado.</p>
-<p>Lo que suele aparecer en pantalla:</p>
-<div class="tw">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Símbolo en la calculadora</th>
-<th style="text-align: left;">Qué es en la guía</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">n</td>
-<td style="text-align: left;">Número de datos</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">x̄</td>
-<td style="text-align: left;">Media</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Σx</td>
-<td style="text-align: left;">Suma de los datos</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Σx²</td>
-<td style="text-align: left;">Suma de los cuadrados</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">σx (o σn, xσn)</td>
-<td style="text-align: left;">Desviación típica S (divide entre n)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">sx (o σn−1, xσn−1)</td>
-<td style="text-align: left;">Cuasidesviación típica s (divide entre n −
-1)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">a, b, r</td>
-<td style="text-align: left;">Recta de regresión y correlación (Tema
-3)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Pasos generales</strong> (en las Casio, que son las más
-habituales; en otras marcas es parecido):</p>
-<ol type="1">
-<li>Entra en el modo estadístico y elige <strong>1 variable</strong>
-(1-VAR).</li>
-<li>Si tienes una tabla de frecuencias, activa la columna de
-<strong>frecuencias</strong> (FREQ) en la configuración. Así metes cada
-valor una vez con su nᵢ.</li>
-<li>Escribe los datos (y sus frecuencias) en la tabla de la
-pantalla.</li>
-<li>Sal de la tabla (AC) y busca en el menú de opciones el
-<strong>cálculo de 1 variable</strong>: ahí salen x̄, σx, sx, n…</li>
-</ol>
-<div class="co co-ojo">
-<div class="co-t">
-Ojo
-</div>
-<p>σx es la desviación típica <strong>S</strong> de los apuntes (la que
-divide entre n). sx es la cuasidesviación <strong>s</strong>. Y si la
-calculadora te da cuartiles (Q1, Q3), pueden no coincidir con la receta
-de los apuntes: en el examen, usa la receta.</p>
-</div>
-<p>Cada modelo tiene las teclas en un sitio distinto. Practica con
-<strong>tu</strong> calculadora con el ejemplo de los hermanos: tiene
-que salirte x̄ = 0,977 y σx = 1,252. Si no te sale, pide ayuda a tu tutor
-la primera vez.</p>
-</section>
-</section>
-</section>
-<section id="parte-0-bis.-excel-desde-cero" class="level1 t0">
-<h1 class="t0"><span class="tab">Parte 0 bis</span><span class="ht">Excel desde cero</span></h1>
-<section id="lo-básico-de-una-hoja" class="level2">
-<h2><span class="secnum">0.11</span><span class="ht">Lo básico de una
-hoja</span></h2>
-<p>Una hoja de Excel es una cuadrícula. Las <strong>columnas</strong>
-tienen letras (A, B, C…) y las <strong>filas</strong> números (1, 2,
-3…). Cada casilla es una <strong>celda</strong> y se nombra por su
-columna y su fila: <strong>B3</strong> es la celda de la columna B, fila
-3.</p>
-<p>Un <strong>rango</strong> es un grupo de celdas seguidas.
-<code>B2:B45</code> significa “desde B2 hasta B45”.</p>
-</section>
-<section id="escribir-una-fórmula" class="level2">
-<h2><span class="secnum">0.12</span><span class="ht">Escribir una
-fórmula</span></h2>
-<ol type="1">
-<li>Haz clic en la celda donde quieres el resultado.</li>
-<li>Escribe <strong>siempre</strong> primero el signo
-<strong>=</strong>.</li>
-<li>Escribe la operación o la función.</li>
-<li>Pulsa <strong>Intro</strong>.</li>
-</ol>
-<p>Si no pones el <code>=</code>, Excel lo toma como texto y no calcula
-nada.</p>
-<div class="co co-ojo">
-<div class="co-t">
-Ojo. Excel en español usa punto y coma
-</div>
-<p>Dentro de una función, las partes se separan con <strong>;</strong> y
-no con coma, porque la coma es el decimal. Ejemplo:
-<code>=CONTAR.SI(B2:B45;0)</code>. Si escribes una coma, Excel dará
-error.</p>
-</div>
-</section>
-<section id="arrastrar-una-fórmula-copiar-hacia-abajo" class="level2">
-<h2><span class="secnum">0.13</span><span class="ht">Arrastrar una
-fórmula (copiar hacia abajo)</span></h2>
-<p>Si en C2 escribes <code>=B2*2</code> y quieres lo mismo en C3, C4,
-C5…:</p>
-<ol type="1">
-<li>Selecciona C2.</li>
-<li>Pon el ratón en la esquina inferior derecha de la celda: aparece una
-cruz negra pequeña.</li>
-<li>Arrastra hacia abajo (o haz doble clic en esa cruz).</li>
-</ol>
-<p>Excel cambia solo las referencias: en C3 pondrá <code>=B3*2</code>,
-en C4 <code>=B4*2</code>…</p>
-</section>
-<section id="fijar-una-celda-con-referencia-absoluta" class="level2">
-<h2><span class="secnum">0.14</span><span class="ht">Fijar una celda con
-$ (referencia absoluta)</span></h2>
-<p>A veces quieres que al arrastrar una celda <strong>no
-cambie</strong>. Por ejemplo, para dividir cada frecuencia entre el
-total, que está siempre en B9: <code>=B2/$B$9</code>.</p>
-<p>El símbolo <strong>$</strong> “congela” la celda. Truco: escribe B9 y
-pulsa la tecla <strong>F4</strong>; Excel pone los $ solo.</p>
-<div class="co co-truco">
-<div class="co-t">
-Truco
-</div>
-<p>Regla práctica: el <strong>total</strong> y la <strong>media</strong>
-casi siempre se fijan con $, porque se usan en todas las filas.</p>
-</div>
-</section>
-<section id="las-funciones-que-vas-a-usar" class="level2">
-<h2><span class="secnum">0.15</span><span class="ht">Las funciones que
-vas a usar</span></h2>
-<p>No te las aprendas ahora. Aparecerán cuando toque y tienes una
-chuleta completa al final.</p>
-<div class="tw">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Para…</th>
-<th style="text-align: left;">Función en Excel (español)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Sumar</td>
-<td style="text-align: left;"><code>=SUMA(rango)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Contar cuántos datos hay</td>
-<td style="text-align: left;"><code>=CONTAR(rango)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Contar cuántas veces sale un valor</td>
-<td style="text-align: left;"><code>=CONTAR.SI(rango;valor)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Media</td>
-<td style="text-align: left;"><code>=PROMEDIO(rango)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Mediana</td>
-<td style="text-align: left;"><code>=MEDIANA(rango)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Moda</td>
-<td style="text-align: left;"><code>=MODA.UNO(rango)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Máximo y mínimo</td>
-<td style="text-align: left;"><code>=MAX(rango)</code> y
-<code>=MIN(rango)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Cuartil</td>
-<td style="text-align: left;"><code>=CUARTIL.INC(rango;1)</code> (o 2,
-3)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Percentil</td>
-<td style="text-align: left;"><code>=PERCENTIL.INC(rango;0,97)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Varianza (la de clase)</td>
-<td style="text-align: left;"><code>=VAR.P(rango)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Cuasivarianza</td>
-<td style="text-align: left;"><code>=VAR.S(rango)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Desviación típica</td>
-<td style="text-align: left;"><code>=DESVEST.P(rango)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Cuasidesviación típica</td>
-<td style="text-align: left;"><code>=DESVEST.S(rango)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Multiplicar dos columnas y sumar</td>
-<td style="text-align: left;"><code>=SUMAPRODUCTO(rango1;rango2)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Raíz cuadrada</td>
-<td style="text-align: left;"><code>=RAIZ(número)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Covarianza</td>
-<td style="text-align: left;"><code>=COVARIANZA.P(rangoX;rangoY)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Correlación</td>
-<td style="text-align: left;"><code>=COEF.DE.CORREL(rangoX;rangoY)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Pendiente de la recta</td>
-<td style="text-align: left;"><code>=PENDIENTE(rangoY;rangoX)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Término independiente</td>
-<td style="text-align: left;"><code>=INTERSECCION.EJE(rangoY;rangoX)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Predicción</td>
-<td style="text-align: left;"><code>=PRONOSTICO.LINEAL(x;rangoY;rangoX)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Media geométrica</td>
-<td style="text-align: left;"><code>=MEDIA.GEOM(rango)</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="insertar-un-gráfico" class="level2">
-<h2><span class="secnum">0.16</span><span class="ht">Insertar un
-gráfico</span></h2>
-<ol type="1">
-<li>Selecciona los datos (por ejemplo, la columna de valores y la de
-frecuencias).</li>
-<li>Pestaña <strong>Insertar</strong> → grupo
-<strong>Gráficos</strong>.</li>
-<li>Elige el tipo: columnas (barras), circular (sectores), histograma,
-cuadro y bigotes (caja), dispersión, radial.</li>
-<li>Con el gráfico seleccionado, el botón <strong>+</strong> que aparece
-al lado permite añadir <strong>títulos de ejes</strong>,
-<strong>etiquetas de datos</strong> y <strong>línea de
-tendencia</strong>.</li>
-</ol>
-</section>
-<section id="tabla-dinámica-para-contar-por-categorías" class="level2">
-<h2><span class="secnum">0.17</span><span class="ht">Tabla dinámica
-(para contar por categorías)</span></h2>
-<p>Sirve para contar automáticamente cuántas veces aparece cada valor o
-cada combinación de valores. La usó la profesora en el Tema 2.</p>
-<ol type="1">
-<li>Haz clic en cualquier celda de tus datos (con su fila de
-títulos).</li>
-<li><strong>Insertar</strong> → <strong>Tabla dinámica</strong> →
-Aceptar (en una hoja nueva).</li>
-<li>A la derecha aparece una lista con los nombres de tus columnas.</li>
-<li>Arrastra la variable que quieres contar a
-<strong>Filas</strong>.</li>
-<li>Arrastra esa misma variable (u otra) a <strong>Valores</strong>. Si
-sale “Suma de…”, haz clic encima → <strong>Configuración de campo de
-valor</strong> → elige <strong>Cuenta</strong>.</li>
-<li>Para una tabla de doble entrada, arrastra la segunda variable a
-<strong>Columnas</strong>.</li>
-</ol>
-<div class="co co-truco">
-<div class="co-t">
-Truco
-</div>
-<p>Para ver porcentajes en vez de recuentos: clic derecho sobre un
-número de la tabla dinámica → <strong>Mostrar valores como</strong> →
-<strong>% del total general</strong> (o % del total de fila / de
-columna, para las condicionadas del Tema 2).</p>
 </div>
 </section>
 </section>
@@ -9257,6 +8480,244 @@ tasas</span></h2>
 </div>
 </section>
 </section>
+<section id="repaso-exprés-el-examen-en-3-días" class="level1 tx">
+<h1 class="tx"><span class="ht">Repaso exprés: el examen en 3
+días</span></h1>
+<div class="co co-idea">
+<div class="co-t">
+Si te quedan pocos días, empieza aquí
+</div>
+<p>El examen es como el modelo de la profesora: 30 preguntas tipo test y
+10 cortas, casi todo de <strong>saber qué es cada cosa, qué fórmula va y
+qué trampa evitar</strong>. No hace falta leer la guía entera. Esto es
+lo mínimo que tienes que saber, tema a tema. Si algo no lo entiendes,
+pincha en el enlace del tema y lee solo ese trozo.</p>
+</div>
+<section id="el-plan-de-3-días" class="level2">
+<h2>El plan de 3 días</h2>
+<div class="tw">
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Día</th>
+<th style="text-align: left;">Qué hacer</th>
+<th style="text-align: right;">Tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Día 1</strong></td>
+<td style="text-align: left;">Lee el <strong>Repaso exprés de los Temas
+1 y 2</strong> (aquí abajo). Después, el <strong>examen modelo,
+preguntas 1 a 15</strong>: intenta cada una antes de abrir la
+solución.</td>
+<td style="text-align: right;">2 h</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Día 2</strong></td>
+<td style="text-align: left;"><strong>Repaso exprés de los Temas 3 y
+4</strong>. Después, el <strong>examen modelo, preguntas 16 a 30 y P1 a
+P10</strong>. Si te sobra tiempo, el vídeo del Tema 3 o del 4 a
+1,25×.</td>
+<td style="text-align: right;">2 h 30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Día 3</strong></td>
+<td style="text-align: left;"><strong>Simulacro tipo test</strong> con
+reloj (90 min). Al entregar, lee la explicación de cada fallo y vuelve a
+leer en este repaso el tema que peor te haya salido. Antes de dormir, la
+<strong>chuleta</strong>.</td>
+<td style="text-align: right;">2 h 30</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Mañana del examen</strong></td>
+<td style="text-align: left;">Solo la lista <strong>“Las 15
+trampas”</strong> de abajo. Nada nuevo.</td>
+<td style="text-align: right;">15 min</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>El plan de estudio largo (más abajo, en «Plan de estudio») es para
+cuando hay semanas. Para estos 3 días, sigue esta tabla.</p>
+</section>
+<section id="tema-1-en-10-minutos" class="level2">
+<h2>Tema 1 en 10 minutos</h2>
+<p><strong>Variables.</strong> Cualitativa (palabras):
+<strong>nominal</strong> sin orden (departamento) u
+<strong>ordinal</strong> con orden (satisfacción baja/media/alta).
+Cuantitativa (números): <strong>discreta</strong> si se cuenta (hijos) o
+<strong>continua</strong> si se mide (salario, altura).</p>
+<p><strong>Parámetro</strong> = medida de la población.
+<strong>Estadístico</strong> = la misma medida en una muestra.</p>
+<p><strong>Centro.</strong></p>
+<ul>
+<li>Media: x̄ = Σxᵢnᵢ / n. En Excel con tabla:
+<code>=SUMAPRODUCTO(x;n)/SUMA(n)</code>.</li>
+<li>Mediana: el dato del medio. <strong>Robusta</strong>: no le afectan
+los atípicos. Con atípicos o asimetría fuerte, mejor mediana o
+<strong>media truncada</strong> (<code>=MEDIA.ACOTADA</code>).</li>
+<li>Moda: el más repetido. <strong>Con intervalos de distinto ancho, el
+intervalo modal es el de mayor densidad dᵢ = nᵢ / aᵢ</strong>, no el de
+más datos. En el histograma, en el eje vertical va la densidad.</li>
+</ul>
+<p><strong>Dispersión.</strong></p>
+<ul>
+<li>Varianza S² = Σxᵢ²nᵢ / n − x̄² (<code>=VAR.P</code>). Cuasivarianza:
+entre n − 1 (<code>=VAR.S</code>). Desviación típica S = √S².</li>
+<li><strong>CV = S / x̄.</strong> Sin unidades. Sirve para comparar
+grupos con medias o unidades distintas: <strong>menor CV, más
+homogéneo</strong>.</li>
+<li>IQR = C₃ − C₁. <strong>Atípicos:</strong> por debajo de C₁ − 1,5·IQR
+o por encima de C₃ + 1,5·IQR.</li>
+<li><strong>Varianza total = dentro + entre.</strong> Dentro = Σ S²ᵢ nᵢ
+/ n. Entre = Σ (x̄ᵢ − x̄)² nᵢ / n. Si “entre” es grande, los grupos son
+muy distintos.</li>
+</ul>
+<p><strong>Cambio Y = aX + b:</strong> ȳ = a·x̄ + b · S²ᵧ = a²·S²ₓ · Sᵧ =
+|a|·Sₓ. Sumar b no cambia la dispersión.</p>
+<p><strong>Forma.</strong> CA &gt; 0: cola a la derecha (media &gt;
+mediana). CA &lt; 0: cola a la izquierda. CA = 0: simétrica. Curtosis
+&gt; 0 leptocúrtica (apuntada), &lt; 0 platicúrtica.</p>
+<p><strong>Diagrama de caja.</strong> Mediana cerca del borde de abajo
+de la caja y bigote de arriba largo → asimetría positiva.</p>
+<p><strong>Tipificar:</strong> z = (x − x̄) / S. En Excel,
+<code>=(A2-$B$1)/$B$2</code>: el dato sin dólares, la media y S con
+dólares.</p>
+<p><a href="#tema-1.-análisis-descriptivo-de-una-variable">Ir al Tema 1
+completo</a></p>
+</section>
+<section id="tema-2-en-5-minutos" class="level2">
+<h2>Tema 2 en 5 minutos</h2>
+<ul>
+<li><strong>Conjunta</strong> nᵢⱼ: la casilla. Relativa: fᵢⱼ = nᵢⱼ /
+n.</li>
+<li><strong>Marginal:</strong> los totales. nᵢ. = suma de la fila i; n.ⱼ
+= suma de la columna j.</li>
+<li><strong>Condicionada</strong> Y | X = xᵢ: coges la fila de xᵢ y la
+divides entre su total.</li>
+<li><strong>Independencia:</strong> fᵢⱼ = fᵢ. · f.ⱼ <strong>en
+todas</strong> las casillas. Equivale a que <strong>todas las
+condicionadas son iguales entre sí e iguales a la marginal</strong>.
+Ejemplo: si el 70 % del total tiene jornada completa y son
+independientes, el 70 % de los hombres también.</li>
+<li>Frecuencia esperada si fueran independientes: nᵢ. · n.ⱼ / n.</li>
+<li><strong>Gráficos:</strong> barras agrupadas o apiladas y mosaico
+(dos cualitativas). En el <strong>mosaico</strong>, el
+<strong>ancho</strong> de cada columna es la frecuencia marginal.</li>
+</ul>
+<p><a href="#tema-2.-análisis-descriptivo-de-dos-variables">Ir al Tema 2
+completo</a></p>
+</section>
+<section id="tema-3-en-10-minutos" class="level2">
+<h2>Tema 3 en 10 minutos</h2>
+<ul>
+<li><strong>Nube de puntos</strong> que sube → relación directa (S_XY
+&gt; 0). Que baja → inversa (S_XY &lt; 0).</li>
+<li><strong>Covarianza:</strong> S_XY = Σxᵢyᵢ / n − x̄·ȳ (con tabla,
+Σxᵢyⱼnᵢⱼ / n − x̄·ȳ). Solo mira su <strong>signo</strong>: su tamaño
+depende de las unidades.</li>
+<li><strong>Recta de Y sobre X:</strong> Ŷ = a + bX, con <strong>b =
+S_XY / S²ₓ</strong> y <strong>a = ȳ − b·x̄</strong>. b = lo que sube Y de
+media por cada unidad más de X.</li>
+<li><strong>Recta de X sobre Y:</strong> b′ = S_XY / S²ᵧ. Las dos rectas
+<strong>se cortan en (x̄, ȳ)</strong>.</li>
+<li><strong>Si S_XY = 0:</strong> Ŷ = ȳ (horizontal) y X̂ = x̄ (vertical).
+No hay relación lineal.</li>
+<li><strong>r = S_XY / (Sₓ·Sᵧ):</strong> entre −1 y 1, <strong>sin
+unidades</strong> (no cambia si pasas de euros a miles de euros), mismo
+signo que b. <strong>r = 0 no es “ninguna relación”</strong>: solo que
+no es lineal.</li>
+<li><strong>R² = r²:</strong> el % de la variabilidad de Y que explica
+la recta. Si r = −0,85, R² = 0,7225 → 72,25 %.</li>
+<li><strong>Predecir:</strong> sustituir X en la recta. Con Salario =
+1390 + 78,5·Antigüedad y 10 años: 1390 + 785 = 2175 €. <strong>No
+predigas fuera del rango de los datos</strong> (extrapolar).</li>
+<li><strong>Pasa por las medias:</strong> ȳ = a + b·x̄. Útil en los
+ejercicios “sin datos”.</li>
+<li>Excel: <code>=PENDIENTE(Y;X)</code>,
+<code>=INTERSECCION.EJE(Y;X)</code>, <code>=COEF.DE.CORREL(X;Y)</code>,
+<code>=COEFICIENTE.R2(Y;X)</code>. Siempre primero la Y.</li>
+</ul>
+<p><a href="#tema-3.-regresión-y-correlación">Ir al Tema 3
+completo</a></p>
+</section>
+<section id="tema-4-en-10-minutos" class="level2">
+<h2>Tema 4 en 10 minutos</h2>
+<ul>
+<li><strong>Índice simple</strong> = valor / valor del año base × 100.
+<strong>Índice − 100 = variación en %</strong>: 125,4 → +25,4 %; 92 → −8
+%.</li>
+<li><strong>Tasa de variación</strong> = nuevo / viejo − 1.</li>
+<li><strong>Los porcentajes se multiplican, nunca se suman:</strong> +10
+% y +20 % = 1,10·1,20 = +32 %.</li>
+<li><strong>Inversión:</strong> I(al revés) = 1 / I (en tanto por uno).
+<strong>Encadenamiento:</strong> se multiplican.</li>
+<li><strong>Cambio de base:</strong> cada índice entre el del nuevo año
+base, × 100.</li>
+<li><strong>Tasa media:</strong> media <strong>geométrica</strong>:
+ⁿ√((1+t₁)(1+t₂)…) − 1. En Excel, <code>=MEDIA.GEOM(rango)-1</code> o
+<code>=PRODUCTO(rango)^(1/n)-1</code>.</li>
+<li><strong>De anual a mensual:</strong> (1 + t)^(1/12) − 1. 6 % anual →
+0,487 % mensual. <strong>De mensual a anual:</strong> (1 + t)¹² −
+1.</li>
+<li><strong>Laspeyres:</strong> pondera con las cantidades del
+<strong>año base</strong> (q₀); tiende a <strong>sobreestimar</strong>
+la subida de precios. <strong>Paasche:</strong> cantidades del
+<strong>año actual</strong> (qₜ). <strong>Fisher:</strong> √(L·P).</li>
+<li><strong>Deflactar:</strong> valor real = nominal / IPC (en tanto por
+uno), o nominal / IPC × 100 si el IPC está en base 100. Real sube = 1,05
+/ 1,03 − 1, no 5 − 3.</li>
+</ul>
+<p><a href="#tema-4.-números-índices">Ir al Tema 4 completo</a></p>
+</section>
+<section id="las-15-trampas-del-test" class="level2">
+<h2>Las 15 trampas del test</h2>
+<ol type="1">
+<li>Intervalos de distinto ancho → moda por <strong>densidad</strong>,
+no por frecuencia.</li>
+<li>Varianza = entre n (VAR.P). Cuasivarianza = entre n − 1
+(VAR.S).</li>
+<li>¿Te dan S o S²? Para la pendiente necesitas la
+<strong>varianza</strong>.</li>
+<li>El CV compara grupos con medias o unidades distintas; S sola
+no.</li>
+<li>La suma de las desviaciones a la media es siempre
+<strong>0</strong>.</li>
+<li>Sumar una constante no cambia la varianza ni S; multiplicar por a
+multiplica S² por a².</li>
+<li>Total = dentro <strong>+</strong> entre (se suman).</li>
+<li>CA &gt; 0 = cola a la <strong>derecha</strong>.</li>
+<li>Atípicos: <strong>1,5 · IQR</strong> por fuera de C₁ y C₃.</li>
+<li>Independencia: condicionadas = marginal, en <strong>todas</strong>
+las casillas.</li>
+<li>r = 0 → no hay relación <strong>lineal</strong> (puede haber curva).
+r no cambia con las unidades.</li>
+<li>R² es r al cuadrado: el signo desaparece. r lleva el signo de la
+pendiente.</li>
+<li>b = S_XY / S²ₓ (la X abajo); a = ȳ − b·x̄.</li>
+<li>Los porcentajes se <strong>multiplican</strong>; la tasa media es la
+<strong>geométrica</strong>; 6 % anual no es 0,5 % al mes.</li>
+<li>Laspeyres = cantidades del año <strong>base</strong>; deflactar =
+<strong>dividir</strong> entre el IPC.</li>
+</ol>
+<div class="co co-truco">
+<div class="co-t">
+En el test
+</div>
+<p>Lee las 4 opciones antes de elegir. Muchas veces dos se descartan
+solas: “es negativo cuando…”, “siempre positiva”, “suman cero”, “tienden
+a infinito”. Si dudas entre dos, busca cuál dice algo
+<strong>imposible</strong> (un CV negativo, un R² mayor que 1, una
+varianza negativa).</p>
+</div>
+</section>
+</section>
 <section id="examen-modelo-de-la-profesora" class="level1 tx">
 <h1 class="tx"><span class="tab">Examen</span><span class="ht">El modelo
 de la profesora</span></h1>
@@ -9290,8 +8751,8 @@ relación”.</p>
 <strong>decide tu respuesta antes</strong> de abrir la solución y
 después pulsa «Ver la solución». Cada solución explica por qué es esa y
 por qué no son las otras, y te dice dónde está en la guía. Cuando lo
-tengas, haz el <strong>Simulacro 4</strong>, que es igual pero con
-preguntas nuevas y se corrige solo.</p>
+tengas, haz el <strong>Simulacro tipo test</strong>, que es igual pero
+con preguntas nuevas y se corrige solo.</p>
 </section>
 <section id="tipo-test-tema-1-preguntas-1-a-10" class="level2">
 <h2>Tipo test: Tema 1 (preguntas 1 a 10)</h2>
@@ -10361,31 +9822,25 @@ línea: “según el límite calculado, 27 no sería atípico”.</p>
 <div class="co-t">
 Cómo hacer un simulacro
 </div>
-<p>Hazlo como si fuera el examen: de una sentada y con el reloj en
-marcha (90 minutos). Escribe tus resultados en las casillas. <strong>No
-se corrige hasta que pulses «Entregar»</strong>, igual que en el
-examen.</p>
-<p>Hay tres tipos. Los <strong>simulacros 1 y 2</strong> son con Excel.
-El <strong>simulacro 3</strong> es <strong>en papel</strong>, con
-ejercicios de cálculo. El <strong>simulacro 4</strong> copia el formato
-del <strong>modelo de la profesora</strong>: 30 preguntas tipo test y 10
-de respuesta corta. <strong>Es el más parecido al examen real: si solo
-puedes hacer uno, haz el 4.</strong></p>
+<p>Como si fuera el examen: de una sentada, sin mirar la guía y con el
+reloj en marcha (90 minutos). <strong>No se corrige hasta pulsar
+«Entregar»</strong>, igual que en el examen. Al entregar sale la nota,
+la explicación de cada fallo y qué conviene repasar.</p>
 </div>
-<p>Al entregar verás la nota (sobre 10), qué has acertado y una pista en
-cada fallo. Después:</p>
-<ul>
-<li><strong>7 o más:</strong> vas bien. Repasa solo las preguntas en
-rojo.</li>
-<li><strong>Entre 5 y 7:</strong> repasa las preguntas en rojo y repite
-la práctica de ese tipo en el nivel 3.</li>
-<li><strong>Menos de 5:</strong> no pasa nada, para eso está el
-simulacro. Vuelve a las prácticas de los tipos que has fallado,
-empezando por el nivel 2, y repite el simulacro otro día.</li>
-</ul>
-<p>La guía te dice al entregar qué prácticas te conviene repetir.</p>
-<section id="simulacro-4-tipo-test-como-el-de-la-profesora" class="level2">
-<h2>Simulacro 4 (tipo test, como el de la profesora)</h2>
+<p>Por orden de importancia:</p>
+<ol type="1">
+<li><strong>Simulacro tipo test.</strong> El mismo formato que el modelo
+de la profesora: 30 preguntas tipo test y 10 de respuesta corta.
+<strong>Si solo hay tiempo para uno, este.</strong></li>
+<li><strong>Simulacro en papel.</strong> Ejercicios de cálculo a mano,
+por si caen cuentas más largas.</li>
+<li><strong>Preguntas de Excel sin ordenador.</strong> 30 preguntas
+cortas sobre funciones y fórmulas.</li>
+</ol>
+<p>Los dos simulacros con Excel están al final de la guía, en «Por si el
+examen fuera con ordenador».</p>
+<section id="simulacro-tipo-test" class="level2">
+<h2>Simulacro tipo test</h2>
 <div class="co co-ojo">
 <div class="co-t">
 Igual que el examen modelo
@@ -10393,27 +9848,14 @@ Igual que el examen modelo
 <p>30 preguntas tipo test (A, B, C o D) y 10 de respuesta corta, de los
 cuatro temas, con preguntas nuevas. Solo papel, boli y calculadora. Al
 entregar ves la nota, la explicación de cada pregunta y qué tema te
-conviene repasar. Antes, lee el apartado «El modelo de la
-profesora».</p>
+conviene repasar. Antes conviene leer el examen modelo resuelto.</p>
 </div>
 <div class="testsim" data-sim="S4">
 
 </div>
 </section>
-<section id="simulacro-1" class="level2">
-<h2>Simulacro 1</h2>
-<div class="simulacro" data-sim="S1">
-
-</div>
-</section>
-<section id="simulacro-2" class="level2">
-<h2>Simulacro 2</h2>
-<div class="simulacro" data-sim="S2">
-
-</div>
-</section>
-<section id="simulacro-3-en-papel" class="level2">
-<h2>Simulacro 3 (en papel)</h2>
+<section id="simulacro-en-papel" class="level2">
+<h2>Simulacro en papel</h2>
 <div class="co co-ojo">
 <div class="co-t">
 Sin ordenador
@@ -10440,6 +9882,407 @@ Cómo prepararlas
 <p>Si fallas una, vuelve al apartado del tema donde sale esa función (el
 recuadro verde «En Excel») y léelo otra vez. Las funciones están todas
 juntas en el apartado 0.15 y en la chuleta.</p>
+</div>
+</section>
+</section>
+<section id="chuleta-de-fórmulas" class="level1 tx">
+<h1 class="tx"><span class="ht">Chuleta de fórmulas</span></h1>
+<section id="tema-1.-una-variable" class="level2">
+<h2>Tema 1. Una variable</h2>
+<div class="tw">
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Qué</th>
+<th style="text-align: left;">Fórmula</th>
+<th style="text-align: left;">Excel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Frecuencia relativa</td>
+<td style="text-align: left;">fᵢ = nᵢ / n</td>
+<td style="text-align: left;"><code>=B2/$B$9</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Acumulada</td>
+<td style="text-align: left;">Nᵢ = n₁ + … + nᵢ</td>
+<td style="text-align: left;"><code>=C1+B2</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Media (datos sueltos)</td>
+<td style="text-align: left;">x̄ = Σxᵢ / n</td>
+<td style="text-align: left;"><code>=PROMEDIO(r)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Media (tabla)</td>
+<td style="text-align: left;">x̄ = Σxᵢnᵢ / n = Σxᵢfᵢ</td>
+<td style="text-align: left;"><code>=SUMAPRODUCTO(x;n)/SUMA(n)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Media ponderada</td>
+<td style="text-align: left;">(x̄₁T₁ + x̄₂T₂ + …) / (T₁ + T₂ + …)</td>
+<td style="text-align: left;"><code>=SUMAPRODUCTO(medias;T)/SUMA(T)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cambio Y = aX + b</td>
+<td style="text-align: left;">ȳ = a·x̄ + b · S²ᵧ = a²·S²ₓ · Sᵧ =
+a·Sₓ</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Moda (intervalos)</td>
+<td style="text-align: left;">Lᵢ₋₁ + (dᵢ − dᵢ₋₁)/((dᵢ − dᵢ₋₁) + (dᵢ −
+dᵢ₊₁)) · aᵢ</td>
+<td style="text-align: left;"><code>=MODA.UNO(r)</code> (sueltos)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Densidad</td>
+<td style="text-align: left;">dᵢ = nᵢ / aᵢ</td>
+<td style="text-align: left;"><code>=C2/(B2-A2)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mediana (intervalos)</td>
+<td style="text-align: left;">Lᵢ₋₁ + (n/2 − Nᵢ₋₁)/nᵢ · aᵢ</td>
+<td style="text-align: left;"><code>=MEDIANA(r)</code> (sueltos)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Percentil r (intervalos)</td>
+<td style="text-align: left;">Lᵢ₋₁ + (r·n/100 − Nᵢ₋₁)/nᵢ · aᵢ</td>
+<td style="text-align: left;"><code>=PERCENTIL.INC(r;0,7)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cuartiles</td>
+<td style="text-align: left;">C₁ → n/4 · C₃ → 3n/4</td>
+<td style="text-align: left;"><code>=CUARTIL.INC(r;1)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mediana o cuantil a mano (datos sueltos o
+tabla de valores)</td>
+<td style="text-align: left;">posición k = r·n/100: si no es entera, el
+dato que ocupa el puesto siguiente; si es entera, media de ese dato y el
+siguiente</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rango</td>
+<td style="text-align: left;">máx − mín</td>
+<td style="text-align: left;"><code>=MAX(r)-MIN(r)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IQR</td>
+<td style="text-align: left;">C₃ − C₁</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Varianza</td>
+<td style="text-align: left;">S² = Σxᵢ²nᵢ / n − x̄²</td>
+<td style="text-align: left;"><code>=VAR.P(r)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cuasivarianza</td>
+<td style="text-align: left;">s² = n/(n−1) · S²</td>
+<td style="text-align: left;"><code>=VAR.S(r)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Desviación típica</td>
+<td style="text-align: left;">S = √S²</td>
+<td style="text-align: left;"><code>=DESVEST.P(r)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cuasidesviación</td>
+<td style="text-align: left;">s = √s²</td>
+<td style="text-align: left;"><code>=DESVEST.S(r)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Coef. de variación</td>
+<td style="text-align: left;">CV = S / x̄</td>
+<td style="text-align: left;"><code>=DESVEST.P(r)/PROMEDIO(r)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Var. dentro</td>
+<td style="text-align: left;">(S²₁T₁ + S²₂T₂ + …) / ΣT</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Var. entre</td>
+<td style="text-align: left;">((x̄₁ − x̄)²T₁ + (x̄₂ − x̄)²T₂ + …) / ΣT</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Var. total</td>
+<td style="text-align: left;">dentro + entre</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">% entre grupos</td>
+<td style="text-align: left;">entre / total × 100</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Asimetría</td>
+<td style="text-align: left;">CA &gt; 0 cola derecha · &lt; 0 cola
+izquierda</td>
+<td style="text-align: left;"><code>=COEFICIENTE.ASIMETRIA.P(r)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Curtosis</td>
+<td style="text-align: left;">CC &gt; 0 lepto · = 0 meso · &lt; 0
+plati</td>
+<td style="text-align: left;"><code>=CURTOSIS(r)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tipificar</td>
+<td style="text-align: left;">z = (x − x̄) / S</td>
+<td style="text-align: left;"><code>=NORMALIZACION(x;media;S)</code> o
+<code>=(A2-$B$1)/$B$2</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Límites atípicos</td>
+<td style="text-align: left;">C₁ − 1,5·IQR y C₃ + 1,5·IQR</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Media truncada</td>
+<td style="text-align: left;">quitar un % de datos por cada extremo y
+hacer la media</td>
+<td style="text-align: left;"><code>=MEDIA.ACOTADA(r;0,2)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="tema-2.-dos-variables" class="level2">
+<h2>Tema 2. Dos variables</h2>
+<div class="tw">
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Qué</th>
+<th style="text-align: left;">Fórmula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Frec. relativa conjunta</td>
+<td style="text-align: left;">fᵢⱼ = nᵢⱼ / n</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Marginal de X</td>
+<td style="text-align: left;">nᵢ. = suma de la fila i</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Marginal de Y</td>
+<td style="text-align: left;">n.ⱼ = suma de la columna j</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Condicionada X | Y = yⱼ</td>
+<td style="text-align: left;">la columna j (dividida entre n.ⱼ)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Condicionada Y | X = xᵢ</td>
+<td style="text-align: left;">la fila i (dividida entre nᵢ.)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Independencia</td>
+<td style="text-align: left;">fᵢⱼ = fᵢ. · f.ⱼ en <strong>todas</strong>
+las casillas</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Frecuencia esperada (a mano)</td>
+<td style="text-align: left;">nᵢ. · n.ⱼ / n; si coincide con nᵢⱼ en
+todas, independientes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Si son independientes</td>
+<td style="text-align: left;">todas las condicionadas son iguales entre
+sí e iguales a la marginal</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mosaico</td>
+<td style="text-align: left;">ancho de columna = marginal · alto de cada
+trozo = condicionada</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Excel: tabla dinámica (Filas, Columnas, Valores = Cuenta); “Mostrar
+valores como” → % del total general / de fila / de columna.</p>
+</section>
+<section id="tema-3.-regresión" class="level2">
+<h2>Tema 3. Regresión</h2>
+<div class="tw">
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Qué</th>
+<th style="text-align: left;">Fórmula</th>
+<th style="text-align: left;">Excel (Y en B, X en A)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Covarianza</td>
+<td style="text-align: left;">S_XY = Σxᵢyᵢ/n − x̄·ȳ</td>
+<td style="text-align: left;"><code>=COVARIANZA.P(A;B)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pendiente (Y sobre X)</td>
+<td style="text-align: left;">b = S_XY / S²ₓ</td>
+<td style="text-align: left;"><code>=PENDIENTE(B;A)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Término independiente</td>
+<td style="text-align: left;">a = ȳ − b·x̄</td>
+<td style="text-align: left;"><code>=INTERSECCION.EJE(B;A)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Recta</td>
+<td style="text-align: left;">Ŷ = a + b·X</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Recta X sobre Y</td>
+<td style="text-align: left;">b’ = S_XY / S²ᵧ · a’ = x̄ − b’·ȳ</td>
+<td style="text-align: left;"><code>=PENDIENTE(A;B)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Correlación</td>
+<td style="text-align: left;">r = S_XY / (Sₓ·Sᵧ)</td>
+<td style="text-align: left;"><code>=COEF.DE.CORREL(A;B)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Determinación</td>
+<td style="text-align: left;">R² = r²</td>
+<td style="text-align: left;"><code>=COEFICIENTE.R2(B;A)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Predicción</td>
+<td style="text-align: left;">Ŷ = a + b·x₀</td>
+<td style="text-align: left;"><code>=PRONOSTICO.LINEAL(x0;B;A)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Relaciones útiles</td>
+<td style="text-align: left;">r = b·Sₓ/Sᵧ · S_XY = r·Sₓ·Sᵧ · ȳ = a +
+b·x̄</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Si S_XY = 0</td>
+<td style="text-align: left;">Ŷ = ȳ (horizontal) · X̂ = x̄ (vertical)</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Recuerda: las dos rectas se cortan en (x̄, ȳ). r está entre −1 y 1, no
+tiene unidades y no cambia si cambias de unidades. No predigas fuera del
+rango de los datos (extrapolar).</p>
+</section>
+<section id="tema-4.-números-índices-1" class="level2">
+<h2>Tema 4. Números índices</h2>
+<div class="tw">
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Qué</th>
+<th style="text-align: left;">Fórmula</th>
+<th style="text-align: left;">Excel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Índice simple</td>
+<td style="text-align: left;">I = xₜ / x₀ · 100</td>
+<td style="text-align: left;"><code>=B3/$B$2*100</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tasa de variación</td>
+<td style="text-align: left;">(V₁ − V₀)/V₀ = V₁/V₀ − 1</td>
+<td style="text-align: left;"><code>=B3/B2-1</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Subir p %</td>
+<td style="text-align: left;">× (1 + p/100)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Encadenar</td>
+<td style="text-align: left;">multiplicar los índices</td>
+<td style="text-align: left;"><code>=PRODUCTO(r)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Inversión</td>
+<td style="text-align: left;">I₍ₜ→₀₎ = 1 / I₍₀→ₜ₎</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cambio de base</td>
+<td style="text-align: left;">índice viejo / índice viejo del nuevo año
+base · 100</td>
+<td style="text-align: left;"><code>=C2/$C$6*100</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Media geométrica</td>
+<td style="text-align: left;">(x₁·x₂···xₙ)^(1/n)</td>
+<td style="text-align: left;"><code>=MEDIA.GEOM(r)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tasa media por periodo</td>
+<td style="text-align: left;">(1 + T)^(1/k) − 1</td>
+<td style="text-align: left;"><code>=(1+T)^(1/k)-1</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Laspeyres precios</td>
+<td style="text-align: left;">Σpₜq₀ / Σp₀q₀ · 100</td>
+<td style="text-align: left;"><code>=SUMAPRODUCTO(pt;q0)/SUMAPRODUCTO(p0;q0)*100</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Paasche precios</td>
+<td style="text-align: left;">Σpₜqₜ / Σp₀qₜ · 100</td>
+<td style="text-align: left;"><code>=SUMAPRODUCTO(pt;qt)/SUMAPRODUCTO(p0;qt)*100</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Laspeyres cantidades</td>
+<td style="text-align: left;">Σqₜp₀ / Σq₀p₀ · 100</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Paasche cantidades</td>
+<td style="text-align: left;">Σqₜpₜ / Σq₀pₜ · 100</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fisher</td>
+<td style="text-align: left;">√(L · P)</td>
+<td style="text-align: left;"><code>=RAIZ(L*P)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Valor real (deflactar)</td>
+<td style="text-align: left;">nominal / IPC · 100</td>
+<td style="text-align: left;"><code>=B2/C2*100</code></td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
 </section>
@@ -10853,13 +10696,660 @@ viejo</td>
 </div>
 </section>
 </section>
-<section id="tus-archivos-para-el-examen" class="level1 tx">
-<h1 class="tx"><span class="ht">Tus archivos para el examen</span></h1>
+<section id="lista-para-el-examen" class="level1 tx">
+<h1 class="tx"><span class="ht">Lista para el examen</span></h1>
+<p><strong>Antes de empezar</strong></p>
+<ul>
+<li>Lee todo el examen una vez, sin calcular. Marca qué tema es cada
+pregunta.</li>
+<li>Empieza por la que te dé más seguridad.</li>
+<li>Comprueba que tu calculadora está en modo normal de cálculo, no en
+el estadístico (si lo usaste para comprobar algo, sal de él).</li>
+</ul>
+<p><strong>Para cada ejercicio</strong></p>
+<ol type="1">
+<li>Escribe qué te piden y la <strong>fórmula</strong> antes de poner
+números. Si te equivocas en una cuenta, la fórmula bien escrita ya
+suma.</li>
+<li>Haz <strong>la tabla</strong>: xᵢ, nᵢ, Nᵢ, xᵢ·nᵢ, xᵢ²·nᵢ (Temas 1 y
+2) o xᵢ, yᵢ, xᵢ², yᵢ², xᵢyᵢ (Tema 3). Suma cada columna.</li>
+<li>Escribe cada resultado intermedio con 3 o 4 decimales.
+<strong>Redondea solo al final.</strong></li>
+<li>Recuadra el resultado y escribe la <strong>frase de
+interpretación</strong>.</li>
+</ol>
+<p><strong>Comprobaciones rápidas</strong></p>
+<ul>
+<li>¿Σnᵢ = n? ¿La última Nᵢ es n? ¿Las fᵢ suman 1?</li>
+<li>¿La media está entre el mínimo y el máximo? ¿La mediana
+también?</li>
+<li>¿La varianza es positiva? (Si sale negativa, has olvidado el
+cuadrado o has redondeado la media antes de tiempo.)</li>
+<li>¿r entre −1 y 1, con el mismo signo que b? ¿R² entre 0 y 1?</li>
+<li>¿El año base vale 100? ¿Has multiplicado (no sumado) los
+porcentajes?</li>
+</ul>
+<p><strong>Preguntas sobre Excel en papel</strong></p>
+<ul>
+<li>Escribe la función con su nombre exacto en español y con
+<code>;</code>: <code>=PROMEDIO(A2:A31)</code>.</li>
+<li>Si preguntan por qué se pone <code>$</code>: para que la referencia
+no cambie al arrastrar la fórmula.</li>
+<li>Repasa las 30 preguntas del apartado «Preguntas de Excel sin
+ordenador».</li>
+</ul>
+</section>
+<section id="plan-de-estudio" class="level1 tx">
+<h1 class="tx"><span class="ht">Plan de estudio</span></h1>
+<p>Tu plan se hace solo con tus fechas. Dime cuándo es el examen, qué
+días estudias y qué temas entran, y la guía reparte lo que te queda
+entre los días que tienes. Cada día mezcla teoría y ejercicios del mismo
+tema, y los últimos días son para los simulacros.</p>
+<p>El plan se <strong>recalcula cada día con lo que ya has
+hecho</strong>: lo que marcas como hecho (con las comprobaciones, «Ya lo
+sé hacer» o «Lo he resuelto») desaparece de los días que vienen. Si un
+día no puedes, no pasa nada: mañana el plan se reparte otra vez.</p>
+<p>Si quedan muy pocos días y no da tiempo a todo, el plan pasa solo a
+<strong>modo exprés</strong>: repaso exprés, examen modelo y simulacro
+tipo test. Si prefieres el plan completo, se puede cambiar con un
+clic.</p>
+<div class="plan-app">
+
+</div>
+<div class="co co-truco">
+<div class="co-t">
+Para los días de poca energía
+</div>
+<p>Si un día no te ves con fuerzas, haz solo una cosa pequeña: rehaz
+<strong>un</strong> ejercicio que ya te salió bien, en papel. Mantener
+el contacto diario cuenta más que la cantidad.</p>
+</div>
+<div class="co co-truco">
+<div class="co-t">
+Cuando haya más temario
+</div>
+<p>Si se añaden temas nuevos o hay otro parcial, aparecerán solos en
+«Qué entra»: marca los que entran en ese examen y cambia la fecha.</p>
+</div>
+</section>
+<section id="parte-0.-repaso-de-base-números-y-calculadora" class="level1 t0">
+<h1 class="t0"><span class="tab">Parte 0</span><span class="ht">Repaso
+de base: números y calculadora</span></h1>
+<p>Antes de entrar en la estadística, repasamos las pocas operaciones
+que vamos a usar. Si alguna ya la dominas, salta a la siguiente.</p>
+<section id="el-orden-de-las-operaciones" class="level2">
+<h2><span class="secnum">0.1</span><span class="ht">El orden de las
+operaciones</span></h2>
+<p>Cuando una cuenta tiene varias operaciones, no se hacen de izquierda
+a derecha sin más. Se sigue este orden:</p>
+<ol type="1">
+<li>Primero lo que está <strong>entre paréntesis</strong>.</li>
+<li>Después las <strong>potencias y raíces</strong> (el “al cuadrado”,
+la raíz).</li>
+<li>Después <strong>multiplicaciones y divisiones</strong>.</li>
+<li>Por último <strong>sumas y restas</strong>.</li>
+</ol>
+<p>Ejemplo: 2 + 3 × 4 = 2 + 12 = <strong>14</strong> (no 20, porque la
+multiplicación va antes).</p>
+<p>Ejemplo: (2 + 3) × 4 = 5 × 4 = <strong>20</strong> (el paréntesis
+manda).</p>
+<div class="co co-ojo">
+<div class="co-t">
+Ojo
+</div>
+<p>Excel sigue exactamente este mismo orden. Si escribes
+<code>=2+3*4</code> te da 14. Si quieres que sume primero, tienes que
+poner paréntesis: <code>=(2+3)*4</code>. Muchos errores en el examen
+vienen de un paréntesis olvidado, sobre todo al dividir:
+<code>=A1+A2/2</code> no es lo mismo que <code>=(A1+A2)/2</code>.</p>
+</div>
+</section>
+<section id="decimales-y-redondeo" class="level2">
+<h2><span class="secnum">0.2</span><span class="ht">Decimales y
+redondeo</span></h2>
+<p>En España (y en tu Excel) los decimales se escriben con
+<strong>coma</strong>: 0,477. En los apuntes de la profesora a veces
+aparecen con punto (0.477) porque están hechos con un programa en
+inglés. Es lo mismo.</p>
+<p>Para redondear a 2 decimales, mira la tercera cifra decimal. Si es 0,
+1, 2, 3 o 4, la segunda cifra se queda igual. Si es 5, 6, 7, 8 o 9, la
+segunda cifra sube uno.</p>
+<ul>
+<li>1,2521 → la tercera cifra es 2 → se queda
+<strong>1,25</strong>.</li>
+<li>0,4772 → la tercera cifra es 7 → sube → <strong>0,48</strong>.</li>
+<li>2,3456 → la tercera cifra es 5 → sube → <strong>2,35</strong>.</li>
+</ul>
+<p>En Excel: <code>=REDONDEAR(A1;2)</code> redondea el contenido de A1 a
+2 decimales. También puedes dejar el número como está y usar los botones
+de “Aumentar/Disminuir decimales” de la pestaña Inicio, que solo cambian
+lo que se ve.</p>
+<div class="co co-truco">
+<div class="co-t">
+Truco
+</div>
+<p>No redondees a mitad de un ejercicio. Deja que Excel trabaje con
+todos los decimales y redondea solo el resultado final. Si redondeas
+antes, el resultado final se desvía un poco.</p>
+</div>
+</section>
+<section id="fracciones-y-divisiones" class="level2">
+<h2><span class="secnum">0.3</span><span class="ht">Fracciones y
+divisiones</span></h2>
+<p>Una fracción es una división. 3/4 significa 3 ÷ 4 = 0,75.</p>
+<p>En estadística casi todo es “algo dividido entre el total”. Por
+ejemplo, si 21 de 44 personas no tienen hermanos, la proporción es 21/44
+= 0,477.</p>
+</section>
+<section id="porcentajes" class="level2">
+<h2><span class="secnum">0.4</span><span class="ht">Porcentajes</span></h2>
+<p>Un porcentaje es una proporción multiplicada por 100.</p>
+<ul>
+<li>Proporción 0,477 → porcentaje <strong>47,7 %</strong>.</li>
+<li>Porcentaje 12 % → proporción <strong>0,12</strong>.</li>
+</ul>
+<p>Para pasar de % a número decimal, divide entre 100. Para pasar de
+decimal a %, multiplica por 100.</p>
+<p><strong>Subir un porcentaje.</strong> Subir un 5 % es multiplicar por
+1,05. Subir un 20 % es multiplicar por 1,20. Bajar un 10 % es
+multiplicar por 0,90. Bajar un 2 % es multiplicar por 0,98.</p>
+<div class="co co-truco">
+<div class="co-t">
+Truco
+</div>
+<p>“Subir un 3 %” = “multiplicar por 1 + 0,03 = 1,03”. “Bajar un 3 %” =
+“multiplicar por 1 − 0,03 = 0,97”. Esto lo usarás muchísimo en el Tema
+4.</p>
+</div>
+</section>
+<section id="potencias-el-al-cuadrado" class="level2">
+<h2><span class="secnum">0.5</span><span class="ht">Potencias (el “al
+cuadrado”)</span></h2>
+<p>Elevar al cuadrado es multiplicar un número por sí mismo: 5² = 5 × 5
+= 25.</p>
+<p>Un número negativo al cuadrado da positivo: (−3)² = (−3) × (−3) = 9.
+Esto es importante para la varianza.</p>
+<p>En Excel, el cuadrado se escribe con el símbolo <code>^</code>
+(acento circunflejo, tecla a la derecha de la P, y se pulsa con
+Mayúsculas): <code>=5^2</code> da 25. Para que salga el símbolo a veces
+hay que pulsar la tecla y luego la barra espaciadora.</p>
+</section>
+<section id="raíz-cuadrada" class="level2">
+<h2><span class="secnum">0.6</span><span class="ht">Raíz
+cuadrada</span></h2>
+<p>La raíz cuadrada es lo contrario del cuadrado: √25 = 5, porque 5² =
+25.</p>
+<p>En Excel: <code>=RAIZ(25)</code> da 5.</p>
+<p>Hay otras raíces (cúbica, raíz 12…). Las usarás en el Tema 4. Una
+raíz se puede escribir como potencia de una fracción: la raíz cúbica de
+8 es 8^(1/3) = 2. En Excel: <code>=8^(1/3)</code>.</p>
+</section>
+<section id="el-símbolo-σ-sumatorio" class="level2">
+<h2><span class="secnum">0.7</span><span class="ht">El símbolo Σ
+(sumatorio)</span></h2>
+<p>Σ es la letra griega “sigma” mayúscula. Solo significa <strong>“suma
+todo esto”</strong>.</p>
+<p>Si ves Σ xᵢ, lee: “suma todos los valores x”. Si ves Σ xᵢ·nᵢ, lee:
+“multiplica cada valor por su frecuencia y suma todos esos
+resultados”.</p>
+<p>En Excel, Σ es la función <code>=SUMA( )</code>.</p>
+</section>
+<section id="los-subíndices" class="level2">
+<h2><span class="secnum">0.8</span><span class="ht">Los
+subíndices</span></h2>
+<p>La letra pequeña de abajo (el subíndice) solo sirve para numerar. x₁
+es el primer valor, x₂ el segundo… xᵢ significa “un valor cualquiera, el
+que toque”. No es una operación.</p>
+</section>
+<section id="los-intervalos-y-sus-corchetes" class="level2">
+<h2><span class="secnum">0.9</span><span class="ht">Los intervalos y sus
+corchetes</span></h2>
+<p>Un intervalo es un tramo de números. Los corchetes y paréntesis dicen
+si los extremos entran o no:</p>
+<div class="tw">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Se escribe</th>
+<th style="text-align: left;">Se lee</th>
+<th style="text-align: center;">¿Entra el 10?</th>
+<th style="text-align: center;">¿Entra el 20?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">[10, 20]</td>
+<td style="text-align: left;">de 10 a 20, ambos incluidos</td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(10, 20]</td>
+<td style="text-align: left;">más de 10 y hasta 20</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">[10, 20)</td>
+<td style="text-align: left;">desde 10 y menos de 20</td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: center;">No</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Corchete [ ]</strong> = el número entra. <strong>Paréntesis (
+)</strong> = el número no entra.</p>
+<p><strong>Amplitud</strong> de un intervalo = extremo de arriba −
+extremo de abajo. La amplitud de (10, 20] es 20 − 10 = 10.</p>
+<p><strong>Marca de clase</strong> = el punto medio del intervalo =
+(abajo + arriba) / 2. La marca de clase de (10, 20] es (10 + 20)/2 =
+15.</p>
+</section>
+<section id="la-calculadora" class="level2">
+<h2><span class="secnum">0.10</span><span class="ht">La
+calculadora</span></h2>
+<p>En un examen en papel, la calculadora hace las cuentas y tú haces la
+tabla. Con una calculadora científica normal basta.</p>
+<p><strong>Lo que más vas a usar:</strong></p>
+<div class="tw">
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Para</th>
+<th style="text-align: left;">Tecla</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Elevar al cuadrado</td>
+<td style="text-align: left;">x²</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Raíz cuadrada</td>
+<td style="text-align: left;">√</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Otra potencia (por ejemplo, ³ o ⁴)</td>
+<td style="text-align: left;">^ (o xʸ, o x■)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Raíz n-ésima (para tasas medias)</td>
+<td style="text-align: left;">ˣ√ (normalmente con SHIFT) o elevar a
+(1/n)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Usar el último resultado</td>
+<td style="text-align: left;">Ans</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Guardar un número</td>
+<td style="text-align: left;">STO (o SHIFT + RCL) y una letra</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="co co-truco">
+<div class="co-t">
+Truco: no redondees a mitad de cuenta
+</div>
+<p>Si un resultado lo vas a volver a usar (la media para la varianza,
+por ejemplo), no lo copies redondeado: usa Ans o guárdalo en una
+memoria. Redondea solo el resultado final, a 2 o 3 decimales.</p>
+</div>
+<section id="el-modo-estadístico-para-comprobar" class="level3">
+<h3>El modo estadístico: para comprobar</h3>
+<p>Casi todas las calculadoras científicas tienen un modo
+<strong>estadístico</strong> (se llama STAT, SD o Estadística, según el
+modelo). Metes los datos y te da la media y la desviación típica
+directamente. <strong>No sustituye a la tabla</strong> (en el examen hay
+que enseñar los pasos), pero sirve para <strong>comprobar</strong> que
+no te has equivocado.</p>
+<p>Lo que suele aparecer en pantalla:</p>
+<div class="tw">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Símbolo en la calculadora</th>
+<th style="text-align: left;">Qué es en la guía</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Número de datos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">x̄</td>
+<td style="text-align: left;">Media</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Σx</td>
+<td style="text-align: left;">Suma de los datos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Σx²</td>
+<td style="text-align: left;">Suma de los cuadrados</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">σx (o σn, xσn)</td>
+<td style="text-align: left;">Desviación típica S (divide entre n)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sx (o σn−1, xσn−1)</td>
+<td style="text-align: left;">Cuasidesviación típica s (divide entre n −
+1)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">a, b, r</td>
+<td style="text-align: left;">Recta de regresión y correlación (Tema
+3)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Pasos generales</strong> (en las Casio, que son las más
+habituales; en otras marcas es parecido):</p>
+<ol type="1">
+<li>Entra en el modo estadístico y elige <strong>1 variable</strong>
+(1-VAR).</li>
+<li>Si tienes una tabla de frecuencias, activa la columna de
+<strong>frecuencias</strong> (FREQ) en la configuración. Así metes cada
+valor una vez con su nᵢ.</li>
+<li>Escribe los datos (y sus frecuencias) en la tabla de la
+pantalla.</li>
+<li>Sal de la tabla (AC) y busca en el menú de opciones el
+<strong>cálculo de 1 variable</strong>: ahí salen x̄, σx, sx, n…</li>
+</ol>
+<div class="co co-ojo">
+<div class="co-t">
+Ojo
+</div>
+<p>σx es la desviación típica <strong>S</strong> de los apuntes (la que
+divide entre n). sx es la cuasidesviación <strong>s</strong>. Y si la
+calculadora te da cuartiles (Q1, Q3), pueden no coincidir con la receta
+de los apuntes: en el examen, usa la receta.</p>
+</div>
+<p>Cada modelo tiene las teclas en un sitio distinto. Practica con
+<strong>tu</strong> calculadora con el ejemplo de los hermanos: tiene
+que salirte x̄ = 0,977 y σx = 1,252. Si no sale, pide ayuda a alguien de
+clase la primera vez: es solo encontrar las teclas.</p>
+</section>
+</section>
+</section>
+<section id="parte-0-bis.-excel-desde-cero" class="level1 t0">
+<h1 class="t0"><span class="tab">Parte 0 bis</span><span class="ht">Excel desde cero</span></h1>
+<section id="lo-básico-de-una-hoja" class="level2">
+<h2><span class="secnum">0.11</span><span class="ht">Lo básico de una
+hoja</span></h2>
+<p>Una hoja de Excel es una cuadrícula. Las <strong>columnas</strong>
+tienen letras (A, B, C…) y las <strong>filas</strong> números (1, 2,
+3…). Cada casilla es una <strong>celda</strong> y se nombra por su
+columna y su fila: <strong>B3</strong> es la celda de la columna B, fila
+3.</p>
+<p>Un <strong>rango</strong> es un grupo de celdas seguidas.
+<code>B2:B45</code> significa “desde B2 hasta B45”.</p>
+</section>
+<section id="escribir-una-fórmula" class="level2">
+<h2><span class="secnum">0.12</span><span class="ht">Escribir una
+fórmula</span></h2>
+<ol type="1">
+<li>Haz clic en la celda donde quieres el resultado.</li>
+<li>Escribe <strong>siempre</strong> primero el signo
+<strong>=</strong>.</li>
+<li>Escribe la operación o la función.</li>
+<li>Pulsa <strong>Intro</strong>.</li>
+</ol>
+<p>Si no pones el <code>=</code>, Excel lo toma como texto y no calcula
+nada.</p>
+<div class="co co-ojo">
+<div class="co-t">
+Ojo. Excel en español usa punto y coma
+</div>
+<p>Dentro de una función, las partes se separan con <strong>;</strong> y
+no con coma, porque la coma es el decimal. Ejemplo:
+<code>=CONTAR.SI(B2:B45;0)</code>. Si escribes una coma, Excel dará
+error.</p>
+</div>
+</section>
+<section id="arrastrar-una-fórmula-copiar-hacia-abajo" class="level2">
+<h2><span class="secnum">0.13</span><span class="ht">Arrastrar una
+fórmula (copiar hacia abajo)</span></h2>
+<p>Si en C2 escribes <code>=B2*2</code> y quieres lo mismo en C3, C4,
+C5…:</p>
+<ol type="1">
+<li>Selecciona C2.</li>
+<li>Pon el ratón en la esquina inferior derecha de la celda: aparece una
+cruz negra pequeña.</li>
+<li>Arrastra hacia abajo (o haz doble clic en esa cruz).</li>
+</ol>
+<p>Excel cambia solo las referencias: en C3 pondrá <code>=B3*2</code>,
+en C4 <code>=B4*2</code>…</p>
+</section>
+<section id="fijar-una-celda-con-referencia-absoluta" class="level2">
+<h2><span class="secnum">0.14</span><span class="ht">Fijar una celda con
+$ (referencia absoluta)</span></h2>
+<p>A veces quieres que al arrastrar una celda <strong>no
+cambie</strong>. Por ejemplo, para dividir cada frecuencia entre el
+total, que está siempre en B9: <code>=B2/$B$9</code>.</p>
+<p>El símbolo <strong>$</strong> “congela” la celda. Truco: escribe B9 y
+pulsa la tecla <strong>F4</strong>; Excel pone los $ solo.</p>
+<div class="co co-truco">
+<div class="co-t">
+Truco
+</div>
+<p>Regla práctica: el <strong>total</strong> y la <strong>media</strong>
+casi siempre se fijan con $, porque se usan en todas las filas.</p>
+</div>
+</section>
+<section id="las-funciones-que-vas-a-usar" class="level2">
+<h2><span class="secnum">0.15</span><span class="ht">Las funciones que
+vas a usar</span></h2>
+<p>No te las aprendas ahora. Aparecerán cuando toque y tienes una
+chuleta completa al final.</p>
+<div class="tw">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Para…</th>
+<th style="text-align: left;">Función en Excel (español)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sumar</td>
+<td style="text-align: left;"><code>=SUMA(rango)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Contar cuántos datos hay</td>
+<td style="text-align: left;"><code>=CONTAR(rango)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Contar cuántas veces sale un valor</td>
+<td style="text-align: left;"><code>=CONTAR.SI(rango;valor)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;"><code>=PROMEDIO(rango)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;"><code>=MEDIANA(rango)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Moda</td>
+<td style="text-align: left;"><code>=MODA.UNO(rango)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Máximo y mínimo</td>
+<td style="text-align: left;"><code>=MAX(rango)</code> y
+<code>=MIN(rango)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cuartil</td>
+<td style="text-align: left;"><code>=CUARTIL.INC(rango;1)</code> (o 2,
+3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Percentil</td>
+<td style="text-align: left;"><code>=PERCENTIL.INC(rango;0,97)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Varianza (la de clase)</td>
+<td style="text-align: left;"><code>=VAR.P(rango)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cuasivarianza</td>
+<td style="text-align: left;"><code>=VAR.S(rango)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Desviación típica</td>
+<td style="text-align: left;"><code>=DESVEST.P(rango)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cuasidesviación típica</td>
+<td style="text-align: left;"><code>=DESVEST.S(rango)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Multiplicar dos columnas y sumar</td>
+<td style="text-align: left;"><code>=SUMAPRODUCTO(rango1;rango2)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Raíz cuadrada</td>
+<td style="text-align: left;"><code>=RAIZ(número)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Covarianza</td>
+<td style="text-align: left;"><code>=COVARIANZA.P(rangoX;rangoY)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Correlación</td>
+<td style="text-align: left;"><code>=COEF.DE.CORREL(rangoX;rangoY)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pendiente de la recta</td>
+<td style="text-align: left;"><code>=PENDIENTE(rangoY;rangoX)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Término independiente</td>
+<td style="text-align: left;"><code>=INTERSECCION.EJE(rangoY;rangoX)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Predicción</td>
+<td style="text-align: left;"><code>=PRONOSTICO.LINEAL(x;rangoY;rangoX)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Media geométrica</td>
+<td style="text-align: left;"><code>=MEDIA.GEOM(rango)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="insertar-un-gráfico" class="level2">
+<h2><span class="secnum">0.16</span><span class="ht">Insertar un
+gráfico</span></h2>
+<ol type="1">
+<li>Selecciona los datos (por ejemplo, la columna de valores y la de
+frecuencias).</li>
+<li>Pestaña <strong>Insertar</strong> → grupo
+<strong>Gráficos</strong>.</li>
+<li>Elige el tipo: columnas (barras), circular (sectores), histograma,
+cuadro y bigotes (caja), dispersión, radial.</li>
+<li>Con el gráfico seleccionado, el botón <strong>+</strong> que aparece
+al lado permite añadir <strong>títulos de ejes</strong>,
+<strong>etiquetas de datos</strong> y <strong>línea de
+tendencia</strong>.</li>
+</ol>
+</section>
+<section id="tabla-dinámica-para-contar-por-categorías" class="level2">
+<h2><span class="secnum">0.17</span><span class="ht">Tabla dinámica
+(para contar por categorías)</span></h2>
+<p>Sirve para contar automáticamente cuántas veces aparece cada valor o
+cada combinación de valores. La usó la profesora en el Tema 2.</p>
+<ol type="1">
+<li>Haz clic en cualquier celda de tus datos (con su fila de
+títulos).</li>
+<li><strong>Insertar</strong> → <strong>Tabla dinámica</strong> →
+Aceptar (en una hoja nueva).</li>
+<li>A la derecha aparece una lista con los nombres de tus columnas.</li>
+<li>Arrastra la variable que quieres contar a
+<strong>Filas</strong>.</li>
+<li>Arrastra esa misma variable (u otra) a <strong>Valores</strong>. Si
+sale “Suma de…”, haz clic encima → <strong>Configuración de campo de
+valor</strong> → elige <strong>Cuenta</strong>.</li>
+<li>Para una tabla de doble entrada, arrastra la segunda variable a
+<strong>Columnas</strong>.</li>
+</ol>
+<div class="co co-truco">
+<div class="co-t">
+Truco
+</div>
+<p>Para ver porcentajes en vez de recuentos: clic derecho sobre un
+número de la tabla dinámica → <strong>Mostrar valores como</strong> →
+<strong>% del total general</strong> (o % del total de fila / de
+columna, para las condicionadas del Tema 2).</p>
+</div>
+</section>
+</section>
+<section id="descargas" class="level1 tx">
+<h1 class="tx"><span class="ht">Descargas</span></h1>
+<p>Todos los archivos van guardados dentro de esta guía. Pulsa para
+descargarlos.</p>
+<div class="descarga" data-file="Solucionario_estadistica.xlsx">
+<p><strong>Solucionario</strong> (el que llevas al examen si se
+permite). Traductor, calculadoras y todos los ejercicios resueltos en un
+solo Excel.</p>
+</div>
+<div class="descarga" data-file="Practicas_autocorregidas.xlsx">
+<p><strong>Prácticas en Excel.</strong> Las mismas prácticas de esta
+guía, para hacerlas dentro de Excel; las casillas se ponen verdes o
+rojas.</p>
+</div>
+<div class="descarga" data-file="Simulacros_autocorregidos.xlsx">
+<p><strong>Simulacros en Excel.</strong> Los dos simulacros con Excel,
+con nota automática. Los de tipo test y en papel están solo en esta
+guía.</p>
+</div>
+<div class="descarga" data-file="Plantillas_estadistica.xlsx">
+<p><strong>Calculadoras</strong> sueltas, con el traductor (también
+están dentro del solucionario).</p>
+</div>
+<div class="descarga" data-file="Estadistica_ejercicios_resueltos.xlsx">
+<p><strong>Ejercicios resueltos</strong> sueltos (también están dentro
+del solucionario).</p>
+</div>
+</section>
+<section id="por-si-el-examen-fuera-con-ordenador" class="level1 tx">
+<h1 class="tx"><span class="ht">Por si el examen fuera con
+ordenador</span></h1>
+<p>Según el modelo de la profesora, el examen es en papel y tipo test.
+Esto queda aquí <strong>por si acaso</strong>: si al final se permitiera
+el ordenador, aquí están los simulacros con Excel, qué archivos llevar y
+una lista de comprobación.</p>
+<section id="simulacro-con-excel-1" class="level2">
+<h2>Simulacro con Excel 1</h2>
+<div class="simulacro" data-sim="S1">
+
+</div>
+</section>
+<section id="simulacro-con-excel-2" class="level2">
+<h2>Simulacro con Excel 2</h2>
+<div class="simulacro" data-sim="S2">
+
+</div>
+</section>
+<section id="tus-archivos-para-el-examen" class="level2">
+<h2>Tus archivos para el examen</h2>
 <p>En el examen puedes usar el ordenador, <strong>tus prácticas de
 clase</strong> y <strong>un solucionario</strong>. Conviene llegar
 sabiendo qué hay en cada archivo, para encontrarlo en segundos.</p>
-<section id="las-prácticas-de-clase" class="level2">
-<h2>Las prácticas de clase</h2>
+<section id="las-prácticas-de-clase" class="level3">
+<h3>Las prácticas de clase</h3>
 <div class="tw">
 <table>
 <colgroup>
@@ -10922,8 +11412,8 @@ Si en clase hicisteis alguna, añádela a la carpeta. Si no, practica con
 los ejercicios del Tema 4 y con las prácticas autocorregidas 7 y 8.</p>
 </div>
 </section>
-<section id="tu-solucionario" class="level2">
-<h2>Tu solucionario</h2>
+<section id="tu-solucionario" class="level3">
+<h3>Tu solucionario</h3>
 <div class="co co-ojo">
 <div class="co-t">
 Si el examen es en papel
@@ -10961,481 +11451,8 @@ examen.</p>
 </div>
 </section>
 </section>
-<section id="descargas" class="level1 tx">
-<h1 class="tx"><span class="ht">Descargas</span></h1>
-<p>Todos los archivos van guardados dentro de esta guía. Pulsa para
-descargarlos.</p>
-<div class="descarga" data-file="Solucionario_estadistica.xlsx">
-<p><strong>Solucionario</strong> (el que llevas al examen si se
-permite). Traductor, calculadoras y todos los ejercicios resueltos en un
-solo Excel.</p>
-</div>
-<div class="descarga" data-file="Practicas_autocorregidas.xlsx">
-<p><strong>Prácticas en Excel.</strong> Las mismas prácticas de esta
-guía, para hacerlas dentro de Excel; las casillas se ponen verdes o
-rojas.</p>
-</div>
-<div class="descarga" data-file="Simulacros_autocorregidos.xlsx">
-<p><strong>Simulacros en Excel.</strong> Los simulacros 1 y 2, con nota
-automática. (El 3, en papel, está solo en esta guía.)</p>
-</div>
-<div class="descarga" data-file="Plantillas_estadistica.xlsx">
-<p><strong>Calculadoras</strong> sueltas, con el traductor (también
-están dentro del solucionario).</p>
-</div>
-<div class="descarga" data-file="Estadistica_ejercicios_resueltos.xlsx">
-<p><strong>Ejercicios resueltos</strong> sueltos (también están dentro
-del solucionario).</p>
-</div>
-</section>
-<section id="chuleta-de-fórmulas" class="level1 tx">
-<h1 class="tx"><span class="ht">Chuleta de fórmulas</span></h1>
-<section id="tema-1.-una-variable" class="level2">
-<h2>Tema 1. Una variable</h2>
-<div class="tw">
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Qué</th>
-<th style="text-align: left;">Fórmula</th>
-<th style="text-align: left;">Excel</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Frecuencia relativa</td>
-<td style="text-align: left;">fᵢ = nᵢ / n</td>
-<td style="text-align: left;"><code>=B2/$B$9</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Acumulada</td>
-<td style="text-align: left;">Nᵢ = n₁ + … + nᵢ</td>
-<td style="text-align: left;"><code>=C1+B2</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Media (datos sueltos)</td>
-<td style="text-align: left;">x̄ = Σxᵢ / n</td>
-<td style="text-align: left;"><code>=PROMEDIO(r)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Media (tabla)</td>
-<td style="text-align: left;">x̄ = Σxᵢnᵢ / n = Σxᵢfᵢ</td>
-<td style="text-align: left;"><code>=SUMAPRODUCTO(x;n)/SUMA(n)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Media ponderada</td>
-<td style="text-align: left;">(x̄₁T₁ + x̄₂T₂ + …) / (T₁ + T₂ + …)</td>
-<td style="text-align: left;"><code>=SUMAPRODUCTO(medias;T)/SUMA(T)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Cambio Y = aX + b</td>
-<td style="text-align: left;">ȳ = a·x̄ + b · S²ᵧ = a²·S²ₓ · Sᵧ =
-a·Sₓ</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Moda (intervalos)</td>
-<td style="text-align: left;">Lᵢ₋₁ + (dᵢ − dᵢ₋₁)/((dᵢ − dᵢ₋₁) + (dᵢ −
-dᵢ₊₁)) · aᵢ</td>
-<td style="text-align: left;"><code>=MODA.UNO(r)</code> (sueltos)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Densidad</td>
-<td style="text-align: left;">dᵢ = nᵢ / aᵢ</td>
-<td style="text-align: left;"><code>=C2/(B2-A2)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Mediana (intervalos)</td>
-<td style="text-align: left;">Lᵢ₋₁ + (n/2 − Nᵢ₋₁)/nᵢ · aᵢ</td>
-<td style="text-align: left;"><code>=MEDIANA(r)</code> (sueltos)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Percentil r (intervalos)</td>
-<td style="text-align: left;">Lᵢ₋₁ + (r·n/100 − Nᵢ₋₁)/nᵢ · aᵢ</td>
-<td style="text-align: left;"><code>=PERCENTIL.INC(r;0,7)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Cuartiles</td>
-<td style="text-align: left;">C₁ → n/4 · C₃ → 3n/4</td>
-<td style="text-align: left;"><code>=CUARTIL.INC(r;1)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mediana o cuantil a mano (datos sueltos o
-tabla de valores)</td>
-<td style="text-align: left;">posición k = r·n/100: si no es entera, el
-dato que ocupa el puesto siguiente; si es entera, media de ese dato y el
-siguiente</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Rango</td>
-<td style="text-align: left;">máx − mín</td>
-<td style="text-align: left;"><code>=MAX(r)-MIN(r)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">IQR</td>
-<td style="text-align: left;">C₃ − C₁</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Varianza</td>
-<td style="text-align: left;">S² = Σxᵢ²nᵢ / n − x̄²</td>
-<td style="text-align: left;"><code>=VAR.P(r)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Cuasivarianza</td>
-<td style="text-align: left;">s² = n/(n−1) · S²</td>
-<td style="text-align: left;"><code>=VAR.S(r)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Desviación típica</td>
-<td style="text-align: left;">S = √S²</td>
-<td style="text-align: left;"><code>=DESVEST.P(r)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Cuasidesviación</td>
-<td style="text-align: left;">s = √s²</td>
-<td style="text-align: left;"><code>=DESVEST.S(r)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Coef. de variación</td>
-<td style="text-align: left;">CV = S / x̄</td>
-<td style="text-align: left;"><code>=DESVEST.P(r)/PROMEDIO(r)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Var. dentro</td>
-<td style="text-align: left;">(S²₁T₁ + S²₂T₂ + …) / ΣT</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Var. entre</td>
-<td style="text-align: left;">((x̄₁ − x̄)²T₁ + (x̄₂ − x̄)²T₂ + …) / ΣT</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Var. total</td>
-<td style="text-align: left;">dentro + entre</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">% entre grupos</td>
-<td style="text-align: left;">entre / total × 100</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Asimetría</td>
-<td style="text-align: left;">CA &gt; 0 cola derecha · &lt; 0 cola
-izquierda</td>
-<td style="text-align: left;"><code>=COEFICIENTE.ASIMETRIA.P(r)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Curtosis</td>
-<td style="text-align: left;">CC &gt; 0 lepto · = 0 meso · &lt; 0
-plati</td>
-<td style="text-align: left;"><code>=CURTOSIS(r)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tipificar</td>
-<td style="text-align: left;">z = (x − x̄) / S</td>
-<td style="text-align: left;"><code>=NORMALIZACION(x;media;S)</code> o
-<code>=(A2-$B$1)/$B$2</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Límites atípicos</td>
-<td style="text-align: left;">C₁ − 1,5·IQR y C₃ + 1,5·IQR</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Media truncada</td>
-<td style="text-align: left;">quitar un % de datos por cada extremo y
-hacer la media</td>
-<td style="text-align: left;"><code>=MEDIA.ACOTADA(r;0,2)</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="tema-2.-dos-variables" class="level2">
-<h2>Tema 2. Dos variables</h2>
-<div class="tw">
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Qué</th>
-<th style="text-align: left;">Fórmula</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Frec. relativa conjunta</td>
-<td style="text-align: left;">fᵢⱼ = nᵢⱼ / n</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Marginal de X</td>
-<td style="text-align: left;">nᵢ. = suma de la fila i</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Marginal de Y</td>
-<td style="text-align: left;">n.ⱼ = suma de la columna j</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Condicionada X | Y = yⱼ</td>
-<td style="text-align: left;">la columna j (dividida entre n.ⱼ)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Condicionada Y | X = xᵢ</td>
-<td style="text-align: left;">la fila i (dividida entre nᵢ.)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Independencia</td>
-<td style="text-align: left;">fᵢⱼ = fᵢ. · f.ⱼ en <strong>todas</strong>
-las casillas</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Frecuencia esperada (a mano)</td>
-<td style="text-align: left;">nᵢ. · n.ⱼ / n; si coincide con nᵢⱼ en
-todas, independientes</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Si son independientes</td>
-<td style="text-align: left;">todas las condicionadas son iguales entre
-sí e iguales a la marginal</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Mosaico</td>
-<td style="text-align: left;">ancho de columna = marginal · alto de cada
-trozo = condicionada</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Excel: tabla dinámica (Filas, Columnas, Valores = Cuenta); “Mostrar
-valores como” → % del total general / de fila / de columna.</p>
-</section>
-<section id="tema-3.-regresión" class="level2">
-<h2>Tema 3. Regresión</h2>
-<div class="tw">
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Qué</th>
-<th style="text-align: left;">Fórmula</th>
-<th style="text-align: left;">Excel (Y en B, X en A)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Covarianza</td>
-<td style="text-align: left;">S_XY = Σxᵢyᵢ/n − x̄·ȳ</td>
-<td style="text-align: left;"><code>=COVARIANZA.P(A;B)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Pendiente (Y sobre X)</td>
-<td style="text-align: left;">b = S_XY / S²ₓ</td>
-<td style="text-align: left;"><code>=PENDIENTE(B;A)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Término independiente</td>
-<td style="text-align: left;">a = ȳ − b·x̄</td>
-<td style="text-align: left;"><code>=INTERSECCION.EJE(B;A)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Recta</td>
-<td style="text-align: left;">Ŷ = a + b·X</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Recta X sobre Y</td>
-<td style="text-align: left;">b’ = S_XY / S²ᵧ · a’ = x̄ − b’·ȳ</td>
-<td style="text-align: left;"><code>=PENDIENTE(A;B)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Correlación</td>
-<td style="text-align: left;">r = S_XY / (Sₓ·Sᵧ)</td>
-<td style="text-align: left;"><code>=COEF.DE.CORREL(A;B)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Determinación</td>
-<td style="text-align: left;">R² = r²</td>
-<td style="text-align: left;"><code>=COEFICIENTE.R2(B;A)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Predicción</td>
-<td style="text-align: left;">Ŷ = a + b·x₀</td>
-<td style="text-align: left;"><code>=PRONOSTICO.LINEAL(x0;B;A)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Relaciones útiles</td>
-<td style="text-align: left;">r = b·Sₓ/Sᵧ · S_XY = r·Sₓ·Sᵧ · ȳ = a +
-b·x̄</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Si S_XY = 0</td>
-<td style="text-align: left;">Ŷ = ȳ (horizontal) · X̂ = x̄ (vertical)</td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Recuerda: las dos rectas se cortan en (x̄, ȳ). r está entre −1 y 1, no
-tiene unidades y no cambia si cambias de unidades. No predigas fuera del
-rango de los datos (extrapolar).</p>
-</section>
-<section id="tema-4.-números-índices-1" class="level2">
-<h2>Tema 4. Números índices</h2>
-<div class="tw">
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Qué</th>
-<th style="text-align: left;">Fórmula</th>
-<th style="text-align: left;">Excel</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Índice simple</td>
-<td style="text-align: left;">I = xₜ / x₀ · 100</td>
-<td style="text-align: left;"><code>=B3/$B$2*100</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tasa de variación</td>
-<td style="text-align: left;">(V₁ − V₀)/V₀ = V₁/V₀ − 1</td>
-<td style="text-align: left;"><code>=B3/B2-1</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Subir p %</td>
-<td style="text-align: left;">× (1 + p/100)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Encadenar</td>
-<td style="text-align: left;">multiplicar los índices</td>
-<td style="text-align: left;"><code>=PRODUCTO(r)</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Inversión</td>
-<td style="text-align: left;">I₍ₜ→₀₎ = 1 / I₍₀→ₜ₎</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Cambio de base</td>
-<td style="text-align: left;">índice viejo / índice viejo del nuevo año
-base · 100</td>
-<td style="text-align: left;"><code>=C2/$C$6*100</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Media geométrica</td>
-<td style="text-align: left;">(x₁·x₂···xₙ)^(1/n)</td>
-<td style="text-align: left;"><code>=MEDIA.GEOM(r)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tasa media por periodo</td>
-<td style="text-align: left;">(1 + T)^(1/k) − 1</td>
-<td style="text-align: left;"><code>=(1+T)^(1/k)-1</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Laspeyres precios</td>
-<td style="text-align: left;">Σpₜq₀ / Σp₀q₀ · 100</td>
-<td style="text-align: left;"><code>=SUMAPRODUCTO(pt;q0)/SUMAPRODUCTO(p0;q0)*100</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Paasche precios</td>
-<td style="text-align: left;">Σpₜqₜ / Σp₀qₜ · 100</td>
-<td style="text-align: left;"><code>=SUMAPRODUCTO(pt;qt)/SUMAPRODUCTO(p0;qt)*100</code></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Laspeyres cantidades</td>
-<td style="text-align: left;">Σqₜp₀ / Σq₀p₀ · 100</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Paasche cantidades</td>
-<td style="text-align: left;">Σqₜpₜ / Σq₀pₜ · 100</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Fisher</td>
-<td style="text-align: left;">√(L · P)</td>
-<td style="text-align: left;"><code>=RAIZ(L*P)</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Valor real (deflactar)</td>
-<td style="text-align: left;">nominal / IPC · 100</td>
-<td style="text-align: left;"><code>=B2/C2*100</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-</section>
-<section id="el-examen-en-papel-lista-de-comprobación" class="level1 tx">
-<h1 class="tx"><span class="ht">El examen en papel: lista de
-comprobación</span></h1>
-<p><strong>Antes de empezar</strong></p>
-<ul>
-<li>Lee todo el examen una vez, sin calcular. Marca qué tema es cada
-pregunta.</li>
-<li>Empieza por la que te dé más seguridad.</li>
-<li>Comprueba que tu calculadora está en modo normal de cálculo, no en
-el estadístico (si lo usaste para comprobar algo, sal de él).</li>
-</ul>
-<p><strong>Para cada ejercicio</strong></p>
-<ol type="1">
-<li>Escribe qué te piden y la <strong>fórmula</strong> antes de poner
-números. Si te equivocas en una cuenta, la fórmula bien escrita ya
-suma.</li>
-<li>Haz <strong>la tabla</strong>: xᵢ, nᵢ, Nᵢ, xᵢ·nᵢ, xᵢ²·nᵢ (Temas 1 y
-2) o xᵢ, yᵢ, xᵢ², yᵢ², xᵢyᵢ (Tema 3). Suma cada columna.</li>
-<li>Escribe cada resultado intermedio con 3 o 4 decimales.
-<strong>Redondea solo al final.</strong></li>
-<li>Recuadra el resultado y escribe la <strong>frase de
-interpretación</strong>.</li>
-</ol>
-<p><strong>Comprobaciones rápidas</strong></p>
-<ul>
-<li>¿Σnᵢ = n? ¿La última Nᵢ es n? ¿Las fᵢ suman 1?</li>
-<li>¿La media está entre el mínimo y el máximo? ¿La mediana
-también?</li>
-<li>¿La varianza es positiva? (Si sale negativa, has olvidado el
-cuadrado o has redondeado la media antes de tiempo.)</li>
-<li>¿r entre −1 y 1, con el mismo signo que b? ¿R² entre 0 y 1?</li>
-<li>¿El año base vale 100? ¿Has multiplicado (no sumado) los
-porcentajes?</li>
-</ul>
-<p><strong>Preguntas sobre Excel en papel</strong></p>
-<ul>
-<li>Escribe la función con su nombre exacto en español y con
-<code>;</code>: <code>=PROMEDIO(A2:A31)</code>.</li>
-<li>Si preguntan por qué se pone <code>$</code>: para que la referencia
-no cambie al arrastrar la fórmula.</li>
-<li>Repasa las 30 preguntas del apartado «Preguntas de Excel sin
-ordenador».</li>
-</ul>
-</section>
-<section id="el-examen-con-excel-lista-de-comprobación" class="level1 tx">
-<h1 class="tx"><span class="ht">El examen con Excel: lista de
-comprobación</span></h1>
+<section id="lista-de-comprobación-del-examen-con-excel" class="level2">
+<h2>Lista de comprobación del examen con Excel</h2>
 <p><strong>Antes de empezar</strong></p>
 <ul>
 <li>Abre tus prácticas de clase y tu solucionario antes de empezar. Ten
@@ -11561,34 +11578,6 @@ doble clic en el borde.</td>
 </table>
 </div>
 </section>
-<section id="plan-de-estudio" class="level1 tx">
-<h1 class="tx"><span class="ht">Plan de estudio</span></h1>
-<p>Tu plan se hace solo con tus fechas. Dime cuándo es el examen, qué
-días estudias y qué temas entran, y la guía reparte lo que te queda
-entre los días que tienes. Cada día mezcla teoría y ejercicios del mismo
-tema, y los últimos días son para los simulacros.</p>
-<p>El plan se <strong>recalcula cada día con lo que ya has
-hecho</strong>: lo que marcas como hecho (con las comprobaciones, «Ya lo
-sé hacer» o «Lo he resuelto») desaparece de los días que vienen. Si un
-día no puedes, no pasa nada: mañana el plan se reparte otra vez.</p>
-<div class="plan-app">
-
-</div>
-<div class="co co-truco">
-<div class="co-t">
-Para los días de poca energía
-</div>
-<p>Si un día no te ves con fuerzas, haz solo una cosa pequeña: rehaz
-<strong>un</strong> ejercicio que ya te salió bien, en papel. Mantener
-el contacto diario cuenta más que la cantidad.</p>
-</div>
-<div class="co co-truco">
-<div class="co-t">
-Cuando haya más temario
-</div>
-<p>Si se añaden temas nuevos o hay otro parcial, aparecerán solos en
-«Qué entra»: marca los que entran en ese examen y cambia la fecha.</p>
-</div>
 </section>
 </article>
 <footer class="end">
@@ -13702,9 +13691,9 @@ var PRNAME={1:'Variable discreta',2:'Datos en intervalos',3:'Grupos y cambios de
 var VID={t1:['qFxCvatJA7s','Tema 1. Una variable','35 min'],b12:['rRuCQaWuUSg','Boletín de los Temas 1 y 2','28 min'],t2:['bZ2RDTQ483I','Tema 2. Dos variables','9 min'],t3:['HULRqZML5gU','Tema 3. Regresión y correlación','12 min'],b3:['XRN-ahfALUc','Boletín del Tema 3','10 min'],t4:['25iXVSxnfoU','Tema 4. Números índices','12 min'],b4:['Evhy1CFN7HU','Boletín del Tema 4','11 min']};
 var webOK=/^https?:$/.test(location.protocol);
 [].slice.call(doc.querySelectorAll('.video')).forEach(function(box){
-  var v=VID[box.getAttribute('data-v')];if(!v)return;var id=v[0],url='https://youtu.be/'+id;
+  var vk=box.getAttribute('data-v'),v=VID[vk];if(!v)return;var id=v[0],url='https://youtu.be/'+id;if(!document.getElementById('video-'+vk))box.id='video-'+vk;
   var seen=get('vid:'+id,false);
-  box.innerHTML='<button type="button" class="vid-card"><span class="vid-th"><img loading="lazy" alt="" src="https://i.ytimg.com/vi/'+id+'/hqdefault.jpg" onerror="this.remove()"><span class="vid-play" aria-hidden="true"></span></span><span class="vid-tx"><span class="vid-k">Vídeo'+(seen?' · ya visto':'')+'</span><span class="vid-t">'+esc(v[1])+'</span><span class="vid-m">'+v[2]+' · voz, subtítulos y animaciones</span></span></button><p class="vid-alt"><a href="'+url+'" target="_blank" rel="noopener">Abrir en YouTube</a></p>';
+  box.innerHTML='<button type="button" class="vid-card"><span class="vid-th"><img loading="lazy" alt="" src="https://i.ytimg.com/vi/'+id+'/mqdefault.jpg" onerror="this.remove()"><span class="vid-play" aria-hidden="true"></span></span><span class="vid-tx"><span class="vid-k">Vídeo del '+(/^b/.test(vk)?'boletín':'tema')+' · '+v[2]+(seen?' · visto ✔':'')+'</span><span class="vid-t">'+esc(v[1])+'</span><span class="vid-m">Con voz, subtítulos y animaciones. Buen punto de partida antes de leer.</span></span></button><p class="vid-alt"><a href="'+url+'" target="_blank" rel="noopener">Abrir en YouTube</a></p>';
   box.querySelector('.vid-card').addEventListener('click',function(){
     set('vid:'+id,true);
     if(!webOK){window.open(url,'_blank','noopener');return;}
@@ -13787,6 +13776,12 @@ var TS=D.tests||{};
   draw();
 });
 
+/* ---------- 2d. Zonas del índice y enlaces de la portada ---------- */
+[['tema-1.-análisis-descriptivo-de-una-variable','Aprender'],['repaso-exprés-el-examen-en-3-días','Examen'],['chuleta-de-fórmulas','Herramientas'],['por-si-el-examen-fuera-con-ordenador','Por si acaso']].forEach(function(z){
+  var a=document.querySelector('.toc a[href="#'+z[0]+'"]');if(!a)return;var li=a.closest('li');var lab=el('li','zone',z[1]);lab.setAttribute('aria-hidden','true');li.parentNode.insertBefore(lab,li);if(z[1]==='Por si acaso')li.classList.add('psa');});
+(function(){var on=false;[].forEach.call(document.querySelectorAll('.toc > ul > li'),function(li){if(li.classList.contains('zone')){on=/Examen|Herramientas/.test(li.textContent);return;}if(on)li.classList.add('notab');});})();
+[].forEach.call(document.querySelectorAll('.hero a[href^="#"]'),function(a){a.addEventListener('click',function(e){var t=document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));if(!t)return;e.preventDefault();A.goTo(t);});});
+
 /* ---------- 3. Comprobaciones de cada apartado ---------- */
 var CH=D.checks||{};
 Object.keys(CH).forEach(function(id){
@@ -13836,9 +13831,8 @@ var tmr;window.addEventListener('scroll',function(){clearTimeout(tmr);tmr=setTim
   if(cur)set('last',cur.id);},400);},{passive:true});
 var hero=document.querySelector('.hero');var last=get('last',null);
 if(hero&&last&&document.getElementById(last)){
-  var ls=document.getElementById(last);var c=el('a','cont','<span class="cont-k">Seguir donde lo dejaste</span><span class="cont-t">'+esc(A.tabOf(ls)+A.secTitle(ls))+'</span>');c.href='#'+last;
-  c.addEventListener('click',function(e){e.preventDefault();A.goTo(ls);});
-  var lede=hero.querySelector('.hero-lede');lede.parentNode.insertBefore(c,lede.nextSibling);
+  var ls=document.getElementById(last);
+  var lc=hero.querySelector('.n-learn');if(lc){lc.href='#'+last;lc.querySelector('b').textContent='Seguir donde lo dejaste';lc.querySelector('.n-d').textContent=A.tabOf(ls)+A.secTitle(ls);lc.querySelector('.n-go').textContent='Continuar →';}
 }
 
 /* ---------- 6. Enlaces del plan a prácticas y simulacros ---------- */
@@ -13915,11 +13909,24 @@ function buildUnits(){
   return{groups:groups,base:base,exam:exam};
 }
 var U=buildUnits();
+function expresSeq(){
+  var R=document.getElementById('repaso-exprés-el-examen-en-3-días');if(!R)return null;
+  var rs=[].slice.call(R.querySelectorAll(':scope > section.level2')).filter(function(s){return !/^el-plan/.test(s.id);});
+  var mk=function(s,pre){var w=words(s);return{id:'x:'+s.id,sec:s,title:pre+A.secTitle(s).replace(/\s+/g,' ').trim(),min:clamp(Math.round(w/25),10,30),kind:'xp',done:function(){return !!get('done:'+s.id,false);}};};
+  var r=rs.map(function(s){return mk(s,'Repaso exprés · ');});
+  var M=document.getElementById('examen-modelo-de-la-profesora');
+  var m=M?[].slice.call(M.querySelectorAll(':scope > section.level2')).map(function(s){var u=mk(s,'Examen modelo · ');u.min=/^cómo-es/.test(s.id)?8:(/corta/.test(s.id)?30:25);return u;}):[];
+  var sim=U.exam.filter(function(u){return u.kind==='sim'&&u.sec.querySelector('.testsim');});
+  var trap=r.filter(function(u){return /trampas/.test(u.sec.id);}),rt=r.filter(function(u){return !/trampas/.test(u.sec.id);});
+  var seq=[];if(m[0])seq.push(m[0]);
+  seq=seq.concat(rt.slice(0,2),m.slice(1,3),rt.slice(2),m.slice(3),trap,sim);
+  return seq;
+}
 var ALLTEMAS=[];U.groups.forEach(function(g){g.temas.forEach(function(t){if(t>0&&ALLTEMAS.indexOf(t)<0)ALLTEMAS.push(t);});});ALLTEMAS.sort(function(a,b){return a-b;});
 
 /* ---- 2. Configuración ---- */
 function cfg(){var c=get('plan:cfg',null)||{};
-  if(!c.days)c.days=[1,2,3,4,5,6];if(!c.temas)c.temas=ALLTEMAS.slice();if(c.base===undefined)c.base=true;return c;}
+  if(!c.days)c.days=[1,2,3,4,5,6];if(!c.temas)c.temas=ALLTEMAS.slice();if(c.base===undefined)c.base=false;return c;}
 function saveCfg(c){set('plan:cfg',c);}
 
 /* ---- 3. Reparto ---- */
@@ -13938,10 +13945,13 @@ function schedule(){
   U.groups.forEach(function(g){var teo=g.teo.filter(inc),pr=g.pr.filter(inc);seq=seq.concat(interleave(teo,pr));});
   var nTem=c.temas.length;
   U.exam.forEach(function(u){if(u.kind==='exq'||nTem>=Math.min(3,ALLTEMAS.length))seq.push(u);});
+  var expres=false;
+  if(!c.full&&days.length){var tmin=seq.filter(function(u){return !u.done();}).reduce(function(a,u){return a+u.min;},0);
+    if(tmin/days.length>180){var xs=expresSeq();if(xs&&xs.length){seq=xs;expres=true;}}}
   var pend=seq.filter(function(u){return !u.done();}),doneN=seq.length-pend.length;
-  var res={days:[],seq:seq,pend:pend,doneN:doneN,E:E,S:S,repaso:null,perDay:0,extra:[]};
+  var res={days:[],seq:seq,pend:pend,doneN:doneN,E:E,S:S,repaso:null,perDay:0,extra:[],expres:expres};
   if(!days.length)return res;
-  if(days.length>=4){res.repaso=days.pop();}
+  if(days.length>=4&&!expres){res.repaso=days.pop();}
   var bigs=pend.filter(function(u){return u.big;}),norm=pend.filter(function(u){return !u.big;});
   bigs.sort(function(x,y){return (y.paper?1:0)-(x.paper?1:0);});
   var bigDays=Math.min(bigs.length,Math.max(days.length>=3?1:0,Math.floor(days.length/4)));res.extra=bigs.slice(bigDays);bigs=bigs.slice(0,bigDays);var nd=days.length-bigDays;
@@ -13968,7 +13978,7 @@ function paint(){
     else{
       var left=r.pend.length,tot=r.seq.length;
       h+='<div class="pl-sum"><div class="meter"><span style="width:'+(tot?Math.round(r.doneN/tot*100):0)+'%"></span></div><p>Llevas <b>'+r.doneN+' de '+tot+'</b> tareas. Faltan <b>'+Math.max(0,Math.round((r.E-today())/864e5))+'</b> días para el examen'+(r.days.length?'; te salen unos <b>'+r.perDay+' minutos</b> por día de estudio.':'.')+'</p>'+
-                (r.perDay>150?'<p class="pl-warn"><b>¿Poco tiempo?</b> Si el examen está muy cerca, usa el <a href="#repaso-exprés-el-examen-en-3-días">Repaso exprés</a>: lo imprescindible en unas 2 horas al día.</p><p class="pl-warn">Son muchos minutos al día. Si puedes, añade días de estudio. Si no, quita la Parte 0 si ya la dominas, y marca como hecho lo que ya sepas hacer («Ya lo sé hacer»): el plan se reparte solo con lo que queda.</p>':'')+'</div>';
+                (r.expres?'<p class="pl-note"><b>Modo exprés.</b> Con tan pocos días no da tiempo a todo, así que el plan usa el repaso exprés, el examen modelo y el simulacro tipo test. <button type="button" class="link-btn pl-full">Prefiero el plan completo</button></p>':(c.full?'<p class="pl-note">Plan completo. <button type="button" class="link-btn pl-xp">Volver al modo exprés</button></p>':''))+(!r.expres&&r.perDay>150?'<p class="pl-warn"><b>¿Poco tiempo?</b> Si el examen está muy cerca, usa el <a href="#repaso-exprés-el-examen-en-3-días">Repaso exprés</a>: lo imprescindible en unas 2 horas al día.</p><p class="pl-warn">Son muchos minutos al día. Si puedes, añade días de estudio. Si no, quita la Parte 0 si ya la dominas, y marca como hecho lo que ya sepas hacer («Ya lo sé hacer»): el plan se reparte solo con lo que queda.</p>':'')+'</div>';
       if(r.extra&&r.extra.length)h+='<p class="pl-note">No caben todos los simulacros. Si te sobra tiempo, haz también: '+r.extra.map(function(u){return'<a href="#'+u.sec.id+'" data-u="'+esc(u.id)+'">'+esc(u.title.replace(/^Examen · /,''))+'</a>';}).join(', ')+'.</p>';
       if(!left)h+='<p class="pl-empty">¡Lo tienes todo hecho! Repasa la chuleta y repite el simulacro que peor te saliera.</p>';
       var t0=today();
@@ -13979,6 +13989,7 @@ function paint(){
     app.innerHTML=h;
     app.querySelector('.pl-exam').addEventListener('change',function(e){var c=cfg();c.exam=e.target.value;saveCfg(c);paint();});
     app.querySelector('.pl-start').addEventListener('change',function(e){var c=cfg();c.start=e.target.value;saveCfg(c);paint();});
+    [].forEach.call(app.querySelectorAll('.pl-full,.pl-xp'),function(b){b.addEventListener('click',function(){var c=cfg();c.full=b.classList.contains('pl-full');saveCfg(c);paint();});});
     [].forEach.call(app.querySelectorAll('.chip'),function(b){b.addEventListener('click',function(){var c=cfg();
       if(b.hasAttribute('data-day')){var d=+b.getAttribute('data-day'),i=c.days.indexOf(d);if(i>-1){if(c.days.length>1)c.days.splice(i,1);}else c.days.push(d);}
       else if(b.hasAttribute('data-tema')){var t=+b.getAttribute('data-tema'),j=c.temas.indexOf(t);if(j>-1){if(c.temas.length>1)c.temas.splice(j,1);}else c.temas.push(t);}

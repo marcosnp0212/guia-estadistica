@@ -46,11 +46,24 @@ function buildUnits(){
   return{groups:groups,base:base,exam:exam};
 }
 var U=buildUnits();
+function expresSeq(){
+  var R=document.getElementById('repaso-exprés-el-examen-en-3-días');if(!R)return null;
+  var rs=[].slice.call(R.querySelectorAll(':scope > section.level2')).filter(function(s){return !/^el-plan/.test(s.id);});
+  var mk=function(s,pre){var w=words(s);return{id:'x:'+s.id,sec:s,title:pre+A.secTitle(s).replace(/\s+/g,' ').trim(),min:clamp(Math.round(w/25),10,30),kind:'xp',done:function(){return !!get('done:'+s.id,false);}};};
+  var r=rs.map(function(s){return mk(s,'Repaso exprés · ');});
+  var M=document.getElementById('examen-modelo-de-la-profesora');
+  var m=M?[].slice.call(M.querySelectorAll(':scope > section.level2')).map(function(s){var u=mk(s,'Examen modelo · ');u.min=/^cómo-es/.test(s.id)?8:(/corta/.test(s.id)?30:25);return u;}):[];
+  var sim=U.exam.filter(function(u){return u.kind==='sim'&&u.sec.querySelector('.testsim');});
+  var trap=r.filter(function(u){return /trampas/.test(u.sec.id);}),rt=r.filter(function(u){return !/trampas/.test(u.sec.id);});
+  var seq=[];if(m[0])seq.push(m[0]);
+  seq=seq.concat(rt.slice(0,2),m.slice(1,3),rt.slice(2),m.slice(3),trap,sim);
+  return seq;
+}
 var ALLTEMAS=[];U.groups.forEach(function(g){g.temas.forEach(function(t){if(t>0&&ALLTEMAS.indexOf(t)<0)ALLTEMAS.push(t);});});ALLTEMAS.sort(function(a,b){return a-b;});
 
 /* ---- 2. Configuración ---- */
 function cfg(){var c=get('plan:cfg',null)||{};
-  if(!c.days)c.days=[1,2,3,4,5,6];if(!c.temas)c.temas=ALLTEMAS.slice();if(c.base===undefined)c.base=true;return c;}
+  if(!c.days)c.days=[1,2,3,4,5,6];if(!c.temas)c.temas=ALLTEMAS.slice();if(c.base===undefined)c.base=false;return c;}
 function saveCfg(c){set('plan:cfg',c);}
 
 /* ---- 3. Reparto ---- */
@@ -69,10 +82,13 @@ function schedule(){
   U.groups.forEach(function(g){var teo=g.teo.filter(inc),pr=g.pr.filter(inc);seq=seq.concat(interleave(teo,pr));});
   var nTem=c.temas.length;
   U.exam.forEach(function(u){if(u.kind==='exq'||nTem>=Math.min(3,ALLTEMAS.length))seq.push(u);});
+  var expres=false;
+  if(!c.full&&days.length){var tmin=seq.filter(function(u){return !u.done();}).reduce(function(a,u){return a+u.min;},0);
+    if(tmin/days.length>180){var xs=expresSeq();if(xs&&xs.length){seq=xs;expres=true;}}}
   var pend=seq.filter(function(u){return !u.done();}),doneN=seq.length-pend.length;
-  var res={days:[],seq:seq,pend:pend,doneN:doneN,E:E,S:S,repaso:null,perDay:0,extra:[]};
+  var res={days:[],seq:seq,pend:pend,doneN:doneN,E:E,S:S,repaso:null,perDay:0,extra:[],expres:expres};
   if(!days.length)return res;
-  if(days.length>=4){res.repaso=days.pop();}
+  if(days.length>=4&&!expres){res.repaso=days.pop();}
   var bigs=pend.filter(function(u){return u.big;}),norm=pend.filter(function(u){return !u.big;});
   bigs.sort(function(x,y){return (y.paper?1:0)-(x.paper?1:0);});
   var bigDays=Math.min(bigs.length,Math.max(days.length>=3?1:0,Math.floor(days.length/4)));res.extra=bigs.slice(bigDays);bigs=bigs.slice(0,bigDays);var nd=days.length-bigDays;
@@ -99,7 +115,7 @@ function paint(){
     else{
       var left=r.pend.length,tot=r.seq.length;
       h+='<div class="pl-sum"><div class="meter"><span style="width:'+(tot?Math.round(r.doneN/tot*100):0)+'%"></span></div><p>Llevas <b>'+r.doneN+' de '+tot+'</b> tareas. Faltan <b>'+Math.max(0,Math.round((r.E-today())/864e5))+'</b> días para el examen'+(r.days.length?'; te salen unos <b>'+r.perDay+' minutos</b> por día de estudio.':'.')+'</p>'+
-                (r.perDay>150?'<p class="pl-warn"><b>¿Poco tiempo?</b> Si el examen está muy cerca, usa el <a href="#repaso-exprés-el-examen-en-3-días">Repaso exprés</a>: lo imprescindible en unas 2 horas al día.</p><p class="pl-warn">Son muchos minutos al día. Si puedes, añade días de estudio. Si no, quita la Parte 0 si ya la dominas, y marca como hecho lo que ya sepas hacer («Ya lo sé hacer»): el plan se reparte solo con lo que queda.</p>':'')+'</div>';
+                (r.expres?'<p class="pl-note"><b>Modo exprés.</b> Con tan pocos días no da tiempo a todo, así que el plan usa el repaso exprés, el examen modelo y el simulacro tipo test. <button type="button" class="link-btn pl-full">Prefiero el plan completo</button></p>':(c.full?'<p class="pl-note">Plan completo. <button type="button" class="link-btn pl-xp">Volver al modo exprés</button></p>':''))+(!r.expres&&r.perDay>150?'<p class="pl-warn"><b>¿Poco tiempo?</b> Si el examen está muy cerca, usa el <a href="#repaso-exprés-el-examen-en-3-días">Repaso exprés</a>: lo imprescindible en unas 2 horas al día.</p><p class="pl-warn">Son muchos minutos al día. Si puedes, añade días de estudio. Si no, quita la Parte 0 si ya la dominas, y marca como hecho lo que ya sepas hacer («Ya lo sé hacer»): el plan se reparte solo con lo que queda.</p>':'')+'</div>';
       if(r.extra&&r.extra.length)h+='<p class="pl-note">No caben todos los simulacros. Si te sobra tiempo, haz también: '+r.extra.map(function(u){return'<a href="#'+u.sec.id+'" data-u="'+esc(u.id)+'">'+esc(u.title.replace(/^Examen · /,''))+'</a>';}).join(', ')+'.</p>';
       if(!left)h+='<p class="pl-empty">¡Lo tienes todo hecho! Repasa la chuleta y repite el simulacro que peor te saliera.</p>';
       var t0=today();
@@ -110,6 +126,7 @@ function paint(){
     app.innerHTML=h;
     app.querySelector('.pl-exam').addEventListener('change',function(e){var c=cfg();c.exam=e.target.value;saveCfg(c);paint();});
     app.querySelector('.pl-start').addEventListener('change',function(e){var c=cfg();c.start=e.target.value;saveCfg(c);paint();});
+    [].forEach.call(app.querySelectorAll('.pl-full,.pl-xp'),function(b){b.addEventListener('click',function(){var c=cfg();c.full=b.classList.contains('pl-full');saveCfg(c);paint();});});
     [].forEach.call(app.querySelectorAll('.chip'),function(b){b.addEventListener('click',function(){var c=cfg();
       if(b.hasAttribute('data-day')){var d=+b.getAttribute('data-day'),i=c.days.indexOf(d);if(i>-1){if(c.days.length>1)c.days.splice(i,1);}else c.days.push(d);}
       else if(b.hasAttribute('data-tema')){var t=+b.getAttribute('data-tema'),j=c.temas.indexOf(t);if(j>-1){if(c.temas.length>1)c.temas.splice(j,1);}else c.temas.push(t);}

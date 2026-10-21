@@ -16,7 +16,9 @@ Todos los scripts usan rutas absolutas bajo `/home/claude/`.
 
 ## Estructura
 - `build/alumna/*.md` — el texto de la guía de la alumna (se concatenan por orden de nombre). `build/tutor/00_tutor.md` — guía del tutor.
-  - `00_inicio.md` Antes de empezar + vídeos + **Repaso exprés** + Parte 0. `01..05` temas, boletines, prácticas. `05r_modelo.md` examen modelo de la profesora con solucionario. `05s_simulacros.md` simulacros (S4 = tipo test). `06_anexos.md` chuleta, listas y plan.
+  - Zonas (el índice las muestra con etiquetas, ver `course.js` 2d): **Aprender** `01..05p` (temas, boletines, prácticas; cada tema lleva su vídeo arriba) · **Examen** `05q_repaso.md` (repaso exprés), `05r_modelo.md` (examen modelo resuelto), `05s_simulacros.md` (tipo test S4, papel S3, Excel sin ordenador) · **Herramientas** `06a_chuleta`, `06b_traductor`, `06c_lista`, `06d_plan`, `06e_base` (Parte 0 y 0 bis), `06f_descargas` · **Por si acaso** `07_por_si_acaso.md` (simulacros con Excel S1/S2, archivos, lista con Excel). `00_inicio.md` = Cómo usar esta guía.
+  - Tono neutro (para cualquier estudiante), de tú. Sin créditos. La portada está en `web/hero_alumna.html` (tres botones «¿Qué necesitas?» + tarjetas de tema).
+  - El plan (`plan.js`) pasa solo a **modo exprés** si salen más de 180 min/día.
   - Recuadros: `::: {custom-style="Idea|Ojo|Truco|Excel|Mano|Resultado|Enunciado|Otra"}`. Componentes: `::: {.video data-v="t1"}`, `::: {.practica data-tipo=...}`, `::: {.simulacro data-sim="S1"}`, `::: {.testsim data-sim="S4"}`, `::: {.plan-app}`.
 - `web/` — maquetación HTML: `build_web.py` (pandoc + `guia.lua`), `guia.css`, `guia.js`, `features.js`, `course.js` (prácticas, simulacros, vídeos, simulacro tipo test, comprobaciones), `plan.js` (plan de estudio adaptativo), `sheet/` (hoja de cálculo en el navegador). Todo se incrusta en un único HTML.
 - `xl2/` — generadores de los Excel (solucionario, prácticas, simulacros, plantillas) y los JSON de prácticas/simulacros/comprobaciones. `xl3/` — simulacro en papel (S3), preguntas de Excel sin ordenador, simulacro tipo test S4 (`mk_s4.py` → `sim_test.json`).

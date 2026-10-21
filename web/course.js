@@ -438,7 +438,7 @@ seq.forEach(function(s,i){var nx=seq[i+1];var foot=s.querySelector(':scope > .se
 
 /* ---------- 5. Continuar donde lo dejé ---------- */
 var tmr;window.addEventListener('scroll',function(){clearTimeout(tmr);tmr=setTimeout(function(){
-  var cur=null;for(var i=0;i<seq.length;i++){if(seq[i].getBoundingClientRect().top<=120)cur=seq[i];else break;}
+  var cur=null;for(var i=0;i<seq.length;i++){if(seq[i].offsetParent===null)continue;if(seq[i].getBoundingClientRect().top<=120)cur=seq[i];else break;}
   if(cur)set('last',cur.id);},400);},{passive:true});
 var hero=document.querySelector('.hero');var last=get('last',null);
 if(hero&&last&&document.getElementById(last)){

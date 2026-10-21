@@ -4,7 +4,7 @@
 **🧠 Si te quedan pocos días, empieza aquí.** El examen es como el modelo de la profesora: 30 preguntas tipo test y 10 de respuesta corta. Casi todo consiste en **saber qué es cada cosa, qué fórmula va en cada caso y qué trampa evitar**. No hace falta leer la guía entera. Aquí tienes lo imprescindible de cada tema, explicado con calma y con un ejemplo. Si algo no se entiende, al final de cada tema hay un enlace al apartado completo.
 :::
 
-**¿Qué hago cada día?** Pon la fecha del examen en el [Plan de estudio](#plan-de-estudio) y elige el plan **Exprés**. Te reparte este repaso, los ejercicios clave del boletín, el examen modelo y el simulacro entre los días que tengas.
+**¿Qué hago cada día?** Pon la fecha del examen en [Mi plan](#plan-de-estudio) y elige el plan **Exprés**. Te reparte este repaso, los ejercicios clave del boletín, el examen modelo y el simulacro entre los días que tengas.
 
 ## Tema 1: lo imprescindible
 

@@ -1,5 +1,5 @@
 ---
-title: "Estadística con Excel, desde cero"
+title: "Estadística"
 subtitle: "Guía de estudio · Temas 1 a 4 · Grado en RRLL y RRHH (UVigo, curso 2026/27)"
 lang: es
 ---
@@ -48,20 +48,23 @@ Vas a ver estas cajas de colores:
 
 ## Cómo estudiar con esta guía
 
-La guía tiene cuatro zonas, que están también en el índice de la izquierda:
+Arriba tienes cinco pestañas:
 
-- **Aprender.** Los cuatro temas. Cada uno empieza con su **vídeo** (voz, subtítulos y animaciones) y sigue con la teoría, los ejercicios del boletín resueltos y las prácticas que se corrigen solas.
-- **Examen.** El repaso exprés para los últimos días, el examen modelo de la profesora resuelto y los simulacros con nota.
-- **Herramientas.** La chuleta de fórmulas, el traductor de enunciados, el plan de estudio, la lista para el examen, un repaso de base (porcentajes, calculadora y Excel desde cero) y las descargas.
-- **Por si acaso.** Lo que haría falta si el examen fuera con ordenador.
+- **Inicio.** Lo que te toca hoy, los cuatro temas y el acceso al examen.
+- **Mi plan.** Pones el día del examen y la guía te reparte el trabajo día a día.
+- **Temas.** Cada tema tiene cuatro partes: **Aprender** (el vídeo y la teoría), **Ejercicios resueltos** (los del boletín), **Practica** (ejercicios que se corrigen solos) y **¿Lo sé hacer?** (una lista para comprobarlo).
+- **Examen.** El repaso exprés, el examen modelo de la profesora resuelto y los simulacros con nota.
+- **Herramientas.** La chuleta de fórmulas, el traductor de enunciados, la lista para el examen, el repaso de números y de Excel, y las descargas.
+
+En cada pantalla, el desplegable **Apartado** te lleva directamente a cualquier apartado, sin pasar por los de en medio. Abajo tienes los botones **Anterior** y **Siguiente**.
 
 Cada apartado de un tema sigue el mismo camino:
 
 1. **Lee** la explicación y haz el ejemplo: primero a mano, con papel y calculadora; después, si quieres, en Excel.
 2. **Comprueba** que lo has entendido: al final del apartado hay dos o tres preguntas cortas que se corrigen al momento. Si aciertas todas, el apartado queda marcado como hecho.
-3. Pulsa **Siguiente** y sigue.
+3. Pulsa **Siguiente**, abajo del todo, y sigue.
 
-El progreso se guarda solo en este navegador: cada persona tiene el suyo. La portada recuerda dónde lo dejaste.
+El progreso se guarda solo en este navegador: cada persona tiene el suyo. En Inicio tienes un botón para seguir donde lo dejaste.
 
 Mejor bloques cortos: 25 minutos con atención valen más que dos horas mirando la pantalla. Haz una pausa de 5 minutos entre bloques.
 
@@ -70,7 +73,7 @@ Mejor bloques cortos: 25 minutos con atención valen más que dos horas mirando 
 
 1. Vuelve a leer el apartado despacio y repite el ejemplo con papel y calculadora.
 2. Abre «No lo entiendo: explícamelo de otra forma» si el apartado lo tiene.
-3. Busca la palabra que no entiendes en el buscador del índice (tecla /).
+3. Busca la palabra que no entiendes con la lupa de arriba (o la tecla /).
 4. En los ejercicios, mira la solución **paso a paso**: abre solo el paso siguiente e intenta seguir tú.
-5. Si aun así no sale, apunta la duda con «Añadir una nota» y sigue con el siguiente apartado. Muchas veces se entiende al ver el siguiente. Tus notas quedan reunidas en «Mis notas».
+5. Si aun así no sale, apunta la duda con «Añadir una nota» y sigue con el siguiente apartado. Muchas veces se entiende al ver el siguiente. Tus notas quedan reunidas en el icono del papel, arriba a la derecha.
 :::

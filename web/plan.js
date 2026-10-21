@@ -79,8 +79,8 @@ function xpBlocks(temas){
       add('r1a',h3[0]||r,T+'Repaso: variables, centro y dispersión',25);
       add('r1b',h3[3]||r,T+'Repaso: cuartiles y caja, forma y grupos',20);}
     else add('r'+t,r,T+'Repaso: lo imprescindible',X.rep);
-    var c=byId('comprueba-que-sabes-hacer-tema-'+t);add('c'+t,c,T+'Comprueba que sabes hacer: marca lo que ya sabes',t===1?10:5,function(){return canDone(c);});
-    X.ej[1].forEach(function(e){var s=ejOf(X.ej[0],e[0]);if(s)add('e'+t+'-'+e[0],s,T+'Boletín · '+A.secTitle(s).replace(/\s+/g,' ').trim(),e[1],dn(s));});
+    var c=byId('comprueba-que-sabes-hacer-tema-'+t);add('c'+t,c,T+'¿Lo sé hacer? Marca lo que ya sabes',t===1?10:5,function(){return canDone(c);});
+    X.ej[1].forEach(function(e){var s=ejOf(X.ej[0],e[0]);if(s)add('e'+t+'-'+e[0],s,T+A.secTitle(s).replace(/\s+/g,' ').trim(),e[1],dn(s));});
     var m=byId(X.mod[0]);add('m'+t,m,T+'Examen modelo, preguntas '+X.mod[1],X.mod[2],m&&dn(m));
   });
   var P=byId('respuesta-corta-p1-a-p10');add('p',P,'Examen modelo · Respuesta corta, P1 a P10',35,P&&dn(P));
@@ -173,18 +173,20 @@ function bindLinks(root,r){var all=allItems(r);function find(id){return all.filt
   var u=find(a.getAttribute('data-u'));if(!u)return;
   if(u.lvl){var b=u.sec.querySelector('.practica');if(b&&b._setLevel)b._setLevel(u.lvl);}A.goTo(u.sec);});});
   [].forEach.call(root.querySelectorAll('input[data-x]'),function(x){x.addEventListener('change',function(){set(x.getAttribute('data-x'),x.checked);paint();});});}
+var moreOpen=false;
 function paint(){
   var c=cfg(),r=schedule();
   if(app){
-    var h='<div class="pl-cfg"><div class="pl-row"><label>Día del examen<input type="date" class="pl-exam" value="'+(c.exam||'')+'"></label><label>Empiezo <span class="opt">(si no, hoy)</span><input type="date" class="pl-start" value="'+(c.start||'')+'"></label></div>'+
-      '<div class="pl-row"><span class="pl-lab">Días que estudio</span><div class="chips">'+DCI.map(function(d,i){return'<button type="button" class="chip'+(c.days.indexOf(d)>-1?' on':'')+'" data-day="'+d+'" aria-pressed="'+(c.days.indexOf(d)>-1)+'">'+DC[i]+'</button>';}).join('')+'</div></div>'+
-      '<div class="pl-row"><span class="pl-lab">Qué entra</span><div class="chips">'+ALLTEMAS.map(function(t){return'<button type="button" class="chip'+(c.temas.indexOf(t)>-1?' on':'')+'" data-tema="'+t+'" aria-pressed="'+(c.temas.indexOf(t)>-1)+'">Tema '+t+'</button>';}).join('')+
-      '<button type="button" class="chip'+(c.base?' on':'')+'" data-base="1" aria-pressed="'+c.base+'">Parte 0 (base)</button></div></div>';
     var cur=r?(r.expres?'xp':'full'):(planMode(c)==='full'?'full':'xp');
-    h+='<div class="pl-row"><span class="pl-lab">Qué plan quiero</span><div class="chips">'+[['xp','Exprés'],['full','Completo']].map(function(m){
-        return'<button type="button" class="chip'+(cur===m[0]?' on':'')+'" data-mode="'+m[0]+'" aria-pressed="'+(cur===m[0])+'">'+m[1]+(r&&r.info.rec===m[0]?' · recomendado':'')+'</button>';}).join('')+'</div></div>'+
-      '<p class="pl-mode">'+(cur==='xp'?'<b>Exprés.</b> Lo imprescindible de cada tema: vídeo, repaso exprés, ejercicios clave del boletín y preguntas del examen modelo. Al final, la respuesta corta, Excel sin ordenador y el simulacro tipo test.':'<b>Completo.</b> Toda la guía: la teoría entera de cada tema, todos los ejercicios del boletín, las prácticas y los simulacros.')+
-      (r?' Te quedan unas <b>'+hm(cur==='xp'?r.info.hXp:r.info.hFull)+'</b> de estudio.':'')+'</p></div>';
+    var h='<div class="pl-cfg">'+
+      '<div class="pl-q"><span class="pl-n">1</span><label class="pl-qt" for="pl-exam">¿Cuándo es tu examen?</label><div class="pl-qa"><input type="date" id="pl-exam" class="pl-exam" value="'+(c.exam||'')+'"></div></div>'+
+      '<div class="pl-q"><span class="pl-n">2</span><span class="pl-qt">¿Qué días puedes estudiar?</span><div class="pl-qa chips">'+DCI.map(function(d,i){return'<button type="button" class="chip'+(c.days.indexOf(d)>-1?' on':'')+'" data-day="'+d+'" aria-pressed="'+(c.days.indexOf(d)>-1)+'" aria-label="'+DIAS[d]+'">'+DC[i]+'</button>';}).join('')+'</div></div>'+
+      '<div class="pl-q"><span class="pl-n">3</span><span class="pl-qt">¿Qué plan quieres?</span><div class="pl-qa pl-pick">'+[['xp','Exprés','Lo imprescindible de cada tema: vídeo, repaso exprés, ejercicios clave y examen modelo. Al final, el simulacro.'],['full','Completo','Toda la guía: la teoría entera, todos los ejercicios del boletín, las prácticas y los simulacros.']].map(function(m){
+        return'<button type="button" class="pl-opt'+(cur===m[0]?' on':'')+'" data-mode="'+m[0]+'" aria-pressed="'+(cur===m[0])+'"><b>'+m[1]+(r&&r.info.rec===m[0]?' <em>recomendado</em>':'')+'</b>'+m[2]+(r?' Te quedan unas '+hm(m[0]==='xp'?r.info.hXp:r.info.hFull)+'.':'')+'</button>';}).join('')+'</div></div>'+
+      '<details class="pl-more"'+(moreOpen?' open':'')+'><summary>Más opciones</summary>'+
+      '<div class="pl-row"><label>Empiezo otro día <span class="opt">(si no, hoy)</span><input type="date" class="pl-start" value="'+(c.start||'')+'"></label></div>'+
+      '<div class="pl-row"><span class="pl-lab">Qué entra</span><div class="chips">'+ALLTEMAS.map(function(t){return'<button type="button" class="chip'+(c.temas.indexOf(t)>-1?' on':'')+'" data-tema="'+t+'" aria-pressed="'+(c.temas.indexOf(t)>-1)+'">Tema '+t+'</button>';}).join('')+
+      '<button type="button" class="chip'+(c.base?' on':'')+'" data-base="1" aria-pressed="'+c.base+'">Repaso de números</button></div></div></details></div>';
     if(!r){h+='<p class="pl-empty">Pon el día del examen y aquí aparecerá tu plan, día a día.</p>';}
     else{
       var left=r.pend.length,tot=r.seq.length;
@@ -201,7 +203,8 @@ function paint(){
     app.innerHTML=h;
     app.querySelector('.pl-exam').addEventListener('change',function(e){var c=cfg();c.exam=e.target.value;saveCfg(c);paint();});
     app.querySelector('.pl-start').addEventListener('change',function(e){var c=cfg();c.start=e.target.value;saveCfg(c);paint();});
-    [].forEach.call(app.querySelectorAll('.chip'),function(b){b.addEventListener('click',function(){var c=cfg();
+    var md=app.querySelector('.pl-more');if(md)md.addEventListener('toggle',function(){moreOpen=md.open;});
+    [].forEach.call(app.querySelectorAll('.chip,.pl-opt'),function(b){b.addEventListener('click',function(){var c=cfg();
       if(b.hasAttribute('data-day')){var d=+b.getAttribute('data-day'),i=c.days.indexOf(d);if(i>-1){if(c.days.length>1)c.days.splice(i,1);}else c.days.push(d);}
       else if(b.hasAttribute('data-tema')){var t=+b.getAttribute('data-tema'),j=c.temas.indexOf(t);if(j>-1){if(c.temas.length>1)c.temas.splice(j,1);}else c.temas.push(t);}
       else if(b.hasAttribute('data-mode')){c.mode=b.getAttribute('data-mode');delete c.full;}

@@ -16,11 +16,11 @@ def build(folder,out,title,short,hero=None,endnote='',guide='alumna'):
     md=re.sub(r'^\$\$(.+?)\$\$[ \t]*$',lambda m:'$$'+re.sub(r'(\d+)\{,\}(\d+)',r'\\text{\1,\2}',m.group(1))+'$$',md,flags=re.M)
     tmp=f'/home/claude/web/{out}.md';open(tmp,'w').write(md)
     args=['pandoc','-f','markdown',tmp,'-t','html5','-s','--template=template.html','--lua-filter=guia.lua','--section-divs','--toc','--toc-depth=2',
-          '--mathml','--embed-resources','--css=guia.css','--include-after-body=guia.js']+(['--include-after-body=data.html','--include-after-body=sheetlib.html'] if guide=='alumna' else [])+['--include-after-body=features.js']+(['--include-after-body=course.js','--include-after-body=plan.js'] if guide=='alumna' else [])+['-M','pagetitle='+title,'-V','shorttitle='+short,'-V','endnote='+endnote,'-V','guide='+guide,'-o',f'/home/claude/web/{out}.html']
+          '--mathml','--embed-resources','--css=guia.css','--include-after-body=guia.js']+(['--include-after-body=data.html','--include-after-body=sheetlib.html'] if guide=='alumna' else [])+['--include-after-body=features.js']+(['--include-after-body=course.js','--include-after-body=plan.js','--include-after-body=nav.js'] if guide=='alumna' else [])+['-M','pagetitle='+title,'-V','shorttitle='+short,'-V','endnote='+endnote,'-V','guide='+guide,'-o',f'/home/claude/web/{out}.html']
     if hero: args+=['--include-before-body',hero]
     subprocess.run(args,check=True,cwd='/home/claude/web')
 if __name__=='__main__':
     data_script()
     sheet_lib()
-    build('/home/claude/build/alumna','alumna','Estadística con Excel, desde cero','Estadística con Excel','hero_alumna.html','Guía de estudio · Temas 1 a 4 · Estadística (RRLL y RRHH, UVigo)')
+    build('/home/claude/build/alumna','alumna','Estadística (Temas 1 a 4)','Estadística','hero_alumna.html','Guía de estudio de Estadística, Temas 1 a 4 (RRLL y RRHH, UVigo). Material de estudio no oficial.')
     build('/home/claude/build/tutor','tutor','Guía del tutor · Estadística con Excel','Guía del tutor','hero_tutor.html','Guía del tutor · Estadística con Excel',guide='tutor')

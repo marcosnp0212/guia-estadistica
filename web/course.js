@@ -240,8 +240,9 @@ var pendingLevel={};
     panel.appendChild(rs);
   }
   /* la hoja se monta solo cuando la práctica se ve por primera vez */
-  var drawn=false;function first(){if(drawn)return;drawn=true;if(window.loadSheetLib)window.loadSheetLib();draw();}
-  box._setLevel=function(l){cur=l;set('pr-lvl:'+tipo,l);drawn=true;if(window.loadSheetLib)window.loadSheetLib();draw();};
+  var drawn=false;function withLib(f){if(window.loadSheetLib)window.loadSheetLib(f);else f();}
+  function first(){if(drawn)return;drawn=true;panel.innerHTML='<p class="pr-note">Cargando la hoja de cálculo…</p>';withLib(draw);}
+  box._setLevel=function(l){cur=l;set('pr-lvl:'+tipo,l);drawn=true;withLib(draw);};
   drawTabs();
   if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es.some(function(e){return e.isIntersecting;})){io.disconnect();first();}},{rootMargin:'300px'});io.observe(box);}else first();
 });
@@ -462,14 +463,10 @@ document.addEventListener('click',function(e){
   else{var s=simSec[a.getAttribute('data-sim')];if(s)A.goTo(s.closest('section'));}
 });
 /* ---------- 7. Descargas ---------- */
-var FS=D.fsize||{},F=null;
-function fileB64(name){if(!F){var s=document.getElementById('guia-files');F=s?JSON.parse(s.textContent):{};}return F[name];}
+var FS=D.fsize||{};
 [].slice.call(doc.querySelectorAll('.descarga')).forEach(function(box){
   var name=box.getAttribute('data-file'),kb=FS[name];if(kb==null)return;
-  var btn=el('button','btn dl-btn','Descargar <span class="dl-meta">'+esc(name)+' · '+kb+' KB</span>');btn.type='button';
-  btn.addEventListener('click',function(){var b64=fileB64(name);if(!b64)return;var bin=atob(b64),u=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);
-    var url=URL.createObjectURL(new Blob([u],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}));
-    var a=el('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url);},4000);});
+  var btn=el('a','btn dl-btn','Descargar <span class="dl-meta">'+esc(name)+' · '+kb+' KB</span>');btn.href='assets/'+encodeURIComponent(name);btn.setAttribute('download',name);
   box.appendChild(btn);
 });
 A.paint();

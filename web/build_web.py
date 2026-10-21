@@ -3,17 +3,22 @@ X='/home/claude/xl2/'
 FILES=['Solucionario_estadistica.xlsx','Practicas_autocorregidas.xlsx','Simulacros_autocorregidos.xlsx','Plantillas_estadistica.xlsx','Estadistica_ejercicios_resueltos.xlsx']
 def sheet_lib():
     d='/home/claude/web/sheet/'
-    # la hoja de cálculo pesa 1,7 MB: va como texto y solo se ejecuta la primera vez que una práctica la necesita (loadSheetLib)
-    js='\n;\n'.join(open(d+f).read() for f in ['hot.js','hf-es.js','hfsetup.js'])
-    loader="window.loadSheetLib=function(){if(window.Handsontable)return;var s=document.getElementById('sheetlib-src');if(!s)return;var e=document.createElement('script');e.textContent=s.textContent;document.head.appendChild(e);};"
-    open('/home/claude/web/sheetlib.html','w').write('<style>'+open(d+'hot.css').read()+'</style><script type="text/plain" id="sheetlib-src">'+js+'</script><script>'+loader+'</script>')
+    # la hoja de cálculo (1,7 MB) va en un archivo aparte, assets/sheet.js, que solo se descarga
+    # la primera vez que una práctica la necesita (loadSheetLib); el navegador la guarda para la próxima
+    os.makedirs('/home/claude/web/assets',exist_ok=True)
+    open('/home/claude/web/assets/sheet.js','w').write('\n;\n'.join(open(d+f).read() for f in ['hot.js','hf-es.js','hfsetup.js']))
+    loader=("window.loadSheetLib=function(cb){if(window.Handsontable){if(cb)cb();return;}var q=window._shq=window._shq||[];if(cb)q.push(cb);if(window._shl)return;window._shl=1;"
+            "var e=document.createElement('script');e.src='assets/sheet.js';function done(){q.splice(0).forEach(function(f){f();});}e.onload=done;e.onerror=function(){window._shl=0;done();};document.head.appendChild(e);};")
+    open('/home/claude/web/sheetlib.html','w').write('<style>'+open(d+'hot.css').read()+'</style><script>'+loader+'</script>')
 def data_script():
     d={'practicas':json.load(open(X+'practicas.json')),'simulacros':json.load(open(X+'simulacros.json'))+json.load(open('/home/claude/xl3/sim_papel.json')),'checks':{**json.load(open(X+'checks.json')),**json.load(open('/home/claude/xl3/checks_papel.json'))},'tests':json.load(open('/home/claude/xl3/sim_test.json'))}
     p=base64.b64encode(json.dumps(d,ensure_ascii=False).encode()).decode()
-    f={n:base64.b64encode(open('/home/claude/entrega/'+n,'rb').read()).decode() for n in FILES}
-    # los Excel de descarga van como texto aparte y solo se leen al pulsar «Descargar»
-    fs={n:round(len(v)*0.75/1024) for n,v in f.items()}
-    open('/home/claude/web/data.html','w').write('<script>(function(){var b=atob("'+p+'"),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);window.GUIA_DATA=JSON.parse(new TextDecoder().decode(u));window.GUIA_DATA.fsize='+json.dumps(fs)+';})();</script><script type="application/json" id="guia-files">'+json.dumps(f)+'</script>')
+    # los Excel de descarga van como archivos normales en assets/
+    import shutil
+    os.makedirs('/home/claude/web/assets',exist_ok=True)
+    for n in FILES: shutil.copy('/home/claude/entrega/'+n,'/home/claude/web/assets/'+n)
+    fs={n:round(os.path.getsize('/home/claude/entrega/'+n)/1024) for n in FILES}
+    open('/home/claude/web/data.html','w').write('<script>(function(){var b=atob("'+p+'"),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);window.GUIA_DATA=JSON.parse(new TextDecoder().decode(u));window.GUIA_DATA.fsize='+json.dumps(fs)+';})();</script>')
 def build(folder,out,title,short,hero=None,endnote='',guide='alumna'):
     parts=sorted(f for f in os.listdir(folder) if f.endswith('.md'))
     md='\n\n'.join(open(os.path.join(folder,p),encoding='utf-8').read() for p in parts)

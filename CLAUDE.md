@@ -27,7 +27,7 @@ Todos los scripts usan rutas absolutas bajo `/home/claude/`.
 ## Construir y publicar
 ```bash
 cd /home/claude/web && python3 build_web.py          # genera web/alumna.html y web/tutor.html
-cp /home/claude/web/alumna.html /home/claude/docs/index.html 2>/dev/null || cp web/alumna.html docs/index.html
+cd <raíz del repo> && cp web/alumna.html docs/index.html   # luego commit y push: GitHub Pages publica docs/
 ```
 Comprueba con Playwright (Chromium en /opt/pw-browsers/chromium) que no hay errores de consola, y prueba en 390 px de ancho.
 

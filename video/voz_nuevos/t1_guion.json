@@ -1,0 +1,22 @@
+[
+ {
+  "id": "f91ad1e312870",
+  "texto": "Una propiedad de la media que la profesora pide como ejercicio de «justifica e interpreta»: la suma de las desviaciones a la media siempre es 0. Es decir, si a cada dato le restas la media y sumas todo, da 0.",
+  "subtitulo": "Una propiedad de la media que la profesora pide como ejercicio de «justifica e interpreta»: la suma de las desviaciones a la media siempre es 0. Es decir, si a cada dato le restas la media y sumas todo, da 0."
+ },
+ {
+  "id": "f84479f55ca35",
+  "texto": "La justificación: la suma de equis sub i menos equis barra es la suma de los datos menos n veces la media. Pero n por la media es justo la suma de los datos, porque la media es esa suma entre n. Así que queda la suma de los datos menos la suma de los datos: 0.",
+  "subtitulo": "La justificación: la suma de equis sub i menos equis barra es la suma de los datos menos n veces la media. Pero n por la media es justo la suma de los datos, porque la media es esa suma entre n. Así que queda la suma de los datos menos la suma de los datos: 0."
+ },
+ {
+  "id": "f08735af7121e",
+  "texto": "Y la interpretación: la media es el punto de equilibrio de los datos. Lo que unos datos están por encima de la media se compensa exactamente con lo que otros están por debajo.",
+  "subtitulo": "Y la interpretación: la media es el punto de equilibrio de los datos. Lo que unos datos están por encima de la media se compensa exactamente con lo que otros están por debajo."
+ },
+ {
+  "id": "f9fee020584c3",
+  "texto": "En la hoja de los hermanos de clase, esa columna suma un número rarísimo, menos 4,2 por 10 elevado a menos 15. Es un 0 con un error de redondeo del ordenador.",
+  "subtitulo": "En la hoja de los hermanos de clase, esa columna suma un número rarísimo, menos 4,2 por 10 elevado a menos 15. Es un 0 con un error de redondeo del ordenador."
+ }
+]

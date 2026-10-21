@@ -1,0 +1,36 @@
+:root{--ink:#1d2433;--muted:#5b6475;--bg:#fbfaf7;--card:#ffffff;--blue:#1F4E79;--blue2:#2E75B6;--line:#e3e1da}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#e8e6e1;--muted:#a9b0bd;--bg:#16181d;--card:#1e2128;--blue:#8fbfe8;--blue2:#7fb3e0;--line:#2e323b}}
+html{background:var(--bg)}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;font-size:17px;line-height:1.65;color:var(--ink);background:var(--bg);max-width:860px;margin:0 auto;padding:24px 16px 80px}
+header#title-block-header{border-bottom:3px solid var(--blue2);margin-bottom:24px;padding-bottom:8px}
+h1.title{font-size:2.1em;color:var(--blue);margin:0.2em 0}
+p.subtitle{color:var(--muted);font-size:1.1em;margin-top:0}
+h1{color:var(--blue);font-size:1.75em;margin-top:2.2em;padding-top:.6em;border-top:2px solid var(--line)}
+h2{color:var(--blue2);font-size:1.35em;margin-top:1.8em}
+h3{color:#1F7A5C;font-size:1.15em;margin-top:1.5em}
+h4{color:#7A4E1F;font-size:1.05em}
+p{text-align:justify;hyphens:auto}
+code{font-family:Consolas,"Cascadia Mono",monospace;background:#eef4fb;color:#0d47a1;padding:1px 5px;border-radius:4px;font-size:.92em;font-weight:600;white-space:nowrap}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) code{background:#23324a;color:#9cc7ff}}
+table{border-collapse:collapse;margin:14px 0;font-size:.95em;display:block;overflow-x:auto;max-width:100%}
+th,td{border:1px solid var(--line);padding:5px 10px}
+th{background:#e8f0f8;color:#1F4E79}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) th{background:#253244;color:#cfe3f7}}
+img{max-width:100%;height:auto;display:block;margin:10px auto;background:#fff;border-radius:6px}
+div[data-custom-style]{border-radius:8px;padding:10px 14px;margin:14px 0;border-left:6px solid}
+div[data-custom-style] p{margin:.35em 0;text-align:left}
+div[data-custom-style="Truco"]{background:#e8f5e9;border-color:#2e7d32}
+div[data-custom-style="Ojo"]{background:#fff3e0;border-color:#e65100}
+div[data-custom-style="Excel"]{background:#e3f2fd;border-color:#1565c0}
+div[data-custom-style="Resultado"]{background:#fffde7;border-color:#f9a825}
+div[data-custom-style="Idea"]{background:#f3e5f5;border-color:#6a1b9a}
+div[data-custom-style="Enunciado"]{background:#f2f2f2;border-color:#7f7f7f}
+div[data-custom-style="Formula"]{border:none;padding:0;text-align:center}
+div[data-custom-style="Formula"] img{display:inline-block;max-width:100%;height:auto}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) div[data-custom-style]:not([data-custom-style="Formula"]){color:#1d2433}:root:not([data-theme="light"]) div[data-custom-style] code{background:#ffffffaa;color:#0d47a1}}
+nav#TOC{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 18px;margin-bottom:28px;font-size:.95em}
+nav#TOC::before{content:"Ir a…";font-weight:700;color:var(--blue)}
+nav#TOC ul{padding-left:18px}nav#TOC a{color:var(--blue2);text-decoration:none}
+nav#TOC > ul > li > ul{display:none}
+nav#TOC > ul > li:hover > ul{display:block}
+@media print{nav#TOC{display:none}body{max-width:none;font-size:12pt}}

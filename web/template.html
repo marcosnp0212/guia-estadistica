@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$pagetitle$</title>
+<script>
+try{var t=localStorage.getItem('guia-tema');if(t)document.documentElement.setAttribute('data-theme',t);if(localStorage.getItem('guia-sb')==='0')document.documentElement.classList.add('sb-off');}catch(e){}
+</script>
+$for(css)$
+<link rel="stylesheet" href="$css$">
+$endfor$
+</head>
+<body data-guide="$guide$">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="progress" aria-hidden="true"><span></span></div>
+<header class="topbar">
+  <button class="nav-toggle" aria-controls="indice" aria-expanded="false">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <span>Índice</span>
+  </button>
+  <span class="topbar-title">$shorttitle$</span>
+  <span class="here" aria-live="polite"></span>
+  <button class="theme-toggle" aria-label="Cambiar entre modo claro y oscuro">
+    <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="currentColor"/></svg>
+    <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+  </button>
+</header>
+<aside class="sidebar" id="indice" aria-label="Índice">
+  <div class="sidebar-head">
+    <span class="sb-title">$shorttitle$</span>
+  </div>
+  <nav class="toc">
+$table-of-contents$
+  </nav>
+</aside>
+<div class="scrim" hidden></div>
+<main id="contenido">
+$for(include-before)$
+$include-before$
+$endfor$
+<article class="doc">
+$body$
+</article>
+<footer class="end">
+  <p>$endnote$</p>
+  <a href="#contenido" class="to-top">Volver al principio</a>
+</footer>
+</main>
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+ {
+  "id": "fce59f2b960fb",
+  "texto": "Dos índices más del apartado. El de Sauerbeck es la media aritmética de los índices simples de cada producto, sin ponderar: supone que todos los productos son igual de importantes. Con el pan, 120, y la leche, 122,22, sale 121,11.",
+  "subtitulo": "Dos índices más del apartado. El de Sauerbeck es la media aritmética de los índices simples de cada producto, sin ponderar: supone que todos los productos son igual de importantes. Con el pan, 120, y la leche, 122,22, sale 121,11."
+ },
+ {
+  "id": "fb6774b5fc80c",
+  "texto": "Y los índices de cantidades: igual que los de precios, pero intercambiando los papeles. Ahora lo que cambia arriba y abajo son las cantidades, y el precio se queda fijo: el del año base en Laspeyres y el de hoy en Paasche.",
+  "subtitulo": "Y los índices de cantidades: igual que los de precios, pero intercambiando los papeles. Ahora lo que cambia arriba y abajo son las cantidades, y el precio se queda fijo: el del año base en Laspeyres y el de hoy en Paasche."
+ },
+ {
+  "id": "f514a2ca235b7",
+  "texto": "Con el pan y la leche, Laspeyres de cantidades: 110 por 1 más 190 por 0,90, entre 100 por 1 más 200 por 0,90. 281 entre 280: 100,36. Se ha comprado un 0,36 por ciento más.",
+  "subtitulo": "Con el pan y la leche, Laspeyres de cantidades: 110 por 1 más 190 por 0,90, entre 100 por 1 más 200 por 0,90. 281 entre 280: 100,36. Se ha comprado un 0,36 por ciento más."
+ },
+ {
+  "id": "fd6cb9b383ee3",
+  "texto": "Y Paasche de cantidades, con los precios de hoy: 341 entre 340, 100,29.",
+  "subtitulo": "Y Paasche de cantidades, con los precios de hoy: 341 entre 340, 100,29."
+ },
+ {
+  "id": "f09e32ac41b4a",
+  "texto": "¿Por qué tantos índices? Laspeyres sobreestima la inflación: si algo sube mucho, la gente compra menos, pero Laspeyres sigue usando las cantidades antiguas. Paasche la subestima. Fisher queda en medio.",
+  "subtitulo": "¿Por qué tantos índices? Laspeyres sobreestima la inflación: si algo sube mucho, la gente compra menos, pero Laspeyres sigue usando las cantidades antiguas. Paasche la subestima. Fisher queda en medio."
+ }
+]

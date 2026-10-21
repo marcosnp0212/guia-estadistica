@@ -1,0 +1,37 @@
+[
+ {
+  "id": "f562168b353a4",
+  "texto": "Si los datos vienen en una tabla de doble entrada, cada pareja aparece n sub i j veces, así que en la suma también se multiplica por la frecuencia de la casilla.",
+  "subtitulo": "Si los datos vienen en una tabla de doble entrada, cada pareja aparece n sub i j veces, así que en la suma también se multiplica por la frecuencia de la casilla."
+ },
+ {
+  "id": "fc2880609383c",
+  "texto": "El ejemplo de los apuntes, la tabla de días de ausencia y asuntos propios del Tema 2.",
+  "subtitulo": "El ejemplo de los apuntes, la tabla de días de ausencia y asuntos propios del Tema 2."
+ },
+ {
+  "id": "f061376703a70",
+  "texto": "Para cada casilla, multiplica el valor de X, el de Y y la frecuencia. Por filas es más cómodo: en la fila de X igual a 1, 1 por, 2 por 1, más 3 por 3, más 5 por 2: 21. Las otras filas dan 72, 75 y 116.",
+  "subtitulo": "Para cada casilla, multiplica el valor de X, el de Y y la frecuencia. Por filas es más cómodo: en la fila de X igual a 1, 1 por, 2 por 1, más 3 por 3, más 5 por 2: 21. Las otras filas dan 72, 75 y 116."
+ },
+ {
+  "id": "fa982a7a8e4a1",
+  "texto": "La suma total es 284.",
+  "subtitulo": "La suma total es 284."
+ },
+ {
+  "id": "f04b695f56880",
+  "texto": "Las medias, con las marginales: la de X es 82 entre 32, 2,5625; la de Y, 111 entre 32, 3,46875.",
+  "subtitulo": "Las medias, con las marginales: la de X es 82 entre 32, 2,5625; la de Y, 111 entre 32, 3,46875."
+ },
+ {
+  "id": "fa5732b729e83",
+  "texto": "Y la covarianza: 284 entre 32, 8,875, menos el producto de las medias, 8,889. Da menos 0,014.",
+  "subtitulo": "Y la covarianza: 284 entre 32, 8,875, menos el producto de las medias, 8,889. Da menos 0,014."
+ },
+ {
+  "id": "f6b356054447a",
+  "texto": "Es negativa pero casi 0: prácticamente no hay relación lineal entre faltar más días y coger más días de asuntos propios.",
+  "subtitulo": "Es negativa pero casi 0: prácticamente no hay relación lineal entre faltar más días y coger más días de asuntos propios."
+ }
+]

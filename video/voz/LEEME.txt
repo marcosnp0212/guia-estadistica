@@ -1,0 +1,11 @@
+VOZ EN OFF DE LOS VÍDEOS (Temas 1 a 4)
+
+En Windows:
+1. Pon en esta misma carpeta los archivos t1_guion.json, t2_guion.json, t3_guion.json y t4_guion.json.
+2. Doble clic en generar_voz.bat.
+3. Elige la voz en español (por ejemplo, Helena o Pablo) y espera. Crea la carpeta "audio".
+4. Comprime la carpeta "audio" en un .zip y súbela al chat. Con eso se montan los vídeos finales.
+
+Si no aparece ninguna voz en español: Configuración > Hora e idioma > Voz > Agregar voces > Español (España).
+
+En Mac: abre Terminal en esta carpeta y escribe:  bash generar_voz_mac.sh

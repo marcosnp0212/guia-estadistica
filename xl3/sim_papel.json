@@ -1,0 +1,690 @@
+[
+ {
+  "id": "S3_P1",
+  "title": "Simulacro 3 · Pregunta 1 (2 puntos)",
+  "color": "tx",
+  "subtitle": "Cursos de formación de 20 empleados",
+  "blocks": [
+   {
+    "t": "p",
+    "text": "Número de cursos de formación que han hecho en el último año 20 empleados de una empresa.",
+    "b": true,
+    "i": false
+   },
+   {
+    "t": "datos",
+    "values": [
+     0,
+     1,
+     1,
+     2,
+     2,
+     2,
+     3,
+     1,
+     0,
+     2,
+     4,
+     2,
+     1,
+     3,
+     2,
+     1,
+     0,
+     2,
+     3,
+     5
+    ]
+   },
+   {
+    "t": "hint",
+    "text": "Hazlo en papel: tabla de frecuencias con xᵢ, nᵢ, Nᵢ, xᵢ·nᵢ y xᵢ²·nᵢ. Usa la receta de los apuntes para la mediana y los cuartiles."
+   },
+   {
+    "t": "h",
+    "text": "Preguntas"
+   },
+   {
+    "t": "ask",
+    "label": "Media",
+    "key": 1.85,
+    "dec": 2,
+    "tol": 0.0051,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      2.5,
+      "Has hecho la media de los valores distintos. Cada valor cuenta tantas veces como se repite."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Mediana (receta de los apuntes)",
+    "key": 2.0,
+    "dec": 2,
+    "tol": 0.0051,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "Moda",
+    "key": 2.0,
+    "dec": 0,
+    "tol": 0.51,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      7,
+      "Eso es la frecuencia más alta. La moda es el VALOR que tiene esa frecuencia."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Primer cuartil C₁ (receta de los apuntes)",
+    "key": 1.0,
+    "dec": 2,
+    "tol": 0.0051,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "Tercer cuartil C₃ (receta de los apuntes)",
+    "key": 2.5,
+    "dec": 2,
+    "tol": 0.0051,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      2,
+      "Con 3n/4 = 15 exacto, la receta dice: media del dato 15.º y el 16.º."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Varianza S² (dividiendo entre n)",
+    "key": 1.6274999999999995,
+    "dec": 3,
+    "tol": 0.0016274999999999996,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      1.7131578947368415,
+      "Esa es la cuasivarianza (entre n − 1). Te piden la varianza S², entre n."
+     ],
+     [
+      5.05,
+      "Te falta restar la media al cuadrado."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Coeficiente de variación (en decimal)",
+    "key": 0.6895865309282742,
+    "dec": 3,
+    "tol": 0.0006895865309282742,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      0.8797297297297294,
+      "El CV usa la desviación típica S (la raíz de la varianza), no la varianza."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "En Excel, ¿qué función usarías para la varianza S² (la que divide entre n)? Escribe solo su nombre.",
+    "key": "VAR.P",
+    "dec": 0,
+    "tol": 0,
+    "kind": "text",
+    "accept": [
+     "VAR.P",
+     "VARP"
+    ],
+    "alts": [
+     [
+      "VAR.S",
+      "VAR.S divide entre n − 1: es la cuasivarianza."
+     ],
+     [
+      "VAR",
+      "VAR es la antigua VAR.S (entre n − 1)."
+     ],
+     [
+      "DESVEST.P",
+      "Esa es la desviación típica, no la varianza."
+     ]
+    ]
+   }
+  ],
+  "paper": true
+ },
+ {
+  "id": "S3_P2",
+  "title": "Simulacro 3 · Pregunta 2 (2 puntos)",
+  "color": "tx",
+  "subtitle": "Salarios en intervalos",
+  "blocks": [
+   {
+    "t": "p",
+    "text": "Salario mensual (€) de 80 trabajadores de una cadena de tiendas.",
+    "b": true,
+    "i": false
+   },
+   {
+    "t": "tabla",
+    "headers": [
+     "Salario (€)",
+     "nᵢ"
+    ],
+    "rows": [
+     [
+      "[1000, 1200]",
+      10
+     ],
+     [
+      "(1200, 1400]",
+      25
+     ],
+     [
+      "(1400, 1800]",
+      30
+     ],
+     [
+      "(1800, 2400]",
+      15
+     ]
+    ]
+   },
+   {
+    "t": "hint",
+    "text": "Ojo: los intervalos no miden lo mismo. Para la moda, densidades."
+   },
+   {
+    "t": "h",
+    "text": "Preguntas"
+   },
+   {
+    "t": "ask",
+    "label": "Salario medio",
+    "key": 1537.5,
+    "dec": 2,
+    "tol": 1.5375,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "Mediana",
+    "key": 1466.6666666666667,
+    "dec": 2,
+    "tol": 1.4666666666666668,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "Moda (con densidades)",
+    "key": 1320.0,
+    "dec": 2,
+    "tol": 1.32,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      1500.0,
+      "Has usado las frecuencias. Con amplitudes distintas, el intervalo modal es el de mayor DENSIDAD (nᵢ ÷ aᵢ)."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Percentil 90",
+    "key": 2080.0,
+    "dec": 2,
+    "tol": 2.08,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "Proporción de trabajadores que ganan más de 1600 € (en decimal)",
+    "key": 0.375,
+    "dec": 4,
+    "tol": 0.000375,
+    "kind": "pct",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "En Excel, ¿qué función cuenta cuántos datos caen en cada intervalo (la que se escribe en varias celdas a la vez)?",
+    "key": "FRECUENCIA",
+    "dec": 0,
+    "tol": 0,
+    "kind": "text",
+    "accept": [
+     "FRECUENCIA"
+    ],
+    "alts": [
+     [
+      "CONTAR.SI",
+      "CONTAR.SI cuenta un valor concreto. Para intervalos, FRECUENCIA (o CONTAR.SI.CONJUNTO)."
+     ],
+     [
+      "CONTAR.SI.CONJUNTO",
+      "También vale para un intervalo, pero la que hace todos a la vez es FRECUENCIA."
+     ]
+    ]
+   }
+  ],
+  "paper": true
+ },
+ {
+  "id": "S3_P3",
+  "title": "Simulacro 3 · Pregunta 3 (2 puntos)",
+  "color": "tx",
+  "subtitle": "Sexo y tipo de jornada",
+  "blocks": [
+   {
+    "t": "p",
+    "text": "100 trabajadores según su sexo (filas) y su tipo de jornada (columnas).",
+    "b": true,
+    "i": false
+   },
+   {
+    "t": "tabla",
+    "headers": [
+     "Sexo \\ Jornada",
+     "Completa",
+     "Parcial",
+     "Por horas"
+    ],
+    "rows": [
+     [
+      "Hombre",
+      18,
+      12,
+      10
+     ],
+     [
+      "Mujer",
+      12,
+      22,
+      26
+     ]
+    ]
+   },
+   {
+    "t": "h",
+    "text": "Preguntas"
+   },
+   {
+    "t": "ask",
+    "label": "¿Cuántos trabajadores tienen jornada parcial? (marginal)",
+    "key": 34.0,
+    "dec": 0,
+    "tol": 0.51,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "Porcentaje de mujeres con jornada parcial, sobre el total de mujeres (en decimal)",
+    "key": 0.36666666666666664,
+    "dec": 4,
+    "tol": 0.00036666666666666667,
+    "kind": "pct",
+    "accept": null,
+    "alts": [
+     [
+      0.22,
+      "Has dividido entre el total (100). La condicionada se divide entre el total de su grupo: las mujeres."
+     ],
+     [
+      0.6470588235294118,
+      "Has dividido entre el total de la columna. «De las mujeres» = fila de mujeres."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Porcentaje de los de jornada completa que son hombres (en decimal)",
+    "key": 0.6,
+    "dec": 4,
+    "tol": 0.0006,
+    "kind": "pct",
+    "accept": null,
+    "alts": [
+     [
+      0.45,
+      "Has dividido entre los hombres. «De los de jornada completa» = columna de completa."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Frecuencia esperada de la casilla Mujer–Parcial si fueran independientes",
+    "key": 20.4,
+    "dec": 2,
+    "tol": 0.020399999999999998,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "¿Son independientes? Escribe SI o NO.",
+    "key": "NO",
+    "dec": 0,
+    "tol": 0,
+    "kind": "text",
+    "accept": [
+     "NO"
+    ],
+    "alts": [
+     [
+      "SI",
+      "Compara la casilla Mujer–Parcial (22) con su esperada: no coinciden, así que no son independientes."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "En Excel, ¿qué herramienta usas para construir la tabla de doble entrada a partir de los datos?",
+    "key": "TABLA DINAMICA",
+    "dec": 0,
+    "tol": 0,
+    "kind": "text",
+    "accept": [
+     "TABLA DINAMICA",
+     "TABLAS DINAMICAS",
+     "TABLA DINÁMICA"
+    ],
+    "alts": []
+   }
+  ],
+  "paper": true
+ },
+ {
+  "id": "S3_P4",
+  "title": "Simulacro 3 · Pregunta 4 (2 puntos)",
+  "color": "tx",
+  "subtitle": "Regresión a partir de las sumas",
+  "blocks": [
+   {
+    "t": "p",
+    "text": "Horas de formación (X) y puntuación en una evaluación de desempeño (Y) de 10 trabajadores. Solo te dan las sumas:",
+    "b": true,
+    "i": false
+   },
+   {
+    "t": "tabla",
+    "headers": [
+     "n",
+     "Σx",
+     "Σy",
+     "Σx²",
+     "Σy²",
+     "Σxy"
+    ],
+    "rows": [
+     [
+      10,
+      50,
+      300,
+      290,
+      9300,
+      1580
+     ]
+    ]
+   },
+   {
+    "t": "h",
+    "text": "Preguntas"
+   },
+   {
+    "t": "ask",
+    "label": "Covarianza S_XY",
+    "key": 8.0,
+    "dec": 3,
+    "tol": 0.008,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      158.0,
+      "Te falta restar x̄·ȳ."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Pendiente b de la recta de Y sobre X",
+    "key": 2.0,
+    "dec": 3,
+    "tol": 0.002,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      0.26666666666666666,
+      "Has dividido entre la varianza de Y. Para Y sobre X se divide entre S²ₓ."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Término independiente a",
+    "key": 20.0,
+    "dec": 3,
+    "tol": 0.02,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "Coeficiente de correlación r",
+    "key": 0.7302967433402214,
+    "dec": 3,
+    "tol": 0.0007302967433402215,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "Coeficiente de determinación R² (en decimal)",
+    "key": 0.5333333333333332,
+    "dec": 3,
+    "tol": 0.0005333333333333333,
+    "kind": "pct",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "Puntuación prevista para 7 horas de formación",
+    "key": 34.0,
+    "dec": 2,
+    "tol": 0.034,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "En Excel, ¿qué función da la pendiente de la recta?",
+    "key": "PENDIENTE",
+    "dec": 0,
+    "tol": 0,
+    "kind": "text",
+    "accept": [
+     "PENDIENTE"
+    ],
+    "alts": [
+     [
+      "INTERSECCION.EJE",
+      "Esa da el término independiente a, no la pendiente."
+     ]
+    ]
+   }
+  ],
+  "paper": true
+ },
+ {
+  "id": "S3_P5",
+  "title": "Simulacro 3 · Pregunta 5 (2 puntos)",
+  "color": "tx",
+  "subtitle": "Índices y deflactar",
+  "blocks": [
+   {
+    "t": "p",
+    "text": "Índices y deflactar.",
+    "b": true,
+    "i": false
+   },
+   {
+    "t": "p",
+    "text": "Las ventas de una empresa variaron +20 % en 2023, −10 % en 2024 y +15 % en 2025. Base 2022 = 100.",
+    "b": false,
+    "i": false
+   },
+   {
+    "t": "p",
+    "text": "Un salario pasa de 1500 € (2022) a 1650 € (2025). El IPC de 2025 con base 2022 es 108.",
+    "b": false,
+    "i": false
+   },
+   {
+    "t": "tabla",
+    "headers": [
+     "Producto",
+     "p₂₀₂₂",
+     "q₂₀₂₂",
+     "p₂₀₂₅"
+    ],
+    "rows": [
+     [
+      "A",
+      1.2,
+      50,
+      1.3
+     ],
+     [
+      "B",
+      2.0,
+      20,
+      2.6
+     ]
+    ]
+   },
+   {
+    "t": "h",
+    "text": "Preguntas"
+   },
+   {
+    "t": "ask",
+    "label": "Índice de ventas de 2025 (base 2022 = 100)",
+    "key": 124.19999999999999,
+    "dec": 2,
+    "tol": 0.12419999999999999,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      125,
+      "Has sumado los porcentajes. Se multiplican: 1,20 × 0,90 × 1,15."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Tasa media anual de crecimiento 2022-2025 (en decimal)",
+    "key": 0.07491436130478402,
+    "dec": 4,
+    "tol": 7.491436130478402e-05,
+    "kind": "pct",
+    "accept": null,
+    "alts": [
+     [
+      0.08333333333333333,
+      "Has dividido entre 3. La tasa media es la raíz cúbica del crecimiento total, menos 1."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Salario de 2025 en euros de 2022 (real)",
+    "key": 1527.7777777777778,
+    "dec": 2,
+    "tol": 1.527777777777778,
+    "kind": "num",
+    "accept": null,
+    "alts": [
+     [
+      1782.0000000000002,
+      "Has multiplicado por el IPC. Para deflactar se DIVIDE: 1650 ÷ 108 × 100."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Variación real del salario 2022-2025 (en decimal)",
+    "key": 0.0185185185185186,
+    "dec": 4,
+    "tol": 5.1000000000000006e-05,
+    "kind": "pct",
+    "accept": null,
+    "alts": [
+     [
+      0.1,
+      "Esa es la variación nominal (1650 ÷ 1500 − 1). La real usa el salario deflactado."
+     ]
+    ]
+   },
+   {
+    "t": "ask",
+    "label": "Índice de precios de Laspeyres 2025 (base 2022 = 100)",
+    "key": 117.0,
+    "dec": 2,
+    "tol": 0.117,
+    "kind": "num",
+    "accept": null,
+    "alts": []
+   },
+   {
+    "t": "ask",
+    "label": "En Excel, ¿qué función calcula la media geométrica?",
+    "key": "MEDIA.GEOM",
+    "dec": 0,
+    "tol": 0,
+    "kind": "text",
+    "accept": [
+     "MEDIA.GEOM",
+     "MEDIAGEOM"
+    ],
+    "alts": []
+   }
+  ],
+  "paper": true
+ }
+]

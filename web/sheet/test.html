@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="hot.css"></head><body>
+<div id="g" style="width:700px;height:300px"></div>
+<script src="hot.js"></script><script src="hf-es.js"></script><script src="hfsetup.js"></script>
+<script>
+var hf=HyperFormula.buildEmpty({licenseKey:'internal-use-in-handsontable',language:'esES',functionArgSeparator:';',decimalSeparator:',',thousandSeparator:' '});
+var data=[[0,'',''],[1,'',''],[2,'',''],[0,'',''],[4,'','']];
+function rend(inst,td,r,c,prop,val,cp){Handsontable.renderers.TextRenderer.apply(this,arguments);if(typeof val==='number'){td.textContent=String(Math.round(val*1e6)/1e6).replace('.',',');td.style.textAlign='right';}}
+window.hot=new Handsontable(document.getElementById('g'),{data:data,rowHeaders:true,colHeaders:true,minRows:12,minCols:8,licenseKey:'non-commercial-and-evaluation',formulas:{engine:hf,sheetName:'Hoja1'},cells:function(){return{renderer:rend};},fillHandle:true,undo:true,outsideClickDeselects:false});
+</script></body></html>

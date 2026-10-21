@@ -1,0 +1,297 @@
+[
+ {
+  "id": "000_00",
+  "texto": "Tema 3: regresión y correlación. Tenemos dos variables numéricas de cada persona, por ejemplo la antigüedad y el salario. Queremos saber si cuando una sube la otra también, cuánto, y si podemos predecir el salario de alguien sabiendo su antigüedad. La herramienta es una recta.",
+  "subtitulo": "Tema 3: regresión y correlación. Tenemos dos variables numéricas de cada persona, por ejemplo la antigüedad y el salario. Queremos saber si cuando una sube la otra también, cuánto, y si podemos predecir el salario de alguien sabiendo su antigüedad. La herramienta es una recta."
+ },
+ {
+  "id": "001_00",
+  "texto": "Estos son los seis apartados del tema.",
+  "subtitulo": "Estos son los seis apartados del tema."
+ },
+ {
+  "id": "001_01",
+  "texto": "Y este es el ejemplo de clase que usaremos todo el tema: diez trabajadores, con su antigüedad en años y su salario en euros.",
+  "subtitulo": "Y este es el ejemplo de clase que usaremos todo el tema: diez trabajadores, con su antigüedad en años y su salario en euros."
+ },
+ {
+  "id": "002_00",
+  "texto": "Apartado 3.1: la nube de puntos. Cada trabajador es un punto: su antigüedad en el eje horizontal y su salario en el vertical. La forma de la nube dice qué relación hay.",
+  "subtitulo": "Apartado 3.1: la nube de puntos. Cada trabajador es un punto: su antigüedad en el eje horizontal y su salario en el vertical. La forma de la nube dice qué relación hay."
+ },
+ {
+  "id": "002_01",
+  "texto": "Si la nube sube hacia la derecha, la relación es directa: cuando una aumenta, la otra tiende a aumentar. Si baja, inversa. Si no tiene dirección, no hay relación lineal. Y si los puntos siguen una curva, la relación no es lineal.",
+  "subtitulo": "Si la nube sube hacia la derecha, la relación es directa: cuando una aumenta, la otra tiende a aumentar. Si baja, inversa. Si no tiene dirección, no hay relación lineal. Y si los puntos siguen una curva, la relación no es lineal."
+ },
+ {
+  "id": "002_02",
+  "texto": "Cuanto más estrecha y alargada es la nube, más fuerte es la relación.",
+  "subtitulo": "Cuanto más estrecha y alargada es la nube, más fuerte es la relación."
+ },
+ {
+  "id": "003_00",
+  "texto": "En papel: dibuja los ejes con su escala. El vertical no tiene que empezar en 0: para los salarios, de 1300 a 2600 está bien.",
+  "subtitulo": "En papel: dibuja los ejes con su escala. El vertical no tiene que empezar en 0: para los salarios, de 1300 a 2600 está bien."
+ },
+ {
+  "id": "003_01",
+  "texto": "Pon un punto por cada pareja: antigüedad 1 y salario 1400, antigüedad 2 y salario 1600, y así.",
+  "subtitulo": "Pon un punto por cada pareja: antigüedad 1 y salario 1400, antigüedad 2 y salario 1600, y así."
+ },
+ {
+  "id": "003_02",
+  "texto": "Mira la forma: aquí sube hacia la derecha, relación directa.",
+  "subtitulo": "Mira la forma: aquí sube hacia la derecha, relación directa."
+ },
+ {
+  "id": "003_03",
+  "texto": "Si te piden dibujar la recta, calcula dos puntos con su ecuación, por ejemplo en X igual a 0 y en X igual a 15, y únelos con la regla. Tiene que pasar por el punto de las medias.",
+  "subtitulo": "Si te piden dibujar la recta, calcula dos puntos con su ecuación, por ejemplo en X igual a 0 y en X igual a 15, y únelos con la regla. Tiene que pasar por el punto de las medias."
+ },
+ {
+  "id": "003_04",
+  "texto": "En Excel: selecciona las dos columnas, Insertar, Dispersión. Después, clic derecho sobre un punto, Agregar línea de tendencia, Lineal, y marca presentar la ecuación y el R cuadrado.",
+  "subtitulo": "En Excel: selecciona las dos columnas, Insertar, Dispersión. Después, clic derecho sobre un punto, Agregar línea de tendencia, Lineal, y marca presentar la ecuación y el R cuadrado."
+ },
+ {
+  "id": "003_05",
+  "texto": "Excel te escribe la recta y el R cuadrado encima del gráfico. Es la mejor forma de comprobar tus cálculos a mano.",
+  "subtitulo": "Excel te escribe la recta y el R cuadrado encima del gráfico. Es la mejor forma de comprobar tus cálculos a mano."
+ },
+ {
+  "id": "004_00",
+  "texto": "Apartado 3.2: la covarianza. Es un número que dice si las dos variables se mueven en el mismo sentido o en sentido contrario. La fórmula práctica: la suma de los productos equis por y, entre n, menos el producto de las medias.",
+  "subtitulo": "Apartado 3.2: la covarianza. Es un número que dice si las dos variables se mueven en el mismo sentido o en sentido contrario. La fórmula práctica: la suma de los productos equis por y, entre n, menos el producto de las medias."
+ },
+ {
+  "id": "004_01",
+  "texto": "Si es positiva, la relación es directa. Si es negativa, inversa. Si es 0, no hay relación lineal.",
+  "subtitulo": "Si es positiva, la relación es directa. Si es negativa, inversa. Si es 0, no hay relación lineal."
+ },
+ {
+  "id": "004_02",
+  "texto": "Ojo: el valor de la covarianza no dice si la relación es fuerte o débil, porque depende de las unidades. No es lo mismo medir en euros que en céntimos. Solo se mira el signo. Para la fuerza está el coeficiente de correlación.",
+  "subtitulo": "Ojo: el valor de la covarianza no dice si la relación es fuerte o débil, porque depende de las unidades. No es lo mismo medir en euros que en céntimos. Solo se mira el signo. Para la fuerza está el coeficiente de correlación."
+ },
+ {
+  "id": "004_03",
+  "texto": "Para entender por qué funciona: dibuja una cruz en la nube justo en las medias. Los puntos de arriba a la derecha y de abajo a la izquierda suman a favor de una relación directa. Los otros dos cuadrantes, en contra.",
+  "subtitulo": "Para entender por qué funciona: dibuja una cruz en la nube justo en las medias. Los puntos de arriba a la derecha y de abajo a la izquierda suman a favor de una relación directa. Los otros dos cuadrantes, en contra."
+ },
+ {
+  "id": "005_00",
+  "texto": "A mano, en papel, haz una sola tabla con cinco columnas: equis, y, equis al cuadrado, y al cuadrado, y equis por y. Súmalas. Con esas cinco sumas sacas todo el tema sin volver a tocar los datos.",
+  "subtitulo": "A mano, en papel, haz una sola tabla con cinco columnas: equis, y, equis al cuadrado, y al cuadrado, y equis por y. Súmalas. Con esas cinco sumas sacas todo el tema sin volver a tocar los datos."
+ },
+ {
+  "id": "005_01",
+  "texto": "Las medias: 70 entre 10, 7 años; 19400 entre 10, 1940 euros.",
+  "subtitulo": "Las medias: 70 entre 10, 7 años; 19400 entre 10, 1940 euros."
+ },
+ {
+  "id": "005_02",
+  "texto": "La varianza de X: 674 entre 10, menos 7 al cuadrado: 18,4.",
+  "subtitulo": "La varianza de X: 674 entre 10, menos 7 al cuadrado: 18,4."
+ },
+ {
+  "id": "005_03",
+  "texto": "La varianza de Y: 38 875 000 entre 10, menos 1940 al cuadrado: 123 900.",
+  "subtitulo": "La varianza de Y: 38 875 000 entre 10, menos 1940 al cuadrado: 123 900."
+ },
+ {
+  "id": "005_04",
+  "texto": "Y la covarianza: 150 250 entre 10, menos 7 por 1940. 15 025 menos 13 580: 1445. Positiva: relación directa.",
+  "subtitulo": "Y la covarianza: 150 250 entre 10, menos 7 por 1940. 15 025 menos 13 580: 1445. Positiva: relación directa."
+ },
+ {
+  "id": "006_00",
+  "texto": "En Excel: COVARIANZA.P con las dos columnas. Da 1445.",
+  "subtitulo": "En Excel: COVARIANZA.P con las dos columnas. Da 1445."
+ },
+ {
+  "id": "006_01",
+  "texto": "Usa la punto P, que divide entre n, como en clase. La punto M divide entre n menos 1; no la uses salvo que te lo pidan.",
+  "subtitulo": "Usa la punto P, que divide entre n, como en clase. La punto M divide entre n menos 1; no la uses salvo que te lo pidan."
+ },
+ {
+  "id": "007_00",
+  "texto": "Apartado 3.3: la recta de regresión. Es la recta que mejor se ajusta a la nube. La de Y sobre X sirve para predecir Y sabiendo X: Y estimada es igual a a más b por X.",
+  "subtitulo": "Apartado 3.3: la recta de regresión. Es la recta que mejor se ajusta a la nube. La de Y sobre X sirve para predecir Y sabiendo X: Y estimada es igual a a más b por X."
+ },
+ {
+  "id": "007_01",
+  "texto": "La pendiente b es la covarianza entre la varianza de X. Y a es la media de Y menos b por la media de X.",
+  "subtitulo": "La pendiente b es la covarianza entre la varianza de X. Y a es la media de Y menos b por la media de X."
+ },
+ {
+  "id": "007_02",
+  "texto": "La pendiente es lo más importante: dice cuánto cambia Y, de media, cuando X aumenta una unidad. Tiene el mismo signo que la covarianza.",
+  "subtitulo": "La pendiente es lo más importante: dice cuánto cambia Y, de media, cuando X aumenta una unidad. Tiene el mismo signo que la covarianza."
+ },
+ {
+  "id": "007_03",
+  "texto": "El término a es el valor de Y cuando X vale 0. A veces no tiene sentido práctico, por ejemplo si nadie tiene X igual a 0.",
+  "subtitulo": "El término a es el valor de Y cuando X vale 0. A veces no tiene sentido práctico, por ejemplo si nadie tiene X igual a 0."
+ },
+ {
+  "id": "007_04",
+  "texto": "Y el sombrero sobre la Y indica que es una predicción, un valor medio estimado, no un dato real.",
+  "subtitulo": "Y el sombrero sobre la Y indica que es una predicción, un valor medio estimado, no un dato real."
+ },
+ {
+  "id": "008_00",
+  "texto": "Con nuestras sumas: b es 1445 entre 18,4, 78,53.",
+  "subtitulo": "Con nuestras sumas: b es 1445 entre 18,4, 78,53."
+ },
+ {
+  "id": "008_01",
+  "texto": "Y a es 1940 menos 78,53 por 7: 1390,27.",
+  "subtitulo": "Y a es 1940 menos 78,53 por 7: 1390,27."
+ },
+ {
+  "id": "008_02",
+  "texto": "La recta: salario estimado igual a 1390,27 más 78,53 por la antigüedad.",
+  "subtitulo": "La recta: salario estimado igual a 1390,27 más 78,53 por la antigüedad."
+ },
+ {
+  "id": "008_03",
+  "texto": "Y la interpretación, que es lo que más puntúa: por cada año más de antigüedad, el salario aumenta de media 78,53 euros. Y un trabajador recién llegado, con 0 años, cobraría unos 1390.",
+  "subtitulo": "Y la interpretación, que es lo que más puntúa: por cada año más de antigüedad, el salario aumenta de media 78,53 euros. Y un trabajador recién llegado, con 0 años, cobraría unos 1390."
+ },
+ {
+  "id": "008_04",
+  "texto": "Si te piden la recta de X sobre Y, para predecir X a partir de Y, se divide entre la varianza de Y en vez de la de X, y a prima es la media de X menos b prima por la media de Y. Las dos rectas son distintas, pero las dos pasan por el punto de las medias.",
+  "subtitulo": "Si te piden la recta de X sobre Y, para predecir X a partir de Y, se divide entre la varianza de Y en vez de la de X, y a prima es la media de X menos b prima por la media de Y. Las dos rectas son distintas, pero las dos pasan por el punto de las medias."
+ },
+ {
+  "id": "009_00",
+  "texto": "En Excel, la pendiente con PENDIENTE.",
+  "subtitulo": "En Excel, la pendiente con PENDIENTE."
+ },
+ {
+  "id": "009_01",
+  "texto": "Y el término independiente con INTERSECCION.EJE.",
+  "subtitulo": "Y el término independiente con INTERSECCION.EJE."
+ },
+ {
+  "id": "009_02",
+  "texto": "Muy importante: primero va la Y y después la X. Si las pones al revés, te da la recta de X sobre Y.",
+  "subtitulo": "Muy importante: primero va la Y y después la X. Si las pones al revés, te da la recta de X sobre Y."
+ },
+ {
+  "id": "010_00",
+  "texto": "Apartado 3.4. El coeficiente de correlación r mide la fuerza y el sentido de la relación lineal: la covarianza entre el producto de las dos desviaciones típicas. Y el coeficiente de determinación, R cuadrado, es r al cuadrado.",
+  "subtitulo": "Apartado 3.4. El coeficiente de correlación r mide la fuerza y el sentido de la relación lineal: la covarianza entre el producto de las dos desviaciones típicas. Y el coeficiente de determinación, R cuadrado, es r al cuadrado."
+ },
+ {
+  "id": "010_01",
+  "texto": "r está siempre entre menos 1 y 1. Cerca de 1, relación directa fuerte. Cerca de 0, débil o nula. Cerca de menos 1, inversa fuerte.",
+  "subtitulo": "r está siempre entre menos 1 y 1. Cerca de 1, relación directa fuerte. Cerca de 0, débil o nula. Cerca de menos 1, inversa fuerte."
+ },
+ {
+  "id": "010_02",
+  "texto": "r tiene el mismo signo que la pendiente. Y R cuadrado, entre 0 y 1, dice qué parte de la variabilidad de Y queda explicada por la recta.",
+  "subtitulo": "r tiene el mismo signo que la pendiente. Y R cuadrado, entre 0 y 1, dice qué parte de la variabilidad de Y queda explicada por la recta."
+ },
+ {
+  "id": "010_03",
+  "texto": "Con nuestros datos: 1445 entre la raíz de 18,4 por la raíz de 123 900. 1445 entre 4,29 por 352: 0,957. Relación directa muy fuerte.",
+  "subtitulo": "Con nuestros datos: 1445 entre la raíz de 18,4 por la raíz de 123 900. 1445 entre 4,29 por 352: 0,957. Relación directa muy fuerte."
+ },
+ {
+  "id": "010_04",
+  "texto": "R cuadrado es 0,916: el 91,6 por ciento de la variabilidad del salario se explica por la antigüedad. El 8,4 por ciento restante depende de otros factores.",
+  "subtitulo": "R cuadrado es 0,916: el 91,6 por ciento de la variabilidad del salario se explica por la antigüedad. El 8,4 por ciento restante depende de otros factores."
+ },
+ {
+  "id": "010_05",
+  "texto": "Y un aviso: que dos variables estén muy correlacionadas no demuestra que una provoque la otra. Puede haber una tercera detrás. Basta con decir que están relacionadas. En Excel: COEF.DE.CORREL y COEFICIENTE.R2.",
+  "subtitulo": "Y un aviso: que dos variables estén muy correlacionadas no demuestra que una provoque la otra. Puede haber una tercera detrás. Basta con decir que están relacionadas. En Excel: COEF.DE.CORREL y COEFICIENTE.R2."
+ },
+ {
+  "id": "011_00",
+  "texto": "Apartado 3.5: las predicciones. Si el ajuste es bueno, se usa la recta para predecir: se sustituye X por el valor que te den. Por ejemplo, el salario de una trabajadora con 11 años.",
+  "subtitulo": "Apartado 3.5: las predicciones. Si el ajuste es bueno, se usa la recta para predecir: se sustituye X por el valor que te den. Por ejemplo, el salario de una trabajadora con 11 años."
+ },
+ {
+  "id": "011_01",
+  "texto": "1390,27 más 78,53 por 11: 2254,13 euros.",
+  "subtitulo": "1390,27 más 78,53 por 11: 2254,13 euros."
+ },
+ {
+  "id": "011_02",
+  "texto": "Es una predicción fiable porque R cuadrado es alto.",
+  "subtitulo": "Es una predicción fiable porque R cuadrado es alto."
+ },
+ {
+  "id": "011_03",
+  "texto": "Pero cuidado: solo es fiable predecir dentro del rango de los datos, aquí de 1 a 15 años. Predecir para 40 años de antigüedad sería arriesgado: no sabemos si la relación sigue siendo una recta.",
+  "subtitulo": "Pero cuidado: solo es fiable predecir dentro del rango de los datos, aquí de 1 a 15 años. Predecir para 40 años de antigüedad sería arriesgado: no sabemos si la relación sigue siendo una recta."
+ },
+ {
+  "id": "011_04",
+  "texto": "En Excel: PRONOSTICO.LINEAL, con el valor de X, luego las Y y luego las X.",
+  "subtitulo": "En Excel: PRONOSTICO.LINEAL, con el valor de X, luego las Y y luego las X."
+ },
+ {
+  "id": "012_00",
+  "texto": "Apartado 3.6: los ejercicios sin datos. Muchos ejercicios no dan los datos, sino algunos resultados, y hay que despejar lo que falta. Estas relaciones lo permiten. De la pendiente: la covarianza es b por la varianza de X.",
+  "subtitulo": "Apartado 3.6: los ejercicios sin datos. Muchos ejercicios no dan los datos, sino algunos resultados, y hay que despejar lo que falta. Estas relaciones lo permiten. De la pendiente: la covarianza es b por la varianza de X."
+ },
+ {
+  "id": "012_01",
+  "texto": "De r: la covarianza es r por las dos desviaciones típicas.",
+  "subtitulo": "De r: la covarianza es r por las dos desviaciones típicas."
+ },
+ {
+  "id": "012_02",
+  "texto": "Combinando las dos: r es b por la desviación de X entre la de Y.",
+  "subtitulo": "Combinando las dos: r es b por la desviación de X entre la de Y."
+ },
+ {
+  "id": "012_03",
+  "texto": "Si te dan R cuadrado, r es su raíz, con el signo de la pendiente.",
+  "subtitulo": "Si te dan R cuadrado, r es su raíz, con el signo de la pendiente."
+ },
+ {
+  "id": "012_04",
+  "texto": "Y como la recta pasa por las medias, la media de Y es a más b por la media de X.",
+  "subtitulo": "Y como la recta pasa por las medias, la media de Y es a más b por la media de X."
+ },
+ {
+  "id": "012_05",
+  "texto": "El error más común: confundir la desviación típica con la varianza. Lee con cuidado qué te dan. Si la desviación de X es 40, la varianza es 1600.",
+  "subtitulo": "El error más común: confundir la desviación típica con la varianza. Lee con cuidado qué te dan. Si la desviación de X es 40, la varianza es 1600."
+ },
+ {
+  "id": "013_00",
+  "texto": "Un ejemplo del boletín: la recta es Y igual a 2 menos 3X, R cuadrado 0,81, la media de X es 2 y la desviación de Y es 10.",
+  "subtitulo": "Un ejemplo del boletín: la recta es Y igual a 2 menos 3X, R cuadrado 0,81, la media de X es 2 y la desviación de Y es 10."
+ },
+ {
+  "id": "013_01",
+  "texto": "La media de Y: sustituyes la media de X en la recta. 2 menos 3 por 2: menos 4.",
+  "subtitulo": "La media de Y: sustituyes la media de X en la recta. 2 menos 3 por 2: menos 4."
+ },
+ {
+  "id": "013_02",
+  "texto": "r es la raíz de 0,81, 0,9, pero negativa, porque la pendiente es negativa.",
+  "subtitulo": "r es la raíz de 0,81, 0,9, pero negativa, porque la pendiente es negativa."
+ },
+ {
+  "id": "013_03",
+  "texto": "La desviación de X: r es b por ese de equis entre ese de y. Menos 0,9 igual a menos 3 por ese de equis entre 10. Despejando, ese de equis es 3.",
+  "subtitulo": "La desviación de X: r es b por Sx entre Sy. Menos 0,9 igual a menos 3 por Sx entre 10. Despejando, Sx es 3."
+ },
+ {
+  "id": "013_04",
+  "texto": "Y la covarianza: b por la varianza de X, menos 3 por 9, menos 27. Y compruebas: menos 27 entre 3 por 10 da menos 0,9. Correcto.",
+  "subtitulo": "Y la covarianza: b por la varianza de X, menos 3 por 9, menos 27. Y compruebas: menos 27 entre 3 por 10 da menos 0,9. Correcto."
+ },
+ {
+  "id": "014_00",
+  "texto": "Y hasta aquí el Tema 3. En la guía tienes el boletín del tema y las prácticas 5 y 6. Haz la tabla de cinco columnas en papel, y comprueba con Excel.",
+  "subtitulo": "Y hasta aquí el Tema 3. En la guía tienes el boletín del tema y las prácticas 5 y 6. Haz la tabla de cinco columnas en papel, y comprueba con Excel."
+ }
+]

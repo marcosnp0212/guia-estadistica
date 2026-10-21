@@ -1,0 +1,247 @@
+[
+ {
+  "id": "000_00",
+  "texto": "Tema 2: el análisis descriptivo de dos variables. Ahora miramos dos características a la vez de cada persona, por ejemplo su departamento y si teletrabaja, y queremos saber si están relacionadas.",
+  "subtitulo": "Tema 2: el análisis descriptivo de dos variables. Ahora miramos dos características a la vez de cada persona, por ejemplo su departamento y si teletrabaja, y queremos saber si están relacionadas."
+ },
+ {
+  "id": "001_00",
+  "texto": "Son cuatro apartados: la tabla de doble entrada, las distribuciones marginales, las condicionadas y la independencia. ¿En unos departamentos se teletrabaja más que en otros, o da igual el departamento? Eso es lo que vamos a aprender a contestar.",
+  "subtitulo": "Son cuatro apartados: la tabla de doble entrada, las distribuciones marginales, las condicionadas y la independencia. ¿En unos departamentos se teletrabaja más que en otros, o da igual el departamento? Eso es lo que vamos a aprender a contestar."
+ },
+ {
+  "id": "002_00",
+  "texto": "Apartado 2.1: la tabla de doble entrada. Es una tabla de frecuencias con filas para los valores de una variable y columnas para los de la otra. En cada casilla va el número de personas que tienen a la vez ese valor de las dos. Se llama frecuencia conjunta.",
+  "subtitulo": "Apartado 2.1: la tabla de doble entrada. Es una tabla de frecuencias con filas para los valores de una variable y columnas para los de la otra. En cada casilla va el número de personas que tienen a la vez ese valor de las dos. Se llama frecuencia conjunta."
+ },
+ {
+  "id": "002_01",
+  "texto": "Ejemplo de clase: 40 empleados según su departamento y su modalidad de trabajo.",
+  "subtitulo": "Ejemplo de clase: 40 empleados según su departamento y su modalidad de trabajo."
+ },
+ {
+  "id": "002_02",
+  "texto": "Cómo se lee una casilla: 8 empleados son de Recursos Humanos y, a la vez, trabajan en presencial.",
+  "subtitulo": "Cómo se lee una casilla: 8 empleados son de Recursos Humanos y, a la vez, trabajan en presencial."
+ },
+ {
+  "id": "002_03",
+  "texto": "Si alguna de las variables es cualitativa, se llama tabla de contingencia. Si las dos son cuantitativas, tabla de correlación.",
+  "subtitulo": "Si alguna de las variables es cualitativa, se llama tabla de contingencia. Si las dos son cuantitativas, tabla de correlación."
+ },
+ {
+  "id": "002_04",
+  "texto": "Y la frecuencia relativa conjunta es cada casilla dividida entre el total: 8 entre 40, 0,20. El 20 por ciento de los empleados son de Recursos Humanos y presenciales.",
+  "subtitulo": "Y la frecuencia relativa conjunta es cada casilla dividida entre el total: 8 entre 40, 0,20. El 20 por ciento de los empleados son de Recursos Humanos y presenciales."
+ },
+ {
+  "id": "003_00",
+  "texto": "A mano: dibuja una cuadrícula con una fila por cada valor de X y una columna por cada valor de Y. Deja una fila y una columna más para los totales.",
+  "subtitulo": "A mano: dibuja una cuadrícula con una fila por cada valor de X y una columna por cada valor de Y. Deja una fila y una columna más para los totales."
+ },
+ {
+  "id": "003_01",
+  "texto": "Recorre los datos persona a persona. Para cada una, mira su X y su Y y pon un palote en la casilla donde se cruzan.",
+  "subtitulo": "Recorre los datos persona a persona. Para cada una, mira su X y su Y y pon un palote en la casilla donde se cruzan."
+ },
+ {
+  "id": "003_02",
+  "texto": "Cuenta los palotes de cada casilla: esas son las frecuencias conjuntas.",
+  "subtitulo": "Cuenta los palotes de cada casilla: esas son las frecuencias conjuntas."
+ },
+ {
+  "id": "003_03",
+  "texto": "Suma cada fila y cada columna. La comprobación: la suma de los totales de las filas y la de los totales de las columnas tienen que dar lo mismo, n.",
+  "subtitulo": "Suma cada fila y cada columna. La comprobación: la suma de los totales de las filas y la de los totales de las columnas tienen que dar lo mismo, n."
+ },
+ {
+  "id": "004_00",
+  "texto": "En Excel se hace con una tabla dinámica. Ten los datos en dos columnas con título, una fila por persona.",
+  "subtitulo": "En Excel se hace con una tabla dinámica. Ten los datos en dos columnas con título, una fila por persona."
+ },
+ {
+  "id": "004_01",
+  "texto": "Haz clic en los datos y ve a Insertar, Tabla dinámica.",
+  "subtitulo": "Haz clic en los datos y ve a Insertar, Tabla dinámica."
+ },
+ {
+  "id": "004_02",
+  "texto": "Arrastra Departamento a Filas y Modalidad a Columnas.",
+  "subtitulo": "Arrastra Departamento a Filas y Modalidad a Columnas."
+ },
+ {
+  "id": "004_03",
+  "texto": "Arrastra Departamento otra vez a Valores. Saldrá «Cuenta de Departamento»: esas son las frecuencias conjuntas.",
+  "subtitulo": "Arrastra Departamento otra vez a Valores. Saldrá «Cuenta de Departamento»: esas son las frecuencias conjuntas."
+ },
+ {
+  "id": "004_04",
+  "texto": "Para las relativas: clic derecho en un número, Mostrar valores como, por ciento del total general. Un truco visual de clase: formato condicional con escala de colores, para ver de un vistazo dónde se concentra la gente.",
+  "subtitulo": "Para las relativas: clic derecho en un número, Mostrar valores como, por ciento del total general. Un truco visual de clase: formato condicional con escala de colores, para ver de un vistazo dónde se concentra la gente."
+ },
+ {
+  "id": "005_00",
+  "texto": "Apartado 2.2: las distribuciones marginales. Son la distribución de una sola de las dos variables, olvidándote de la otra. Están en los márgenes de la tabla: son los totales.",
+  "subtitulo": "Apartado 2.2: las distribuciones marginales. Son la distribución de una sola de las dos variables, olvidándote de la otra. Están en los márgenes de la tabla: son los totales."
+ },
+ {
+  "id": "005_01",
+  "texto": "En nuestra tabla.",
+  "subtitulo": "En nuestra tabla."
+ },
+ {
+  "id": "005_02",
+  "texto": "La marginal del departamento es la columna de totales: 13, 10 y 17.",
+  "subtitulo": "La marginal del departamento es la columna de totales: 13, 10 y 17."
+ },
+ {
+  "id": "005_03",
+  "texto": "Y la de la modalidad, la fila de totales: 23, 13 y 4.",
+  "subtitulo": "Y la de la modalidad, la fila de totales: 23, 13 y 4."
+ },
+ {
+  "id": "005_04",
+  "texto": "Una marginal es una tabla de frecuencias normal y corriente, así que se le aplica todo el Tema 1: media, mediana, moda, varianza.",
+  "subtitulo": "Una marginal es una tabla de frecuencias normal y corriente, así que se le aplica todo el Tema 1: media, mediana, moda, varianza."
+ },
+ {
+  "id": "006_00",
+  "texto": "A mano, la media de una marginal. Ejemplo de los apuntes: X son los días de ausencia.",
+  "subtitulo": "A mano, la media de una marginal. Ejemplo de los apuntes: X son los días de ausencia."
+ },
+ {
+  "id": "006_01",
+  "texto": "La columna de totales hace de frecuencia. Montas la tabla del Tema 1: valor por frecuencia y valor al cuadrado por frecuencia.",
+  "subtitulo": "La columna de totales hace de frecuencia. Montas la tabla del Tema 1: valor por frecuencia y valor al cuadrado por frecuencia."
+ },
+ {
+  "id": "006_02",
+  "texto": "La media: 82 entre 32, 2,5625 días.",
+  "subtitulo": "La media: 82 entre 32, 2,5625 días."
+ },
+ {
+  "id": "006_03",
+  "texto": "Y la varianza: 246 entre 32, menos la media al cuadrado: 1,121.",
+  "subtitulo": "Y la varianza: 246 entre 32, menos la media al cuadrado: 1,121."
+ },
+ {
+  "id": "007_00",
+  "texto": "Apartado 2.3: las distribuciones condicionadas. Son la distribución de una variable solo para un grupo definido por la otra. Se escriben con una barra vertical, que se lee «sabiendo que».",
+  "subtitulo": "Apartado 2.3: las distribuciones condicionadas. Son la distribución de una variable solo para un grupo definido por la otra. Se escriben con una barra vertical, que se lee «sabiendo que»."
+ },
+ {
+  "id": "007_01",
+  "texto": "Y condicionada a que X sea Producción es la fila de Producción: 10 presenciales, 6 híbridos y 1 en remoto, de 17 personas.",
+  "subtitulo": "Y condicionada a que X sea Producción es la fila de Producción: 10 presenciales, 6 híbridos y 1 en remoto, de 17 personas."
+ },
+ {
+  "id": "007_02",
+  "texto": "Y X condicionada a que Y sea presencial es la columna de presencial: 8, 5 y 10, de 23 personas.",
+  "subtitulo": "Y X condicionada a que Y sea presencial es la columna de presencial: 8, 5 y 10, de 23 personas."
+ },
+ {
+  "id": "007_03",
+  "texto": "Para comparar grupos se pasan a porcentaje dentro del grupo, dividiendo entre el total de esa fila o columna: de los 17 de Producción, 10 entre 17, el 58,8 por ciento, son presenciales.",
+  "subtitulo": "Para comparar grupos se pasan a porcentaje dentro del grupo, dividiendo entre el total de esa fila o columna: de los 17 de Producción, 10 entre 17, el 58,8 por ciento, son presenciales."
+ },
+ {
+  "id": "007_04",
+  "texto": "El truco: lo que va detrás de la barra es el grupo al que te restringes. Tapa con la mano todo lo demás de la tabla y quédate con esa fila o columna.",
+  "subtitulo": "El truco: lo que va detrás de la barra es el grupo al que te restringes. Tapa con la mano todo lo demás de la tabla y quédate con esa fila o columna."
+ },
+ {
+  "id": "008_00",
+  "texto": "Y si te piden condicionar a varios valores, sumas esas filas. Ejercicio de los apuntes: X son días de ausencia e Y días de asuntos propios.",
+  "subtitulo": "Y si te piden condicionar a varios valores, sumas esas filas. Ejercicio de los apuntes: X son días de ausencia e Y días de asuntos propios."
+ },
+ {
+  "id": "008_01",
+  "texto": "Y condicionada a que X valga 2 o 3: sumas las filas del 2 y del 3. Sale 7, 4 y 7, con un total de 18.",
+  "subtitulo": "Y condicionada a que X valga 2 o 3: sumas las filas del 2 y del 3. Sale 7, 4 y 7, con un total de 18."
+ },
+ {
+  "id": "008_02",
+  "texto": "Sus frecuencias relativas, dividiendo entre 18: 0,389, 0,222 y 0,389.",
+  "subtitulo": "Sus frecuencias relativas, dividiendo entre 18: 0,389, 0,222 y 0,389."
+ },
+ {
+  "id": "008_03",
+  "texto": "Y su media: 2 por 7, más 3 por 4, más 5 por 7, entre 18. Da 3,39 días de asuntos propios entre los que faltan 2 o 3 días.",
+  "subtitulo": "Y su media: 2 por 7, más 3 por 4, más 5 por 7, entre 18. Da 3,39 días de asuntos propios entre los que faltan 2 o 3 días."
+ },
+ {
+  "id": "008_04",
+  "texto": "Cuidado: se divide entre el total del grupo, 18, no entre el total de la tabla, 32.",
+  "subtitulo": "Cuidado: se divide entre el total del grupo, 18, no entre el total de la tabla, 32."
+ },
+ {
+  "id": "008_05",
+  "texto": "En Excel, cada casilla entre el total de su fila, con el dólar delante de la columna del total. En la tabla dinámica es Mostrar valores como, por ciento del total de filas.",
+  "subtitulo": "En Excel, cada casilla entre el total de su fila, con el dólar delante de la columna del total. En la tabla dinámica es Mostrar valores como, por ciento del total de filas."
+ },
+ {
+  "id": "009_00",
+  "texto": "Apartado 2.4: la independencia. Dos variables son independientes si saber el valor de una no te dice nada de la otra. Si el porcentaje de presenciales fuera el mismo en todos los departamentos, la modalidad no dependería del departamento.",
+  "subtitulo": "Apartado 2.4: la independencia. Dos variables son independientes si saber el valor de una no te dice nada de la otra. Si el porcentaje de presenciales fuera el mismo en todos los departamentos, la modalidad no dependería del departamento."
+ },
+ {
+  "id": "009_01",
+  "texto": "Matemáticamente: la frecuencia relativa de cada casilla tiene que ser igual al producto de las marginales de su fila y su columna, en todas las casillas.",
+  "subtitulo": "Matemáticamente: la frecuencia relativa de cada casilla tiene que ser igual al producto de las marginales de su fila y su columna, en todas las casillas."
+ },
+ {
+  "id": "009_02",
+  "texto": "Es lo mismo que decir que los porcentajes por filas son iguales en todas las filas. Por eso lo más fácil, muchas veces, es mirar los porcentajes.",
+  "subtitulo": "Es lo mismo que decir que los porcentajes por filas son iguales en todas las filas. Por eso lo más fácil, muchas veces, es mirar los porcentajes."
+ },
+ {
+  "id": "009_03",
+  "texto": "La receta: calcula la frecuencia relativa de una casilla.",
+  "subtitulo": "La receta: calcula la frecuencia relativa de una casilla."
+ },
+ {
+  "id": "009_04",
+  "texto": "Calcula el producto de sus marginales: el total de su fila entre n, por el total de su columna entre n.",
+  "subtitulo": "Calcula el producto de sus marginales: el total de su fila entre n, por el total de su columna entre n."
+ },
+ {
+  "id": "009_05",
+  "texto": "Si alguna casilla no cumple la igualdad, no son independientes: basta con una. Para decir que sí lo son, tiene que cumplirse en todas.",
+  "subtitulo": "Si alguna casilla no cumple la igualdad, no son independientes: basta con una. Para decir que sí lo son, tiene que cumplirse en todas."
+ },
+ {
+  "id": "010_00",
+  "texto": "A mano hay una forma equivalente con números más cómodos: la frecuencia esperada si fueran independientes. Es el total de la fila por el total de la columna, entre n.",
+  "subtitulo": "A mano hay una forma equivalente con números más cómodos: la frecuencia esperada si fueran independientes. Es el total de la fila por el total de la columna, entre n."
+ },
+ {
+  "id": "010_01",
+  "texto": "En departamento y modalidad, la casilla Recursos Humanos y presencial: 13 por 23 entre 40, 7,475. Pero en la tabla hay 8. No coinciden, así que no son independientes.",
+  "subtitulo": "En departamento y modalidad, la casilla Recursos Humanos y presencial: 13 por 23 entre 40, 7,475. Pero en la tabla hay 8. No coinciden, así que no son independientes."
+ },
+ {
+  "id": "010_02",
+  "texto": "Otro ejemplo de clase: sexo y tipo de contrato, 240 empleados.",
+  "subtitulo": "Otro ejemplo de clase: sexo y tipo de contrato, 240 empleados."
+ },
+ {
+  "id": "010_03",
+  "texto": "Hombre e indefinido: 180 por 120 entre 240, 90. Y en la tabla hay 90. Si lo repites en las seis casillas, coinciden todas: son independientes. El tipo de contrato no depende del sexo.",
+  "subtitulo": "Hombre e indefinido: 180 por 120 entre 240, 90. Y en la tabla hay 90. Si lo repites en las seis casillas, coinciden todas: son independientes. El tipo de contrato no depende del sexo."
+ },
+ {
+  "id": "010_04",
+  "texto": "Un atajo: si hay una casilla con 0 pero su fila y su columna no suman 0, ya no pueden ser independientes.",
+  "subtitulo": "Un atajo: si hay una casilla con 0 pero su fila y su columna no suman 0, ya no pueden ser independientes."
+ },
+ {
+  "id": "010_05",
+  "texto": "En Excel se hace la tabla de lo que habría si fueran independientes, con los dólares a medias: dólar E fija la columna de totales de fila, y dólar 6 la fila de totales de columna. Luego comparas casilla a casilla.",
+  "subtitulo": "En Excel se hace la tabla de lo que habría si fueran independientes, con los dólares a medias: dólar E fija la columna de totales de fila, y dólar 6 la fila de totales de columna. Luego comparas casilla a casilla."
+ },
+ {
+  "id": "011_00",
+  "texto": "Y hasta aquí el Tema 2. En la guía tienes las comprobaciones, los ejercicios 15 a 18 del boletín y la práctica 4. Hazlos primero en papel.",
+  "subtitulo": "Y hasta aquí el Tema 2. En la guía tienes las comprobaciones, los ejercicios 15 a 18 del boletín y la práctica 4. Hazlos primero en papel."
+ }
+]

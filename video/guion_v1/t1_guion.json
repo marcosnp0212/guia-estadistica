@@ -1,0 +1,932 @@
+[
+ {
+  "id": "000_00",
+  "texto": "Hola. En este vídeo vamos a ver el Tema 1: el análisis descriptivo de una variable. Vamos despacio y con ejemplos. Para cada cosa verás cómo se hace a mano, con calculadora, cómo se hace en Excel y qué frase escribir en el examen.",
+  "subtitulo": "Hola. En este vídeo vamos a ver el Tema 1: el análisis descriptivo de una variable. Vamos despacio y con ejemplos. Para cada cosa verás cómo se hace a mano, con calculadora, cómo se hace en Excel y qué frase escribir en el examen."
+ },
+ {
+  "id": "001_00",
+  "texto": "Estos son los 11 apartados del tema. La idea de todo el tema es sencilla: tenemos muchos datos de una sola característica, por ejemplo cuántos hermanos tiene cada persona, y queremos resumirlos. Ordenarlos en una tabla, dibujarlos y dar unos pocos números que cuenten cómo son: dónde está el centro, cuánto se separan los datos y qué forma tienen.",
+  "subtitulo": "Estos son los 11 apartados del tema. La idea de todo el tema es sencilla: tenemos muchos datos de una sola característica, por ejemplo cuántos hermanos tiene cada persona, y queremos resumirlos. Ordenarlos en una tabla, dibujarlos y dar unos pocos números que cuenten cómo son: dónde está el centro, cuánto se separan los datos y qué forma tienen."
+ },
+ {
+  "id": "002_00",
+  "texto": "Apartado 1.1: vocabulario básico. Son pocas palabras, pero salen en las preguntas de teoría. Con una frase de cada una vas bien.",
+  "subtitulo": "Apartado 1.1: vocabulario básico. Son pocas palabras, pero salen en las preguntas de teoría. Con una frase de cada una vas bien."
+ },
+ {
+  "id": "003_00",
+  "texto": "Un individuo es cada cosa de la que tomamos datos. Puede ser una persona, una empresa o una provincia.",
+  "subtitulo": "Un individuo es cada cosa de la que tomamos datos. Puede ser una persona, una empresa o una provincia."
+ },
+ {
+  "id": "003_01",
+  "texto": "La población son todos los individuos que nos interesan. Por ejemplo, todos los trabajadores de España.",
+  "subtitulo": "La población son todos los individuos que nos interesan. Por ejemplo, todos los trabajadores de España."
+ },
+ {
+  "id": "003_02",
+  "texto": "Como casi nunca podemos preguntar a todos, estudiamos un trozo: eso es la muestra. Por ejemplo, 500 trabajadores elegidos al azar. Si estudiamos a todos, se llama censo.",
+  "subtitulo": "Como casi nunca podemos preguntar a todos, estudiamos un trozo: eso es la muestra. Por ejemplo, 500 trabajadores elegidos al azar. Si estudiamos a todos, se llama censo."
+ },
+ {
+  "id": "003_03",
+  "texto": "Un parámetro es un número que describe a la población, como la media de todos. Un estadístico es ese mismo tipo de número, pero calculado en la muestra.",
+  "subtitulo": "Un parámetro es un número que describe a la población, como la media de todos. Un estadístico es ese mismo tipo de número, pero calculado en la muestra."
+ },
+ {
+  "id": "003_04",
+  "texto": "Y la variable es la característica que medimos: el salario, el sexo, el número de hijos.",
+  "subtitulo": "Y la variable es la característica que medimos: el salario, el sexo, el número de hijos."
+ },
+ {
+  "id": "003_05",
+  "texto": "Un truco para no confundirlos: parámetro empieza por P, como población. Estadístico tiene una E, como muestra.",
+  "subtitulo": "Un truco para no confundirlos: parámetro empieza por P, como población. Estadístico tiene una E, como muestra."
+ },
+ {
+  "id": "004_00",
+  "texto": "Apartado 1.2: los tipos de variables. Es lo primero que tienes que mirar en cualquier ejercicio, porque según el tipo se pueden hacer unas cosas u otras.",
+  "subtitulo": "Apartado 1.2: los tipos de variables. Es lo primero que tienes que mirar en cualquier ejercicio, porque según el tipo se pueden hacer unas cosas u otras."
+ },
+ {
+  "id": "005_00",
+  "texto": "Hay cuatro tipos. Las cuantitativas son números. Si se cuentan, uno, dos, tres, son discretas: el número de hijos. Si se miden y pueden tener decimales, son continuas: el salario o la altura. Las cualitativas son palabras. Si no tienen orden, son nominales, como el sexo o el departamento. Si tienen un orden lógico, son ordinales, como la satisfacción: baja, media y alta.",
+  "subtitulo": "Hay cuatro tipos. Las cuantitativas son números. Si se cuentan, uno, dos, tres, son discretas: el número de hijos. Si se miden y pueden tener decimales, son continuas: el salario o la altura. Las cualitativas son palabras. Si no tienen orden, son nominales, como el sexo o el departamento. Si tienen un orden lógico, son ordinales, como la satisfacción: baja, media y alta."
+ },
+ {
+  "id": "005_01",
+  "texto": "Para distinguirlas, hazte estas preguntas. ¿La respuesta es un número? Entonces es cuantitativa. ¿Se cuenta con los dedos? Discreta. ¿Se mide con una regla, una báscula o en euros? Continua. ¿La respuesta es una palabra? Cualitativa. ¿Esas palabras tienen un orden natural? Ordinal. Si no, nominal.",
+  "subtitulo": "Para distinguirlas, hazte estas preguntas. ¿La respuesta es un número? Entonces es cuantitativa. ¿Se cuenta con los dedos? Discreta. ¿Se mide con una regla, una báscula o en euros? Continua. ¿La respuesta es una palabra? Cualitativa. ¿Esas palabras tienen un orden natural? Ordinal. Si no, nominal."
+ },
+ {
+  "id": "005_02",
+  "texto": "Ojo con esto, que cae en el examen: con una variable nominal solo puedes calcular la moda y hacer gráficos de barras o de sectores. No tiene sentido calcular la media del departamento.",
+  "subtitulo": "Ojo con esto, que cae en el examen: con una variable nominal solo puedes calcular la moda y hacer gráficos de barras o de sectores. No tiene sentido calcular la media del departamento."
+ },
+ {
+  "id": "006_00",
+  "texto": "Apartado 1.3: la tabla de frecuencias. Es una tabla que dice cuántas veces aparece cada valor. Es el primer paso de casi todos los ejercicios.",
+  "subtitulo": "Apartado 1.3: la tabla de frecuencias. Es una tabla que dice cuántas veces aparece cada valor. Es el primer paso de casi todos los ejercicios."
+ },
+ {
+  "id": "007_00",
+  "texto": "Estas son sus columnas. equis sub i son los valores distintos, ordenados de menor a mayor. ene sub i, la frecuencia absoluta: cuántas veces aparece cada valor. efe sub i, la frecuencia relativa: qué parte del total es; se calcula dividiendo ene sub i entre n, el número total de datos. El porcentaje es la relativa por cien. ene mayúscula sub i es la acumulada: cuántos datos hay hasta ese valor, incluido. Y efe mayúscula sub i, la acumulada relativa.",
+  "subtitulo": "Estas son sus columnas. xᵢ son los valores distintos, ordenados de menor a mayor. nᵢ, la frecuencia absoluta: cuántas veces aparece cada valor. fᵢ, la frecuencia relativa: qué parte del total es; se calcula dividiendo nᵢ entre n, el número total de datos. El porcentaje es la relativa por cien. Nᵢ es la acumulada: cuántos datos hay hasta ese valor, incluido. Y Fᵢ, la acumulada relativa."
+ },
+ {
+  "id": "007_01",
+  "texto": "Hay unas comprobaciones que siempre se cumplen: la suma de las frecuencias absolutas es n, la suma de las relativas es 1, y la última acumulada es n. Úsalas para saber si lo has hecho bien.",
+  "subtitulo": "Hay unas comprobaciones que siempre se cumplen: la suma de las frecuencias absolutas es n, la suma de las relativas es 1, y la última acumulada es n. Úsalas para saber si lo has hecho bien."
+ },
+ {
+  "id": "008_00",
+  "texto": "Vamos a hacerla a mano con el ejemplo de clase: se preguntó a 44 personas cuántos hermanos tenían.",
+  "subtitulo": "Vamos a hacerla a mano con el ejemplo de clase: se preguntó a 44 personas cuántos hermanos tenían."
+ },
+ {
+  "id": "008_01",
+  "texto": "Primero, ordena los datos o apunta los valores distintos que aparecen: 0, 1, 2, 3, 4 y 5.",
+  "subtitulo": "Primero, ordena los datos o apunta los valores distintos que aparecen: 0, 1, 2, 3, 4 y 5."
+ },
+ {
+  "id": "008_02",
+  "texto": "Segundo, recorre la lista una sola vez y pon un palote junto a cada valor cada vez que aparezca. Agrúpalos de 5 en 5 para no perderte.",
+  "subtitulo": "Segundo, recorre la lista una sola vez y pon un palote junto a cada valor cada vez que aparezca. Agrúpalos de 5 en 5 para no perderte."
+ },
+ {
+  "id": "008_03",
+  "texto": "Tercero, cuenta los palotes: esa es la columna ene sub i. Súmala. Tiene que darte 44. Si no te da, has contado mal: repítelo antes de seguir.",
+  "subtitulo": "Tercero, cuenta los palotes: esa es la columna nᵢ. Súmala. Tiene que darte 44. Si no te da, has contado mal: repítelo antes de seguir."
+ },
+ {
+  "id": "008_04",
+  "texto": "Cuarto, divide cada ene sub i entre 44 con la calculadora: es la frecuencia relativa. Y la acumulada se va sumando: la primera es 21; la segunda, 21 más 12 igual a 33; y así hasta llegar a 44.",
+  "subtitulo": "Cuarto, divide cada nᵢ entre 44 con la calculadora: es la frecuencia relativa. Y la acumulada se va sumando: la primera es 21; la segunda, 21 + 12 = 33; y así hasta llegar a 44."
+ },
+ {
+  "id": "008_05",
+  "texto": "Así queda la tabla. Una fila se lee así: 21 personas, el 47,7  por ciento, no tienen hermanos. Y con la acumulada: 33 personas, el 75  por ciento, tienen un hermano o ninguno.",
+  "subtitulo": "Así queda la tabla. Una fila se lee así: 21 personas, el 47,7 %, no tienen hermanos. Y con la acumulada: 33 personas, el 75 %, tienen un hermano o ninguno."
+ },
+ {
+  "id": "009_00",
+  "texto": "En Excel, supón que tienes los 44 datos en la columna B, de la fila 2 a la 45, y los valores del 0 al 5 en la columna D.",
+  "subtitulo": "En Excel, supón que tienes los 44 datos en la columna B, de la fila 2 a la 45, y los valores del 0 al 5 en la columna D."
+ },
+ {
+  "id": "009_01",
+  "texto": "Para la frecuencia absoluta, escribe CONTAR.SI, el rango de datos fijado con dólares, punto y coma, y la celda del valor. Luego arrastras hacia abajo.",
+  "subtitulo": "Para la frecuencia absoluta, escribe CONTAR.SI, el rango de datos fijado con dólares, punto y coma, y la celda del valor. Luego arrastras hacia abajo."
+ },
+ {
+  "id": "009_02",
+  "texto": "Para la relativa, divides cada frecuencia entre el total, que tienes en E8, también fijado con dólares.",
+  "subtitulo": "Para la relativa, divides cada frecuencia entre el total, que tienes en E8, también fijado con dólares."
+ },
+ {
+  "id": "009_03",
+  "texto": "Y la acumulada: la primera es igual a la primera frecuencia, y cada una de las siguientes es la de arriba más la frecuencia de su fila.",
+  "subtitulo": "Y la acumulada: la primera es igual a la primera frecuencia, y cada una de las siguientes es la de arriba más la frecuencia de su fila."
+ },
+ {
+  "id": "009_04",
+  "texto": "El dólar es muy importante. Sirve para que, al arrastrar la fórmula, Excel no mueva el rango de datos ni el total. Si se te olvida, verás números raros o el error dividir entre cero.",
+  "subtitulo": "El dólar es muy importante. Sirve para que, al arrastrar la fórmula, Excel no mueva el rango de datos ni el total. Si se te olvida, verás números raros o el error dividir entre cero."
+ },
+ {
+  "id": "010_00",
+  "texto": "Si la variable es continua, como la altura o el salario, casi nunca se repite un valor exacto. Entonces se agrupan los datos en intervalos. Ejemplo de clase: 16 alturas, de 163 a 198 centímetros.",
+  "subtitulo": "Si la variable es continua, como la altura o el salario, casi nunca se repite un valor exacto. Entonces se agrupan los datos en intervalos. Ejemplo de clase: 16 alturas, de 163 a 198 centímetros."
+ },
+ {
+  "id": "010_01",
+  "texto": "Número de intervalos: más o menos la raíz cuadrada de n. Raíz de 16: 4.",
+  "subtitulo": "Número de intervalos: más o menos la raíz cuadrada de n. Raíz de 16: 4."
+ },
+ {
+  "id": "010_02",
+  "texto": "Amplitud: el máximo menos el mínimo, entre el número de intervalos. 35 entre 4 da 8,75, y lo redondeamos hacia arriba a un número cómodo: 10.",
+  "subtitulo": "Amplitud: el máximo menos el mínimo, entre el número de intervalos. 35 entre 4 da 8,75, y lo redondeamos hacia arriba a un número cómodo: 10."
+ },
+ {
+  "id": "010_03",
+  "texto": "Los intervalos quedan así. La marca de clase es el punto medio de cada intervalo, por ejemplo 165. Representa a todo el intervalo en las cuentas.",
+  "subtitulo": "Los intervalos quedan así. La marca de clase es el punto medio de cada intervalo, por ejemplo 165. Representa a todo el intervalo en las cuentas."
+ },
+ {
+  "id": "010_04",
+  "texto": "Ahora cuentas cuántos datos caen en cada uno. Cuidado con los extremos: un dato que vale justo 170 va en el primer intervalo, porque el paréntesis del segundo dice que el 170 no entra.",
+  "subtitulo": "Ahora cuentas cuántos datos caen en cada uno. Cuidado con los extremos: un dato que vale justo 170 va en el primer intervalo, porque el paréntesis del segundo dice que el 170 no entra."
+ },
+ {
+  "id": "010_05",
+  "texto": "Y así queda la tabla de las alturas, con sus marcas y sus acumuladas. En Excel esto se hace con la función FRECUENCIA, que cuenta los datos de cada intervalo a la vez.",
+  "subtitulo": "Y así queda la tabla de las alturas, con sus marcas y sus acumuladas. En Excel esto se hace con la función FRECUENCIA, que cuenta los datos de cada intervalo a la vez."
+ },
+ {
+  "id": "011_00",
+  "texto": "Apartado 1.4: los gráficos. Qué gráfico va con cada tipo de variable, cómo se dibuja en papel y cómo se hace en Excel.",
+  "subtitulo": "Apartado 1.4: los gráficos. Qué gráfico va con cada tipo de variable, cómo se dibuja en papel y cómo se hace en Excel."
+ },
+ {
+  "id": "012_00",
+  "texto": "Para variables cualitativas y para las discretas se usa el diagrama de barras: en el eje horizontal, los valores; en el vertical, la frecuencia. Las barras no se tocan.",
+  "subtitulo": "Para variables cualitativas y para las discretas se usa el diagrama de barras: en el eje horizontal, los valores; en el vertical, la frecuencia. Las barras no se tocan."
+ },
+ {
+  "id": "012_01",
+  "texto": "Este es el de los hermanos. Se ve de un vistazo que lo más frecuente es no tener hermanos, y que a partir de ahí las barras bajan.",
+  "subtitulo": "Este es el de los hermanos. Se ve de un vistazo que lo más frecuente es no tener hermanos, y que a partir de ahí las barras bajan."
+ },
+ {
+  "id": "013_00",
+  "texto": "El diagrama de sectores es un círculo repartido en trozos. El ángulo de cada trozo es 360 por la frecuencia relativa. Solo es recomendable con pocas categorías.",
+  "subtitulo": "El diagrama de sectores es un círculo repartido en trozos. El ángulo de cada trozo es 360 por la frecuencia relativa. Solo es recomendable con pocas categorías."
+ },
+ {
+  "id": "013_01",
+  "texto": "El gráfico radial, o de araña, tiene un radio por categoría y sirve para comparar perfiles, por ejemplo el gasto de dos provincias en varias partidas.",
+  "subtitulo": "El gráfico radial, o de araña, tiene un radio por categoría y sirve para comparar perfiles, por ejemplo el gasto de dos provincias en varias partidas."
+ },
+ {
+  "id": "013_02",
+  "texto": "El pictograma usa dibujos en lugar de barras.",
+  "subtitulo": "El pictograma usa dibujos en lugar de barras."
+ },
+ {
+  "id": "013_03",
+  "texto": "Para variables agrupadas en intervalos se usa el histograma. Se parece a las barras, pero aquí las barras se tocan, porque los intervalos van seguidos. Y lo que importa es el área de cada rectángulo.",
+  "subtitulo": "Para variables agrupadas en intervalos se usa el histograma. Se parece a las barras, pero aquí las barras se tocan, porque los intervalos van seguidos. Y lo que importa es el área de cada rectángulo."
+ },
+ {
+  "id": "013_04",
+  "texto": "Por eso, si los intervalos no miden lo mismo, la altura no es la frecuencia, sino la densidad: la frecuencia dividida entre la amplitud. Si un intervalo es el doble de ancho, es normal que tenga más datos solo por eso.",
+  "subtitulo": "Por eso, si los intervalos no miden lo mismo, la altura no es la frecuencia, sino la densidad: la frecuencia dividida entre la amplitud. Si un intervalo es el doble de ancho, es normal que tenga más datos solo por eso."
+ },
+ {
+  "id": "013_05",
+  "texto": "Y el polígono de frecuencias es una línea que une los puntos medios de los techos del histograma.",
+  "subtitulo": "Y el polígono de frecuencias es una línea que une los puntos medios de los techos del histograma."
+ },
+ {
+  "id": "014_00",
+  "texto": "En papel, para las barras: dibuja los dos ejes. En el horizontal, los valores separados por el mismo espacio. En el vertical, una escala que llegue un poco por encima de la frecuencia más alta; con los hermanos, de 0 a 25, marcando de 5 en 5.",
+  "subtitulo": "En papel, para las barras: dibuja los dos ejes. En el horizontal, los valores separados por el mismo espacio. En el vertical, una escala que llegue un poco por encima de la frecuencia más alta; con los hermanos, de 0 a 25, marcando de 5 en 5."
+ },
+ {
+  "id": "014_01",
+  "texto": "Para los sectores, calcula el ángulo de cada trozo, 360 por la frecuencia relativa, y mídelo con el transportador, uno detrás de otro. Con los hermanos salen estos ángulos, que suman 360.",
+  "subtitulo": "Para los sectores, calcula el ángulo de cada trozo, 360 por la frecuencia relativa, y mídelo con el transportador, uno detrás de otro. Con los hermanos salen estos ángulos, que suman 360."
+ },
+ {
+  "id": "014_02",
+  "texto": "Para el histograma, el eje horizontal va a escala: un intervalo el doble de ancho ocupa el doble. Y la altura es la frecuencia, o la densidad si los intervalos miden distinto. Los rectángulos van pegados.",
+  "subtitulo": "Para el histograma, el eje horizontal va a escala: un intervalo el doble de ancho ocupa el doble. Y la altura es la frecuencia, o la densidad si los intervalos miden distinto. Los rectángulos van pegados."
+ },
+ {
+  "id": "014_03",
+  "texto": "Para el polígono, marca un punto en el centro del techo de cada rectángulo y únelos con líneas rectas.",
+  "subtitulo": "Para el polígono, marca un punto en el centro del techo de cada rectángulo y únelos con líneas rectas."
+ },
+ {
+  "id": "014_04",
+  "texto": "Y no olvides el título y el nombre de cada eje.",
+  "subtitulo": "Y no olvides el título y el nombre de cada eje."
+ },
+ {
+  "id": "015_00",
+  "texto": "En Excel, para las barras, selecciona los valores y las frecuencias, y ve a Insertar, gráfico de columnas, columna agrupada.",
+  "subtitulo": "En Excel, para las barras, selecciona los valores y las frecuencias, y ve a Insertar, gráfico de columnas, columna agrupada."
+ },
+ {
+  "id": "015_01",
+  "texto": "Para los sectores, Insertar, gráfico circular.",
+  "subtitulo": "Para los sectores, Insertar, gráfico circular."
+ },
+ {
+  "id": "015_02",
+  "texto": "Para un histograma con los datos sin agrupar: Insertar, gráfico estadístico, histograma.",
+  "subtitulo": "Para un histograma con los datos sin agrupar: Insertar, gráfico estadístico, histograma."
+ },
+ {
+  "id": "015_03",
+  "texto": "Y si ya tienes la tabla agrupada, haz un gráfico de columnas y pon el ancho del intervalo al 0 por ciento, para que las barras se toquen.",
+  "subtitulo": "Y si ya tienes la tabla agrupada, haz un gráfico de columnas y pon el ancho del intervalo al 0 por ciento, para que las barras se toquen."
+ },
+ {
+  "id": "016_00",
+  "texto": "Apartado 1.5: las medidas de posición central. Media, mediana y moda. Las tres dicen dónde está el centro de los datos, cada una a su manera.",
+  "subtitulo": "Apartado 1.5: las medidas de posición central. Media, mediana y moda. Las tres dicen dónde está el centro de los datos, cada una a su manera."
+ },
+ {
+  "id": "017_00",
+  "texto": "La media es el promedio de toda la vida: sumas todos los datos y divides entre cuántos hay. Se escribe equis barra.",
+  "subtitulo": "La media es el promedio de toda la vida: sumas todos los datos y divides entre cuántos hay. Se escribe equis barra."
+ },
+ {
+  "id": "017_01",
+  "texto": "Si los datos vienen en una tabla de frecuencias, cada valor se multiplica por las veces que aparece, se suma todo y se divide entre n.",
+  "subtitulo": "Si los datos vienen en una tabla de frecuencias, cada valor se multiplica por las veces que aparece, se suma todo y se divide entre n."
+ },
+ {
+  "id": "017_02",
+  "texto": "Una forma de entenderla: imagina que juntas todo, por ejemplo todos los hermanos del grupo, y lo repartes a partes iguales. Lo que le toca a cada persona es la media.",
+  "subtitulo": "Una forma de entenderla: imagina que juntas todo, por ejemplo todos los hermanos del grupo, y lo repartes a partes iguales. Lo que le toca a cada persona es la media."
+ },
+ {
+  "id": "018_00",
+  "texto": "A mano, con la tabla de los hermanos.",
+  "subtitulo": "A mano, con la tabla de los hermanos."
+ },
+ {
+  "id": "018_01",
+  "texto": "Añade una columna con cada valor por su frecuencia: 0 por 21, 1 por 12, 2 por 6, y así.",
+  "subtitulo": "Añade una columna con cada valor por su frecuencia: 0 por 21, 1 por 12, 2 por 6, y así."
+ },
+ {
+  "id": "018_02",
+  "texto": "Suma esa columna: da 43. Son todos los hermanos juntos.",
+  "subtitulo": "Suma esa columna: da 43. Son todos los hermanos juntos."
+ },
+ {
+  "id": "018_03",
+  "texto": "Y divide entre el número de personas: 43 entre 44, 0,977. De media, casi un hermano por persona.",
+  "subtitulo": "Y divide entre el número de personas: 43 entre 44, 0,977. De media, casi un hermano por persona."
+ },
+ {
+  "id": "018_04",
+  "texto": "Con intervalos se hace igual, pero usando la marca de clase como valor. El resultado es aproximado, porque suponemos que todos los datos del intervalo valen su punto medio. En las alturas, con la tabla sale 178,75, y con los datos sueltos, 179,25. Se parecen, pero no son iguales.",
+  "subtitulo": "Con intervalos se hace igual, pero usando la marca de clase como valor. El resultado es aproximado, porque suponemos que todos los datos del intervalo valen su punto medio. En las alturas, con la tabla sale 178,75, y con los datos sueltos, 179,25. Se parecen, pero no son iguales."
+ },
+ {
+  "id": "019_00",
+  "texto": "En Excel, con los datos sueltos, la función es PROMEDIO.",
+  "subtitulo": "En Excel, con los datos sueltos, la función es PROMEDIO."
+ },
+ {
+  "id": "019_01",
+  "texto": "Si solo tienes la tabla, con los valores en D y las frecuencias en E: SUMAPRODUCTO de valores y frecuencias, dividido entre la suma de las frecuencias.",
+  "subtitulo": "Si solo tienes la tabla, con los valores en D y las frecuencias en E: SUMAPRODUCTO de valores y frecuencias, dividido entre la suma de las frecuencias."
+ },
+ {
+  "id": "019_02",
+  "texto": "SUMAPRODUCTO hace en un solo paso la columna de valor por frecuencia y la suma. Si te da inseguridad, haz la columna auxiliar y divide: da lo mismo.",
+  "subtitulo": "SUMAPRODUCTO hace en un solo paso la columna de valor por frecuencia y la suma. Si te da inseguridad, haz la columna auxiliar y divide: da lo mismo."
+ },
+ {
+  "id": "020_00",
+  "texto": "Cuando tienes las medias de varios grupos de distinto tamaño, la media de todos juntos es la media ponderada: cada media por el tamaño de su grupo, se suma y se divide entre el total.",
+  "subtitulo": "Cuando tienes las medias de varios grupos de distinto tamaño, la media de todos juntos es la media ponderada: cada media por el tamaño de su grupo, se suma y se divide entre el total."
+ },
+ {
+  "id": "020_01",
+  "texto": "Ejemplo de clase: cuatro categorías con su salario medio y su número de personas.",
+  "subtitulo": "Ejemplo de clase: cuatro categorías con su salario medio y su número de personas."
+ },
+ {
+  "id": "020_02",
+  "texto": "La media bien hecha es 1900 por 450, más 2300 por 328, más 2580 por 45, más 4000 por 3, todo entre 826 personas: 2103,51 euros.",
+  "subtitulo": "La media bien hecha es 1900 por 450, más 2300 por 328, más 2580 por 45, más 4000 por 3, todo entre 826 personas: 2103,51 euros."
+ },
+ {
+  "id": "020_03",
+  "texto": "El error típico es hacer la media de las cuatro medias sin ponderar: daría 2695 euros, y es falso, porque los 3 altos cargos pesarían lo mismo que los 450 administrativos. La profesora lo dejó escrito en el Excel de clase como media mal.",
+  "subtitulo": "El error típico es hacer la media de las cuatro medias sin ponderar: daría 2695 euros, y es falso, porque los 3 altos cargos pesarían lo mismo que los 450 administrativos. La profesora lo dejó escrito en el Excel de clase como media mal."
+ },
+ {
+  "id": "020_04",
+  "texto": "Y la media truncada: se quitan los datos más extremos, el mismo porcentaje por arriba y por abajo, y se hace la media del resto. Con estos 10 salarios, quitando el más bajo y el más alto, sale 26,25, que refleja mejor el salario típico que la media normal, 28. En Excel es MEDIA.ACOTADA.",
+  "subtitulo": "Y la media truncada: se quitan los datos más extremos, el mismo porcentaje por arriba y por abajo, y se hace la media del resto. Con estos 10 salarios, quitando el más bajo y el más alto, sale 26,25, que refleja mejor el salario típico que la media normal, 28. En Excel es MEDIA.ACOTADA."
+ },
+ {
+  "id": "021_00",
+  "texto": "Si a todos los datos les sumas una cantidad, o los multiplicas por un número, la media cambia exactamente igual.",
+  "subtitulo": "Si a todos los datos les sumas una cantidad, o los multiplicas por un número, la media cambia exactamente igual."
+ },
+ {
+  "id": "021_01",
+  "texto": "Es decir: a la media le pasa lo mismo que a los datos. Ejemplo de clase: unos salarios con media 2406 euros.",
+  "subtitulo": "Es decir: a la media le pasa lo mismo que a los datos. Ejemplo de clase: unos salarios con media 2406 euros."
+ },
+ {
+  "id": "021_02",
+  "texto": "Si todos suben 200 euros, la media sube 200: 2606.",
+  "subtitulo": "Si todos suben 200 euros, la media sube 200: 2606."
+ },
+ {
+  "id": "021_03",
+  "texto": "Si todos suben un 3 por ciento, se multiplica por 1,03: 2478,18.",
+  "subtitulo": "Si todos suben un 3 por ciento, se multiplica por 1,03: 2478,18."
+ },
+ {
+  "id": "021_04",
+  "texto": "Y si suben las dos cosas: 1,03 por 2406, más 200: 2678,18 euros.",
+  "subtitulo": "Y si suben las dos cosas: 1,03 por 2406, más 200: 2678,18 euros."
+ },
+ {
+  "id": "022_00",
+  "texto": "La moda es el valor que más se repite. En los hermanos, la frecuencia más alta es 21, que corresponde al 0. La moda es 0: lo más frecuente es no tener hermanos. Cuidado: la moda es el valor, no la frecuencia.",
+  "subtitulo": "La moda es el valor que más se repite. En los hermanos, la frecuencia más alta es 21, que corresponde al 0. La moda es 0: lo más frecuente es no tener hermanos. Cuidado: la moda es el valor, no la frecuencia."
+ },
+ {
+  "id": "022_01",
+  "texto": "Con intervalos, primero buscas el intervalo modal, que es el de mayor densidad. Si todos los intervalos miden lo mismo, vale con mirar la frecuencia.",
+  "subtitulo": "Con intervalos, primero buscas el intervalo modal, que es el de mayor densidad. Si todos los intervalos miden lo mismo, vale con mirar la frecuencia."
+ },
+ {
+  "id": "022_02",
+  "texto": "Y aplicas esta fórmula: el extremo inferior del intervalo modal, más una fracción de su amplitud. Arriba, su densidad menos la del anterior. Abajo, esa misma resta más su densidad menos la del siguiente.",
+  "subtitulo": "Y aplicas esta fórmula: el extremo inferior del intervalo modal, más una fracción de su amplitud. Arriba, su densidad menos la del anterior. Abajo, esa misma resta más su densidad menos la del siguiente."
+ },
+ {
+  "id": "022_03",
+  "texto": "En las alturas, el modal es de 170 a 180, con 6 datos; el anterior tiene 3 y el siguiente 5. Mo es 170 más 3 entre 4, por 10: 177,5 centímetros.",
+  "subtitulo": "En las alturas, el modal es de 170 a 180, con 6 datos; el anterior tiene 3 y el siguiente 5. Mo es 170 más 3 entre 4, por 10: 177,5 centímetros."
+ },
+ {
+  "id": "022_04",
+  "texto": "Si el intervalo modal es el primero, no hay anterior: se pone 0. Y si es el último, el siguiente vale 0.",
+  "subtitulo": "Si el intervalo modal es el primero, no hay anterior: se pone 0. Y si es el último, el siguiente vale 0."
+ },
+ {
+  "id": "023_00",
+  "texto": "La mediana es el valor que queda justo en el medio cuando ordenas los datos de menor a mayor. Deja la mitad por debajo y la otra mitad por encima.",
+  "subtitulo": "La mediana es el valor que queda justo en el medio cuando ordenas los datos de menor a mayor. Deja la mitad por debajo y la otra mitad por encima."
+ },
+ {
+  "id": "023_01",
+  "texto": "La receta de los apuntes, con la tabla: primero calcula n entre 2.",
+  "subtitulo": "La receta de los apuntes, con la tabla: primero calcula n entre 2."
+ },
+ {
+  "id": "023_02",
+  "texto": "Luego mira la columna de acumuladas y busca la primera que sea mayor o igual que n entre 2.",
+  "subtitulo": "Luego mira la columna de acumuladas y busca la primera que sea mayor o igual que n entre 2."
+ },
+ {
+  "id": "023_03",
+  "texto": "Si esa acumulada es mayor que n entre 2, la mediana es el valor de esa fila. Si es exactamente igual, la mediana es la media entre ese valor y el siguiente.",
+  "subtitulo": "Si esa acumulada es mayor que n entre 2, la mediana es el valor de esa fila. Si es exactamente igual, la mediana es la media entre ese valor y el siguiente."
+ },
+ {
+  "id": "023_04",
+  "texto": "En los hermanos: n entre 2 es 22. Las acumuladas son 21, 33... La primera que llega a 22 es 33, en el valor 1. Como 33 es mayor que 22, la mediana es 1. La mitad de las personas tiene 1 hermano o ninguno.",
+  "subtitulo": "En los hermanos: n entre 2 es 22. Las acumuladas son 21, 33… La primera que llega a 22 es 33, en el valor 1. Como 33 es mayor que 22, la mediana es 1. La mitad de las personas tiene 1 hermano o ninguno."
+ },
+ {
+  "id": "024_00",
+  "texto": "Con datos sueltos, sin tabla, es la misma idea: ordena los datos y numéralos.",
+  "subtitulo": "Con datos sueltos, sin tabla, es la misma idea: ordena los datos y numéralos."
+ },
+ {
+  "id": "024_01",
+  "texto": "Las 16 alturas, ya ordenadas.",
+  "subtitulo": "Las 16 alturas, ya ordenadas."
+ },
+ {
+  "id": "024_02",
+  "texto": "n entre 2 es 8. Si sale un número entero, la mediana es la media del dato que ocupa ese puesto y el siguiente: el octavo y el noveno. Si no sale entero, redondeas hacia arriba y coges ese dato.",
+  "subtitulo": "n entre 2 es 8. Si sale un número entero, la mediana es la media del dato que ocupa ese puesto y el siguiente: el octavo y el noveno. Si no sale entero, redondeas hacia arriba y coges ese dato."
+ },
+ {
+  "id": "024_03",
+  "texto": "El octavo es 178 y el noveno 179: la mediana es 178,5 centímetros.",
+  "subtitulo": "El octavo es 178 y el noveno 179: la mediana es 178,5 centímetros."
+ },
+ {
+  "id": "024_04",
+  "texto": "Y si los datos vienen en intervalos, se usa una fórmula.",
+  "subtitulo": "Y si los datos vienen en intervalos, se usa una fórmula."
+ },
+ {
+  "id": "024_05",
+  "texto": "El extremo inferior del intervalo mediano, más lo que falta para llegar a n entre 2, dividido entre la frecuencia del intervalo, por su amplitud. En las alturas: 170 más 5 sextos de 10, 178,33. La idea: hasta 170 ya llevamos 3 datos; nos faltan 5 de los 6 del intervalo, así que avanzamos 5 sextos del intervalo.",
+  "subtitulo": "El extremo inferior del intervalo mediano, más lo que falta para llegar a n entre 2, dividido entre la frecuencia del intervalo, por su amplitud. En las alturas: 170 más 5 sextos de 10, 178,33. La idea: hasta 170 ya llevamos 3 datos; nos faltan 5 de los 6 del intervalo, así que avanzamos 5 sextos del intervalo."
+ },
+ {
+  "id": "025_00",
+  "texto": "En Excel, con datos sueltos, la mediana es MEDIANA.",
+  "subtitulo": "En Excel, con datos sueltos, la mediana es MEDIANA."
+ },
+ {
+  "id": "025_01",
+  "texto": "Y la moda, MODA.UNO. Con intervalos, Excel no tiene función: se escribe la fórmula de los apuntes con referencias a las celdas.",
+  "subtitulo": "Y la moda, MODA.UNO. Con intervalos, Excel no tiene función: se escribe la fórmula de los apuntes con referencias a las celdas."
+ },
+ {
+  "id": "025_02",
+  "texto": "¿Cuál uso? La media usa todos los datos, pero un valor muy extremo la arrastra: un salario de un millón dispara la media.",
+  "subtitulo": "¿Cuál uso? La media usa todos los datos, pero un valor muy extremo la arrastra: un salario de un millón dispara la media."
+ },
+ {
+  "id": "025_03",
+  "texto": "La mediana no se deja arrastrar por los extremos. Para salarios o precios de vivienda suele representar mejor lo normal.",
+  "subtitulo": "La mediana no se deja arrastrar por los extremos. Para salarios o precios de vivienda suele representar mejor lo normal."
+ },
+ {
+  "id": "025_04",
+  "texto": "Y la moda es la única que sirve para variables nominales, como el departamento.",
+  "subtitulo": "Y la moda es la única que sirve para variables nominales, como el departamento."
+ },
+ {
+  "id": "026_00",
+  "texto": "Apartado 1.6: los cuantiles. Son puntos de corte que dividen los datos ordenados en partes iguales. La mediana es uno de ellos.",
+  "subtitulo": "Apartado 1.6: los cuantiles. Son puntos de corte que dividen los datos ordenados en partes iguales. La mediana es uno de ellos."
+ },
+ {
+  "id": "027_00",
+  "texto": "Los cuartiles cortan en cuatro partes. El primero, C1, deja el 25 por ciento de los datos por debajo. El segundo es la mediana. El tercero, C3, deja el 75 por ciento por debajo.",
+  "subtitulo": "Los cuartiles cortan en cuatro partes. El primero, C1, deja el 25 por ciento de los datos por debajo. El segundo es la mediana. El tercero, C3, deja el 75 por ciento por debajo."
+ },
+ {
+  "id": "027_01",
+  "texto": "Los deciles cortan en diez partes, y los percentiles en cien. El percentil 98 deja el 98 por ciento por debajo.",
+  "subtitulo": "Los deciles cortan en diez partes, y los percentiles en cien. El percentil 98 deja el 98 por ciento por debajo."
+ },
+ {
+  "id": "027_02",
+  "texto": "Hay equivalencias útiles: C1 es el percentil 25, la mediana es el percentil 50 y C3 el percentil 75.",
+  "subtitulo": "Hay equivalencias útiles: C1 es el percentil 25, la mediana es el percentil 50 y C3 el percentil 75."
+ },
+ {
+  "id": "027_03",
+  "texto": "Se calculan exactamente igual que la mediana, cambiando n entre 2 por la proporción que toque: n entre 4 para C1, 3n entre 4 para C3, y r por n entre 100 para el percentil r.",
+  "subtitulo": "Se calculan exactamente igual que la mediana, cambiando n entre 2 por la proporción que toque: n entre 4 para C1, 3n entre 4 para C3, y r por n entre 100 para el percentil r."
+ },
+ {
+  "id": "027_04",
+  "texto": "Con intervalos, la fórmula es la de la mediana, cambiando n entre 2 por ese valor.",
+  "subtitulo": "Con intervalos, la fórmula es la de la mediana, cambiando n entre 2 por ese valor."
+ },
+ {
+  "id": "028_00",
+  "texto": "A mano, con la tabla de los hermanos. Las acumuladas son 21, 33, 39, 41, 43 y 44.",
+  "subtitulo": "A mano, con la tabla de los hermanos. Las acumuladas son 21, 33, 39, 41, 43 y 44."
+ },
+ {
+  "id": "028_01",
+  "texto": "C1: n entre 4 es 11. La primera acumulada que llega a 11 es 21, en el valor 0. Como 21 es mayor que 11, C1 es 0.",
+  "subtitulo": "C1: n entre 4 es 11. La primera acumulada que llega a 11 es 21, en el valor 0. Como 21 es mayor que 11, C1 es 0."
+ },
+ {
+  "id": "028_02",
+  "texto": "C3: 3n entre 4 es 33. La primera acumulada que llega es justo 33, en el valor 1. Como es exactamente igual, se hace la media con el valor siguiente: 1 más 2, entre 2, 1,5.",
+  "subtitulo": "C3: 3n entre 4 es 33. La primera acumulada que llega es justo 33, en el valor 1. Como es exactamente igual, se hace la media con el valor siguiente: 1 más 2, entre 2, 1,5."
+ },
+ {
+  "id": "028_03",
+  "texto": "Con datos sueltos, por ejemplo las 16 alturas ordenadas, es igual que la mediana.",
+  "subtitulo": "Con datos sueltos, por ejemplo las 16 alturas ordenadas, es igual que la mediana."
+ },
+ {
+  "id": "028_04",
+  "texto": "C1: 16 entre 4 es 4, un número entero. Entonces es la media del cuarto y el quinto dato: 172 y 174, que da 173.",
+  "subtitulo": "C1: 16 entre 4 es 4, un número entero. Entonces es la media del cuarto y el quinto dato: 172 y 174, que da 173."
+ },
+ {
+  "id": "028_05",
+  "texto": "Percentil 90: 0,9 por 16 es 14,4. No es entero: redondeas hacia arriba, 15, y es el dato número 15: 193.",
+  "subtitulo": "Percentil 90: 0,9 por 16 es 14,4. No es entero: redondeas hacia arriba, 15, y es el dato número 15: 193."
+ },
+ {
+  "id": "028_06",
+  "texto": "Ojo: Excel usa otro método para los cuartiles y a veces da algo distinto. En los hermanos, CUARTIL.INC da 1,25 en vez de 1,5. Los dos son correctos según el método. En papel, usa la receta de los apuntes.",
+  "subtitulo": "Ojo: Excel usa otro método para los cuartiles y a veces da algo distinto. En los hermanos, CUARTIL.INC da 1,25 en vez de 1,5. Los dos son correctos según el método. En papel, usa la receta de los apuntes."
+ },
+ {
+  "id": "029_00",
+  "texto": "Y con intervalos, el ejercicio de los apuntes: 100 datos en tres intervalos.",
+  "subtitulo": "Y con intervalos, el ejercicio de los apuntes: 100 datos en tres intervalos."
+ },
+ {
+  "id": "029_01",
+  "texto": "C1: 100 entre 4 es 25. La primera acumulada que llega a 25 es 44, el intervalo de 13 a 18. Aplicamos la fórmula: 13 más, 25 menos 15, entre 29, por 5. Da 14,72.",
+  "subtitulo": "C1: 100 entre 4 es 25. La primera acumulada que llega a 25 es 44, el intervalo de 13 a 18. Aplicamos la fórmula: 13 más, 25 menos 15, entre 29, por 5. Da 14,72."
+ },
+ {
+  "id": "029_02",
+  "texto": "La mediana: 50 cae en el intervalo de 18 a 25. 18 más, 50 menos 44, entre 56, por 7: 18,75.",
+  "subtitulo": "La mediana: 50 cae en el intervalo de 18 a 25. 18 más, 50 menos 44, entre 56, por 7: 18,75."
+ },
+ {
+  "id": "029_03",
+  "texto": "Y el percentil 70: 70 cae en el mismo intervalo. 18 más, 70 menos 44, entre 56, por 7: 21,25.",
+  "subtitulo": "Y el percentil 70: 70 cae en el mismo intervalo. 18 más, 70 menos 44, entre 56, por 7: 21,25."
+ },
+ {
+  "id": "030_00",
+  "texto": "En Excel, CUARTIL.INC con el rango y el número de cuartil: 1 o 3.",
+  "subtitulo": "En Excel, CUARTIL.INC con el rango y el número de cuartil: 1 o 3."
+ },
+ {
+  "id": "030_01",
+  "texto": "Y PERCENTIL.INC con el porcentaje en tanto por uno: 0,97 para el percentil 97.",
+  "subtitulo": "Y PERCENTIL.INC con el porcentaje en tanto por uno: 0,97 para el percentil 97."
+ },
+ {
+  "id": "030_02",
+  "texto": "Cómo se interpreta, que es lo que te pedirán: si un trabajador está en el percentil 98, el 98 por ciento de los trabajadores gana menos o igual que él, y solo el 2 por ciento gana más.",
+  "subtitulo": "Cómo se interpreta, que es lo que te pedirán: si un trabajador está en el percentil 98, el 98 por ciento de los trabajadores gana menos o igual que él, y solo el 2 por ciento gana más."
+ },
+ {
+  "id": "030_03",
+  "texto": "Y si C3 es 1,5 hermanos: el 75 por ciento de las personas tiene 1,5 hermanos o menos; en la práctica, uno o ninguno.",
+  "subtitulo": "Y si C3 es 1,5 hermanos: el 75 por ciento de las personas tiene 1,5 hermanos o menos; en la práctica, uno o ninguno."
+ },
+ {
+  "id": "031_00",
+  "texto": "Apartado 1.7: las medidas de dispersión. Dos clases pueden tener la misma nota media, un 5, y ser muy distintas: en una todos sacan un 5 y en la otra la mitad saca un 0 y la otra mitad un 10. Las medidas de dispersión dicen cuánto se separan los datos del centro.",
+  "subtitulo": "Apartado 1.7: las medidas de dispersión. Dos clases pueden tener la misma nota media, un 5, y ser muy distintas: en una todos sacan un 5 y en la otra la mitad saca un 0 y la otra mitad un 10. Las medidas de dispersión dicen cuánto se separan los datos del centro."
+ },
+ {
+  "id": "032_00",
+  "texto": "La más sencilla es el rango: el máximo menos el mínimo.",
+  "subtitulo": "La más sencilla es el rango: el máximo menos el mínimo."
+ },
+ {
+  "id": "032_01",
+  "texto": "En los hermanos, 5 menos 0, 5. En las alturas, 35. Es fácil, pero un solo dato extremo lo cambia todo.",
+  "subtitulo": "En los hermanos, 5 menos 0, 5. En las alturas, 35. Es fácil, pero un solo dato extremo lo cambia todo."
+ },
+ {
+  "id": "032_02",
+  "texto": "El rango intercuartílico es C3 menos C1.",
+  "subtitulo": "El rango intercuartílico es C3 menos C1."
+ },
+ {
+  "id": "032_03",
+  "texto": "Es la anchura del 50 por ciento central de los datos, y no le afectan los extremos. En los hermanos, 1,5 menos 0: 1,5.",
+  "subtitulo": "Es la anchura del 50 por ciento central de los datos, y no le afectan los extremos. En los hermanos, 1,5 menos 0: 1,5."
+ },
+ {
+  "id": "033_00",
+  "texto": "La varianza es la media de las distancias al cuadrado de cada dato a la media. La fórmula de la izquierda es la definición; la de la derecha, la práctica, que es la que usarás a mano: la suma de los cuadrados por su frecuencia, entre n, menos la media al cuadrado.",
+  "subtitulo": "La varianza es la media de las distancias al cuadrado de cada dato a la media. La fórmula de la izquierda es la definición; la de la derecha, la práctica, que es la que usarás a mano: la suma de los cuadrados por su frecuencia, entre n, menos la media al cuadrado."
+ },
+ {
+  "id": "033_01",
+  "texto": "¿Por qué al cuadrado? Porque si sumas las distancias tal cual, las de arriba y las de abajo se anulan y siempre da 0. Al elevar al cuadrado, todas son positivas.",
+  "subtitulo": "¿Por qué al cuadrado? Porque si sumas las distancias tal cual, las de arriba y las de abajo se anulan y siempre da 0. Al elevar al cuadrado, todas son positivas."
+ },
+ {
+  "id": "033_02",
+  "texto": "La varianza queda en unidades al cuadrado, euros al cuadrado, y cuesta interpretarla. Por eso se hace la raíz: la desviación típica, que está en las mismas unidades que los datos.",
+  "subtitulo": "La varianza queda en unidades al cuadrado, euros al cuadrado, y cuesta interpretarla. Por eso se hace la raíz: la desviación típica, que está en las mismas unidades que los datos."
+ },
+ {
+  "id": "033_03",
+  "texto": "La cuasivarianza divide entre n menos 1 en vez de entre n. Se usa cuando los datos son una muestra. Se saca multiplicando la varianza por n entre n menos 1. Y su raíz es la cuasidesviación típica.",
+  "subtitulo": "La cuasivarianza divide entre n menos 1 en vez de entre n. Se usa cuando los datos son una muestra. Se saca multiplicando la varianza por n entre n menos 1. Y su raíz es la cuasidesviación típica."
+ },
+ {
+  "id": "033_04",
+  "texto": "El fallo más típico: elevar al cuadrado la suma entera en vez de cada valor. Primero cada valor al cuadrado, luego por su frecuencia, luego se suma. Y no olvides restar la media al cuadrado al final.",
+  "subtitulo": "El fallo más típico: elevar al cuadrado la suma entera en vez de cada valor. Primero cada valor al cuadrado, luego por su frecuencia, luego se suma. Y no olvides restar la media al cuadrado al final."
+ },
+ {
+  "id": "034_00",
+  "texto": "A mano, con los hermanos. La tabla lleva una columna más: equis al cuadrado por su frecuencia. Su suma es 111.",
+  "subtitulo": "A mano, con los hermanos. La tabla lleva una columna más: equis al cuadrado por su frecuencia. Su suma es 111."
+ },
+ {
+  "id": "034_01",
+  "texto": "La media ya la teníamos: 43 entre 44, 0,9773.",
+  "subtitulo": "La media ya la teníamos: 43 entre 44, 0,9773."
+ },
+ {
+  "id": "034_02",
+  "texto": "La varianza: 111 entre 44 es 2,5227. Menos la media al cuadrado, 0,9551. Da 1,568.",
+  "subtitulo": "La varianza: 111 entre 44 es 2,5227. Menos la media al cuadrado, 0,9551. Da 1,568."
+ },
+ {
+  "id": "034_03",
+  "texto": "La desviación típica es la raíz: 1,252 hermanos. Se interpreta así: los datos se separan de la media, en promedio, unos 1,25 hermanos.",
+  "subtitulo": "La desviación típica es la raíz: 1,252 hermanos. Se interpreta así: los datos se separan de la media, en promedio, unos 1,25 hermanos."
+ },
+ {
+  "id": "034_04",
+  "texto": "Y si te piden las cuasi: la varianza por 44 entre 43, 1,604; y su raíz, 1,266.",
+  "subtitulo": "Y si te piden las cuasi: la varianza por 44 entre 43, 1,604; y su raíz, 1,266."
+ },
+ {
+  "id": "034_05",
+  "texto": "Un truco para la columna de cuadrados: equis al cuadrado por ene es equis por la columna de equis por ene, que ya tienes al lado. Y usa la media sin redondear al elevarla al cuadrado: guárdala en la memoria de la calculadora.",
+  "subtitulo": "Un truco para la columna de cuadrados: equis al cuadrado por ene es equis por la columna de equis por ene, que ya tienes al lado. Y usa la media sin redondear al elevarla al cuadrado: guárdala en la memoria de la calculadora."
+ },
+ {
+  "id": "035_00",
+  "texto": "En Excel hay una función para cada una: VAR.P para la varianza, VAR.S para la cuasivarianza, DESVEST.P para la desviación típica y DESVEST.S para la cuasidesviación.",
+  "subtitulo": "En Excel hay una función para cada una: VAR.P para la varianza, VAR.S para la cuasivarianza, DESVEST.P para la desviación típica y DESVEST.S para la cuasidesviación."
+ },
+ {
+  "id": "035_01",
+  "texto": "Para acordarte: punto P es de población y divide entre n. Punto S es de sample, muestra en inglés, y divide entre n menos 1. La de clase, la ese cuadrado, es VAR.P.",
+  "subtitulo": "Para acordarte: punto P es de población y divide entre n. Punto S es de sample, muestra en inglés, y divide entre n menos 1. La de clase, la ese cuadrado, es VAR.P."
+ },
+ {
+  "id": "035_02",
+  "texto": "Y cuidado con las salidas del programa R de los apuntes: cuando pone sd, es la cuasidesviación, no la desviación típica.",
+  "subtitulo": "Y cuidado con las salidas del programa R de los apuntes: cuando pone sd, es la cuasidesviación, no la desviación típica."
+ },
+ {
+  "id": "036_00",
+  "texto": "El coeficiente de variación es la desviación típica dividida entre la media.",
+  "subtitulo": "El coeficiente de variación es la desviación típica dividida entre la media."
+ },
+ {
+  "id": "036_01",
+  "texto": "Es una dispersión relativa, sin unidades. Sirve para comparar grupos con medias o unidades muy distintas.",
+  "subtitulo": "Es una dispersión relativa, sin unidades. Sirve para comparar grupos con medias o unidades muy distintas."
+ },
+ {
+  "id": "036_02",
+  "texto": "Ejemplo de clase: un sector energético que factura entre 500 y 600 millones y uno creativo que factura entre 1 y 8 millones. La desviación típica del energético es mucho mayor, 40,82, pero porque sus cifras son enormes. En términos relativos, el creativo tiene un CV de 0,66 frente a 0,07.",
+  "subtitulo": "Ejemplo de clase: un sector energético que factura entre 500 y 600 millones y uno creativo que factura entre 1 y 8 millones. La desviación típica del energético es mucho mayor, 40,82, pero porque sus cifras son enormes. En términos relativos, el creativo tiene un CV de 0,66 frente a 0,07."
+ },
+ {
+  "id": "036_03",
+  "texto": "La interpretación: cuanto mayor es el CV, más dispersión relativa hay y menos representativa es la media. El sector creativo es mucho más disperso: una empresa factura 8 veces más que otra.",
+  "subtitulo": "La interpretación: cuanto mayor es el CV, más dispersión relativa hay y menos representativa es la media. El sector creativo es mucho más disperso: una empresa factura 8 veces más que otra."
+ },
+ {
+  "id": "036_04",
+  "texto": "En Excel, la desviación típica entre la media.",
+  "subtitulo": "En Excel, la desviación típica entre la media."
+ },
+ {
+  "id": "037_00",
+  "texto": "Y si cambias los datos sumando o multiplicando, ¿qué le pasa a la dispersión?",
+  "subtitulo": "Y si cambias los datos sumando o multiplicando, ¿qué le pasa a la dispersión?"
+ },
+ {
+  "id": "037_01",
+  "texto": "Si sumas una cantidad a todos, la dispersión no cambia: todos se mueven lo mismo y siguen igual de separados.",
+  "subtitulo": "Si sumas una cantidad a todos, la dispersión no cambia: todos se mueven lo mismo y siguen igual de separados."
+ },
+ {
+  "id": "037_02",
+  "texto": "Si multiplicas por un número, la desviación típica se multiplica por ese número, y la varianza por ese número al cuadrado.",
+  "subtitulo": "Si multiplicas por un número, la desviación típica se multiplica por ese número, y la varianza por ese número al cuadrado."
+ },
+ {
+  "id": "037_03",
+  "texto": "Y el CV no cambia si solo multiplicas, porque la media y la desviación se multiplican igual. Pero sí cambia si sumas, porque la media se mueve y la desviación no.",
+  "subtitulo": "Y el CV no cambia si solo multiplicas, porque la media y la desviación se multiplican igual. Pero sí cambia si sumas, porque la media se mueve y la desviación no."
+ },
+ {
+  "id": "038_00",
+  "texto": "Último caso de dispersión: te dan varios grupos, por ejemplo departamentos, con su tamaño, su media y su varianza, y te piden la varianza de todos juntos. La varianza dentro de los grupos es la media ponderada de las varianzas: lo dispersos que están los datos dentro de cada grupo.",
+  "subtitulo": "Último caso de dispersión: te dan varios grupos, por ejemplo departamentos, con su tamaño, su media y su varianza, y te piden la varianza de todos juntos. La varianza dentro de los grupos es la media ponderada de las varianzas: lo dispersos que están los datos dentro de cada grupo."
+ },
+ {
+  "id": "038_01",
+  "texto": "La varianza entre los grupos mide lo distintas que son las medias de los grupos: cada media menos la media global, al cuadrado, por el tamaño del grupo; se suma y se divide entre el total.",
+  "subtitulo": "La varianza entre los grupos mide lo distintas que son las medias de los grupos: cada media menos la media global, al cuadrado, por el tamaño del grupo; se suma y se divide entre el total."
+ },
+ {
+  "id": "038_02",
+  "texto": "La varianza total es la suma de las dos.",
+  "subtitulo": "La varianza total es la suma de las dos."
+ },
+ {
+  "id": "038_03",
+  "texto": "Y el porcentaje debido a las diferencias entre grupos es la varianza entre, dividida entre la total, por cien.",
+  "subtitulo": "Y el porcentaje debido a las diferencias entre grupos es la varianza entre, dividida entre la total, por cien."
+ },
+ {
+  "id": "039_00",
+  "texto": "El ejemplo de los apuntes: tres submuestras con su tamaño, su media y su varianza.",
+  "subtitulo": "El ejemplo de los apuntes: tres submuestras con su tamaño, su media y su varianza."
+ },
+ {
+  "id": "039_01",
+  "texto": "Primero, la media global, que es la media ponderada: 5300 entre 500, 10,6.",
+  "subtitulo": "Primero, la media global, que es la media ponderada: 5300 entre 500, 10,6."
+ },
+ {
+  "id": "039_02",
+  "texto": "La varianza dentro: cada varianza por su tamaño, sumado y entre 500: 17,8.",
+  "subtitulo": "La varianza dentro: cada varianza por su tamaño, sumado y entre 500: 17,8."
+ },
+ {
+  "id": "039_03",
+  "texto": "La varianza entre: cada media menos 10,6, al cuadrado, por su tamaño. Sale 54, 72 y 294; sumado, 420; entre 500, 0,84.",
+  "subtitulo": "La varianza entre: cada media menos 10,6, al cuadrado, por su tamaño. Sale 54, 72 y 294; sumado, 420; entre 500, 0,84."
+ },
+ {
+  "id": "039_04",
+  "texto": "La total es 18,64, y solo el 4,5 por ciento se debe a las diferencias entre grupos. Interpretación: casi toda la variabilidad está dentro de los grupos; las tres submuestras tienen medias parecidas.",
+  "subtitulo": "La total es 18,64, y solo el 4,5 por ciento se debe a las diferencias entre grupos. Interpretación: casi toda la variabilidad está dentro de los grupos; las tres submuestras tienen medias parecidas."
+ },
+ {
+  "id": "039_05",
+  "texto": "Cuidado: si el enunciado te da desviaciones típicas en vez de varianzas, primero elévalas al cuadrado. Es un error muy común.",
+  "subtitulo": "Cuidado: si el enunciado te da desviaciones típicas en vez de varianzas, primero elévalas al cuadrado. Es un error muy común."
+ },
+ {
+  "id": "040_00",
+  "texto": "Apartado 1.8: las medidas de forma. Describen el dibujo de la distribución: si tiene una cola hacia un lado, y si es más picuda o más plana.",
+  "subtitulo": "Apartado 1.8: las medidas de forma. Describen el dibujo de la distribución: si tiene una cola hacia un lado, y si es más picuda o más plana."
+ },
+ {
+  "id": "041_00",
+  "texto": "La asimetría mira si la distribución es igual a los dos lados o tiene una cola larga hacia uno de ellos.",
+  "subtitulo": "La asimetría mira si la distribución es igual a los dos lados o tiene una cola larga hacia uno de ellos."
+ },
+ {
+  "id": "041_01",
+  "texto": "Se mide con el coeficiente de asimetría. Si es casi 0, es simétrica. Si es positivo, hay una cola hacia la derecha: unos pocos valores muy altos, como en los salarios, donde la mayoría gana poco y unos pocos ganan muchísimo; la media queda por encima de la mediana. Si es negativo, la cola va hacia los valores bajos.",
+  "subtitulo": "Se mide con el coeficiente de asimetría. Si es casi 0, es simétrica. Si es positivo, hay una cola hacia la derecha: unos pocos valores muy altos, como en los salarios, donde la mayoría gana poco y unos pocos ganan muchísimo; la media queda por encima de la mediana. Si es negativo, la cola va hacia los valores bajos."
+ },
+ {
+  "id": "042_00",
+  "texto": "La curtosis mira si la distribución es muy picuda, con muchos datos amontonados cerca de la media, o más plana, comparada con la campana de la distribución normal.",
+  "subtitulo": "La curtosis mira si la distribución es muy picuda, con muchos datos amontonados cerca de la media, o más plana, comparada con la campana de la distribución normal."
+ },
+ {
+  "id": "042_01",
+  "texto": "Si el coeficiente es 0, mesocúrtica, como la normal. Si es positivo, leptocúrtica, más picuda. Si es negativo, platicúrtica, más plana.",
+  "subtitulo": "Si el coeficiente es 0, mesocúrtica, como la normal. Si es positivo, leptocúrtica, más picuda. Si es negativo, platicúrtica, más plana."
+ },
+ {
+  "id": "042_02",
+  "texto": "Un truco para recordarlo: lepto suena a salto, picuda. Plati suena a plato, plana. Meso es en medio.",
+  "subtitulo": "Un truco para recordarlo: lepto suena a salto, picuda. Plati suena a plato, plana. Meso es en medio."
+ },
+ {
+  "id": "043_00",
+  "texto": "Las fórmulas usan las distancias a la media elevadas al cubo, para la asimetría, y a la cuarta, para la curtosis.",
+  "subtitulo": "Las fórmulas usan las distancias a la media elevadas al cubo, para la asimetría, y a la cuarta, para la curtosis."
+ },
+ {
+  "id": "043_01",
+  "texto": "A mano es largo, y en papel suelen darte la tabla hecha o pedirte solo la interpretación. Si te lo piden entero: una columna con la distancia de cada valor a la media, y luego esa distancia al cubo por la frecuencia y a la cuarta por la frecuencia. Sumas las dos columnas.",
+  "subtitulo": "A mano es largo, y en papel suelen darte la tabla hecha o pedirte solo la interpretación. Si te lo piden entero: una columna con la distancia de cada valor a la media, y luego esa distancia al cubo por la frecuencia y a la cuarta por la frecuencia. Sumas las dos columnas."
+ },
+ {
+  "id": "043_02",
+  "texto": "En los hermanos, la suma de los cubos es 123,70. Dividido entre 44, y entre la desviación típica al cubo, da 1,43: asimetría positiva.",
+  "subtitulo": "En los hermanos, la suma de los cubos es 123,70. Dividido entre 44, y entre la desviación típica al cubo, da 1,43: asimetría positiva."
+ },
+ {
+  "id": "043_03",
+  "texto": "Y la curtosis: 488,03 entre 44, entre S a la cuarta, menos 3: 1,51. Leptocúrtica, muy concentrada en los valores bajos.",
+  "subtitulo": "Y la curtosis: 488,03 entre 44, entre S a la cuarta, menos 3: 1,51. Leptocúrtica, muy concentrada en los valores bajos."
+ },
+ {
+  "id": "043_04",
+  "texto": "Un atajo sin cuentas: si la media es claramente mayor que la mediana, la asimetría es positiva.",
+  "subtitulo": "Un atajo sin cuentas: si la media es claramente mayor que la mediana, la asimetría es positiva."
+ },
+ {
+  "id": "043_05",
+  "texto": "En Excel: COEFICIENTE.ASIMETRIA.P y CURTOSIS. Pueden diferir un poco en los decimales, pero el signo, que es lo que se interpreta, coincide.",
+  "subtitulo": "En Excel: COEFICIENTE.ASIMETRIA.P y CURTOSIS. Pueden diferir un poco en los decimales, pero el signo, que es lo que se interpreta, coincide."
+ },
+ {
+  "id": "044_00",
+  "texto": "Apartado 1.9: tipificar. Tipificar un dato es restarle la media y dividir entre la desviación típica.",
+  "subtitulo": "Apartado 1.9: tipificar. Tipificar un dato es restarle la media y dividir entre la desviación típica."
+ },
+ {
+  "id": "044_01",
+  "texto": "El resultado, la puntuación z, dice cuántas desviaciones típicas está el dato por encima o por debajo de la media. Sirve para comparar datos de grupos distintos.",
+  "subtitulo": "El resultado, la puntuación z, dice cuántas desviaciones típicas está el dato por encima o por debajo de la media. Sirve para comparar datos de grupos distintos."
+ },
+ {
+  "id": "044_02",
+  "texto": "Ejemplo de clase: un alumno saca un 6 en un examen donde la media es 7 y la desviación 2. Su z es menos 0,5: medio punto típico por debajo de su clase.",
+  "subtitulo": "Ejemplo de clase: un alumno saca un 6 en un examen donde la media es 7 y la desviación 2. Su z es menos 0,5: medio punto típico por debajo de su clase."
+ },
+ {
+  "id": "044_03",
+  "texto": "En otro examen saca un 5, con media 4,5 y desviación 1. Su z es más 0,5.",
+  "subtitulo": "En otro examen saca un 5, con media 4,5 y desviación 1. Su z es más 0,5."
+ },
+ {
+  "id": "044_04",
+  "texto": "Así que, aunque el 6 parece mejor nota, relativamente le fue mejor en el segundo examen.",
+  "subtitulo": "Así que, aunque el 6 parece mejor nota, relativamente le fue mejor en el segundo examen."
+ },
+ {
+  "id": "044_05",
+  "texto": "En Excel, NORMALIZACION, con el dato, la media y la desviación típica.",
+  "subtitulo": "En Excel, NORMALIZACION, con el dato, la media y la desviación típica."
+ },
+ {
+  "id": "045_00",
+  "texto": "Apartado 1.10: los valores atípicos y el diagrama de caja. La caja va de C1 a C3, con una raya gruesa en la mediana. Los bigotes llegan hasta el dato más extremo que no es atípico, y los atípicos se dibujan como puntitos sueltos.",
+  "subtitulo": "Apartado 1.10: los valores atípicos y el diagrama de caja. La caja va de C1 a C3, con una raya gruesa en la mediana. Los bigotes llegan hasta el dato más extremo que no es atípico, y los atípicos se dibujan como puntitos sueltos."
+ },
+ {
+  "id": "045_01",
+  "texto": "Un dato es atípico si está por debajo del límite inferior, C1 menos 1,5 veces el rango intercuartílico, o por encima del superior, C3 más 1,5 veces el rango intercuartílico.",
+  "subtitulo": "Un dato es atípico si está por debajo del límite inferior, C1 menos 1,5 veces el rango intercuartílico, o por encima del superior, C3 más 1,5 veces el rango intercuartílico."
+ },
+ {
+  "id": "046_00",
+  "texto": "A mano, con los hermanos: C1 es 0 y C3 es 1,5, así que el rango intercuartílico es 1,5.",
+  "subtitulo": "A mano, con los hermanos: C1 es 0 y C3 es 1,5, así que el rango intercuartílico es 1,5."
+ },
+ {
+  "id": "046_01",
+  "texto": "Los límites: abajo, 0 menos 1,5 por 1,5, menos 2,25. Arriba, 1,5 más 2,25, 3,75.",
+  "subtitulo": "Los límites: abajo, 0 menos 1,5 por 1,5, menos 2,25. Arriba, 1,5 más 2,25, 3,75."
+ },
+ {
+  "id": "046_02",
+  "texto": "Nadie tiene menos de menos 2,25 hermanos, así que no hay atípicos por abajo. Pero 4 y 5 superan 3,75: hay 3 atípicos, dos personas con 4 hermanos y una con 5. El bigote de arriba llega hasta 3, el dato más alto que no es atípico.",
+  "subtitulo": "Nadie tiene menos de menos 2,25 hermanos, así que no hay atípicos por abajo. Pero 4 y 5 superan 3,75: hay 3 atípicos, dos personas con 4 hermanos y una con 5. El bigote de arriba llega hasta 3, el dato más alto que no es atípico."
+ },
+ {
+  "id": "046_03",
+  "texto": "Para dibujarlo: un eje con escala; la caja de C1 a C3; una raya en la mediana; los bigotes hasta los datos más extremos que no son atípicos; y los atípicos como puntitos sueltos. En Excel: Insertar, gráfico estadístico, cuadro y bigotes.",
+  "subtitulo": "Para dibujarlo: un eje con escala; la caja de C1 a C3; una raya en la mediana; los bigotes hasta los datos más extremos que no son atípicos; y los atípicos como puntitos sueltos. En Excel: Insertar, gráfico estadístico, cuadro y bigotes."
+ },
+ {
+  "id": "046_04",
+  "texto": "Y para leer un diagrama de caja: dónde está la caja te dice el nivel; la raya, el valor central, y si no está en medio de la caja, hay asimetría; lo larga que es la caja, la dispersión; y los puntos, los atípicos.",
+  "subtitulo": "Y para leer un diagrama de caja: dónde está la caja te dice el nivel; la raya, el valor central, y si no está en medio de la caja, hay asimetría; lo larga que es la caja, la dispersión; y los puntos, los atípicos."
+ },
+ {
+  "id": "047_00",
+  "texto": "Último apartado, el 1.11: interpretar las salidas de un programa. Los apuntes muestran resúmenes del programa R. Mean es la media; sd, la cuasidesviación; los porcentajes son el mínimo, los cuartiles y el máximo; skewness es la asimetría y kurtosis la curtosis.",
+  "subtitulo": "Último apartado, el 1.11: interpretar las salidas de un programa. Los apuntes muestran resúmenes del programa R. Mean es la media; sd, la cuasidesviación; los porcentajes son el mínimo, los cuartiles y el máximo; skewness es la asimetría y kurtosis la curtosis."
+ },
+ {
+  "id": "047_01",
+  "texto": "Y esta es la plantilla para escribir cualquier análisis descriptivo. Primero: qué variable es y cuántos datos hay.",
+  "subtitulo": "Y esta es la plantilla para escribir cualquier análisis descriptivo. Primero: qué variable es y cuántos datos hay."
+ },
+ {
+  "id": "047_02",
+  "texto": "Segundo, el centro: la media y la mediana. Si se parecen, la distribución es bastante simétrica; si la media es mayor, hay valores altos que tiran de ella.",
+  "subtitulo": "Segundo, el centro: la media y la mediana. Si se parecen, la distribución es bastante simétrica; si la media es mayor, hay valores altos que tiran de ella."
+ },
+ {
+  "id": "047_03",
+  "texto": "Tercero, la dispersión: la desviación típica, y entre qué valores está el 50 por ciento central.",
+  "subtitulo": "Tercero, la dispersión: la desviación típica, y entre qué valores está el 50 por ciento central."
+ },
+ {
+  "id": "047_04",
+  "texto": "Y por último, el rango, la forma, con el signo de la asimetría y de la curtosis, y los atípicos, si hay.",
+  "subtitulo": "Y por último, el rango, la forma, con el signo de la asimetría y de la curtosis, y los atípicos, si hay."
+ },
+ {
+  "id": "048_00",
+  "texto": "Un ejemplo con las alturas. Estos son los números que da el programa.",
+  "subtitulo": "Un ejemplo con las alturas. Estos son los números que da el programa."
+ },
+ {
+  "id": "048_01",
+  "texto": "Y esta la respuesta modelo: se han medido 16 personas. La altura media es 179,25 centímetros y la mediana 178,5; al parecerse, la distribución es bastante simétrica. Las alturas se separan de la media unos 9,4 centímetros de promedio. El 50 por ciento central mide entre 173,5 y 184,5. La asimetría es positiva pero pequeña, casi simétrica, y la curtosis algo negativa, un poco más plana que la normal. No hay atípicos.",
+  "subtitulo": "Y esta la respuesta modelo: se han medido 16 personas. La altura media es 179,25 centímetros y la mediana 178,5; al parecerse, la distribución es bastante simétrica. Las alturas se separan de la media unos 9,4 centímetros de promedio. El 50 por ciento central mide entre 173,5 y 184,5. La asimetría es positiva pero pequeña, casi simétrica, y la curtosis algo negativa, un poco más plana que la normal. No hay atípicos."
+ },
+ {
+  "id": "049_00",
+  "texto": "Y hasta aquí el Tema 1. Ahora, en la guía, haz las comprobaciones de cada apartado y los ejercicios del boletín, primero en papel. Y cuando lo tengas, las prácticas 1 a 3. Ánimo, que lo más largo del curso ya está.",
+  "subtitulo": "Y hasta aquí el Tema 1. Ahora, en la guía, haz las comprobaciones de cada apartado y los ejercicios del boletín, primero en papel. Y cuando lo tengas, las prácticas 1 a 3. Ánimo, que lo más largo del curso ya está."
+ }
+]

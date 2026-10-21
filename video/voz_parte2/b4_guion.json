@@ -1,0 +1,302 @@
+[
+ {
+  "id": "f96adb05fa930",
+  "texto": "En este vídeo resolvemos los 12 ejercicios del boletín del Tema 4, números índice. Para cada uno: enunciado, resolución a mano, Excel e interpretación. Para el vídeo antes de cada solución e inténtalo tú.",
+  "subtitulo": "En este vídeo resolvemos los 12 ejercicios del boletín del Tema 4, números índice. Para cada uno: enunciado, resolución a mano, Excel e interpretación. Para el vídeo antes de cada solución e inténtalo tú."
+ },
+ {
+  "id": "f6a6fd7577c2d",
+  "texto": "En casi todo el tema usamos una sola idea: subir un porcentaje es multiplicar por 1 más la tasa, y bajar es multiplicar por 1 menos la tasa.",
+  "subtitulo": "En casi todo el tema usamos una sola idea: subir un porcentaje es multiplicar por 1 más la tasa, y bajar es multiplicar por 1 menos la tasa."
+ },
+ {
+  "id": "f5cd729af35fa",
+  "texto": "Cuando la frase es liosa, escríbela como ecuación antes de calcular. A supera en un 15 por ciento a B: A es 1,15 por B.",
+  "subtitulo": "Cuando la frase es liosa, escríbela como ecuación antes de calcular. A supera en un 15 por ciento a B: A es 1,15 por B."
+ },
+ {
+  "id": "f456f5aa55d3a",
+  "texto": "Y la tasa de variación entre dos valores: el nuevo entre el viejo, menos 1.",
+  "subtitulo": "Y la tasa de variación entre dos valores: el nuevo entre el viejo, menos 1."
+ },
+ {
+  "id": "fe64b8c6aaefd",
+  "texto": "Ejercicio 1: índices de producción con base 2019.",
+  "subtitulo": "Ejercicio 1: índices de producción con base 2019."
+ },
+ {
+  "id": "f6021ecc1193b",
+  "texto": "Ponemos 2019 igual a 100. 2020 sube un 40 por ciento: por 1,40, 140. 2021 baja un 20 por ciento respecto a 2020: por 0,80, 112.",
+  "subtitulo": "Ponemos 2019 igual a 100. 2020 sube un 40 por ciento: por 1,40, 140. 2021 baja un 20 por ciento respecto a 2020: por 0,80, 112."
+ },
+ {
+  "id": "f08b56fe3e4e6",
+  "texto": "Y la frase difícil: 2021 superó en un 15 por ciento a 2022. Como ecuación: 2021 es 1,15 por 2022. Despejamos: 112 entre 1,15, 97,39.",
+  "subtitulo": "Y la frase difícil: 2021 superó en un 15 por ciento a 2022. Como ecuación: 2021 es 1,15 por 2022. Despejamos: 112 entre 1,15, 97,39."
+ },
+ {
+  "id": "f3a55e8c78d20",
+  "texto": "El error típico es multiplicar 112 por 0,85, que da 95,2. Está mal, porque la referencia del 15 por ciento es 2022, no 2021.",
+  "subtitulo": "El error típico es multiplicar 112 por 0,85, que da 95,2. Está mal, porque la referencia del 15 por ciento es 2022, no 2021."
+ },
+ {
+  "id": "fdbb2b8eceb3c",
+  "texto": "En Excel, la misma idea: multiplicar o dividir la celda anterior.",
+  "subtitulo": "En Excel, la misma idea: multiplicar o dividir la celda anterior."
+ },
+ {
+  "id": "f0a29968d3335",
+  "texto": "Ejercicio 2: el precio de un bien, con base 2019. Todas las frases se refieren a 2020.",
+  "subtitulo": "Ejercicio 2: el precio de un bien, con base 2019. Todas las frases se refieren a 2020."
+ },
+ {
+  "id": "fc0ea1e37a5f9",
+  "texto": "2019 es 100, y 2020, un 20 por ciento más: 120.",
+  "subtitulo": "2019 es 100, y 2020, un 20 por ciento más: 120."
+ },
+ {
+  "id": "f8c40fd6ae27c",
+  "texto": "2020 es un 20 por ciento menor que 2018: 2020 es 0,80 por 2018. Despejando, 120 entre 0,80, 150.",
+  "subtitulo": "2020 es un 20 por ciento menor que 2018: 2020 es 0,80 por 2018. Despejando, 120 entre 0,80, 150."
+ },
+ {
+  "id": "f6ecba1fcd233",
+  "texto": "Y 2020 es un 50 por ciento menor que 2021: 120 entre 0,50, 240.",
+  "subtitulo": "Y 2020 es un 50 por ciento menor que 2021: 120 entre 0,50, 240."
+ },
+ {
+  "id": "ffaa8a90393d1",
+  "texto": "La serie queda: 150, 100, 120 y 240.",
+  "subtitulo": "La serie queda: 150, 100, 120 y 240."
+ },
+ {
+  "id": "fdf868732e9f8",
+  "texto": "Ejercicio 3: tasas anuales de cuentas corrientes. Índices con base 2020.",
+  "subtitulo": "Ejercicio 3: tasas anuales de cuentas corrientes. Índices con base 2020."
+ },
+ {
+  "id": "f0d6211a31b6b",
+  "texto": "Se encadenan: cada año, el índice anterior por 1 más la tasa. 109, 119,90, 117,50, 126,90 y 139,59. Usa todos los decimales en la calculadora para no arrastrar errores.",
+  "subtitulo": "Se encadenan: cada año, el índice anterior por 1 más la tasa. 109, 119,90, 117,50, 126,90 y 139,59. Usa todos los decimales en la calculadora para no arrastrar errores."
+ },
+ {
+  "id": "f5b66eab8e764",
+  "texto": "En Excel, la celda anterior por 1 más la tasa, y arrastrar.",
+  "subtitulo": "En Excel, la celda anterior por 1 más la tasa, y arrastrar."
+ },
+ {
+  "id": "f5a886f709bed",
+  "texto": "Interpretación: en 2025 hay un 39,6 por ciento más de cuentas que en 2020.",
+  "subtitulo": "Interpretación: en 2025 hay un 39,6 por ciento más de cuentas que en 2020."
+ },
+ {
+  "id": "f4deef684f60b",
+  "texto": "Ejercicio 4: ¿está bien ajustado el salario? El IPC de 2024 con base 2023 es 103,5: los precios subieron un 3,5 por ciento.",
+  "subtitulo": "Ejercicio 4: ¿está bien ajustado el salario? El IPC de 2024 con base 2023 es 103,5: los precios subieron un 3,5 por ciento."
+ },
+ {
+  "id": "ff60c0ad0150f",
+  "texto": "Para no perder poder adquisitivo debería cobrar 433,45 por 1,035: 448,62 euros. Cobra 442,20, menos: no está bien ajustado.",
+  "subtitulo": "Para no perder poder adquisitivo debería cobrar 433,45 por 1,035: 448,62 euros. Cobra 442,20, menos: no está bien ajustado."
+ },
+ {
+  "id": "f9087919c65ba",
+  "texto": "Otra forma: pasar el salario de 2024 a euros de 2023. Dividir entre el IPC y multiplicar por 100: 427,25 euros.",
+  "subtitulo": "Otra forma: pasar el salario de 2024 a euros de 2023. Dividir entre el IPC y multiplicar por 100: 427,25 euros."
+ },
+ {
+  "id": "fec73c896cd87",
+  "texto": "Y la variación real: 427,25 entre 433,45 menos 1: menos 1,43 por ciento.",
+  "subtitulo": "Y la variación real: 427,25 entre 433,45 menos 1: menos 1,43 por ciento."
+ },
+ {
+  "id": "fc1afeebdb408",
+  "texto": "La interpretación: aunque en euros cobra un 2 por ciento más, los precios subieron un 3,5. En términos reales ha perdido un 1,43 por ciento de poder adquisitivo.",
+  "subtitulo": "La interpretación: aunque en euros cobra un 2 por ciento más, los precios subieron un 3,5. En términos reales ha perdido un 1,43 por ciento de poder adquisitivo."
+ },
+ {
+  "id": "f4363f66b936e",
+  "texto": "Ejercicio 5: las tasas de variación de una inversión, cada año respecto al anterior.",
+  "subtitulo": "Ejercicio 5: las tasas de variación de una inversión, cada año respecto al anterior."
+ },
+ {
+  "id": "fb163991bdec1",
+  "texto": "Nuevo entre viejo menos 1: 2021, más 12 por ciento; 2022, menos 4,17; 2023, más 10; y 2024, más 5.",
+  "subtitulo": "Nuevo entre viejo menos 1: 2021, más 12 por ciento; 2022, menos 4,17; 2023, más 10; y 2024, más 5."
+ },
+ {
+  "id": "f652d47709b48",
+  "texto": "En Excel, la celda entre la de arriba menos 1, con formato de porcentaje.",
+  "subtitulo": "En Excel, la celda entre la de arriba menos 1, con formato de porcentaje."
+ },
+ {
+  "id": "ffec673309a28",
+  "texto": "Ejercicio 6: justificar dos series de índices de producción.",
+  "subtitulo": "Ejercicio 6: justificar dos series de índices de producción."
+ },
+ {
+  "id": "fa64337f6a511",
+  "texto": "La primera, base 2020: cada producción entre la de 2020, 120, por 100. Por ejemplo, 135 entre 120 por 100: 112,5.",
+  "subtitulo": "La primera, base 2020: cada producción entre la de 2020, 120, por 100. Por ejemplo, 135 entre 120 por 100: 112,5."
+ },
+ {
+  "id": "f6d23392d0d25",
+  "texto": "La segunda es un cambio de base: cada índice de la serie anterior entre el de 2022, que es 125, por 100. 100 entre 125, 80. 150 entre 125, 120.",
+  "subtitulo": "La segunda es un cambio de base: cada índice de la serie anterior entre el de 2022, que es 125, por 100. 100 entre 125, 80. 150 entre 125, 120."
+ },
+ {
+  "id": "fdf1d9aeed472",
+  "texto": "Y sale lo mismo que dividir directamente cada producción entre la de 2022.",
+  "subtitulo": "Y sale lo mismo que dividir directamente cada producción entre la de 2022."
+ },
+ {
+  "id": "fc3b9d0c77915",
+  "texto": "En Excel, con el dólar para fijar la celda del año base.",
+  "subtitulo": "En Excel, con el dólar para fijar la celda del año base."
+ },
+ {
+  "id": "fc7f5e54e9acf",
+  "texto": "Ejercicio 7: cantidad, precio y valor de un producto en 2015, 2022 y 2025.",
+  "subtitulo": "Ejercicio 7: cantidad, precio y valor de un producto en 2015, 2022 y 2025."
+ },
+ {
+  "id": "f3e0f287ac51f",
+  "texto": "a) Las tasas de cada periodo, nuevo entre viejo menos 1. La cantidad sube un 2,38 y un 0,48 por ciento; el precio, un 28,57 y un 11,11. b) Las tasas anuales equivalentes: de 2015 a 2022 hay 7 años, así que elevamos 1 más la tasa a 1 séptimo y restamos 1. De 2022 a 2025, 3 años: a 1 tercio.",
+  "subtitulo": "a) Las tasas de cada periodo, nuevo entre viejo menos 1. La cantidad sube un 2,38 y un 0,48 por ciento; el precio, un 28,57 y un 11,11. b) Las tasas anuales equivalentes: de 2015 a 2022 hay 7 años, así que elevamos 1 más la tasa a 1 séptimo y restamos 1. De 2022 a 2025, 3 años: a 1 tercio."
+ },
+ {
+  "id": "fc0dfe7de77d8",
+  "texto": "c) El valor es precio por cantidad: 123 480, 162 540 y 181 460.",
+  "subtitulo": "c) El valor es precio por cantidad: 123 480, 162 540 y 181 460."
+ },
+ {
+  "id": "f0541203cb77b",
+  "texto": "d) Los índices del valor con base 2015: 131,63 y 146,95. En todo el periodo, el valor sube un 46,95 por ciento.",
+  "subtitulo": "d) Los índices del valor con base 2015: 131,63 y 146,95. En todo el periodo, el valor sube un 46,95 por ciento."
+ },
+ {
+  "id": "f0ef084112a09",
+  "texto": "Una curiosidad útil: el índice de valor es el producto del de precios por el de cantidad. Sirve para comprobar.",
+  "subtitulo": "Una curiosidad útil: el índice de valor es el producto del de precios por el de cantidad. Sirve para comprobar."
+ },
+ {
+  "id": "fdd6dadf3116b",
+  "texto": "Ejercicio 8: tasas mensuales del 5, 4 y 3 por ciento.",
+  "subtitulo": "Ejercicio 8: tasas mensuales del 5, 4 y 3 por ciento."
+ },
+ {
+  "id": "fc93cb4f7e99e",
+  "texto": "a) La tasa del trimestre: se multiplican los factores, 1,05 por 1,04 por 1,03, 1,12476. Un 12,48 por ciento.",
+  "subtitulo": "a) La tasa del trimestre: se multiplican los factores, 1,05 por 1,04 por 1,03, 1,12476. Un 12,48 por ciento."
+ },
+ {
+  "id": "f8e55e2235b3c",
+  "texto": "b) Comprobación con 100 euros: 105, 109,20 y 112,48. Coincide.",
+  "subtitulo": "b) Comprobación con 100 euros: 105, 109,20 y 112,48. Coincide."
+ },
+ {
+  "id": "fe1c42572833f",
+  "texto": "c) La tasa media mensual: la raíz cúbica de 1,12476, menos 1. Un 4 por ciento.",
+  "subtitulo": "c) La tasa media mensual: la raíz cúbica de 1,12476, menos 1. Un 4 por ciento."
+ },
+ {
+  "id": "f1296efef9734",
+  "texto": "Ojo: las tasas no se suman. 5 más 4 más 3 es 12, pero la tasa real es 12,48. Se multiplican.",
+  "subtitulo": "Ojo: las tasas no se suman. 5 más 4 más 3 es 12, pero la tasa real es 12,48. Se multiplican."
+ },
+ {
+  "id": "f5b9dc5c971a9",
+  "texto": "En Excel, el producto elevado a 1 tercio, menos 1.",
+  "subtitulo": "En Excel, el producto elevado a 1 tercio, menos 1."
+ },
+ {
+  "id": "f1f069d010b73",
+  "texto": "Ejercicio 9: Laspeyres y Paasche de una cesta de cinco productos. La tabla de trabajo: cuatro columnas de productos de precio por cantidad.",
+  "subtitulo": "Ejercicio 9: Laspeyres y Paasche de una cesta de cinco productos. La tabla de trabajo: cuatro columnas de productos de precio por cantidad."
+ },
+ {
+  "id": "fd3fd795545bc",
+  "texto": "Laspeyres pondera con las cantidades del año base: precios nuevos por cantidades de 2020, entre precios de 2020 por cantidades de 2020. 1925 entre 1590 por 100: 121,07. Los precios subieron un 21,07 por ciento.",
+  "subtitulo": "Laspeyres pondera con las cantidades del año base: precios nuevos por cantidades de 2020, entre precios de 2020 por cantidades de 2020. 1925 entre 1590 por 100: 121,07. Los precios subieron un 21,07 por ciento."
+ },
+ {
+  "id": "f672903dbc5a7",
+  "texto": "Paasche pondera con las cantidades del año actual: 1848 entre 1526,5 por 100: 121,06. Salen casi iguales porque las cantidades apenas cambiaron.",
+  "subtitulo": "Paasche pondera con las cantidades del año actual: 1848 entre 1526,5 por 100: 121,06. Salen casi iguales porque las cantidades apenas cambiaron."
+ },
+ {
+  "id": "f32df319c09e0",
+  "texto": "En Excel, SUMAPRODUCTO arriba y abajo, por 100.",
+  "subtitulo": "En Excel, SUMAPRODUCTO arriba y abajo, por 100."
+ },
+ {
+  "id": "f08e2c1e544ec",
+  "texto": "Ejercicio 10: sueldos e IPC de 1992 a 1996, con el IPC en base 1990.",
+  "subtitulo": "Ejercicio 10: sueldos e IPC de 1992 a 1996, con el IPC en base 1990."
+ },
+ {
+  "id": "f301ebe955a20",
+  "texto": "a) Cambio de base a 1992: cada IPC entre el de 1992, 120, por 100.",
+  "subtitulo": "a) Cambio de base a 1992: cada IPC entre el de 1992, 120, por 100."
+ },
+ {
+  "id": "f8921efaf40ff",
+  "texto": "b) El sueldo en dinero de 1992, el sueldo real: cada sueldo entre su IPC con base 1992, por 100.",
+  "subtitulo": "b) El sueldo en dinero de 1992, el sueldo real: cada sueldo entre su IPC con base 1992, por 100."
+ },
+ {
+  "id": "fcfa546331a35",
+  "texto": "c) La variación de 1992 a 1996. En términos corrientes, más 26,67 por ciento. En términos reales, menos 1,17.",
+  "subtitulo": "c) La variación de 1992 a 1996. En términos corrientes, más 26,67 por ciento. En términos reales, menos 1,17."
+ },
+ {
+  "id": "f9444fe205550",
+  "texto": "Interpretación: aunque el sueldo nominal sube mucho, los precios suben más, y el poder adquisitivo baja ligeramente.",
+  "subtitulo": "Interpretación: aunque el sueldo nominal sube mucho, los precios suben más, y el poder adquisitivo baja ligeramente."
+ },
+ {
+  "id": "fe5fd76d61fde",
+  "texto": "Ejercicio 11: actualizar un alquiler de 1200 euros con el IPC.",
+  "subtitulo": "Ejercicio 11: actualizar un alquiler de 1200 euros con el IPC."
+ },
+ {
+  "id": "fd25df480d69e",
+  "texto": "a) Se actualiza en la misma proporción que el IPC: por el IPC nuevo entre el de 2020. 2021, 1221,43 euros; 2022, 1285,71.",
+  "subtitulo": "a) Se actualiza en la misma proporción que el IPC: por el IPC nuevo entre el de 2020. 2021, 1221,43 euros; 2022, 1285,71."
+ },
+ {
+  "id": "f28756e484f5e",
+  "texto": "b) Si en 2022 quiere cobrar 1300, lo equivalente en dinero de 2020 es 1300 por 112 entre 120: 1213,33 euros. Más que los 1200 de 2020: sube por encima del IPC.",
+  "subtitulo": "b) Si en 2022 quiere cobrar 1300, lo equivalente en dinero de 2020 es 1300 por 112 entre 120: 1213,33 euros. Más que los 1200 de 2020: sube por encima del IPC."
+ },
+ {
+  "id": "f0e2e30519dcc",
+  "texto": "En Excel, el alquiler fijo con dólares por el cociente de IPC.",
+  "subtitulo": "En Excel, el alquiler fijo con dólares por el cociente de IPC."
+ },
+ {
+  "id": "f3a345eb57c90",
+  "texto": "Último ejercicio, el 12: el salario mínimo en términos reales con base 2010.",
+  "subtitulo": "Último ejercicio, el 12: el salario mínimo en términos reales con base 2010."
+ },
+ {
+  "id": "fc2f746f8d369",
+  "texto": "El IPC no está en base 2010, así que lo pasamos dividiendo entre 105,63. Todo junto: SMI real igual a SMI por 105,63 entre el IPC de ese año. En 2011, 621,51 euros. El índice real, el SMI real entre 633,3 por 100.",
+  "subtitulo": "El IPC no está en base 2010, así que lo pasamos dividiendo entre 105,63. Todo junto: SMI real igual a SMI por 105,63 entre el IPC de ese año. En 2011, 621,51 euros. El índice real, el SMI real entre 633,3 por 100."
+ },
+ {
+  "id": "fb35653e98d67",
+  "texto": "En Excel, con el IPC de 2010 fijado con dólares, y arrastrar.",
+  "subtitulo": "En Excel, con el IPC de 2010 fijado con dólares, y arrastrar."
+ },
+ {
+  "id": "f2ce3c2be9bb4",
+  "texto": "La interpretación: aunque el SMI nominal sube un 3,46 por ciento entre 2010 y 2016, en términos reales baja un 2,68. El peor año, 2013.",
+  "subtitulo": "La interpretación: aunque el SMI nominal sube un 3,46 por ciento entre 2010 y 2016, en términos reales baja un 2,68. El peor año, 2013."
+ },
+ {
+  "id": "fb4214c5078e2",
+  "texto": "Hasta aquí el boletín del Tema 4. Ahora, en la guía, las prácticas 7 y 8 y los simulacros. Mucho ánimo.",
+  "subtitulo": "Hasta aquí el boletín del Tema 4. Ahora, en la guía, las prácticas 7 y 8 y los simulacros. Mucho ánimo."
+ }
+]

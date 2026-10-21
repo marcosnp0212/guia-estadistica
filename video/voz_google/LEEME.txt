@@ -1,0 +1,8 @@
+VOZ CON GOOGLE CLOUD (voces Chirp 3 HD)
+
+1. Abre clave.txt con el Bloc de notas, borra PEGA_AQUI_TU_CLAVE, pega tu clave y guarda.
+2. Doble clic en 1_probar_voces.bat. Crea una muestra de cada voz y abre una página para escucharlas. Apunta el número de la que te guste.
+3. Doble clic en 2_generar_voz.bat. Escribe ese número y la velocidad (Intro = normal). Genera los ~590 audios; tarda un rato. Si se corta, vuelve a ejecutarlo: sigue por donde iba.
+4. Comprime la carpeta "audio" en un .zip y súbela al chat.
+
+La clave es como tu tarjeta: no la compartas. Cuando termines puedes borrarla de clave.txt.

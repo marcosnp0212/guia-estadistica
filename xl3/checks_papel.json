@@ -1,0 +1,438 @@
+{
+ "preguntas-de-excel-sin-ordenador": [
+  {
+   "type": "mc",
+   "q": "Tienes los datos en A2:A31. ¿Qué fórmula da la media?",
+   "opts": [
+    "=PROMEDIO(A2;A31)",
+    "=MEDIA(A2:A31)",
+    "=PROMEDIO(A2:A31)",
+    "=SUMA(A2:A31)"
+   ],
+   "ok": 2,
+   "explain": "PROMEDIO con el rango escrito con dos puntos (:).",
+   "why": {
+    "0": "Con punto y coma (;) solo coges A2 y A31, no todo el rango. El rango se escribe con dos puntos."
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué función da la varianza S² de los apuntes (la que divide entre n)?",
+   "opts": [
+    "VAR.S",
+    "DESVEST.P",
+    "COVARIANZA.P",
+    "VAR.P"
+   ],
+   "ok": 3,
+   "explain": ".P = población, divide entre n. Es la S² de clase.",
+   "why": {
+    "0": "VAR.S divide entre n − 1: es la cuasivarianza s².",
+    "1": "DESVEST.P es la desviación típica (la raíz de la varianza)."
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Y la cuasidesviación típica s (divide entre n − 1)?",
+   "opts": [
+    "DESVEST.P",
+    "DESVEST.S",
+    "RAIZ",
+    "VAR.S"
+   ],
+   "ok": 1,
+   "explain": "DESVEST.S: desviación típica de la muestra (Sample), entre n − 1.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué devuelve =CONTAR.SI(A2:A31;3)?",
+   "opts": [
+    "Cuántos datos hay en total",
+    "El tercer dato",
+    "Cuántas celdas valen 3",
+    "La suma de los 3 primeros datos"
+   ],
+   "ok": 2,
+   "explain": "CONTAR.SI cuenta cuántas celdas cumplen la condición: aquí, valer 3. Es la nᵢ del valor 3.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "En E2 tienes =CONTAR.SI(A2:A31;D2) y la arrastras hacia abajo. ¿Qué pasa?",
+   "opts": [
+    "Excel da error #¡VALOR!",
+    "El rango se mueve a A3:A32, A4:A33… y los conteos salen mal",
+    "Todo sale bien",
+    "Solo cambia D2"
+   ],
+   "ok": 1,
+   "explain": "Sin $, al arrastrar se mueve todo. Hay que fijar el rango: $A$2:$A$31.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Para qué sirve el $ en $A$2?",
+   "opts": [
+    "Para multiplicar",
+    "Para sumar la columna",
+    "Para que la celda no cambie al arrastrar la fórmula",
+    "Para que el número salga en euros"
+   ],
+   "ok": 2,
+   "explain": "$ fija la columna y la fila: al copiar la fórmula, sigue apuntando a A2.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "En =B2/$B$8, ¿qué representa $B$8 en una tabla de frecuencias?",
+   "opts": [
+    "La frecuencia de la fila 8",
+    "El valor más alto",
+    "La media",
+    "El total n, que tiene que ser el mismo en todas las filas"
+   ],
+   "ok": 3,
+   "explain": "Para fᵢ = nᵢ ÷ n, el denominador siempre es n: por eso se fija.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué calcula =SUMAPRODUCTO(A2:A6;B2:B6)/SUMA(B2:B6) si A son valores y B frecuencias?",
+   "opts": [
+    "La mediana",
+    "La media de la tabla de frecuencias",
+    "La suma de los valores",
+    "La varianza"
+   ],
+   "ok": 1,
+   "explain": "SUMAPRODUCTO hace Σxᵢ·nᵢ y SUMA da n: Σxᵢnᵢ ÷ n = x̄.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "=CUARTIL.INC(A2:A31;3) devuelve…",
+   "opts": [
+    "El tercer dato",
+    "El percentil 3",
+    "El tercer cuartil C₃",
+    "El 3 % de los datos"
+   ],
+   "ok": 2,
+   "explain": "El segundo número indica qué cuartil: 1, 2 (mediana) o 3.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Cómo pides el percentil 90 de A2:A31?",
+   "opts": [
+    "=PERCENTIL.INC(A2:A31;90)",
+    "=PERCENTIL(90)",
+    "=CUARTIL.INC(A2:A31;90)",
+    "=PERCENTIL.INC(A2:A31;0,9)"
+   ],
+   "ok": 3,
+   "explain": "El porcentaje va en tanto por uno: 0,9.",
+   "why": {
+    "0": "Excel quiere el percentil en tanto por uno (entre 0 y 1). 90 da error."
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "Excel da C₃ = 2,25 y con la receta de los apuntes te sale 2,5. ¿Qué pasa?",
+   "opts": [
+    "Hay que usar la media",
+    "Los dos están bien: Excel usa otro método para los cuartiles",
+    "Excel está mal",
+    "Te has equivocado seguro"
+   ],
+   "ok": 1,
+   "explain": "CUARTIL.INC interpola; la receta de los apuntes no. En papel usa la receta y, si te dan una salida de ordenador, sus números.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué función da la moda de unos datos sueltos?",
+   "opts": [
+    "CONTAR.SI",
+    "MEDIANA",
+    "MAX",
+    "MODA.UNO"
+   ],
+   "ok": 3,
+   "explain": "MODA.UNO devuelve el valor que más se repite.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "Con datos en intervalos, ¿Excel calcula la mediana con =MEDIANA de la tabla?",
+   "opts": [
+    "Solo si los intervalos son iguales",
+    "Sí, con =MEDIANA.INTERVALO",
+    "No: con la tabla agrupada hay que escribir la fórmula de los apuntes con celdas",
+    "Sí, siempre"
+   ],
+   "ok": 2,
+   "explain": "MEDIANA solo sirve con los datos sueltos. Con intervalos se escribe Lᵢ₋₁ + (n/2 − Nᵢ₋₁)/nᵢ · aᵢ con referencias a celdas.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué hace =FRECUENCIA(A2:A81;C2:C5)?",
+   "opts": [
+    "Calcula la frecuencia relativa",
+    "Ordena los datos",
+    "Cuenta cuántos datos caen en cada intervalo, usando los extremos superiores de C2:C5",
+    "Calcula la moda"
+   ],
+   "ok": 2,
+   "explain": "Cuenta los datos ≤ cada extremo y > el anterior: intervalos (a, b].",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Con qué herramienta de Excel se construye una tabla de doble entrada a partir de los datos?",
+   "opts": [
+    "Formato condicional",
+    "Ordenar y filtrar",
+    "Gráfico de dispersión",
+    "Tabla dinámica"
+   ],
+   "ok": 3,
+   "explain": "Insertar → Tabla dinámica: una variable en Filas, otra en Columnas y una de ellas en Valores (cuenta).",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "En la tabla dinámica, ¿cómo ves los porcentajes de cada fila (Y | X)?",
+   "opts": [
+    "Mostrar valores como → % del total de filas",
+    "Mostrar valores como → % del total general",
+    "Formato de celdas → Porcentaje",
+    "Insertar → Gráfico"
+   ],
+   "ok": 0,
+   "explain": "% del total de filas: cada fila suma 100 %. Son las condicionadas Y | X.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "Para la tabla «si fueran independientes» escribes =$E3*B$6 y arrastras. ¿Por qué los $ a medias?",
+   "opts": [
+    "Para que cada casilla use el total de su fila (columna E) y el de su columna (fila 6)",
+    "Es igual que sin $",
+    "Por estética",
+    "Para que dé error si no son independientes"
+   ],
+   "ok": 0,
+   "explain": "$E fija la columna de totales de fila; $6 fija la fila de totales de columna.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué función da la covarianza S_XY de clase (divide entre n)?",
+   "opts": [
+    "VAR.P",
+    "COVARIANZA.P",
+    "COVARIANZA.M",
+    "COEF.DE.CORREL"
+   ],
+   "ok": 1,
+   "explain": ".P divide entre n, como en los apuntes.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "X en A2:A11 e Y en B2:B11. ¿Cuál da la pendiente de la recta de Y sobre X?",
+   "opts": [
+    "=COEF.DE.CORREL(A2:A11;B2:B11)",
+    "=PENDIENTE(B2:B11;A2:A11)",
+    "=INTERSECCION.EJE(B2:B11;A2:A11)",
+    "=PENDIENTE(A2:A11;B2:B11)"
+   ],
+   "ok": 1,
+   "explain": "Primero la Y y después la X.",
+   "why": {
+    "3": "Al revés te da la pendiente de la recta de X sobre Y.",
+    "2": "Esa da el término independiente a."
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué devuelve =INTERSECCION.EJE(B2:B11;A2:A11)?",
+   "opts": [
+    "El punto de medias",
+    "La pendiente b",
+    "El valor de r",
+    "El término independiente a de la recta"
+   ],
+   "ok": 3,
+   "explain": "Es el valor de Y cuando X = 0: el término a.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué fórmula predice Y cuando X = 11?",
+   "opts": [
+    "=PRONOSTICO.LINEAL(11;B2:B11;A2:A11)",
+    "=PENDIENTE(11)",
+    "=PRONOSTICO.LINEAL(B2:B11;A2:A11;11)",
+    "=PROMEDIO(B2:B11)*11"
+   ],
+   "ok": 0,
+   "explain": "Orden: el valor de X, luego los Y, luego los X.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué función da R² directamente?",
+   "opts": [
+    "COEF.DE.CORREL",
+    "COEFICIENTE.R2",
+    "VAR.P",
+    "PENDIENTE"
+   ],
+   "ok": 1,
+   "explain": "COEFICIENTE.R2(Y;X). También puedes elevar COEF.DE.CORREL al cuadrado.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "En un gráfico de dispersión, ¿cómo sacas la recta y el R²?",
+   "opts": [
+    "Datos → Ordenar",
+    "Insertar → Recta",
+    "Formato de celdas",
+    "Clic derecho en un punto → Agregar línea de tendencia → Lineal, y marcar «Presentar ecuación» y «R cuadrado»"
+   ],
+   "ok": 3,
+   "explain": "La línea de tendencia escribe la ecuación y el R² encima del gráfico.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "Tienes los salarios en B2:B12 y el año base en la fila 2. ¿Qué escribes en C2 para el índice, antes de arrastrar?",
+   "opts": [
+    "=$B2/B2*100",
+    "=B2/$B$2*100",
+    "=B2*100",
+    "=B2/B2*100"
+   ],
+   "ok": 1,
+   "explain": "El año base se fija con $B$2 para que todas las filas dividan entre él.",
+   "why": {
+    "3": "Sin $, al arrastrar cada año se dividiría entre sí mismo: todo saldría 100."
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué calcula =B3/B2-1 con formato %?",
+   "opts": [
+    "La media",
+    "La tasa de variación entre B2 y B3",
+    "El índice",
+    "La diferencia en euros"
+   ],
+   "ok": 1,
+   "explain": "V₁/V₀ − 1 = tasa de variación.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Cómo escribes en Excel la tasa mensual equivalente a un 6 % anual?",
+   "opts": [
+    "=RAIZ(1,06)/12",
+    "=1,06^1/12-1",
+    "=6/12",
+    "=1,06^(1/12)-1"
+   ],
+   "ok": 3,
+   "explain": "La raíz duodécima es elevar a (1/12), con el paréntesis.",
+   "why": {
+    "1": "Sin paréntesis, Excel hace 1,06¹ y luego divide entre 12."
+   },
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "¿Qué función da la media geométrica de A1:A3?",
+   "opts": [
+    "MEDIA.GEOM",
+    "PROMEDIO",
+    "RAIZ",
+    "PRODUCTO"
+   ],
+   "ok": 0,
+   "explain": "MEDIA.GEOM multiplica y hace la raíz n-ésima. También =PRODUCTO(A1:A3)^(1/3).",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "p₀ en B, q₀ en C y pₜ en D. ¿Qué fórmula es el índice de Laspeyres de precios?",
+   "opts": [
+    "=SUMAPRODUCTO(D2:D6;C2:C6)/SUMAPRODUCTO(B2:B6;C2:C6)*100",
+    "=SUMAPRODUCTO(D2:D6;B2:B6)/SUMA(C2:C6)*100",
+    "=SUMA(D2:D6)/SUMA(B2:B6)*100",
+    "=PROMEDIO(D2:D6)/PROMEDIO(B2:B6)*100"
+   ],
+   "ok": 0,
+   "explain": "Σpₜq₀ / Σp₀q₀ × 100: la misma cantidad (q₀) arriba y abajo.",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "Salario en B2 e IPC en C2 (base 100). ¿Qué fórmula da el salario real?",
+   "opts": [
+    "=B2-C2",
+    "=B2*C2/100",
+    "=C2/B2*100",
+    "=B2/C2*100"
+   ],
+   "ok": 3,
+   "explain": "Deflactar es dividir entre el IPC (y × 100 si el IPC está en base 100).",
+   "why": {},
+   "data": null
+  },
+  {
+   "type": "mc",
+   "q": "Excel muestra #¡DIV/0! en una celda. ¿Qué significa?",
+   "opts": [
+    "Que el número es demasiado grande",
+    "Que estás dividiendo entre una celda vacía o que vale 0",
+    "Que falta un paréntesis",
+    "Que la función no existe"
+   ],
+   "ok": 1,
+   "explain": "Suele pasar al arrastrar sin $: el denominador se mueve a una celda vacía.",
+   "why": {},
+   "data": null
+  }
+ ]
+}

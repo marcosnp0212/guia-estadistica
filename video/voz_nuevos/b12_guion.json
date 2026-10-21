@@ -1,0 +1,652 @@
+[
+ {
+  "id": "fc8ba646ca72a",
+  "texto": "En este vídeo resolvemos los 22 ejercicios del boletín de los Temas 1 y 2. Para cada uno: el enunciado, la resolución a mano paso a paso, cómo se haría en Excel y la frase de interpretación. Un consejo: antes de ver cada solución, para el vídeo e inténtalo tú en papel.",
+  "subtitulo": "En este vídeo resolvemos los 22 ejercicios del boletín de los Temas 1 y 2. Para cada uno: el enunciado, la resolución a mano paso a paso, cómo se haría en Excel y la frase de interpretación. Un consejo: antes de ver cada solución, para el vídeo e inténtalo tú en papel."
+ },
+ {
+  "id": "fa97f44b3aaa2",
+  "texto": "Antes de empezar cualquier ejercicio, hazte tres preguntas. Primera: ¿qué variable es y de qué tipo?",
+  "subtitulo": "Antes de empezar cualquier ejercicio, hazte tres preguntas. Primera: ¿qué variable es y de qué tipo?"
+ },
+ {
+  "id": "f5c2103178789",
+  "texto": "Segunda: ¿los datos vienen sueltos, en una tabla de valores o en intervalos?",
+  "subtitulo": "Segunda: ¿los datos vienen sueltos, en una tabla de valores o en intervalos?"
+ },
+ {
+  "id": "fccd8f6d79989",
+  "texto": "Y tercera: ¿qué me piden exactamente? ¿El centro, la dispersión, una posición, la forma o la relación entre dos variables?",
+  "subtitulo": "Y tercera: ¿qué me piden exactamente? ¿El centro, la dispersión, una posición, la forma o la relación entre dos variables?"
+ },
+ {
+  "id": "f68fd33ef5cbf",
+  "texto": "Ejercicio 1. Tres conjuntos de seis datos. Nos piden la media y la varianza de cada uno, y tipificar el primero.",
+  "subtitulo": "Ejercicio 1. Tres conjuntos de seis datos. Nos piden la media y la varianza de cada uno, y tipificar el primero."
+ },
+ {
+  "id": "feeddf5da8386",
+  "texto": "A mano: la suma de cada conjunto es 21, así que los tres tienen media 21 entre 6, 3,5. Para la varianza usamos la fórmula práctica: la suma de los cuadrados entre 6, menos 3,5 al cuadrado. En el primero, 91 entre 6 menos 12,25: 2,917. En el segundo, 6,25. En el tercero, por los valores extremos menos 13 y 20, 91,58.",
+  "subtitulo": "A mano: la suma de cada conjunto es 21, así que los tres tienen media 21 entre 6, 3,5. Para la varianza usamos la fórmula práctica: la suma de los cuadrados entre 6, menos 3,5 al cuadrado. En el primero, 91 entre 6 menos 12,25: 2,917. En el segundo, 6,25. En el tercero, por los valores extremos menos 13 y 20, 91,58."
+ },
+ {
+  "id": "ff636e6675735",
+  "texto": "Moraleja: los tres tienen la misma media, pero su dispersión es muy distinta. La media sola no basta para describir unos datos.",
+  "subtitulo": "Moraleja: los tres tienen la misma media, pero su dispersión es muy distinta. La media sola no basta para describir unos datos."
+ },
+ {
+  "id": "fafcbfdb0a9eb",
+  "texto": "Para tipificar el primero: la desviación típica es la raíz de 2,917, 1,708. Y a cada dato le restas 3,5 y divides entre 1,708.",
+  "subtitulo": "Para tipificar el primero: la desviación típica es la raíz de 2,917, 1,708. Y a cada dato le restas 3,5 y divides entre 1,708."
+ },
+ {
+  "id": "f125d07ecc6ca",
+  "texto": "Salen estos valores. Comprobación: suman 0, porque los datos tipificados tienen media 0.",
+  "subtitulo": "Salen estos valores. Comprobación: suman 0, porque los datos tipificados tienen media 0."
+ },
+ {
+  "id": "f801300ff698a",
+  "texto": "En Excel: PROMEDIO, VAR.P, y para tipificar, NORMALIZACION con el dato, la media y la desviación típica fijadas con dólares, y arrastrar.",
+  "subtitulo": "En Excel: PROMEDIO, VAR.P, y para tipificar, NORMALIZACION con el dato, la media y la desviación típica fijadas con dólares, y arrastrar."
+ },
+ {
+  "id": "f7b82ef15113d",
+  "texto": "Ejercicio 2: tres preguntas de teoría.",
+  "subtitulo": "Ejercicio 2: tres preguntas de teoría."
+ },
+ {
+  "id": "fdf28ead08109",
+  "texto": "a) Que la renta de un trabajador esté en el percentil 98 significa que el 98 por ciento de los trabajadores tiene una renta menor o igual que la suya, y solo un 2 por ciento gana más.",
+  "subtitulo": "a) Que la renta de un trabajador esté en el percentil 98 significa que el 98 por ciento de los trabajadores tiene una renta menor o igual que la suya, y solo un 2 por ciento gana más."
+ },
+ {
+  "id": "f3aeb409fe69d",
+  "texto": "b) Las medidas de posición dicen dónde están los datos: el centro o puntos de corte. Las de dispersión, cuánto se separan. Y las de forma describen el dibujo de la distribución.",
+  "subtitulo": "b) Las medidas de posición dicen dónde están los datos: el centro o puntos de corte. Las de dispersión, cuánto se separan. Y las de forma describen el dibujo de la distribución."
+ },
+ {
+  "id": "f07d491541b83",
+  "texto": "c) La asimetría mira si la distribución tiene una cola más larga hacia un lado. La curtosis, si es más picuda o más plana que la normal.",
+  "subtitulo": "c) La asimetría mira si la distribución tiene una cola más larga hacia un lado. La curtosis, si es más picuda o más plana que la normal."
+ },
+ {
+  "id": "ffeaed9646eac",
+  "texto": "Ejercicio 3: el número de hijos de varias familias. Nos piden el tamaño de la muestra, la tabla de frecuencias, comentar unos gráficos e interpretar unas medidas.",
+  "subtitulo": "Ejercicio 3: el número de hijos de varias familias. Nos piden el tamaño de la muestra, la tabla de frecuencias, comentar unos gráficos e interpretar unas medidas."
+ },
+ {
+  "id": "fac91b168c7c1",
+  "texto": "a) Contando los datos, n es 20 familias. Es una variable cuantitativa discreta.",
+  "subtitulo": "a) Contando los datos, n es 20 familias. Es una variable cuantitativa discreta."
+ },
+ {
+  "id": "fb2a82cb9da88",
+  "texto": "b) Ordenamos y contamos con palotes. 4 familias sin hijos, 7 con uno, 4 con dos, 3 con tres y 2 con cuatro. Las relativas y las acumuladas salen como siempre.",
+  "subtitulo": "b) Ordenamos y contamos con palotes. 4 familias sin hijos, 7 con uno, 4 con dos, 3 con tres y 2 con cuatro. Las relativas y las acumuladas salen como siempre."
+ },
+ {
+  "id": "fb83ac9132f9c",
+  "texto": "Con la tabla comprobamos las medidas que nos dan. La mediana: n entre 2 es 10, la primera acumulada que llega es 11, valor 1. C3: 15, y la acumulada es justo 15, así que la media entre 2 y 3: 2,5. Y la media, 32 entre 20, 1,6. Coinciden.",
+  "subtitulo": "Con la tabla comprobamos las medidas que nos dan. La mediana: n entre 2 es 10, la primera acumulada que llega es 11, valor 1. C3: 15, y la acumulada es justo 15, así que la media entre 2 y 3: 2,5. Y la media, 32 entre 20, 1,6. Coinciden."
+ },
+ {
+  "id": "f2e367032043f",
+  "texto": "c) Los tres gráficos son diagramas de barras con la misma forma: uno con frecuencias absolutas, otro con relativas y otro con porcentajes. Solo cambia la escala. Lo más frecuente es tener un hijo, y a partir de ahí las barras bajan.",
+  "subtitulo": "c) Los tres gráficos son diagramas de barras con la misma forma: uno con frecuencias absolutas, otro con relativas y otro con porcentajes. Solo cambia la escala. Lo más frecuente es tener un hijo, y a partir de ahí las barras bajan."
+ },
+ {
+  "id": "f41e873ad9a19",
+  "texto": "d) Todas son medidas de posición. La media es mayor que la mediana porque las familias con 3 y 4 hijos tiran de ella hacia arriba: hay asimetría positiva.",
+  "subtitulo": "d) Todas son medidas de posición. La media es mayor que la mediana porque las familias con 3 y 4 hijos tiran de ella hacia arriba: hay asimetría positiva."
+ },
+ {
+  "id": "f5f0a097cdfef",
+  "texto": "Ojo: en Excel, CUARTIL.INC da 2,25 para el tercer cuartil, por la diferencia de método. En papel, la receta.",
+  "subtitulo": "Ojo: en Excel, CUARTIL.INC da 2,25 para el tercer cuartil, por la diferencia de método. En papel, la receta."
+ },
+ {
+  "id": "f30ef8f760f03",
+  "texto": "Ejercicio 4: lesiones de jugadores de fútbol, con frecuencias absolutas, y de baloncesto, con frecuencias relativas. Ojo a esa diferencia, que cambia cómo se calcula la media.",
+  "subtitulo": "Ejercicio 4: lesiones de jugadores de fútbol, con frecuencias absolutas, y de baloncesto, con frecuencias relativas. Ojo a esa diferencia, que cambia cómo se calcula la media."
+ },
+ {
+  "id": "f6c2f942e5b41",
+  "texto": "La media de fútbol: valor por frecuencia, sumado, da 100; entre 25 jugadores, 4 lesiones.",
+  "subtitulo": "La media de fútbol: valor por frecuencia, sumado, da 100; entre 25 jugadores, 4 lesiones."
+ },
+ {
+  "id": "f4deece3674f7",
+  "texto": "En baloncesto nos dan frecuencias relativas, así que se multiplica cada valor por su frecuencia relativa y se suma, sin dividir, porque las relativas ya suman 1. También da 4.",
+  "subtitulo": "En baloncesto nos dan frecuencias relativas, así que se multiplica cada valor por su frecuencia relativa y se suma, sin dividir, porque las relativas ya suman 1. También da 4."
+ },
+ {
+  "id": "f0c7ea09073eb",
+  "texto": "La moda: en fútbol, 4, la frecuencia más alta. En baloncesto, la más alta, 0,24, está en el 1 y en el 7: es bimodal.",
+  "subtitulo": "La moda: en fútbol, 4, la frecuencia más alta. En baloncesto, la más alta, 0,24, está en el 1 y en el 7: es bimodal."
+ },
+ {
+  "id": "f5002e6122635",
+  "texto": "Lo que piden de las medianas: con 4 lesiones o más estás en la mitad de futbolistas que más se lesiona. Las acumuladas llegan a 12,5 en el valor 4. En baloncesto, la acumulada relativa pasa de 0,5 también en el 4.",
+  "subtitulo": "Lo que piden de las medianas: con 4 lesiones o más estás en la mitad de futbolistas que más se lesiona. Las acumuladas llegan a 12,5 en el valor 4. En baloncesto, la acumulada relativa pasa de 0,5 también en el 4."
+ },
+ {
+  "id": "f362be3cbf80f",
+  "texto": "Para comparar la variabilidad, las varianzas: fútbol, 452 entre 25 menos 16, 2,08. Baloncesto, 21,76 menos 16, 5,76.",
+  "subtitulo": "Para comparar la variabilidad, las varianzas: fútbol, 452 entre 25 menos 16, 2,08. Baloncesto, 21,76 menos 16, 5,76."
+ },
+ {
+  "id": "fb1276a42ebe9",
+  "texto": "Las dos tienen media 4, pero la varianza de baloncesto casi triplica la de fútbol. Hay más variabilidad en baloncesto: muchos jugadores con muy pocas lesiones y muchos con muchísimas. Se ve también en los gráficos: fútbol es una montaña y baloncesto una U.",
+  "subtitulo": "Las dos tienen media 4, pero la varianza de baloncesto casi triplica la de fútbol. Hay más variabilidad en baloncesto: muchos jugadores con muy pocas lesiones y muchos con muchísimas. Se ve también en los gráficos: fútbol es una montaña y baloncesto una U."
+ },
+ {
+  "id": "fc0d854b942dc",
+  "texto": "En Excel, con relativas, la media es SUMAPRODUCTO de valores y frecuencias, sin dividir entre nada.",
+  "subtitulo": "En Excel, con relativas, la media es SUMAPRODUCTO de valores y frecuencias, sin dividir entre nada."
+ },
+ {
+  "id": "f7a38f81c2d51",
+  "texto": "Ejercicio 5: dibujar el histograma de estos intervalos. Fíjate en que no miden lo mismo.",
+  "subtitulo": "Ejercicio 5: dibujar el histograma de estos intervalos. Fíjate en que no miden lo mismo."
+ },
+ {
+  "id": "f8e3fda9709a3",
+  "texto": "Las amplitudes son 1, 1, 1, 2 y 3. Así que la altura de cada barra tiene que ser la densidad: la frecuencia entre la amplitud. 3, 6, 9, 4,5 y 1.",
+  "subtitulo": "Las amplitudes son 1, 1, 1, 2 y 3. Así que la altura de cada barra tiene que ser la densidad: la frecuencia entre la amplitud. 3, 6, 9, 4,5 y 1."
+ },
+ {
+  "id": "f253e52bbb0c9",
+  "texto": "Así queda el histograma. En papel, el eje horizontal va a escala, y el área de cada rectángulo es su frecuencia: en el de 10 a 12, base 2 por altura 4,5, 9.",
+  "subtitulo": "Así queda el histograma. En papel, el eje horizontal va a escala, y el área de cada rectángulo es su frecuencia: en el de 10 a 12, base 2 por altura 4,5, 9."
+ },
+ {
+  "id": "f53b0d8b18d58",
+  "texto": "El error sería dibujar el 9 como altura del intervalo de 10 a 12. Parecería igual de lleno que el de 9 a 10, pero sus 9 datos están repartidos en el doble de espacio.",
+  "subtitulo": "El error sería dibujar el 9 como altura del intervalo de 10 a 12. Parecería igual de lleno que el de 9 a 10, pero sus 9 datos están repartidos en el doble de espacio."
+ },
+ {
+  "id": "fb5127274746c",
+  "texto": "Ejercicio 6: las notas de un examen, del 1 al 8, con sus frecuencias.",
+  "subtitulo": "Ejercicio 6: las notas de un examen, del 1 al 8, con sus frecuencias."
+ },
+ {
+  "id": "f650343a38a09",
+  "texto": "Montamos la tabla con acumuladas absolutas y relativas.",
+  "subtitulo": "Montamos la tabla con acumuladas absolutas y relativas."
+ },
+ {
+  "id": "fb730c5d46704",
+  "texto": "El total de alumnos es la última acumulada: 50.",
+  "subtitulo": "El total de alumnos es la última acumulada: 50."
+ },
+ {
+  "id": "fdac12e06fa75",
+  "texto": "Alumnos con más de un 3: todos menos los que tienen 3 o menos. La acumulada hasta el 3 es 16, así que 50 menos 16, 34.",
+  "subtitulo": "Alumnos con más de un 3: todos menos los que tienen 3 o menos. La acumulada hasta el 3 es 16, así que 50 menos 16, 34."
+ },
+ {
+  "id": "ffb44b2940730",
+  "texto": "Porcentaje con un 6: 10 entre 50, el 20 por ciento. Con más de un 4: 1 menos la acumulada hasta el 4, 0,46: el 54 por ciento.",
+  "subtitulo": "Porcentaje con un 6: 10 entre 50, el 20 por ciento. Con más de un 4: 1 menos la acumulada hasta el 4, 0,46: el 54 por ciento."
+ },
+ {
+  "id": "f34c65a71e47b",
+  "texto": "Nota mayor o igual que 2 y menor que 5: los que tienen 2, 3 o 4. 4 más 8 más 7, 19 alumnos. O con acumuladas: la del 4 menos la del 1, 23 menos 4.",
+  "subtitulo": "Nota mayor o igual que 2 y menor que 5: los que tienen 2, 3 o 4. 4 más 8 más 7, 19 alumnos. O con acumuladas: la del 4 menos la del 1, 23 menos 4."
+ },
+ {
+  "id": "fcb4a11f562bb",
+  "texto": "El truco aquí son las palabras: más de 3 no incluye el 3; al menos 3, sí. Menos de 5 no incluye el 5. Subráyalas en el enunciado. En Excel, con datos sueltos, se haría con CONTAR.SI y CONTAR.SI.CONJUNTO.",
+  "subtitulo": "El truco aquí son las palabras: más de 3 no incluye el 3; al menos 3, sí. Menos de 5 no incluye el 5. Subráyalas en el enunciado. En Excel, con datos sueltos, se haría con CONTAR.SI y CONTAR.SI.CONJUNTO."
+ },
+ {
+  "id": "f4e41c7a8d639",
+  "texto": "Ejercicio 7: pólizas vendidas al día durante 26 días, en intervalos.",
+  "subtitulo": "Ejercicio 7: pólizas vendidas al día durante 26 días, en intervalos."
+ },
+ {
+  "id": "fa461754e18c1",
+  "texto": "a) Días con más de 50 pólizas: los tres últimos intervalos, 6 más 9 más 5: 20 días.",
+  "subtitulo": "a) Días con más de 50 pólizas: los tres últimos intervalos, 6 más 9 más 5: 20 días."
+ },
+ {
+  "id": "f636aae60cbdc",
+  "texto": "b) Más de 62: el 62 cae dentro del intervalo de 60 a 70. Como no tenemos los datos exactos, suponemos que los 9 días de ese intervalo están repartidos de forma uniforme. De 62 a 70 hay 8 de las 10 unidades, así que 9 por 8 décimos, 7,2 días. Más los 5 del último intervalo: 12,2, unos 12 días.",
+  "subtitulo": "b) Más de 62: el 62 cae dentro del intervalo de 60 a 70. Como no tenemos los datos exactos, suponemos que los 9 días de ese intervalo están repartidos de forma uniforme. De 62 a 70 hay 8 de las 10 unidades, así que 9 por 8 décimos, 7,2 días. Más los 5 del último intervalo: 12,2, unos 12 días."
+ },
+ {
+  "id": "f0bcf7fa7dc34",
+  "texto": "c) Entre 52 y 67, por trozos: de 52 a 60, 6 por 8 décimos, 4,8. De 60 a 67, 9 por 7 décimos, 6,3. En total 11,1 días, que sobre 26 es el 42,7 por ciento.",
+  "subtitulo": "c) Entre 52 y 67, por trozos: de 52 a 60, 6 por 8 décimos, 4,8. De 60 a 67, 9 por 7 décimos, 6,3. En total 11,1 días, que sobre 26 es el 42,7 por ciento."
+ },
+ {
+  "id": "fd04b0738f21d",
+  "texto": "Es la misma idea que hay detrás de la fórmula de la mediana. Escribe siempre la frase de que suponemos un reparto uniforme dentro del intervalo.",
+  "subtitulo": "Es la misma idea que hay detrás de la fórmula de la mediana. Escribe siempre la frase de que suponemos un reparto uniforme dentro del intervalo."
+ },
+ {
+  "id": "f794b8106af96",
+  "texto": "En Excel se hace igual, con referencias a las celdas de la tabla.",
+  "subtitulo": "En Excel se hace igual, con referencias a las celdas de la tabla."
+ },
+ {
+  "id": "f86f5ba29b5ca",
+  "texto": "Ejercicio 8: exportaciones de empresas, en miles de euros, en intervalos.",
+  "subtitulo": "Ejercicio 8: exportaciones de empresas, en miles de euros, en intervalos."
+ },
+ {
+  "id": "f2051bb5b63ea",
+  "texto": "Marcas de clase 5, 15, 30 y 45. Montamos la tabla con marca por frecuencia y marca al cuadrado por frecuencia.",
+  "subtitulo": "Marcas de clase 5, 15, 30 y 45. Montamos la tabla con marca por frecuencia y marca al cuadrado por frecuencia."
+ },
+ {
+  "id": "f557631a21512",
+  "texto": "Media: 1070 entre 44, 24,32 miles de euros. Varianza: 33 850 entre 44, menos la media al cuadrado: 177,94. Desviación típica, 13,34. CV: 0,549.",
+  "subtitulo": "Media: 1070 entre 44, 24,32 miles de euros. Varianza: 33 850 entre 44, menos la media al cuadrado: 177,94. Desviación típica, 13,34. CV: 0,549."
+ },
+ {
+  "id": "f190a1e4b6455",
+  "texto": "b) Francia tiene un CV de 0,64, mayor: más dispersión relativa en Francia. Comparamos el CV porque son países distintos, con medias distintas.",
+  "subtitulo": "b) Francia tiene un CV de 0,64, mayor: más dispersión relativa en Francia. Comparamos el CV porque son países distintos, con medias distintas."
+ },
+ {
+  "id": "fcf02e4b49774",
+  "texto": "c) En España suben un 1 por ciento: se multiplica por 1,01. La media pasa a 24,56, la varianza se multiplica por 1,01 al cuadrado, y el CV no cambia. En Francia se suma un millón de euros, que son 1000 miles: la media sube 1000, la varianza no cambia, y como la media sube y la desviación no, el CV baja.",
+  "subtitulo": "c) En España suben un 1 por ciento: se multiplica por 1,01. La media pasa a 24,56, la varianza se multiplica por 1,01 al cuadrado, y el CV no cambia. En Francia se suma un millón de euros, que son 1000 miles: la media sube 1000, la varianza no cambia, y como la media sube y la desviación no, el CV baja."
+ },
+ {
+  "id": "f5cd3c32ca833",
+  "texto": "Ejercicio 9: toneladas de óxido de azufre emitidas al día. Nos dan porcentajes de días.",
+  "subtitulo": "Ejercicio 9: toneladas de óxido de azufre emitidas al día. Nos dan porcentajes de días."
+ },
+ {
+  "id": "f231ea7dd86b5",
+  "texto": "Pasamos los porcentajes a frecuencias relativas, dividiendo entre 100, y usamos la media con relativas: marca por frecuencia relativa, sumado. Las marcas son 7, 11, 15, y así de 4 en 4.",
+  "subtitulo": "Pasamos los porcentajes a frecuencias relativas, dividiendo entre 100, y usamos la media con relativas: marca por frecuencia relativa, sumado. Las marcas son 7, 11, 15, y así de 4 en 4."
+ },
+ {
+  "id": "ff91e95ab0593",
+  "texto": "La media es 18,9 toneladas al día. La varianza, 387,6 menos 18,9 al cuadrado: 30,39. Y la desviación típica, 5,51 toneladas.",
+  "subtitulo": "La media es 18,9 toneladas al día. La varianza, 387,6 menos 18,9 al cuadrado: 30,39. Y la desviación típica, 5,51 toneladas."
+ },
+ {
+  "id": "f2bd9ee1003d6",
+  "texto": "El gráfico es un histograma, porque es continua en intervalos. Como todos miden 4, la altura puede ser directamente el porcentaje.",
+  "subtitulo": "El gráfico es un histograma, porque es continua en intervalos. Como todos miden 4, la altura puede ser directamente el porcentaje."
+ },
+ {
+  "id": "f4410596c328e",
+  "texto": "Ejercicio 10: los sueldos de 15 trabajadores, en miles de euros.",
+  "subtitulo": "Ejercicio 10: los sueldos de 15 trabajadores, en miles de euros."
+ },
+ {
+  "id": "feaa0c273513b",
+  "texto": "La media: cada sueldo por su frecuencia, 225, entre 15: 15 mil euros.",
+  "subtitulo": "La media: cada sueldo por su frecuencia, 225, entre 15: 15 mil euros."
+ },
+ {
+  "id": "fe103758233ed",
+  "texto": "La mediana: n entre 2 es 7,5; las acumuladas son 3, 8... la primera que llega es 8, en el 12. La mediana es 12. Y la moda también es 12, el que más se repite. La media es mayor porque el sueldo de 30 tira hacia arriba.",
+  "subtitulo": "La mediana: n entre 2 es 7,5; las acumuladas son 3, 8… la primera que llega es 8, en el 12. La mediana es 12. Y la moda también es 12, el que más se repite. La media es mayor porque el sueldo de 30 tira hacia arriba."
+ },
+ {
+  "id": "fb7158e6028f8",
+  "texto": "b) Dispersión absoluta: la desviación típica. La suma de los cuadrados por frecuencia es 3795; entre 15, 253; menos 15 al cuadrado, 28. La raíz: 5,29. La relativa, el CV: 5,29 entre 15, 0,353.",
+  "subtitulo": "b) Dispersión absoluta: la desviación típica. La suma de los cuadrados por frecuencia es 3795; entre 15, 253; menos 15 al cuadrado, 28. La raíz: 5,29. La relativa, el CV: 5,29 entre 15, 0,353."
+ },
+ {
+  "id": "f12ca4b9920f3",
+  "texto": "c) Subir un 5 por ciento es multiplicar por 1,05. Media, mediana, moda y desviación típica se multiplican por 1,05; la varianza por 1,05 al cuadrado; y el CV no cambia.",
+  "subtitulo": "c) Subir un 5 por ciento es multiplicar por 1,05. Media, mediana, moda y desviación típica se multiplican por 1,05; la varianza por 1,05 al cuadrado; y el CV no cambia."
+ },
+ {
+  "id": "f845fdd9f17b0",
+  "texto": "Ejercicio 11: la superficie de 200 apartamentos.",
+  "subtitulo": "Ejercicio 11: la superficie de 200 apartamentos."
+ },
+ {
+  "id": "f135608d91806",
+  "texto": "a) La superficie media con las marcas de clase: 13 350 entre 200, 66,75 metros cuadrados. Y como el alquiler es 10 euros por metro, es una transformación lineal: el alquiler medio es 10 por 66,75, 667,5 euros.",
+  "subtitulo": "a) La superficie media con las marcas de clase: 13 350 entre 200, 66,75 metros cuadrados. Y como el alquiler es 10 euros por metro, es una transformación lineal: el alquiler medio es 10 por 66,75, 667,5 euros."
+ },
+ {
+  "id": "f52c234d15bcd",
+  "texto": "b) Para la moda, las amplitudes son distintas, así que necesitamos densidades: 5, 4, 3, 2 y 0,5.",
+  "subtitulo": "b) Para la moda, las amplitudes son distintas, así que necesitamos densidades: 5, 4, 3, 2 y 0,5."
+ },
+ {
+  "id": "f5994a7fc45de",
+  "texto": "La mayor densidad es la del primer intervalo. Como no tiene anterior, se pone 0. La moda: 40 más 5 entre 6, por 10: 48,33 metros cuadrados.",
+  "subtitulo": "La mayor densidad es la del primer intervalo. Como no tiene anterior, se pone 0. La moda: 40 más 5 entre 6, por 10: 48,33 metros cuadrados."
+ },
+ {
+  "id": "f1e50a90d0e7c",
+  "texto": "Ojo: mirando solo las frecuencias ganaría el de 60 a 80, con 60 pisos. Pero es el doble de ancho. Con amplitudes distintas, siempre densidades.",
+  "subtitulo": "Ojo: mirando solo las frecuencias ganaría el de 60 a 80, con 60 pisos. Pero es el doble de ancho. Con amplitudes distintas, siempre densidades."
+ },
+ {
+  "id": "f5b438d4afa02",
+  "texto": "Ejercicio 12: puntuaciones de 500 empleados para repartir puestos. El 65 por ciento con menos puntos serán administrativos, el siguiente 20 por ciento jefes de sección, el siguiente 10 por ciento jefes de departamento y el 5 por ciento con más puntos, inspectores.",
+  "subtitulo": "Ejercicio 12: puntuaciones de 500 empleados para repartir puestos. El 65 por ciento con menos puntos serán administrativos, el siguiente 20 por ciento jefes de sección, el siguiente 10 por ciento jefes de departamento y el 5 por ciento con más puntos, inspectores."
+ },
+ {
+  "id": "f6e7953177074",
+  "texto": "El planteamiento: para ser jefe de sección hay que superar al 65 por ciento de abajo, así que necesitamos el percentil 65. Para ser inspector, estar en el 5 por ciento de arriba: el percentil 95.",
+  "subtitulo": "El planteamiento: para ser jefe de sección hay que superar al 65 por ciento de abajo, así que necesitamos el percentil 65. Para ser inspector, estar en el 5 por ciento de arriba: el percentil 95."
+ },
+ {
+  "id": "f6abf3135bb81",
+  "texto": "Percentil 65: 0,65 por 500 es 325. La primera acumulada que llega es 394, el intervalo de 50 a 70. 50 más, 325 menos 234, entre 160, por 20: 61,4 puntos.",
+  "subtitulo": "Percentil 65: 0,65 por 500 es 325. La primera acumulada que llega es 394, el intervalo de 50 a 70. 50 más, 325 menos 234, entre 160, por 20: 61,4 puntos."
+ },
+ {
+  "id": "fd417eb48d2bd",
+  "texto": "Percentil 95: 475, en el intervalo de 70 a 90. 70 más, 475 menos 394, entre 98, por 20: 86,5 puntos. Para jefe de departamento, el percentil 85: 76,3.",
+  "subtitulo": "Percentil 95: 475, en el intervalo de 70 a 90. 70 más, 475 menos 394, entre 98, por 20: 86,5 puntos. Para jefe de departamento, el percentil 85: 76,3."
+ },
+ {
+  "id": "f17f3df95b657",
+  "texto": "En Excel, la fórmula de los apuntes con referencias a las celdas de la tabla.",
+  "subtitulo": "En Excel, la fórmula de los apuntes con referencias a las celdas de la tabla."
+ },
+ {
+  "id": "fd3239b19e793",
+  "texto": "Ejercicio 13: superficie de viviendas en Pontevedra, y después Galicia entera.",
+  "subtitulo": "Ejercicio 13: superficie de viviendas en Pontevedra, y después Galicia entera."
+ },
+ {
+  "id": "f29352ffc82d7",
+  "texto": "Con la tabla de trabajo de siempre: la media es 11 040 entre 110, 100,36 metros cuadrados. Para la moda, densidades: la mayor es 1,70, en el intervalo de 60 a 90. Aplicando la fórmula, 75,23.",
+  "subtitulo": "Con la tabla de trabajo de siempre: la media es 11 040 entre 110, 100,36 metros cuadrados. Para la moda, densidades: la mayor es 1,70, en el intervalo de 60 a 90. Aplicando la fórmula, 75,23."
+ },
+ {
+  "id": "f59b92871db8b",
+  "texto": "La dispersión: la varianza, 1 420 950 entre 110 menos la media al cuadrado, 2844,87. La desviación típica, 53,34. Un CV de 0,53: dispersión relativa alta, sobre todo por las viviendas grandes.",
+  "subtitulo": "La dispersión: la varianza, 1 420 950 entre 110 menos la media al cuadrado, 2844,87. La desviación típica, 53,34. Un CV de 0,53: dispersión relativa alta, sobre todo por las viviendas grandes."
+ },
+ {
+  "id": "f8e4ec715987b",
+  "texto": "El 30 por ciento central deja un 35 por ciento por debajo y otro 35 por encima: está entre el percentil 35 y el 65. Con la fórmula: entre 73,24 y 97,11 metros cuadrados.",
+  "subtitulo": "El 30 por ciento central deja un 35 por ciento por debajo y otro 35 por encima: está entre el percentil 35 y el 65. Con la fórmula: entre 73,24 y 97,11 metros cuadrados."
+ },
+ {
+  "id": "f4d026b00fefe",
+  "texto": "b) Para Galicia, varianza en subpoblaciones. Nos dan desviaciones típicas, así que primero las elevamos al cuadrado.",
+  "subtitulo": "b) Para Galicia, varianza en subpoblaciones. Nos dan desviaciones típicas, así que primero las elevamos al cuadrado."
+ },
+ {
+  "id": "f6259a2435b7f",
+  "texto": "La media global, ponderando por el tamaño: 101,93 metros cuadrados.",
+  "subtitulo": "La media global, ponderando por el tamaño: 101,93 metros cuadrados."
+ },
+ {
+  "id": "fb98faffd8087",
+  "texto": "La varianza dentro: cada varianza por su tamaño, entre 400: 2868,09.",
+  "subtitulo": "La varianza dentro: cada varianza por su tamaño, entre 400: 2868,09."
+ },
+ {
+  "id": "f1a8b365ccf3b",
+  "texto": "La varianza entre: cada media menos 101,93, al cuadrado, por su tamaño, entre 400: 2,25.",
+  "subtitulo": "La varianza entre: cada media menos 101,93, al cuadrado, por su tamaño, entre 400: 2,25."
+ },
+ {
+  "id": "f3e2ccf16b77c",
+  "texto": "La total, 2870,34, y la desviación típica, 53,58.",
+  "subtitulo": "La total, 2870,34, y la desviación típica, 53,58."
+ },
+ {
+  "id": "fbe2e4b6bee21",
+  "texto": "Interpretación: casi toda la variabilidad es dentro de cada provincia; las cuatro tienen medias muy parecidas.",
+  "subtitulo": "Interpretación: casi toda la variabilidad es dentro de cada provincia; las cuatro tienen medias muy parecidas."
+ },
+ {
+  "id": "f0c37fa06e966",
+  "texto": "Ejercicio 14: salarios de tres categorías, con tamaño, media y desviación típica.",
+  "subtitulo": "Ejercicio 14: salarios de tres categorías, con tamaño, media y desviación típica."
+ },
+ {
+  "id": "f668797a77be1",
+  "texto": "a) Como las medias son distintas, comparamos el coeficiente de variación: 7 entre 30, 2,25 entre 15 y 4,24 entre 20. El menor es el de administrativos: es la categoría más homogénea.",
+  "subtitulo": "a) Como las medias son distintas, comparamos el coeficiente de variación: 7 entre 30, 2,25 entre 15 y 4,24 entre 20. El menor es el de administrativos: es la categoría más homogénea."
+ },
+ {
+  "id": "f72eba8003bac",
+  "texto": "b) La media de la empresa, ponderada: 4050 entre 200, 20,25 mil euros.",
+  "subtitulo": "b) La media de la empresa, ponderada: 4050 entre 200, 20,25 mil euros."
+ },
+ {
+  "id": "f56e6e70eef84",
+  "texto": "La varianza dentro, con las desviaciones al cuadrado: 19,40.",
+  "subtitulo": "La varianza dentro, con las desviaciones al cuadrado: 19,40."
+ },
+ {
+  "id": "ff0d449f685e6",
+  "texto": "La varianza entre: cada media menos 20,25, al cuadrado, por su tamaño: 21,19.",
+  "subtitulo": "La varianza entre: cada media menos 20,25, al cuadrado, por su tamaño: 21,19."
+ },
+ {
+  "id": "f74278f58f0d7",
+  "texto": "La total, 40,59, y la desviación típica de la empresa, 6,37 mil euros. Más de la mitad de la variabilidad, el 52 por ciento, se debe a las diferencias entre categorías.",
+  "subtitulo": "La total, 40,59, y la desviación típica de la empresa, 6,37 mil euros. Más de la mitad de la variabilidad, el 52 por ciento, se debe a las diferencias entre categorías."
+ },
+ {
+  "id": "fecd3e7597984",
+  "texto": "Ejercicio 15: 1000 hogares según el número de personas y la superficie de la vivienda. a) La superficie más frecuente, b) el número mediano de integrantes, y c) la varianza de la superficie de los hogares con más de 4 personas.",
+  "subtitulo": "Ejercicio 15: 1000 hogares según el número de personas y la superficie de la vivienda. a) La superficie más frecuente, b) el número mediano de integrantes, y c) la varianza de la superficie de los hogares con más de 4 personas."
+ },
+ {
+  "id": "f1c86b0caaf2b",
+  "texto": "a) La superficie es Y, así que usamos su marginal, la fila de totales. Las amplitudes son distintas: densidades. La mayor, 16,33, en el intervalo de 60 a 90. La moda: 78,13 metros cuadrados.",
+  "subtitulo": "a) La superficie es Y, así que usamos su marginal, la fila de totales. Las amplitudes son distintas: densidades. La mayor, 16,33, en el intervalo de 60 a 90. La moda: 78,13 metros cuadrados."
+ },
+ {
+  "id": "ff4aa436ee052",
+  "texto": "b) El número de personas es X: su marginal es la columna de totales. n entre 2 es 500; las acumuladas son 137, 359, 566. La mediana es 3 personas.",
+  "subtitulo": "b) El número de personas es X: su marginal es la columna de totales. n entre 2 es 500; las acumuladas son 137, 359, 566. La mediana es 3 personas."
+ },
+ {
+  "id": "f077829fe0edf",
+  "texto": "c) Más de 4 personas es la fila de 5 o más: una distribución condicionada, con 200 hogares. Con las marcas 30, 75, 105 y 160, la media es 91,38 metros cuadrados.",
+  "subtitulo": "c) Más de 4 personas es la fila de 5 o más: una distribución condicionada, con 200 hogares. Con las marcas 30, 75, 105 y 160, la media es 91,38 metros cuadrados."
+ },
+ {
+  "id": "f2cfbd40b3a97",
+  "texto": "Y la varianza: 1 941 725 entre 200, menos la media al cuadrado: 1359,23. La desviación típica, 36,87.",
+  "subtitulo": "Y la varianza: 1 941 725 entre 200, menos la media al cuadrado: 1359,23. La desviación típica, 36,87."
+ },
+ {
+  "id": "fd04b9a51c271",
+  "texto": "Ejercicio 16: 100 familias según sus ingresos, en cientos de euros, y su gasto en plataformas de streaming.",
+  "subtitulo": "Ejercicio 16: 100 familias según sus ingresos, en cientos de euros, y su gasto en plataformas de streaming."
+ },
+ {
+  "id": "ff40a430f67e6",
+  "texto": "a) El ingreso medio con la marginal de X y las marcas 8, 12,5, 17,5, 25 y 40: 1848 entre 100, 18,48 cientos de euros, es decir, 1848 euros.",
+  "subtitulo": "a) El ingreso medio con la marginal de X y las marcas 8, 12,5, 17,5, 25 y 40: 1848 entre 100, 18,48 cientos de euros, es decir, 1848 euros."
+ },
+ {
+  "id": "fb062af431307",
+  "texto": "b) La varianza de X: 35,33. Para Y, con marcas 6, 30, 84 y 300: media 58,92 euros y varianza 4748,67.",
+  "subtitulo": "b) La varianza de X: 35,33. Para Y, con marcas 6, 30, 84 y 300: media 58,92 euros y varianza 4748,67."
+ },
+ {
+  "id": "f0c7f89f20132",
+  "texto": "c) ¿Son independientes? Basta una casilla: la primera tiene una frecuencia relativa de 0,04, y el producto de sus marginales es 0,0168. No coinciden: no son independientes. El gasto depende de los ingresos.",
+  "subtitulo": "c) ¿Son independientes? Basta una casilla: la primera tiene una frecuencia relativa de 0,04, y el producto de sus marginales es 0,0168. No coinciden: no son independientes. El gasto depende de los ingresos."
+ },
+ {
+  "id": "fdf8c12ed3505",
+  "texto": "d) Las familias que no superan los 2000 euros son las tres primeras filas; las sumamos: 22, 21, 24 y 3, con 70 familias. El 50 por ciento central está entre C1 y C3. C1: 17,5 cae en el primer intervalo, 9,55 euros. C3: 52,5 cae en el de 48 a 120, 76,50 euros.",
+  "subtitulo": "d) Las familias que no superan los 2000 euros son las tres primeras filas; las sumamos: 22, 21, 24 y 3, con 70 familias. El 50 por ciento central está entre C1 y C3. C1: 17,5 cae en el primer intervalo, 9,55 euros. C3: 52,5 cae en el de 48 a 120, 76,50 euros."
+ },
+ {
+  "id": "f36b162b9167a",
+  "texto": "Ejercicio 17: el gasto diario de 150 turistas en las cuatro provincias gallegas.",
+  "subtitulo": "Ejercicio 17: el gasto diario de 150 turistas en las cuatro provincias gallegas."
+ },
+ {
+  "id": "fb3ef23a7b1cf",
+  "texto": "a) Media de A Coruña: 8700 entre 63, 138,10 euros al día. Pontevedra: 6690 entre 62, 107,90. En A Coruña gastan unos 30 euros más.",
+  "subtitulo": "a) Media de A Coruña: 8700 entre 63, 138,10 euros al día. Pontevedra: 6690 entre 62, 107,90. En A Coruña gastan unos 30 euros más."
+ },
+ {
+  "id": "f44fb024f29be",
+  "texto": "b) Galicia entera es la marginal: sumamos las cuatro provincias. La mediana: 75 cae en el intervalo de 90 a 120: 114,38 euros. Y la moda, con densidades, 106,04. Ojo: el intervalo de 120 a 180 tiene más turistas, pero es el doble de ancho.",
+  "subtitulo": "b) Galicia entera es la marginal: sumamos las cuatro provincias. La mediana: 75 cae en el intervalo de 90 a 120: 114,38 euros. Y la moda, con densidades, 106,04. Ojo: el intervalo de 120 a 180 tiene más turistas, pero es el doble de ancho."
+ },
+ {
+  "id": "f9fd8cf430a65",
+  "texto": "c) Para estar en el 25 por ciento que más gasta en Pontevedra, el percentil 75: 46,5 cae en el intervalo de 120 a 180. 122,5 euros.",
+  "subtitulo": "c) Para estar en el 25 por ciento que más gasta en Pontevedra, el percentil 75: 46,5 cae en el intervalo de 120 a 180. 122,5 euros."
+ },
+ {
+  "id": "f49b0f2efd4ec",
+  "texto": "d) El norte, A Coruña más Lugo, y el sur, Ourense más Pontevedra. Sumando filas: el norte tiene media 135,95, desviación 57 y CV 0,419. El sur, 109,23, 50,17 y CV 0,459.",
+  "subtitulo": "d) El norte, A Coruña más Lugo, y el sur, Ourense más Pontevedra. Sumando filas: el norte tiene media 135,95, desviación 57 y CV 0,419. El sur, 109,23, 50,17 y CV 0,459."
+ },
+ {
+  "id": "f490ce0f882cb",
+  "texto": "En términos absolutos hay más dispersión en el norte. Pero como las medias son distintas, lo correcto es el CV: el sur es relativamente más disperso.",
+  "subtitulo": "En términos absolutos hay más dispersión en el norte. Pero como las medias son distintas, lo correcto es el CV: el sur es relativamente más disperso."
+ },
+ {
+  "id": "fde50be87edd6",
+  "texto": "Ejercicio 18: 38 737 heridos en accidentes, según la gravedad y si llevaban cinturón.",
+  "subtitulo": "Ejercicio 18: 38 737 heridos en accidentes, según la gravedad y si llevaban cinturón."
+ },
+ {
+  "id": "fdb1a5faa2f67",
+  "texto": "a) Las frecuencias relativas: cada casilla entre el total. Grave con cinturón, 0,1354.",
+  "subtitulo": "a) Las frecuencias relativas: cada casilla entre el total. Grave con cinturón, 0,1354."
+ },
+ {
+  "id": "f7675aee6119b",
+  "texto": "b) Las marginales: el 20,6 por ciento fueron graves y el 79,4 leves. El 76,4 llevaba cinturón y el 23,6 no.",
+  "subtitulo": "b) Las marginales: el 20,6 por ciento fueron graves y el 79,4 leves. El 76,4 llevaba cinturón y el 23,6 no."
+ },
+ {
+  "id": "f8dcd17900df1",
+  "texto": "c) Gravedad sabiendo que llevaban cinturón: la columna de con cinturón, dividida entre su total: el 17,7 por ciento graves. Y cinturón sabiendo que fue leve: la fila de leve: 79,2 con cinturón y 20,8 sin.",
+  "subtitulo": "c) Gravedad sabiendo que llevaban cinturón: la columna de con cinturón, dividida entre su total: el 17,7 por ciento graves. Y cinturón sabiendo que fue leve: la fila de leve: 79,2 con cinturón y 20,8 sin."
+ },
+ {
+  "id": "f08b775db5429",
+  "texto": "d) ¿Independientes? 0,1354 frente a 0,2059 por 0,7640, 0,1573. No coinciden: no son independientes.",
+  "subtitulo": "d) ¿Independientes? 0,1354 frente a 0,2059 por 0,7640, 0,1573. No coinciden: no son independientes."
+ },
+ {
+  "id": "f85be73ee56b9",
+  "texto": "La interpretación: entre los que no llevaban cinturón, el 29,9 por ciento tuvo heridas graves; entre los que sí, el 17,7. La gravedad depende del uso del cinturón.",
+  "subtitulo": "La interpretación: entre los que no llevaban cinturón, el 29,9 por ciento tuvo heridas graves; entre los que sí, el 17,7. La gravedad depende del uso del cinturón."
+ },
+ {
+  "id": "faa59e093d52a",
+  "texto": "Ejercicio 19: comentar un diagrama de caja de la satisfacción laboral en tres sectores. Se comenta siempre en cuatro puntos.",
+  "subtitulo": "Ejercicio 19: comentar un diagrama de caja de la satisfacción laboral en tres sectores. Se comenta siempre en cuatro puntos."
+ },
+ {
+  "id": "f9f969ec73335",
+  "texto": "El nivel, con las medianas: Educación es el sector más satisfecho, con unos 7,2; después Sanidad, 5,9; y por último Servicios Sociales, 4,9.",
+  "subtitulo": "El nivel, con las medianas: Educación es el sector más satisfecho, con unos 7,2; después Sanidad, 5,9; y por último Servicios Sociales, 4,9."
+ },
+ {
+  "id": "fbacb0992a123",
+  "texto": "La dispersión: Educación tiene la caja más estrecha, opiniones muy parecidas. Servicios Sociales, la más ancha y los bigotes más largos: opiniones muy variadas.",
+  "subtitulo": "La dispersión: Educación tiene la caja más estrecha, opiniones muy parecidas. Servicios Sociales, la más ancha y los bigotes más largos: opiniones muy variadas."
+ },
+ {
+  "id": "fbbd300296089",
+  "texto": "Los atípicos: solo en Educación, un trabajador muy satisfecho y otro muy poco.",
+  "subtitulo": "Los atípicos: solo en Educación, un trabajador muy satisfecho y otro muy poco."
+ },
+ {
+  "id": "f883164022752",
+  "texto": "La forma: en Sanidad la mediana está más cerca de la parte baja de la caja y el bigote de arriba es más largo: ligera asimetría positiva.",
+  "subtitulo": "La forma: en Sanidad la mediana está más cerca de la parte baja de la caja y el bigote de arriba es más largo: ligera asimetría positiva."
+ },
+ {
+  "id": "f40b5a49435eb",
+  "texto": "Conclusión: la satisfacción es más alta y homogénea en Educación, y más baja y heterogénea en Servicios Sociales.",
+  "subtitulo": "Conclusión: la satisfacción es más alta y homogénea en Educación, y más baja y heterogénea en Servicios Sociales."
+ },
+ {
+  "id": "fbe9f97f3148e",
+  "texto": "Ejercicio 20: un resumen de estadísticos de la Encuesta de Presupuestos Familiares, por provincias.",
+  "subtitulo": "Ejercicio 20: un resumen de estadísticos de la Encuesta de Presupuestos Familiares, por provincias."
+ },
+ {
+  "id": "fd8a8f6758112",
+  "texto": "Alimentación es el gasto mayor. La media y la mediana son casi iguales y la asimetría casi 0: es simétrica. La curtosis algo negativa. Y es la de menor dispersión relativa.",
+  "subtitulo": "Alimentación es el gasto mayor. La media y la mediana son casi iguales y la asimetría casi 0: es simétrica. La curtosis algo negativa. Y es la de menor dispersión relativa."
+ },
+ {
+  "id": "ffa841305ffa9",
+  "texto": "Vivienda: la media supera a la mediana y la asimetría es claramente positiva. Hay provincias con un gasto muy alto, como Madrid, que es un valor atípico, y estiran la cola a la derecha.",
+  "subtitulo": "Vivienda: la media supera a la mediana y la asimetría es claramente positiva. Hay provincias con un gasto muy alto, como Madrid, que es un valor atípico, y estiran la cola a la derecha."
+ },
+ {
+  "id": "fa619edf34c3b",
+  "texto": "Sanidad es el gasto menor, pero la de mayor dispersión relativa, con un CV del 30 por ciento.",
+  "subtitulo": "Sanidad es el gasto menor, pero la de mayor dispersión relativa, con un CV del 30 por ciento."
+ },
+ {
+  "id": "fc7cdcc2fbc1e",
+  "texto": "Y en el gráfico radial, con un máximo de 12 000, cada valor entre 12 000 da qué parte del radio ocupa. La línea que llega más lejos en alimentación y vivienda es Barcelona; la otra, Almería. Para dibujar Pontevedra, marcas cada valor sobre su radio y unes los puntos.",
+  "subtitulo": "Y en el gráfico radial, con un máximo de 12 000, cada valor entre 12 000 da qué parte del radio ocupa. La línea que llega más lejos en alimentación y vivienda es Barcelona; la otra, Almería. Para dibujar Pontevedra, marcas cada valor sobre su radio y unes los puntos."
+ },
+ {
+  "id": "fede587cee9fe",
+  "texto": "Ejercicio 21: salarios de mujeres y hombres.",
+  "subtitulo": "Ejercicio 21: salarios de mujeres y hombres."
+ },
+ {
+  "id": "fde570c0d7215",
+  "texto": "a) La variabilidad absoluta, con las varianzas: mayor en los hombres.",
+  "subtitulo": "a) La variabilidad absoluta, con las varianzas: mayor en los hombres."
+ },
+ {
+  "id": "f25b0b371401c",
+  "texto": "b) La relativa, con el CV: mujeres, la raíz de 34 400 entre 2240, 0,0828; hombres, 0,0753. Más variabilidad relativa en las mujeres.",
+  "subtitulo": "b) La relativa, con el CV: mujeres, la raíz de 34 400 entre 2240, 0,0828; hombres, 0,0753. Más variabilidad relativa en las mujeres."
+ },
+ {
+  "id": "f6d1b69aed333",
+  "texto": "c) La media global, 2550 euros. d) La varianza dentro de los grupos, 40 400. e) La varianza entre: 2240 menos 2550, al cuadrado, por 5, más lo mismo con los hombres, entre 10: 96 100.",
+  "subtitulo": "c) La media global, 2550 euros. d) La varianza dentro de los grupos, 40 400. e) La varianza entre: 2240 menos 2550, al cuadrado, por 5, más lo mismo con los hombres, entre 10: 96 100."
+ },
+ {
+  "id": "f3444baf6a75c",
+  "texto": "f) La total, 136 500. Y g) el porcentaje debido a las diferencias entre grupos: el 70,4 por ciento.",
+  "subtitulo": "f) La total, 136 500. Y g) el porcentaje debido a las diferencias entre grupos: el 70,4 por ciento."
+ },
+ {
+  "id": "f3dcce05bc7c1",
+  "texto": "Interpretación: el 70 por ciento de la variabilidad de los salarios se explica por ser hombre o mujer. Es una desigualdad salarial muy alta.",
+  "subtitulo": "Interpretación: el 70 por ciento de la variabilidad de los salarios se explica por ser hombre o mujer. Es una desigualdad salarial muy alta."
+ },
+ {
+  "id": "f3dfdc526ad67",
+  "texto": "Último ejercicio, el 22: cuatro propuestas de subida salarial sobre una media de 2550 euros y una varianza de 136 500.",
+  "subtitulo": "Último ejercicio, el 22: cuatro propuestas de subida salarial sobre una media de 2550 euros y una varianza de 136 500."
+ },
+ {
+  "id": "f8c10031c665c",
+  "texto": "Aplicamos las reglas de los cambios de origen y escala: la media nueva es a por la media más b, y la varianza nueva, a al cuadrado por la varianza. Sumar 50 sube la media 50 y no cambia la varianza. Subir un 2 por ciento multiplica la media por 1,02 y la varianza por 1,02 al cuadrado. Y así con las otras.",
+  "subtitulo": "Aplicamos las reglas de los cambios de origen y escala: la media nueva es a por la media más b, y la varianza nueva, a al cuadrado por la varianza. Sumar 50 sube la media 50 y no cambia la varianza. Subir un 2 por ciento multiplica la media por 1,02 y la varianza por 1,02 al cuadrado. Y así con las otras."
+ },
+ {
+  "id": "f786d6abb2664",
+  "texto": "Si lo que se quiere es no aumentar las diferencias salariales, la mejor es la primera, la suma fija: todos ganan lo mismo y la dispersión no cambia.",
+  "subtitulo": "Si lo que se quiere es no aumentar las diferencias salariales, la mejor es la primera, la suma fija: todos ganan lo mismo y la dispersión no cambia."
+ },
+ {
+  "id": "fb29a4ce7ccdb",
+  "texto": "Un detalle: en la cuarta propuesta no se dice el orden. Aquí se aplica primero el 1 por ciento y luego los 25 euros, como en el Excel de clase. Si es al revés, la media sería 2600,75. Escribe en el examen cuál has usado.",
+  "subtitulo": "Un detalle: en la cuarta propuesta no se dice el orden. Aquí se aplica primero el 1 por ciento y luego los 25 euros, como en el Excel de clase. Si es al revés, la media sería 2600,75. Escribe en el examen cuál has usado."
+ },
+ {
+  "id": "fb0c82e2a62f7",
+  "texto": "Y hasta aquí el boletín de los Temas 1 y 2. Ahora, en la guía, las prácticas 1 a 4, primero con ayuda y después como en el examen.",
+  "subtitulo": "Y hasta aquí el boletín de los Temas 1 y 2. Ahora, en la guía, las prácticas 1 a 4, primero con ayuda y después como en el examen."
+ }
+]

@@ -1,0 +1,7 @@
+﻿VOZ, SEGUNDA PARTE (solo lo nuevo)
+
+1. Abre clave.txt con el Bloc de notas, borra PEGA_AQUI_TU_CLAVE, pega tu clave y guarda.
+2. Doble clic en generar_voz.bat. Usa la misma voz que la primera vez (Iapetus, velocidad 1), así que no pregunta nada.
+3. Cuando acabe, comprime la carpeta «audio» que se crea aquí dentro en un .zip y súbela al chat.
+
+La clave es como tu tarjeta: no la compartas. Cuando termines, bórrala de clave.txt.

@@ -1,0 +1,272 @@
+[
+ {
+  "id": "fdd6355e33c9b",
+  "texto": "En este vídeo resolvemos los 9 ejercicios del boletín del Tema 3, regresión lineal. Para cada uno: enunciado, resolución a mano, Excel e interpretación. Para el vídeo antes de cada solución e inténtalo tú.",
+  "subtitulo": "En este vídeo resolvemos los 9 ejercicios del boletín del Tema 3, regresión lineal. Para cada uno: enunciado, resolución a mano, Excel e interpretación. Para el vídeo antes de cada solución e inténtalo tú."
+ },
+ {
+  "id": "fb08ec5e25a48",
+  "texto": "En regresión te pueden dar la información de tres formas. Con datos sueltos, haces la tabla de trabajo con X, Y, X por Y y X al cuadrado.",
+  "subtitulo": "En regresión te pueden dar la información de tres formas. Con datos sueltos, haces la tabla de trabajo con X, Y, X por Y y X al cuadrado."
+ },
+ {
+  "id": "f92f431286268",
+  "texto": "Con las sumas ya hechas, calculas las medias, las varianzas y la covarianza.",
+  "subtitulo": "Con las sumas ya hechas, calculas las medias, las varianzas y la covarianza."
+ },
+ {
+  "id": "f45cfd8d02e20",
+  "texto": "O directamente los estadísticos, y entonces vas directo a la pendiente y la ordenada.",
+  "subtitulo": "O directamente los estadísticos, y entonces vas directo a la pendiente y la ordenada."
+ },
+ {
+  "id": "f76bc8fab0bb7",
+  "texto": "Y en todos los casos, fíjate bien en si te dan la desviación típica o la varianza. Para la pendiente necesitas la varianza: si te dan la desviación típica, elévala al cuadrado.",
+  "subtitulo": "Y en todos los casos, fíjate bien en si te dan la desviación típica o la varianza. Para la pendiente necesitas la varianza: si te dan la desviación típica, elévala al cuadrado."
+ },
+ {
+  "id": "f1ae897f7ded7",
+  "texto": "Ejercicio 1: publicidad y ventas. Nos dan las medias, las desviaciones típicas y la covarianza.",
+  "subtitulo": "Ejercicio 1: publicidad y ventas. Nos dan las medias, las desviaciones típicas y la covarianza."
+ },
+ {
+  "id": "f675c3a4cb394",
+  "texto": "Ojo, nos dan desviaciones típicas: la varianza de X es 40 al cuadrado, 1600. La pendiente, 19 200 entre 1600: 12. La ordenada, 850 menos 12 por 60: 130.",
+  "subtitulo": "Ojo, nos dan desviaciones típicas: la varianza de X es 40 al cuadrado, 1600. La pendiente, 19 200 entre 1600: 12. La ordenada, 850 menos 12 por 60: 130."
+ },
+ {
+  "id": "f12e570d4a421",
+  "texto": "El coeficiente de correlación, la covarianza entre el producto de las desviaciones típicas: 0,96. Al cuadrado, R cuadrado igual a 0,9216.",
+  "subtitulo": "El coeficiente de correlación, la covarianza entre el producto de las desviaciones típicas: 0,96. Al cuadrado, R cuadrado igual a 0,9216."
+ },
+ {
+  "id": "f769e45b4a4d1",
+  "texto": "Para la predicción, cuidado con las unidades: 100 000 euros son 100 miles. 130 más 12 por 100: 1330 millones de cajas.",
+  "subtitulo": "Para la predicción, cuidado con las unidades: 100 000 euros son 100 miles. 130 más 12 por 100: 1330 millones de cajas."
+ },
+ {
+  "id": "f1ed32d5bef9f",
+  "texto": "En Excel, con los datos en celdas: la covarianza entre la desviación típica al cuadrado.",
+  "subtitulo": "En Excel, con los datos en celdas: la covarianza entre la desviación típica al cuadrado."
+ },
+ {
+  "id": "fc00949994dbf",
+  "texto": "La interpretación: por cada mil euros más en publicidad, las ventas suben de media 12 millones de cajas, y el ajuste es muy bueno: el 92 por ciento.",
+  "subtitulo": "La interpretación: por cada mil euros más en publicidad, las ventas suben de media 12 millones de cajas, y el ajuste es muy bueno: el 92 por ciento."
+ },
+ {
+  "id": "f30ac4166ae6f",
+  "texto": "Ejercicio 2: rendimiento de una acción y de un índice bursátil. Nos dan n y las sumas.",
+  "subtitulo": "Ejercicio 2: rendimiento de una acción y de un índice bursátil. Nos dan n y las sumas."
+ },
+ {
+  "id": "f903c885de756",
+  "texto": "Primero las medias: 25,4 entre 25, 1,016; y 22,6 entre 25, 0,904.",
+  "subtitulo": "Primero las medias: 25,4 entre 25, 1,016; y 22,6 entre 25, 0,904."
+ },
+ {
+  "id": "fa1239358e0ed",
+  "texto": "Las varianzas con la fórmula práctica: la de X, 4,7957; la de Y, 6,0628.",
+  "subtitulo": "Las varianzas con la fórmula práctica: la de X, 4,7957; la de Y, 6,0628."
+ },
+ {
+  "id": "fea8d5e7a4a88",
+  "texto": "La covarianza: la suma de los productos entre n, menos el producto de las medias: 5,1015.",
+  "subtitulo": "La covarianza: la suma de los productos entre n, menos el producto de las medias: 5,1015."
+ },
+ {
+  "id": "f0029466e6db2",
+  "texto": "La pendiente, 1,0638: cuando el índice sube un punto, la acción sube de media 1,06. La ordenada, menos 0,1768.",
+  "subtitulo": "La pendiente, 1,0638: cuando el índice sube un punto, la acción sube de media 1,06. La ordenada, menos 0,1768."
+ },
+ {
+  "id": "f2f32a0b9f299",
+  "texto": "R cuadrado, la covarianza al cuadrado entre el producto de las varianzas: 0,895, el 89,5 por ciento. Y si el índice rinde un 1,5, esperamos un 1,419 por ciento.",
+  "subtitulo": "R cuadrado, la covarianza al cuadrado entre el producto de las varianzas: 0,895, el 89,5 por ciento. Y si el índice rinde un 1,5, esperamos un 1,419 por ciento."
+ },
+ {
+  "id": "fb0cbaec234ff",
+  "texto": "Ejercicio 3: el precio por hora de cinco talleres y su número de clientes.",
+  "subtitulo": "Ejercicio 3: el precio por hora de cinco talleres y su número de clientes."
+ },
+ {
+  "id": "f9954677329eb",
+  "texto": "Con datos sueltos, la tabla de trabajo: X, Y, X por Y, X al cuadrado e Y al cuadrado, y las sumas abajo.",
+  "subtitulo": "Con datos sueltos, la tabla de trabajo: X, Y, X por Y, X al cuadrado e Y al cuadrado, y las sumas abajo."
+ },
+ {
+  "id": "fd7481851258c",
+  "texto": "Medias: 22,16 euros y 58,2 clientes. Varianzas: 1,2064 y 155,36. La covarianza sale negativa: menos 11,152. Relación inversa.",
+  "subtitulo": "Medias: 22,16 euros y 58,2 clientes. Varianzas: 1,2064 y 155,36. La covarianza sale negativa: menos 11,152. Relación inversa."
+ },
+ {
+  "id": "f873f212ec892",
+  "texto": "La pendiente, menos 11,152 entre 1,2064: menos 9,244. La ordenada, 263,05.",
+  "subtitulo": "La pendiente, menos 11,152 entre 1,2064: menos 9,244. La ordenada, 263,05."
+ },
+ {
+  "id": "fdd18e58fa7dc",
+  "texto": "b) El gráfico: la nube de puntos con la recta. A mano, ejes de 20 a 24 y de 40 a 85. Para la recta, calcula Y gorro en 20, 78,2, y en 24, 41,2, y los unes: baja.",
+  "subtitulo": "b) El gráfico: la nube de puntos con la recta. A mano, ejes de 20 a 24 y de 40 a 85. Para la recta, calcula Y gorro en 20, 78,2, y en 24, 41,2, y los unes: baja."
+ },
+ {
+  "id": "fda100708598f",
+  "texto": "c) r es menos 0,815, y R cuadrado, 0,664. Lo que no explica el precio es 1 menos 0,664: el 33,6 por ciento.",
+  "subtitulo": "c) r es menos 0,815, y R cuadrado, 0,664. Lo que no explica el precio es 1 menos 0,664: el 33,6 por ciento."
+ },
+ {
+  "id": "f60be86410365",
+  "texto": "d) La pendiente: por cada euro más por hora, el taller tiene de media 9,24 clientes menos.",
+  "subtitulo": "d) La pendiente: por cada euro más por hora, el taller tiene de media 9,24 clientes menos."
+ },
+ {
+  "id": "f24b6098b83aa",
+  "texto": "En Excel: PENDIENTE, INTERSECCION.EJE y COEFICIENTE.R2, siempre primero las Y y luego las X. Y el gráfico, de dispersión con línea de tendencia.",
+  "subtitulo": "En Excel: PENDIENTE, INTERSECCION.EJE y COEFICIENTE.R2, siempre primero las Y y luego las X. Y el gráfico, de dispersión con línea de tendencia."
+ },
+ {
+  "id": "fb422c9f03567",
+  "texto": "Ejercicio 4: tasación y precio de venta de 12 viviendas. Igual que el ejercicio 1.",
+  "subtitulo": "Ejercicio 4: tasación y precio de venta de 12 viviendas. Igual que el ejercicio 1."
+ },
+ {
+  "id": "f06f89ebd2b83",
+  "texto": "La pendiente, 480 entre 20 al cuadrado: 1,2. Por cada 1000 euros más de tasación, el precio sube de media 1200. La ordenada, 130 menos 1,2 por 115: menos 8.",
+  "subtitulo": "La pendiente, 480 entre 20 al cuadrado: 1,2. Por cada 1000 euros más de tasación, el precio sube de media 1200. La ordenada, 130 menos 1,2 por 115: menos 8."
+ },
+ {
+  "id": "fe4011d2d0c9f",
+  "texto": "r es 0,96: relación directa muy fuerte. R cuadrado, 0,9216.",
+  "subtitulo": "r es 0,96: relación directa muy fuerte. R cuadrado, 0,9216."
+ },
+ {
+  "id": "fe2bd350ee149",
+  "texto": "Una vivienda tasada en 100 000 euros: menos 8 más 1,2 por 100, 112 mil euros.",
+  "subtitulo": "Una vivienda tasada en 100 000 euros: menos 8 más 1,2 por 100, 112 mil euros."
+ },
+ {
+  "id": "f34c884b886fe",
+  "texto": "Y un detalle: la ordenada negativa no tiene sentido práctico, porque no hay viviendas tasadas en 0 euros. Solo sirve para dibujar la recta.",
+  "subtitulo": "Y un detalle: la ordenada negativa no tiene sentido práctico, porque no hay viviendas tasadas en 0 euros. Solo sirve para dibujar la recta."
+ },
+ {
+  "id": "ffff6fd675203",
+  "texto": "Ejercicio 5: litros vertidos y la sanción. Una industria ha vertido unos 2200 litros.",
+  "subtitulo": "Ejercicio 5: litros vertidos y la sanción. Una industria ha vertido unos 2200 litros."
+ },
+ {
+  "id": "f30b0c8fa5810",
+  "texto": "Medias: 2 y 957,14. La varianza de X sale 1. La covarianza, 707,14.",
+  "subtitulo": "Medias: 2 y 957,14. La varianza de X sale 1. La covarianza, 707,14."
+ },
+ {
+  "id": "fb635103d8d19",
+  "texto": "Como la varianza de X es 1, la pendiente es igual a la covarianza: 707,14. Cada mil litros más se sancionan con unos 707 000 euros más. La ordenada, menos 457,14.",
+  "subtitulo": "Como la varianza de X es 1, la pendiente es igual a la covarianza: 707,14. Cada mil litros más se sancionan con unos 707 000 euros más. La ordenada, menos 457,14."
+ },
+ {
+  "id": "ffe9b92c4e096",
+  "texto": "r es 0,96: relación directa muy fuerte.",
+  "subtitulo": "r es 0,96: relación directa muy fuerte."
+ },
+ {
+  "id": "fcf7fa2f54345",
+  "texto": "Para la predicción, de nuevo las unidades: 2200 litros son 2,2 miles. La sanción esperada, 1098,57 miles de euros, unos 1,1 millones.",
+  "subtitulo": "Para la predicción, de nuevo las unidades: 2200 litros son 2,2 miles. La sanción esperada, 1098,57 miles de euros, unos 1,1 millones."
+ },
+ {
+  "id": "fcbacdafc85fc",
+  "texto": "En Excel, PRONOSTICO.LINEAL con el valor de X, las Y y las X.",
+  "subtitulo": "En Excel, PRONOSTICO.LINEAL con el valor de X, las Y y las X."
+ },
+ {
+  "id": "f91c84cffbc6d",
+  "texto": "d) El gráfico.",
+  "subtitulo": "d) El gráfico."
+ },
+ {
+  "id": "f0cb98ceb23bf",
+  "texto": "Un detalle para lucirte: los puntos forman una curva que se acelera, la sanción crece cada vez más deprisa. La recta funciona bien, pero se queda corta en los extremos. Comentarlo demuestra que sabes leer una nube de puntos.",
+  "subtitulo": "Un detalle para lucirte: los puntos forman una curva que se acelera, la sanción crece cada vez más deprisa. La recta funciona bien, pero se queda corta en los extremos. Comentarlo demuestra que sabes leer una nube de puntos."
+ },
+ {
+  "id": "fab104a2c136e",
+  "texto": "Ejercicio 6: un ejercicio sin datos. Nos dan la recta, R cuadrado, la media de X y la desviación de Y, y hay que recuperar lo demás.",
+  "subtitulo": "Ejercicio 6: un ejercicio sin datos. Nos dan la recta, R cuadrado, la media de X y la desviación de Y, y hay que recuperar lo demás."
+ },
+ {
+  "id": "f4134b34a6ac9",
+  "texto": "La clave: la recta siempre pasa por el punto de las medias. Sustituimos X por 2: la media de Y es menos 4.",
+  "subtitulo": "La clave: la recta siempre pasa por el punto de las medias. Sustituimos X por 2: la media de Y es menos 4."
+ },
+ {
+  "id": "f362ed166e188",
+  "texto": "r es la raíz de 0,81, 0,9. Pero ¿positivo o negativo? Lleva el signo de la pendiente, que es negativa: r es menos 0,9.",
+  "subtitulo": "r es la raíz de 0,81, 0,9. Pero ¿positivo o negativo? Lleva el signo de la pendiente, que es negativa: r es menos 0,9."
+ },
+ {
+  "id": "f4d5b2016aff1",
+  "texto": "Con la fórmula que une r y b: r es b por ese de equis entre ese de y. Despejando, ese de equis es 3.",
+  "subtitulo": "Con la fórmula que une r y b: r es b por Sx entre Sy. Despejando, Sx es 3."
+ },
+ {
+  "id": "fa5f7af5c3974",
+  "texto": "Y la covarianza: b por la varianza de X, menos 3 por 9, menos 27. Comprobamos: menos 27 entre 3 por 10, menos 0,9. Correcto.",
+  "subtitulo": "Y la covarianza: b por la varianza de X, menos 3 por 9, menos 27. Comprobamos: menos 27 entre 3 por 10, menos 0,9. Correcto."
+ },
+ {
+  "id": "f7f394d6cc6ed",
+  "texto": "Ejercicio 7: las dos rectas a partir de r. Aquí nos dan varianzas.",
+  "subtitulo": "Ejercicio 7: las dos rectas a partir de r. Aquí nos dan varianzas."
+ },
+ {
+  "id": "f637c268a71c0",
+  "texto": "La covarianza, de la fórmula de r: r por ese de equis por ese de y. La raíz de 3,6 por 2,5 es la raíz de 9, 3. Así que 0,56 por 3: 1,68.",
+  "subtitulo": "La covarianza, de la fórmula de r: r por Sx por Sy. La raíz de 3,6 por 2,5 es la raíz de 9, 3. Así que 0,56 por 3: 1,68."
+ },
+ {
+  "id": "f148e55d57212",
+  "texto": "La recta de Y sobre X divide entre la varianza de X: pendiente 0,467 y ordenada 18,4.",
+  "subtitulo": "La recta de Y sobre X divide entre la varianza de X: pendiente 0,467 y ordenada 18,4."
+ },
+ {
+  "id": "f01ac2e2af6be",
+  "texto": "La de X sobre Y divide entre la varianza de Y, y se cambian los papeles: pendiente 0,672 y ordenada menos 4,128.",
+  "subtitulo": "La de X sobre Y divide entre la varianza de Y, y se cambian los papeles: pendiente 0,672 y ordenada menos 4,128."
+ },
+ {
+  "id": "f4ed7373a671d",
+  "texto": "Ejercicio 8: emparejar seis gráficos con seis rectas. Para leer una recta: el número suelto es donde corta al eje vertical; el que multiplica a X dice si sube o baja y cuánto. Para comprobar, calcula Y gorro en X igual a 10.",
+  "subtitulo": "Ejercicio 8: emparejar seis gráficos con seis rectas. Para leer una recta: el número suelto es donde corta al eje vertical; el que multiplica a X dice si sube o baja y cuánto. Para comprobar, calcula Y gorro en X igual a 10."
+ },
+ {
+  "id": "fd1101079dc30",
+  "texto": "El gráfico que empieza en 0 solo puede ser Y igual a 2X: en 10 vale 20. Los que empiezan en 5 y suben: el suave es 5 más 1,5X, y el empinado, 5 más 4X. Los que bajan: el suave, 5 menos 1,5X, que llega a menos 10; el empinado, 5 menos 4X, que llega a menos 35. Y la línea horizontal es Y igual a 5: pendiente cero, sin relación lineal.",
+  "subtitulo": "El gráfico que empieza en 0 solo puede ser Y igual a 2X: en 10 vale 20. Los que empiezan en 5 y suben: el suave es 5 más 1,5X, y el empinado, 5 más 4X. Los que bajan: el suave, 5 menos 1,5X, que llega a menos 10; el empinado, 5 menos 4X, que llega a menos 35. Y la línea horizontal es Y igual a 5: pendiente cero, sin relación lineal."
+ },
+ {
+  "id": "fc685fe8dfd16",
+  "texto": "Ejercicio 9: un ejercicio abierto con la Encuesta de Presupuestos Familiares. Tú eliges las variables.",
+  "subtitulo": "Ejercicio 9: un ejercicio abierto con la Encuesta de Presupuestos Familiares. Tú eliges las variables."
+ },
+ {
+  "id": "f0f3bc023285e",
+  "texto": "Tres propuestas, de más a menos ajuste: turismo y ocio según educación, R cuadrado 0,71; ocio según vivienda, 0,66; y vivienda según alimentación, solo 0,23.",
+  "subtitulo": "Tres propuestas, de más a menos ajuste: turismo y ocio según educación, R cuadrado 0,71; ocio según vivienda, 0,66; y vivienda según alimentación, solo 0,23."
+ },
+ {
+  "id": "f5d7ac64d82f1",
+  "texto": "En Excel, PENDIENTE, INTERSECCION.EJE, COEF.DE.CORREL y COEFICIENTE.R2 sobre las 51 filas, y la nube de puntos con línea de tendencia.",
+  "subtitulo": "En Excel, PENDIENTE, INTERSECCION.EJE, COEF.DE.CORREL y COEFICIENTE.R2 sobre las 51 filas, y la nube de puntos con línea de tendencia."
+ },
+ {
+  "id": "f42343f55d6ad",
+  "texto": "La interpretación: por cada euro más que una provincia gasta en educación y cultura, gasta de media 1,27 euros más en ocio, y eso explica el 71 por ciento de las diferencias. En cambio, la recta de vivienda según alimentación tiene un ajuste débil: no serviría para predecir bien.",
+  "subtitulo": "La interpretación: por cada euro más que una provincia gasta en educación y cultura, gasta de media 1,27 euros más en ocio, y eso explica el 71 por ciento de las diferencias. En cambio, la recta de vivienda según alimentación tiene un ajuste débil: no serviría para predecir bien."
+ },
+ {
+  "id": "f756713ccf38f",
+  "texto": "Hasta aquí el boletín del Tema 3. Ahora, en la guía, las prácticas 5 y 6, de regresión.",
+  "subtitulo": "Hasta aquí el boletín del Tema 3. Ahora, en la guía, las prácticas 5 y 6, de regresión."
+ }
+]

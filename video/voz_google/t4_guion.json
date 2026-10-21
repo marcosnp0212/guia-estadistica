@@ -1,0 +1,282 @@
+[
+ {
+  "id": "000_00",
+  "texto": "Tema 4: los números índices. Un índice dice cuánto ha cambiado algo respecto a un momento de referencia, el año base, al que se le da el valor 100. Todo el tema es jugar con divisiones y multiplicaciones por porcentajes. Nada más.",
+  "subtitulo": "Tema 4: los números índices. Un índice dice cuánto ha cambiado algo respecto a un momento de referencia, el año base, al que se le da el valor 100. Todo el tema es jugar con divisiones y multiplicaciones por porcentajes. Nada más."
+ },
+ {
+  "id": "001_00",
+  "texto": "Estos son los ocho apartados. Es el tema con menos fórmulas nuevas y el que mejor se hace a mano.",
+  "subtitulo": "Estos son los ocho apartados. Es el tema con menos fórmulas nuevas y el que mejor se hace a mano."
+ },
+ {
+  "id": "002_00",
+  "texto": "Apartado 4.1: el índice simple. El valor del año que estudias, dividido entre el del año base, por 100.",
+  "subtitulo": "Apartado 4.1: el índice simple. El valor del año que estudias, dividido entre el del año base, por 100."
+ },
+ {
+  "id": "002_01",
+  "texto": "Se interpreta así: el índice menos 100 es el porcentaje de cambio. Un índice de 120 significa que ha subido un 20 por ciento. Uno de 97,44, que ha bajado un 2,56 por ciento. Y el año base siempre vale 100.",
+  "subtitulo": "Se interpreta así: el índice menos 100 es el porcentaje de cambio. Un índice de 120 significa que ha subido un 20 por ciento. Uno de 97,44, que ha bajado un 2,56 por ciento. Y el año base siempre vale 100."
+ },
+ {
+  "id": "002_02",
+  "texto": "Ejemplo de los apuntes: un salario de 1500 euros en 2015 y de 1600 en 2018. 1600 entre 1500, por 100: 106,67. El salario subió un 6,67 por ciento.",
+  "subtitulo": "Ejemplo de los apuntes: un salario de 1500 euros en 2015 y de 1600 en 2018. 1600 entre 1500, por 100: 106,67. El salario subió un 6,67 por ciento."
+ },
+ {
+  "id": "002_03",
+  "texto": "Un truco: muchas veces es más cómodo trabajar sin el por 100. Subir un 20 por ciento es multiplicar por 1,20. Así, encadenar subidas es multiplicar.",
+  "subtitulo": "Un truco: muchas veces es más cómodo trabajar sin el por 100. Subir un 20 por ciento es multiplicar por 1,20. Así, encadenar subidas es multiplicar."
+ },
+ {
+  "id": "002_04",
+  "texto": "En Excel: cada valor entre el del año base, fijado con dólares, por 100, y arrastras.",
+  "subtitulo": "En Excel: cada valor entre el del año base, fijado con dólares, por 100, y arrastras."
+ },
+ {
+  "id": "003_00",
+  "texto": "Apartado 4.2: la tasa de variación. El valor nuevo menos el antiguo, entre el antiguo. O, más cómodo: el nuevo entre el antiguo, menos 1. Positiva es crecimiento; negativa, disminución.",
+  "subtitulo": "Apartado 4.2: la tasa de variación. El valor nuevo menos el antiguo, entre el antiguo. O, más cómodo: el nuevo entre el antiguo, menos 1. Positiva es crecimiento; negativa, disminución."
+ },
+ {
+  "id": "003_01",
+  "texto": "Unas cuentas que pasan de 1000 a 1100: 1100 entre 1000 es 1,1; menos 1, 0,1: un 10 por ciento más.",
+  "subtitulo": "Unas cuentas que pasan de 1000 a 1100: 1100 entre 1000 es 1,1; menos 1, 0,1: un 10 por ciento más."
+ },
+ {
+  "id": "003_02",
+  "texto": "Un precio que baja de 11,42 a 8,41: 8,41 entre 11,42, menos 1: menos 26,35 por ciento.",
+  "subtitulo": "Un precio que baja de 11,42 a 8,41: 8,41 entre 11,42, menos 1: menos 26,35 por ciento."
+ },
+ {
+  "id": "003_03",
+  "texto": "En Excel: el nuevo entre el anterior, menos 1, con formato de porcentaje.",
+  "subtitulo": "En Excel: el nuevo entre el anterior, menos 1, con formato de porcentaje."
+ },
+ {
+  "id": "004_00",
+  "texto": "Apartado 4.3: dos propiedades. La inversión: el índice al revés es el inverso. Si de 2015 a 2019 sube a 1,10, de 2019 a 2015 es 1 entre 1,10, 0,909.",
+  "subtitulo": "Apartado 4.3: dos propiedades. La inversión: el índice al revés es el inverso. Si de 2015 a 2019 sube a 1,10, de 2019 a 2015 es 1 entre 1,10, 0,909."
+ },
+ {
+  "id": "004_01",
+  "texto": "Y el encadenamiento: para ir de un año a otro pasando por uno intermedio, se multiplican los índices.",
+  "subtitulo": "Y el encadenamiento: para ir de un año a otro pasando por uno intermedio, se multiplican los índices."
+ },
+ {
+  "id": "004_02",
+  "texto": "Ejemplo: una empresa crece un 5, luego un 8 y luego un 10 por ciento. 1,05 por 1,08 por 1,10: 1,2474. Ha crecido un 24,74 por ciento en los tres años.",
+  "subtitulo": "Ejemplo: una empresa crece un 5, luego un 8 y luego un 10 por ciento. 1,05 por 1,08 por 1,10: 1,2474. Ha crecido un 24,74 por ciento en los tres años."
+ },
+ {
+  "id": "004_03",
+  "texto": "Cuidado: los porcentajes no se suman. No es un 23 por ciento. Y si algo sube un 10 y luego baja un 10, no te quedas igual: 1,10 por 0,90 es 0,99, has perdido un 1 por ciento. Cada subida se aplica sobre lo que ya tienes.",
+  "subtitulo": "Cuidado: los porcentajes no se suman. No es un 23 por ciento. Y si algo sube un 10 y luego baja un 10, no te quedas igual: 1,10 por 0,90 es 0,99, has perdido un 1 por ciento. Cada subida se aplica sobre lo que ya tienes."
+ },
+ {
+  "id": "005_00",
+  "texto": "Apartado 4.4: el cambio de base. Para pasar una serie de índices a otro año base, se divide toda la serie entre el índice del nuevo año base, y se multiplica por 100.",
+  "subtitulo": "Apartado 4.4: el cambio de base. Para pasar una serie de índices a otro año base, se divide toda la serie entre el índice del nuevo año base, y se multiplica por 100."
+ },
+ {
+  "id": "005_01",
+  "texto": "Ejemplo de los apuntes: pasar unos salarios de base 2015 a base 2019. El índice de 2019 en base 2015 es 110, así que dividimos todos entre 110. 2015 queda en 90,91, 2019 pasa a valer 100, y 2025, 118,18.",
+  "subtitulo": "Ejemplo de los apuntes: pasar unos salarios de base 2015 a base 2019. El índice de 2019 en base 2015 es 110, así que dividimos todos entre 110. 2015 queda en 90,91, 2019 pasa a valer 100, y 2025, 118,18."
+ },
+ {
+  "id": "005_02",
+  "texto": "En Excel: cada índice entre el del nuevo año base, fijado con dólares, por 100.",
+  "subtitulo": "En Excel: cada índice entre el del nuevo año base, fijado con dólares, por 100."
+ },
+ {
+  "id": "006_00",
+  "texto": "Apartado 4.5: la media geométrica. Cuando los datos son crecimientos que se multiplican, la media correcta no es la normal, sino la geométrica: se multiplican los n valores y se hace la raíz n-ésima, es decir, se eleva a 1 entre n.",
+  "subtitulo": "Apartado 4.5: la media geométrica. Cuando los datos son crecimientos que se multiplican, la media correcta no es la normal, sino la geométrica: se multiplican los n valores y se hace la raíz n-ésima, es decir, se eleva a 1 entre n."
+ },
+ {
+  "id": "006_01",
+  "texto": "Con los crecimientos del 5, 8 y 10 por ciento: 1,2474 elevado a un tercio, 1,0765. El crecimiento medio es del 7,65 por ciento anual. Si lo compruebas, 1,0765 al cubo da 1,2474.",
+  "subtitulo": "Con los crecimientos del 5, 8 y 10 por ciento: 1,2474 elevado a un tercio, 1,0765. El crecimiento medio es del 7,65 por ciento anual. Si lo compruebas, 1,0765 al cubo da 1,2474."
+ },
+ {
+  "id": "006_02",
+  "texto": "Y si algo sube un 10 y baja un 10: la raíz de 0,99, 0,995. De media pierde un 0,5 por ciento al año. La media normal diría 0, y es falso.",
+  "subtitulo": "Y si algo sube un 10 y baja un 10: la raíz de 0,99, 0,995. De media pierde un 0,5 por ciento al año. La media normal diría 0, y es falso."
+ },
+ {
+  "id": "006_03",
+  "texto": "En general, si en k periodos la tasa total ha sido T, la tasa media por periodo es 1 más T, elevado a 1 entre k, menos 1.",
+  "subtitulo": "En general, si en k periodos la tasa total ha sido T, la tasa media por periodo es 1 más T, elevado a 1 entre k, menos 1."
+ },
+ {
+  "id": "006_04",
+  "texto": "Por ejemplo, un 6 por ciento anual en mensual: 1,06 elevado a un doceavo, menos 1: 0,487 por ciento al mes.",
+  "subtitulo": "Por ejemplo, un 6 por ciento anual en mensual: 1,06 elevado a un doceavo, menos 1: 0,487 por ciento al mes."
+ },
+ {
+  "id": "007_00",
+  "texto": "Con la calculadora: primero pasa cada porcentaje a multiplicador. Más 5 por ciento es 1,05; menos 3 por ciento, 0,97.",
+  "subtitulo": "Con la calculadora: primero pasa cada porcentaje a multiplicador. Más 5 por ciento es 1,05; menos 3 por ciento, 0,97."
+ },
+ {
+  "id": "007_01",
+  "texto": "Multiplícalos todos: ese es el crecimiento total.",
+  "subtitulo": "Multiplícalos todos: ese es el crecimiento total."
+ },
+ {
+  "id": "007_02",
+  "texto": "Para la media, eleva a 1 entre el número de periodos. En la calculadora, la tecla de potencia y el exponente entre paréntesis. O la tecla de raíz n-ésima, si la tiene.",
+  "subtitulo": "Para la media, eleva a 1 entre el número de periodos. En la calculadora, la tecla de potencia y el exponente entre paréntesis. O la tecla de raíz n-ésima, si la tiene."
+ },
+ {
+  "id": "007_03",
+  "texto": "Resta 1 y pásalo a porcentaje.",
+  "subtitulo": "Resta 1 y pásalo a porcentaje."
+ },
+ {
+  "id": "007_04",
+  "texto": "Y comprueba elevando el resultado al número de periodos: tiene que darte el total.",
+  "subtitulo": "Y comprueba elevando el resultado al número de periodos: tiene que darte el total."
+ },
+ {
+  "id": "007_05",
+  "texto": "En Excel es igual: 1,06 elevado a, entre paréntesis, 1 entre 12, menos 1. O MEDIA.GEOM, si tienes los multiplicadores en celdas.",
+  "subtitulo": "En Excel es igual: 1,06 elevado a, entre paréntesis, 1 entre 12, menos 1. O MEDIA.GEOM, si tienes los multiplicadores en celdas."
+ },
+ {
+  "id": "007_06",
+  "texto": "Y el paréntesis es obligatorio. Sin él, Excel y la calculadora harían 1,06 entre 12.",
+  "subtitulo": "Y el paréntesis es obligatorio. Sin él, Excel y la calculadora harían 1,06 entre 12."
+ },
+ {
+  "id": "008_00",
+  "texto": "Apartado 4.6: los índices de varios productos, una cesta de la compra. El de Laspeyres de precios: arriba, los precios de hoy por las cantidades del año base; abajo, los precios del año base por esas mismas cantidades. El de Paasche usa las cantidades de hoy.",
+  "subtitulo": "Apartado 4.6: los índices de varios productos, una cesta de la compra. El de Laspeyres de precios: arriba, los precios de hoy por las cantidades del año base; abajo, los precios del año base por esas mismas cantidades. El de Paasche usa las cantidades de hoy."
+ },
+ {
+  "id": "008_01",
+  "texto": "Laspeyres responde a: lo que costaría hoy la cesta de entonces, comparado con lo que costaba entonces. Es el que se usa para el IPC.",
+  "subtitulo": "Laspeyres responde a: lo que costaría hoy la cesta de entonces, comparado con lo que costaba entonces. Es el que se usa para el IPC."
+ },
+ {
+  "id": "008_02",
+  "texto": "Paasche: lo que cuesta hoy la cesta de hoy, comparado con lo que habría costado entonces.",
+  "subtitulo": "Paasche: lo que cuesta hoy la cesta de hoy, comparado con lo que habría costado entonces."
+ },
+ {
+  "id": "008_03",
+  "texto": "Y el de Fisher es la media geométrica de los dos: la raíz de Laspeyres por Paasche.",
+  "subtitulo": "Y el de Fisher es la media geométrica de los dos: la raíz de Laspeyres por Paasche."
+ },
+ {
+  "id": "008_04",
+  "texto": "Para no confundirlos: arriba siempre van los precios de hoy y abajo los de antes. Lo único que cambia es la cantidad, que es la misma arriba y abajo. Laspeyres usa la cesta del inicio; Paasche, la de ahora.",
+  "subtitulo": "Para no confundirlos: arriba siempre van los precios de hoy y abajo los de antes. Lo único que cambia es la cantidad, que es la misma arriba y abajo. Laspeyres usa la cesta del inicio; Paasche, la de ahora."
+ },
+ {
+  "id": "009_00",
+  "texto": "A mano: cuatro columnas de productos y sus sumas. Ejemplo de los apuntes con pan y leche. Precio de hoy por cantidad de antes, precio de antes por cantidad de antes, precio de hoy por cantidad de hoy, y precio de antes por cantidad de hoy.",
+  "subtitulo": "A mano: cuatro columnas de productos y sus sumas. Ejemplo de los apuntes con pan y leche. Precio de hoy por cantidad de antes, precio de antes por cantidad de antes, precio de hoy por cantidad de hoy, y precio de antes por cantidad de hoy."
+ },
+ {
+  "id": "009_01",
+  "texto": "Laspeyres es la columna 1 entre la 2: 340 entre 280, por 100, 121,43. Los precios subieron un 21,43 por ciento.",
+  "subtitulo": "Laspeyres es la columna 1 entre la 2: 340 entre 280, por 100, 121,43. Los precios subieron un 21,43 por ciento."
+ },
+ {
+  "id": "009_02",
+  "texto": "Paasche, la columna 3 entre la 4: 341 entre 281, 121,35.",
+  "subtitulo": "Paasche, la columna 3 entre la 4: 341 entre 281, 121,35."
+ },
+ {
+  "id": "009_03",
+  "texto": "Y Fisher, la raíz del producto: 121,39.",
+  "subtitulo": "Y Fisher, la raíz del producto: 121,39."
+ },
+ {
+  "id": "009_04",
+  "texto": "En Excel, con SUMAPRODUCTO arriba y abajo, multiplicado por 100.",
+  "subtitulo": "En Excel, con SUMAPRODUCTO arriba y abajo, multiplicado por 100."
+ },
+ {
+  "id": "010_00",
+  "texto": "Apartado 4.7: deflactar. Es quitar el efecto de la inflación. El valor real es el valor nominal entre el IPC, por 100.",
+  "subtitulo": "Apartado 4.7: deflactar. Es quitar el efecto de la inflación. El valor real es el valor nominal entre el IPC, por 100."
+ },
+ {
+  "id": "010_01",
+  "texto": "El valor nominal son los euros tal cual. El real, los euros expresados con el poder de compra del año base.",
+  "subtitulo": "El valor nominal son los euros tal cual. El real, los euros expresados con el poder de compra del año base."
+ },
+ {
+  "id": "010_02",
+  "texto": "Ejemplo: alguien gana 25 000 euros en 2025, y el IPC de 2025 con base 2020 es 110. 25 000 entre 110, por 100: 22 727 euros de 2020.",
+  "subtitulo": "Ejemplo: alguien gana 25 000 euros en 2025, y el IPC de 2025 con base 2020 es 110. 25 000 entre 110, por 100: 22 727 euros de 2020."
+ },
+ {
+  "id": "010_03",
+  "texto": "Si en 2020 ganaba 20 000, su poder adquisitivo ha subido, pero no un 25 por ciento, sino un 13,6.",
+  "subtitulo": "Si en 2020 ganaba 20 000, su poder adquisitivo ha subido, pero no un 25 por ciento, sino un 13,6."
+ },
+ {
+  "id": "010_04",
+  "texto": "En el gráfico de los apuntes: en euros corrientes el salario sube un 30 por ciento en diez años, pero en términos reales solo un 9,24. La distancia entre las dos líneas es lo que se ha comido la inflación.",
+  "subtitulo": "En el gráfico de los apuntes: en euros corrientes el salario sube un 30 por ciento en diez años, pero en términos reales solo un 9,24. La distancia entre las dos líneas es lo que se ha comido la inflación."
+ },
+ {
+  "id": "011_00",
+  "texto": "A mano, para cada año, tres cuentas. El salario real: el salario entre el IPC, por 100. En 2025: 1950 entre 119, por 100, 1638,66 euros.",
+  "subtitulo": "A mano, para cada año, tres cuentas. El salario real: el salario entre el IPC, por 100. En 2025: 1950 entre 119, por 100, 1638,66 euros."
+ },
+ {
+  "id": "011_01",
+  "texto": "El índice nominal: el salario entre el del año base, por 100. 1950 entre 1500: 130.",
+  "subtitulo": "El índice nominal: el salario entre el del año base, por 100. 1950 entre 1500: 130."
+ },
+ {
+  "id": "011_02",
+  "texto": "Y el índice real, con un atajo: el índice nominal entre el IPC, por 100. 130 entre 119: 109,24.",
+  "subtitulo": "Y el índice real, con un atajo: el índice nominal entre el IPC, por 100. 130 entre 119: 109,24."
+ },
+ {
+  "id": "011_03",
+  "texto": "En Excel, el salario entre el IPC por 100, y arrastras.",
+  "subtitulo": "En Excel, el salario entre el IPC por 100, y arrastras."
+ },
+ {
+  "id": "011_04",
+  "texto": "Interpretación: en términos reales, el poder adquisitivo solo ha aumentado un 9,24 por ciento.",
+  "subtitulo": "Interpretación: en términos reales, el poder adquisitivo solo ha aumentado un 9,24 por ciento."
+ },
+ {
+  "id": "012_00",
+  "texto": "Último apartado, el 4.8: dos aplicaciones. El IPC, el índice de precios de consumo, lo elabora el INE y mide la evolución de los precios de lo que compran los hogares. Es un índice tipo Laspeyres encadenado, y desde 2022 se publica en base 2021.",
+  "subtitulo": "Último apartado, el 4.8: dos aplicaciones. El IPC, el índice de precios de consumo, lo elabora el INE y mide la evolución de los precios de lo que compran los hogares. Es un índice tipo Laspeyres encadenado, y desde 2022 se publica en base 2021."
+ },
+ {
+  "id": "012_01",
+  "texto": "Se usa para actualizar alquileres, salarios y pensiones.",
+  "subtitulo": "Se usa para actualizar alquileres, salarios y pensiones."
+ },
+ {
+  "id": "012_02",
+  "texto": "Una práctica rápida: con un IPC del 6,5, el 5,7, el 3,5 y el 2,8 por ciento en cuatro años, la subida acumulada es el producto, 1,1977: un 19,8 por ciento, no el 18,5 que saldría sumando.",
+  "subtitulo": "Una práctica rápida: con un IPC del 6,5, el 5,7, el 3,5 y el 2,8 por ciento en cuatro años, la subida acumulada es el producto, 1,1977: un 19,8 por ciento, no el 18,5 que saldría sumando."
+ },
+ {
+  "id": "012_03",
+  "texto": "Y el IBEX 35 es el índice de la Bolsa española: las 35 empresas más negociadas, ponderadas por lo que valen. Es tipo Laspeyres, con base 1000.",
+  "subtitulo": "Y el IBEX 35 es el índice de la Bolsa española: las 35 empresas más negociadas, ponderadas por lo que valen. Es tipo Laspeyres, con base 1000."
+ },
+ {
+  "id": "012_04",
+  "texto": "En el ejemplo de los apuntes: el valor actual entre el de la base, por 1000. 1064,3 puntos: las acciones han subido de media un 6,43 por ciento.",
+  "subtitulo": "En el ejemplo de los apuntes: el valor actual entre el de la base, por 1000. 1064,3 puntos: las acciones han subido de media un 6,43 por ciento."
+ },
+ {
+  "id": "013_00",
+  "texto": "Y con esto termina el temario. En la guía tienes el boletín del Tema 4, las prácticas 7 y 8, las 30 preguntas de Excel sin ordenador y los simulacros: el tercero, en papel. Mucho ánimo.",
+  "subtitulo": "Y con esto termina el temario. En la guía tienes el boletín del Tema 4, las prácticas 7 y 8, las 30 preguntas de Excel sin ordenador y los simulacros: el tercero, en papel. Mucho ánimo."
+ }
+]

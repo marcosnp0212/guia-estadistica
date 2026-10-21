@@ -1,0 +1,47 @@
+[
+ {
+  "id": "f93b86c8ad5ee",
+  "texto": "Antes de seguir, los gráficos para dos variables. El más usado es el diagrama de barras agrupadas: para cada departamento, una barra por cada modalidad, una al lado de otra.",
+  "subtitulo": "Antes de seguir, los gráficos para dos variables. El más usado es el diagrama de barras agrupadas: para cada departamento, una barra por cada modalidad, una al lado de otra."
+ },
+ {
+  "id": "f460fb7ff00dd",
+  "texto": "O barras apiladas: una sola barra por departamento, partida en trozos, uno por modalidad.",
+  "subtitulo": "O barras apiladas: una sola barra por departamento, partida en trozos, uno por modalidad."
+ },
+ {
+  "id": "fb22b59edb060",
+  "texto": "El gráfico de mosaico usa rectángulos de tamaño proporcional a la frecuencia. Se usa con dos variables cualitativas.",
+  "subtitulo": "El gráfico de mosaico usa rectángulos de tamaño proporcional a la frecuencia. Se usa con dos variables cualitativas."
+ },
+ {
+  "id": "f2a920f99e51d",
+  "texto": "Excel no tiene mosaico, pero se puede imitar con un gráfico de columnas al 100 por ciento apiladas.",
+  "subtitulo": "Excel no tiene mosaico, pero se puede imitar con un gráfico de columnas al 100 por ciento apiladas."
+ },
+ {
+  "id": "f7f07fce441e7",
+  "texto": "Ese gráfico tiene una ventaja: cada barra suma 100 por ciento, así que muestra justo las distribuciones condicionadas, que vemos en el apartado 2.3.",
+  "subtitulo": "Ese gráfico tiene una ventaja: cada barra suma 100 por ciento, así que muestra justo las distribuciones condicionadas, que vemos en el apartado 2.3."
+ },
+ {
+  "id": "f901f57b74221",
+  "texto": "En papel: en el eje horizontal, los departamentos; en el vertical, la frecuencia, de 0 a 10.",
+  "subtitulo": "En papel: en el eje horizontal, los departamentos; en el vertical, la frecuencia, de 0 a 10."
+ },
+ {
+  "id": "f6e29775bd9bf",
+  "texto": "Sobre cada departamento dibujas una barra por modalidad, pegadas entre sí. Para Recursos Humanos: 8, 3 y 2.",
+  "subtitulo": "Sobre cada departamento dibujas una barra por modalidad, pegadas entre sí. Para Recursos Humanos: 8, 3 y 2."
+ },
+ {
+  "id": "f145ea64d4ac7",
+  "texto": "Cada modalidad con un color o un rayado distinto, y una leyenda que diga cuál es cuál.",
+  "subtitulo": "Cada modalidad con un color o un rayado distinto, y una leyenda que diga cuál es cuál."
+ },
+ {
+  "id": "fe861b6b51436",
+  "texto": "Y para el de 100 por ciento apilado: todas las barras miden lo mismo, el 100 por ciento, y se parten según los porcentajes de su fila. Recursos Humanos: 61,5, 23,1 y 15,4 por ciento.",
+  "subtitulo": "Y para el de 100 por ciento apilado: todas las barras miden lo mismo, el 100 por ciento, y se parten según los porcentajes de su fila. Recursos Humanos: 61,5, 23,1 y 15,4 por ciento."
+ }
+]

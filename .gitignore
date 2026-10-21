@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+video/audio/
+video/frames/
+video/frames_a/
+video/out/
+video/out_a/
+video/base.html
+web/alumna.html
+web/tutor.html
+web/alumna.md
+web/tutor.md
+web/data.html
+build/out_*

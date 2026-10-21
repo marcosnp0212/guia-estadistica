@@ -1,0 +1,26 @@
+import os,subprocess,sys,re,json,base64
+X='/home/claude/xl2/'
+FILES=['Solucionario_estadistica.xlsx','Practicas_autocorregidas.xlsx','Simulacros_autocorregidos.xlsx','Plantillas_estadistica.xlsx','Estadistica_ejercicios_resueltos.xlsx']
+def sheet_lib():
+    d='/home/claude/web/sheet/'
+    open('/home/claude/web/sheetlib.html','w').write('<style>'+open(d+'hot.css').read()+'</style>'+''.join('<script>'+open(d+f).read()+'</script>' for f in ['hot.js','hf-es.js','hfsetup.js']))
+def data_script():
+    d={'practicas':json.load(open(X+'practicas.json')),'simulacros':json.load(open(X+'simulacros.json'))+json.load(open('/home/claude/xl3/sim_papel.json')),'checks':{**json.load(open(X+'checks.json')),**json.load(open('/home/claude/xl3/checks_papel.json'))},'tests':json.load(open('/home/claude/xl3/sim_test.json'))}
+    p=base64.b64encode(json.dumps(d,ensure_ascii=False).encode()).decode()
+    f={n:base64.b64encode(open('/home/claude/entrega/'+n,'rb').read()).decode() for n in FILES}
+    open('/home/claude/web/data.html','w').write('<script>(function(){var b=atob("'+p+'"),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);window.GUIA_DATA=JSON.parse(new TextDecoder().decode(u));window.GUIA_DATA.files='+json.dumps(f)+';})();</script>')
+def build(folder,out,title,short,hero=None,endnote='',guide='alumna'):
+    parts=sorted(f for f in os.listdir(folder) if f.endswith('.md'))
+    md='\n\n'.join(open(os.path.join(folder,p),encoding='utf-8').read() for p in parts)
+    md=md.replace('](img/','](/home/claude/web/img/')
+    md=re.sub(r'^\$\$(.+?)\$\$[ \t]*$',lambda m:'$$'+re.sub(r'(\d+)\{,\}(\d+)',r'\\text{\1,\2}',m.group(1))+'$$',md,flags=re.M)
+    tmp=f'/home/claude/web/{out}.md';open(tmp,'w').write(md)
+    args=['pandoc','-f','markdown',tmp,'-t','html5','-s','--template=template.html','--lua-filter=guia.lua','--section-divs','--toc','--toc-depth=2',
+          '--mathml','--embed-resources','--css=guia.css','--include-after-body=guia.js']+(['--include-after-body=data.html','--include-after-body=sheetlib.html'] if guide=='alumna' else [])+['--include-after-body=features.js']+(['--include-after-body=course.js','--include-after-body=plan.js'] if guide=='alumna' else [])+['-M','pagetitle='+title,'-V','shorttitle='+short,'-V','endnote='+endnote,'-V','guide='+guide,'-o',f'/home/claude/web/{out}.html']
+    if hero: args+=['--include-before-body',hero]
+    subprocess.run(args,check=True,cwd='/home/claude/web')
+if __name__=='__main__':
+    data_script()
+    sheet_lib()
+    build('/home/claude/build/alumna','alumna','Estadística con Excel, desde cero','Estadística con Excel','hero_alumna.html','Guía de estudio · Temas 1 a 4 · Estadística (RRLL y RRHH, UVigo)')
+    build('/home/claude/build/tutor','tutor','Guía del tutor · Estadística con Excel','Guía del tutor','hero_tutor.html','Guía del tutor · Estadística con Excel',guide='tutor')

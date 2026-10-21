@@ -6,12 +6,16 @@
 <title>$pagetitle$</title>
 <script>
 try{var t=localStorage.getItem('guia-tema');document.documentElement.setAttribute('data-theme',t||'light');if(localStorage.getItem('guia-sb')==='0')document.documentElement.classList.add('sb-off');}catch(e){}
+if(location.hash&&location.hash!=='#inicio')document.documentElement.classList.add('pre-route');
 </script>
 $for(css)$
 <link rel="stylesheet" href="$css$">
 $endfor$
 </head>
-<body data-guide="$guide$">
+<body data-guide="$guide$"$if(tbar)$ class="tabs-mode at-home"$endif$>
+$if(tbar)$
+$tbar$
+$endif$
 <a class="skip" href="#contenido">Saltar al contenido</a>
 <div class="progress" aria-hidden="true"><span></span></div>
 <header class="topbar">

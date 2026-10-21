@@ -39,16 +39,8 @@ function toolName(id){var t=TOOLS.filter(function(x){return x[1]===id;})[0];retu
 /* ---- 2. Barra superior ---- */
 body.classList.add('tabs-mode');
 var ICON=function(d,fill){return'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="'+(fill?'currentColor':'none')+'" stroke="'+(fill?'none':'currentColor')+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="'+d+'"/></svg>';};
-var bar=el('header','tbar');
-bar.innerHTML='<div class="tb-in"><a class="tb-brand" href="#inicio">Estadística<small>Temas 1 a 4</small></a>'+
-  '<nav class="tb-tabs" aria-label="Secciones"><a data-z="home" href="#inicio">Inicio</a><a data-z="plan" href="#plan-de-estudio">Mi plan</a>'+
-  '<a data-z="tema" href="#temas">Temas<span class="dots" aria-hidden="true"><i class="d1"></i><i class="d2"></i><i class="d3"></i><i class="d4"></i></span></a>'+
-  '<a data-z="exam" href="#examen">Examen</a><a data-z="tools" href="#herramientas"><span class="lg">Herramientas</span><span class="sh">Más</span></a></nav>'+
-  '<div class="tb-tools"><a class="tb-b tb-idx" href="#indice" aria-label="Índice completo">'+ICON('M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01')+'<span>Índice</span></a><button type="button" class="tb-b tb-search-b" aria-label="Buscar en la guía" aria-expanded="false">'+ICON('M11 4.5a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13zM20 20l-4.2-4.2')+'</button>'+
-  '<button type="button" class="tb-b tb-notes-b" aria-label="Mis notas">'+ICON('M5 3h10l4 4v14H5zM8 11h8M8 15h6')+'<span class="tb-dot" hidden></span></button></div></div>'+
-  '<div class="tb-search" hidden></div>';
-body.insertBefore(bar,body.firstChild);
-var theme=document.querySelector('.topbar .theme-toggle');if(theme){theme.classList.add('tb-b');bar.querySelector('.tb-tools').appendChild(theme);}
+/* la barra viene ya escrita en la página (tbar_alumna.html), para que se vea desde el primer momento */
+var bar=document.querySelector('.tbar');
 /* buscador: se mueve del índice lateral a la barra */
 var sp=bar.querySelector('.tb-search'),sw=document.querySelector('.sidebar .search'),sr=document.querySelector('.sidebar .search-res');
 if(sw)sp.appendChild(sw);if(sr)sp.appendChild(sr);
@@ -206,6 +198,6 @@ function paintResume(){var r=hero&&hero.querySelector('.resume');if(!r)return;va
     var run=[e],n=e.nextElementSibling;while(ok(n)){run.push(n);n=n.nextElementSibling;}if(run.length<2)return;
     var row=el('div','co-row');e.parentNode.insertBefore(row,e);run.forEach(function(x){row.appendChild(x);});});})();
 if(hero)[].forEach.call(hero.querySelectorAll('.divider'),function(d){var m=d.className.match(/\bt([1-4])\b/);if(m)d.addEventListener('click',function(){set('nav:tema',+m[1]);},true);});
-fromHash();
+fromHash();document.documentElement.classList.remove('pre-route');
 })();
 </script>

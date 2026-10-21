@@ -16,7 +16,7 @@
   --c:var(--tx); --c-soft:var(--tx-soft);
   --sans:"Lexend",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
-  --sb:300px; --measure:42rem;
+  --sb:300px; --measure:none;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
@@ -100,7 +100,7 @@ a:hover{text-decoration-thickness:2px}
 .scrim{position:fixed;inset:0;background:rgba(10,15,18,.45);z-index:65}
 
 /* ===== Columna de lectura ===== */
-main{margin-left:var(--sb);padding:96px 40px 80px 56px}
+main{margin-left:var(--sb);padding:96px 56px 80px 56px}
 .doc,.hero,.end{max-width:var(--measure)}
 .doc > section{--c:var(--tx);--c-soft:var(--tx-soft)}
 section.t0{--c:var(--t0);--c-soft:var(--t0-soft)} section.t1{--c:var(--t1);--c-soft:var(--t1-soft)}
@@ -620,3 +620,4 @@ details[open]{padding-bottom:.4rem}
 .ts-model p{flex-basis:100%;margin:0}
 .ts-model .btn{margin-left:0}
 .ts-cnt{font-weight:600}
+.doc figure img,.doc p>img{max-width:min(100%,900px)!important;height:auto}

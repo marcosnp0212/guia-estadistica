@@ -3,12 +3,17 @@ X='/home/claude/xl2/'
 FILES=['Solucionario_estadistica.xlsx','Practicas_autocorregidas.xlsx','Simulacros_autocorregidos.xlsx','Plantillas_estadistica.xlsx','Estadistica_ejercicios_resueltos.xlsx']
 def sheet_lib():
     d='/home/claude/web/sheet/'
-    open('/home/claude/web/sheetlib.html','w').write('<style>'+open(d+'hot.css').read()+'</style>'+''.join('<script>'+open(d+f).read()+'</script>' for f in ['hot.js','hf-es.js','hfsetup.js']))
+    # la hoja de cálculo pesa 1,7 MB: va como texto y solo se ejecuta la primera vez que una práctica la necesita (loadSheetLib)
+    js='\n;\n'.join(open(d+f).read() for f in ['hot.js','hf-es.js','hfsetup.js'])
+    loader="window.loadSheetLib=function(){if(window.Handsontable)return;var s=document.getElementById('sheetlib-src');if(!s)return;var e=document.createElement('script');e.textContent=s.textContent;document.head.appendChild(e);};"
+    open('/home/claude/web/sheetlib.html','w').write('<style>'+open(d+'hot.css').read()+'</style><script type="text/plain" id="sheetlib-src">'+js+'</script><script>'+loader+'</script>')
 def data_script():
     d={'practicas':json.load(open(X+'practicas.json')),'simulacros':json.load(open(X+'simulacros.json'))+json.load(open('/home/claude/xl3/sim_papel.json')),'checks':{**json.load(open(X+'checks.json')),**json.load(open('/home/claude/xl3/checks_papel.json'))},'tests':json.load(open('/home/claude/xl3/sim_test.json'))}
     p=base64.b64encode(json.dumps(d,ensure_ascii=False).encode()).decode()
     f={n:base64.b64encode(open('/home/claude/entrega/'+n,'rb').read()).decode() for n in FILES}
-    open('/home/claude/web/data.html','w').write('<script>(function(){var b=atob("'+p+'"),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);window.GUIA_DATA=JSON.parse(new TextDecoder().decode(u));window.GUIA_DATA.files='+json.dumps(f)+';})();</script>')
+    # los Excel de descarga van como texto aparte y solo se leen al pulsar «Descargar»
+    fs={n:round(len(v)*0.75/1024) for n,v in f.items()}
+    open('/home/claude/web/data.html','w').write('<script>(function(){var b=atob("'+p+'"),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);window.GUIA_DATA=JSON.parse(new TextDecoder().decode(u));window.GUIA_DATA.fsize='+json.dumps(fs)+';})();</script><script type="application/json" id="guia-files">'+json.dumps(f)+'</script>')
 def build(folder,out,title,short,hero=None,endnote='',guide='alumna'):
     parts=sorted(f for f in os.listdir(folder) if f.endswith('.md'))
     md='\n\n'.join(open(os.path.join(folder,p),encoding='utf-8').read() for p in parts)

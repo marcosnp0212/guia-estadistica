@@ -23,7 +23,7 @@ function buildUnits(){
     var secs=[].slice.call(l1.querySelectorAll(':scope > section.level2'));
     var us=[];
     secs.forEach(function(s){
-      var title=(A.tabOf(s)+A.secTitle(s)).replace(/\s+/g,' ').trim();
+      var title=(A.tabOf(s).replace(/^Parte 0 bis/,'Excel desde cero').replace(/^Parte 0/,'Repaso de números').replace(/^Boletín/,'Ejercicios resueltos').replace(/^Prácticas/,'Practica')+A.secTitle(s)).replace(/\s+/g,' ').trim();
       if(kind==='prac'){var box=s.querySelector('.practica');if(!box)return;var tipo=box.getAttribute('data-tipo');
         [1,2,3].forEach(function(l){us.push({id:s.id+'#'+l,sec:s,lvl:l,title:title+' · nivel '+l,min:l===1?25:20,kind:'prac',done:function(){return !!get('pr-done:'+tipo+':'+l,false);}});});return;}
       if(kind==='exam'){var sim=s.querySelector('.simulacro');
@@ -190,13 +190,13 @@ function paint(){
     if(!r){h+='<p class="pl-empty">Pon el día del examen y aquí aparecerá tu plan, día a día.</p>';}
     else{
       var left=r.pend.length,tot=r.seq.length;
-      h+='<div class="pl-sum"><div class="meter"><span style="width:'+(tot?Math.round(r.doneN/tot*100):0)+'%"></span></div><p>Llevas <b>'+r.doneN+' de '+tot+'</b> tareas. Faltan <b>'+Math.max(0,Math.round((r.E-today())/864e5))+'</b> días para el examen'+(r.days.length?'; te salen unos <b>'+(r.expres?hm(r.perDay):r.perDay+' minutos')+'</b> por día de estudio'+(r.expres?', sin contar los descansos.':'.'):'.')+'</p>'+
+      h+='<div class="pl-sum"><div class="meter"><span style="width:'+(tot?Math.round(r.doneN/tot*100):0)+'%"></span></div><p>Llevas <b>'+r.doneN+' de '+tot+'</b> tareas. Faltan <b>'+Math.max(0,Math.round((r.E-today())/864e5))+'</b> días para el examen'+(r.days.length?'; te salen unos <b>'+hm(r.perDay)+'</b> por día de estudio'+(r.expres?', sin contar los descansos.':'.'):'.')+'</p>'+
                 (r.expres?(r.days.length===1?'<p class="pl-warn"><b>Solo te queda un día.</b> No da para todo con calma. Sigue el orden de la lista: cada tarea que hagas suma.</p>':(r.perDay>300?'<p class="pl-warn"><b>Son días largos.</b> Parte cada día en tres tandas (mañana, tarde y noche), con bloques de 25 minutos y un descanso largo entre tandas.</p>':'')):(r.perDay>150?'<p class="pl-warn"><b>Son muchos minutos al día.</b> Si no te da, elige el plan <b>Exprés</b>. Si prefieres seguir con el completo, añade días de estudio o marca como hecho lo que ya sepas hacer («Ya lo sé hacer»): el plan se reparte solo con lo que queda.</p>':''))+'</div>';
       if(r.extra&&r.extra.length)h+='<p class="pl-note">No caben todos los simulacros. Si te sobra tiempo, haz también: '+r.extra.map(function(u){return'<a href="#'+u.sec.id+'" data-u="'+esc(u.id)+'">'+esc(u.title.replace(/^Examen · /,''))+'</a>';}).join(', ')+'.</p>';
       if(!left)h+='<p class="pl-empty">¡Lo tienes todo hecho! Repasa la chuleta y repite el simulacro que peor te saliera.</p>';
       var t0=today();
       h+='<ol class="pl-days">'+r.days.filter(function(d){return d.items.length;}).map(function(d){var isT=+d.date===+t0;
-        return'<li class="pl-day'+(isT?' is-today':'')+'"><div class="pl-dh"><span class="pl-date">'+(isT?'Hoy · ':'')+fmt(d.date)+'</span><span class="pl-m">'+(r.expres?hm(d.min):d.min+' min')+'</span></div><ul>'+d.items.map(itemHtml).join('')+'</ul></li>';}).join('')+
+        return'<li class="pl-day'+(isT?' is-today':'')+'"><div class="pl-dh"><span class="pl-date">'+(isT?'Hoy · ':'')+fmt(d.date)+'</span><span class="pl-m">'+hm(d.min)+'</span></div><ul>'+d.items.map(itemHtml).join('')+'</ul></li>';}).join('')+
         (r.expres?'<li class="pl-day pl-rep"><div class="pl-dh"><span class="pl-date">'+fmt(r.E)+' · examen</span><span class="pl-m">15 min</span></div><ul><li class="pl-it"><a href="#las-15-trampas-del-test">Por la mañana, una última vuelta a las 15 trampas. Nada nuevo.</a></li></ul></li>':'')+
         (r.repaso?'<li class="pl-day pl-rep'+(+r.repaso===+t0?' is-today':'')+'"><div class="pl-dh"><span class="pl-date">'+fmt(r.repaso)+'</span><span class="pl-m">repaso</span></div><ul><li class="pl-it"><a href="#chuleta-de-fórmulas">Nada nuevo: lee la chuleta y las listas de comprobación. Duerme bien.</a></li></ul></li>':'')+'</ol>';
     }
@@ -220,7 +220,7 @@ function paintToday(r){
     if(r.repaso&&+r.repaso===+t0)h='<p class="td-k">Hoy, '+fmt(t0)+'</p><p class="td-t">Repaso final: nada nuevo. Lee la chuleta y las listas de comprobación.</p>';
     else if(d){var pl=d.items.filter(function(u){return !u.done();}),pend=pl.length,nd=d.items.length-pend;
       var nx=!pend&&r.expres?r.days.filter(function(x){return x.date>t0;}).map(function(x){return x.items.filter(function(u){return !u.done()&&u.kind==='xp'&&!/^xp:tr:/.test(u.id);})[0];}).filter(Boolean)[0]:null;
-      h='<p class="td-k">Hoy, '+fmt(t0)+' · unos '+(r.expres?hm(d.min):d.min+' min')+'</p><p class="td-t">'+(pend?(nd?'Llevas '+nd+' de '+d.items.length+'. Sigue con:':'Te toca:'):'¡Hecho lo de hoy!'+(nx?' Si te quedan fuerzas, adelanta:':''))+'</p><ul class="td-list">'+(pend?pl.slice(0,6):(nx?[nx]:[])).map(itemHtml).join('')+'</ul>'+(pend>6?'<p class="td-more">y '+(pend-6)+' más en el plan.</p>':'')+'<a class="td-go" href="#plan-de-estudio">Ver el plan completo</a>';}
+      h='<p class="td-k">Hoy, '+fmt(t0)+' · unos '+hm(d.min)+'</p><p class="td-t">'+(pend?(nd?'Llevas '+nd+' de '+d.items.length+'. Sigue con:':'Te toca:'):'¡Hecho lo de hoy!'+(nx?' Si te quedan fuerzas, adelanta:':''))+'</p><ul class="td-list">'+(pend?pl.slice(0,6):(nx?[nx]:[])).map(itemHtml).join('')+'</ul>'+(pend>6?'<p class="td-more">y '+(pend-6)+' más en el plan.</p>':'')+'<a class="td-go" href="#plan-de-estudio">Ver el plan completo</a>';}
     else{var nx=r.days.filter(function(x){return x.date>t0&&x.items.length;})[0];
       h='<p class="td-k">Hoy no toca nada del plan</p><p class="td-t">'+(nx?'Lo siguiente, el '+fmt(nx.date)+': '+esc(nx.items[0].title)+'.':'Repasa lo que peor te haya salido o descansa.')+'</p><a class="td-go" href="#plan-de-estudio">Ver el plan completo</a>';}
   }

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boceto · nueva navegación</title>
+<style>
+:root{--paper:#F6F8F7;--sheet:#fff;--ink:#1F2A30;--ink-2:#4F5D65;--ink-3:#7A878E;--rule:#D6DEE1;--t1:#2F5FD0;--t2:#0F8A68;--t3:#C2185B;--t4:#A86F00;--warn:#C24E00;--warn-soft:#FFF2E8;--ok:#1D8A4E;--t1s:#E6EDFC;--t2s:#E0F3EC;--t3s:#FBE4EE;--t4s:#F8EED6}
+*{box-sizing:border-box}body{margin:0;font-family:Lexend,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#e9edec;color:var(--ink)}
+.note{max-width:1180px;margin:18px auto 8px;padding:0 16px;font-size:.95rem;color:var(--ink-2)}
+.note b{color:var(--ink)}
+.frames{display:flex;gap:28px;justify-content:center;align-items:flex-start;flex-wrap:wrap;padding:8px 16px 40px}
+.frame{background:var(--paper);border:1px solid var(--rule);border-radius:14px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.desk{width:min(900px,100%)}.mob{width:375px}
+.cap{font-size:.8rem;font-weight:700;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;margin:0 0 6px}
+/* barra superior */
+.top{background:var(--sheet);border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:6px;padding:0 14px;height:58px;position:sticky;top:0}
+.brand{font-weight:800;margin-right:14px;white-space:nowrap}
+.nav{display:flex;gap:2px;flex:1}
+.nav button{font:inherit;font-size:.92rem;font-weight:650;border:0;background:none;color:var(--ink-2);padding:8px 12px;border-radius:9px;cursor:pointer;white-space:nowrap}
+.nav button.on{background:var(--ink);color:#fff}
+.nav button:hover:not(.on){background:#eef1f2}
+.icons{display:flex;gap:4px}.icons span{width:36px;height:36px;border:1px solid var(--rule);border-radius:9px;display:grid;place-items:center;font-size:.95rem;color:var(--ink-2)}
+.mob .top{height:auto;flex-wrap:wrap;padding:8px 10px 0;gap:0}.mob .brand{flex:1;font-size:.95rem;padding:6px 4px}
+.mob .nav{order:3;flex-basis:100%;overflow-x:auto;padding:8px 0 8px;gap:4px}
+.mob .nav button{font-size:.85rem;padding:7px 11px;background:#f0f3f4}.mob .nav button.on{background:var(--ink)}
+/* pantallas */
+.scr{display:none;padding:22px 24px 30px}.scr.on{display:block}.mob .scr{padding:16px 14px 24px}
+h1{font-size:1.7rem;margin:0 0 4px}.mob h1{font-size:1.35rem}
+.lede{color:var(--ink-2);margin:0 0 18px}
+.today{background:var(--sheet);border:2px solid var(--warn);border-radius:14px;padding:16px 18px;box-shadow:0 0 0 4px var(--warn-soft);margin-bottom:22px}
+.today .k{color:var(--warn);font-weight:800;font-size:.88rem;margin:0}
+.today .t{font-weight:750;font-size:1.1rem;margin:4px 0 10px}
+.bar{height:8px;border-radius:4px;background:var(--rule);overflow:hidden;margin:0 0 10px}.bar span{display:block;height:100%;width:30%;background:var(--ok)}
+.task{display:flex;gap:10px;align-items:center;padding:7px 0;border-top:1px dashed var(--rule);font-size:.93rem}.task:first-of-type{border-top:0}
+.task i{width:18px;height:18px;border:2px solid var(--ink-3);border-radius:4px;flex:none}.task.d i{background:var(--ok);border-color:var(--ok)}.task.d span{text-decoration:line-through;color:var(--ink-3)}
+.task em{margin-left:auto;font-style:normal;font-size:.78rem;color:var(--ink-3);white-space:nowrap}
+.btn{display:inline-block;font:inherit;font-weight:700;font-size:.92rem;background:var(--ink);color:#fff;border:0;border-radius:10px;padding:10px 16px;margin-top:10px;cursor:pointer}
+.btn.g{background:none;color:var(--ink);border:1.5px solid var(--rule)}
+h2{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:22px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:14px;border-top:5px solid var(--c,var(--ink))}
+.card b{display:block;margin-bottom:3px}.card small{color:var(--ink-2);font-size:.83rem;line-height:1.4;display:block}
+.card .p{height:5px;border-radius:3px;background:var(--rule);margin-top:10px;overflow:hidden}.card .p span{display:block;height:100%;background:var(--c)}
+.small{font-size:.85rem;color:var(--ink-2)}
+/* página de tema */
+.th{border-left:6px solid var(--t1);padding-left:12px;margin-bottom:14px}.th .tag{color:var(--t1);font-weight:800;font-size:.85rem}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px}
+.tabs span{font-size:.88rem;font-weight:700;padding:8px 13px;border-radius:999px;border:1.5px solid var(--rule);background:var(--sheet);color:var(--ink-2)}
+.tabs span.on{background:var(--t1);border-color:var(--t1);color:#fff}
+.mob .tabs{flex-wrap:nowrap;overflow-x:auto}.mob .tabs span{white-space:nowrap}
+.sel{display:flex;align-items:center;gap:8px;background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:10px 12px;font-size:.9rem;margin-bottom:14px}.sel b{flex:1}
+.vid{background:#1F2A30;color:#fff;border-radius:12px;padding:16px;display:flex;gap:12px;align-items:center;margin-bottom:14px}.vid span{font-size:1.6rem}
+.txt{background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:16px;font-size:.93rem;line-height:1.6;color:var(--ink-2)}
+.txt .ln{height:9px;background:#e8ecee;border-radius:4px;margin:9px 0}.txt .ln.s{width:60%}
+.pn{display:flex;justify-content:space-between;margin-top:16px;gap:10px}.pn span{font-size:.88rem;font-weight:700;padding:10px 14px;border:1.5px solid var(--rule);border-radius:10px;background:var(--sheet)}
+.pn span:last-child{background:var(--ink);color:#fff;border-color:var(--ink)}
+/* plan */
+.step{background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+.step .n{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;font-size:.8rem;font-weight:800;margin-right:8px}
+.step b{font-size:.98rem}.step .row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.chip{font-size:.85rem;font-weight:650;padding:6px 11px;border-radius:999px;border:1.5px solid var(--rule);background:var(--sheet);color:var(--ink-2)}.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.date{display:inline-block;margin-top:10px;padding:8px 12px;border:1.5px solid var(--rule);border-radius:8px;font-size:.92rem}
+.opt{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.opt div{border:1.5px solid var(--rule);border-radius:10px;padding:10px;font-size:.83rem;color:var(--ink-2)}.opt div.on{border:2px solid var(--ink)}.opt b{display:block;color:var(--ink);font-size:.92rem}
+.day{background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:10px 14px;margin-top:10px}.day.now{border:2px solid var(--warn)}
+.day .h{display:flex;justify-content:space-between;font-weight:750;margin-bottom:4px}.day .h em{font-style:normal;font-weight:400;font-size:.82rem;color:var(--ink-3)}
+.mob .opt{grid-template-columns:1fr}
+</style></head><body>
+<p class="note"><b>Boceto.</b> Pulsa los botones de la barra de arriba (en cualquiera de los dos marcos) para ver cada pantalla. Son pantallas de ejemplo: el texto gris es relleno.</p>
+<div class="frames">
+ <div><p class="cap">Ordenador</p><div class="frame desk" data-f></div></div>
+ <div><p class="cap">Móvil</p><div class="frame mob" data-f></div></div>
+</div>
+<template id="app">
+ <header class="top"><span class="brand">📊 Estadística</span>
+  <nav class="nav"><button data-s="inicio" class="on">Inicio</button><button data-s="plan">Mi plan</button><button data-s="temas">Temas</button><button data-s="examen">Examen</button><button data-s="mas">Herramientas</button></nav>
+  <div class="icons"><span title="Buscar">🔍</span><span title="Mis notas">📝</span><span title="Modo oscuro">🌙</span></div>
+ </header>
+
+ <section class="scr on" data-p="inicio">
+  <h1>Estadística, desde cero</h1><p class="lede">Temas 1 a 4, paso a paso. Examen el lunes 26 de octubre.</p>
+  <div class="today"><p class="k">HOY, JUEVES 22 · UNAS 3 H 25 MIN</p><p class="t">Llevas 3 de 11. Sigue con:</p><div class="bar"><span></span></div>
+   <div class="task d"><i></i><span>Tema 1 · Vídeo</span><em>35 min</em></div>
+   <div class="task d"><i></i><span>Tema 1 · Repaso: variables, centro y dispersión</span><em>25 min</em></div>
+   <div class="task"><i></i><span>Tema 1 · Repaso: cuartiles y caja</span><em>20 min</em></div>
+   <div class="task"><i></i><span>Tema 1 · Ejercicio 5: histograma</span><em>15 min</em></div>
+   <button class="btn">Seguir donde lo dejé →</button></div>
+  <h2>Los temas</h2>
+  <div class="grid">
+   <div class="card" style="--c:var(--t1)"><b>Tema 1 · Una variable</b><small>Media, mediana, dispersión, caja</small><div class="p"><span style="width:30%"></span></div></div>
+   <div class="card" style="--c:var(--t2)"><b>Tema 2 · Dos variables</b><small>Tablas de doble entrada, independencia</small><div class="p"><span style="width:0"></span></div></div>
+   <div class="card" style="--c:var(--t3)"><b>Tema 3 · Regresión</b><small>Recta, r y R², predicciones</small><div class="p"><span style="width:0"></span></div></div>
+   <div class="card" style="--c:var(--t4)"><b>Tema 4 · Números índices</b><small>Tasas, IPC, Laspeyres, deflactar</small><div class="p"><span style="width:0"></span></div></div>
+  </div>
+  <h2>Para el examen</h2>
+  <div class="grid">
+   <div class="card"><b>⚡ Repaso exprés</b><small>Lo imprescindible de cada tema</small></div>
+   <div class="card"><b>📄 Examen modelo</b><small>El de la profesora, resuelto</small></div>
+   <div class="card"><b>⏱ Simulacro</b><small>Con reloj y nota</small></div>
+  </div>
+  <p class="small" style="margin-top:18px">¿Primera vez aquí? <u>Cómo funciona la guía (1 minuto)</u></p>
+ </section>
+
+ <section class="scr" data-p="plan">
+  <h1>Mi plan</h1><p class="lede">Tres preguntas y la guía te dice qué hacer cada día.</p>
+  <div class="step"><span class="n">1</span><b>¿Cuándo es tu examen?</b><br><span class="date">📅 lunes 26/10/2026</span></div>
+  <div class="step"><span class="n">2</span><b>¿Qué días puedes estudiar?</b><div class="row"><span class="chip on">L</span><span class="chip on">M</span><span class="chip on">X</span><span class="chip on">J</span><span class="chip on">V</span><span class="chip on">S</span><span class="chip on">D</span></div></div>
+  <div class="step"><span class="n">3</span><b>¿Qué plan quieres?</b><div class="opt"><div class="on"><b>Exprés · recomendado</b>Lo imprescindible. Unas 13 h.</div><div><b>Completo</b>Toda la guía. Unas 34 h.</div></div></div>
+  <p class="small">Más opciones: qué temas entran, empezar otro día, añadir el repaso de base.</p>
+  <div class="day now"><div class="h">Hoy · jueves 22<em>3 h 25 min</em></div><div class="task d"><i></i><span>Tema 1 · Vídeo</span><em>35 min</em></div><div class="task"><i></i><span>Tema 1 · Repaso</span><em>25 min</em></div><div class="task"><i></i><span>…</span></div></div>
+  <div class="day"><div class="h">Viernes 23<em>3 h</em></div><div class="task"><i></i><span>Tema 2 · Vídeo</span><em>10 min</em></div><div class="task"><i></i><span>…</span></div></div>
+ </section>
+
+ <section class="scr" data-p="temas">
+  <div class="th"><span class="tag">TEMA 1</span><h1>Una variable</h1></div>
+  <div class="tabs"><span class="on">Aprender</span><span>Ejercicios resueltos</span><span>Practica (se corrige sola)</span><span>¿Lo sé hacer?</span></div>
+  <div class="sel">📑 <b>1.5. Media, mediana y moda</b> ▾</div>
+  <div class="vid"><span>▶</span><div><b>Vídeo del Tema 1</b><br><small>35 min · con voz y subtítulos</small></div></div>
+  <div class="txt"><b style="color:var(--ink)">1.5. Media, mediana y moda</b><div class="ln"></div><div class="ln"></div><div class="ln s"></div><div class="ln"></div><div class="ln s"></div></div>
+  <div class="pn"><span>← 1.4. Gráficos</span><span>1.6. Cuantiles →</span></div>
+ </section>
+
+ <section class="scr" data-p="examen">
+  <h1>Examen</h1><p class="lede">En papel: 30 preguntas tipo test y 10 de respuesta corta.</p>
+  <div class="tabs"><span class="on">Repaso exprés</span><span>Examen modelo</span><span>Simulacros</span></div>
+  <div class="txt"><b style="color:var(--ink)">Tema 1: lo imprescindible</b><div class="ln"></div><div class="ln"></div><div class="ln s"></div><div class="ln"></div></div>
+  <div class="pn"><span>← Volver</span><span>Tema 2: lo imprescindible →</span></div>
+ </section>
+
+ <section class="scr" data-p="mas">
+  <h1>Herramientas</h1><p class="lede">Para tener a mano mientras estudias.</p>
+  <div class="grid">
+   <div class="card"><b>🧾 Chuleta de fórmulas</b><small>Todas en una página</small></div>
+   <div class="card"><b>🔎 ¿Qué me están pidiendo?</b><small>De la frase del enunciado a la fórmula</small></div>
+   <div class="card"><b>✅ Lista para el examen</b><small>Lo que revisar antes de entregar</small></div>
+   <div class="card"><b>🔢 Antes de empezar</b><small>Porcentajes, calculadora y Excel desde cero</small></div>
+   <div class="card"><b>⬇️ Descargas</b><small>Los Excel de la guía</small></div>
+   <div class="card"><b>💻 Si el examen fuera con ordenador</b><small>Simulacros con Excel</small></div>
+  </div>
+ </section>
+</template>
+<script>
+document.querySelectorAll('[data-f]').forEach(function(f){f.appendChild(document.getElementById('app').content.cloneNode(true));
+ if(f.classList.contains('mob'))f.querySelector('.nav button[data-s=mas]').textContent='Más';
+ f.querySelectorAll('.nav button').forEach(function(b){b.addEventListener('click',function(){
+  f.querySelectorAll('.nav button').forEach(function(x){x.classList.toggle('on',x===b);});
+  f.querySelectorAll('.scr').forEach(function(s){s.classList.toggle('on',s.getAttribute('data-p')===b.getAttribute('data-s'));});});});});
+</script>
+</body></html>

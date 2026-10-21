@@ -41,7 +41,7 @@ t1 qFxCvatJA7s · b12 rRuCQaWuUSg · t2 bZ2RDTQ483I · t3 HULRqZML5gU · b3 XRN-
 
 ## Historia y decisiones (para retomar)
 - Empezó como guía personal para una alumna (TDAH, ansiedad, parte de cero). Ahora se comparte con su clase: **tono neutro, de tú, cercano y muy explicado**. Todo lo nuevo tiene que sonar igual que los temas: frases cortas, un ejemplo con números sencillos, recuadros Idea/Ojo/Truco/Excel. Nada de listas secas de fórmulas.
-- Examen (21/10/2026, a 3 días): **en papel, 30 preguntas tipo test + 10 de respuesta corta**, como el modelo que la profesora enseñó en clase (`05r_modelo.md`). Calculadora como mucho. Las preguntas de Excel son de elegir/escribir la fórmula.
+- Examen (lunes 26/10/2026): **en papel, 30 preguntas tipo test + 10 de respuesta corta**, como el modelo que la profesora enseñó en clase (`05r_modelo.md`). Calculadora como mucho. Las preguntas de Excel son de elegir/escribir la fórmula.
 - El modelo de la profesora se deja visible a propósito. Sin créditos ni nombres.
 - Los simulacros con Excel (S1, S2) quedan al final, "por si acaso".
 - Modo claro por defecto; contenido a todo el ancho.

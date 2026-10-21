@@ -569,6 +569,15 @@ input[type=text].cq,.cq-in input,.ask input,.pr-work input{font:inherit;font-fam
 .pl-it.done a{color:var(--ink-3);text-decoration:line-through}
 .pl-it.done::before{content:"✔";color:var(--ok);margin-right:6px}
 .pl-min{flex:none;font-size:.78rem;color:var(--ink-3)}
+.pl-it.xp{justify-content:flex-start;align-items:baseline}
+.pl-it.xp a{flex:1}
+.pl-it.xp.done::before{content:none}
+.pl-chk{flex:none;display:inline-flex;align-self:center;cursor:pointer}
+.pl-chk input{width:18px;height:18px;margin:0;accent-color:var(--ok);cursor:pointer}
+.plan-xp{margin:1rem 0}
+.plan-xp .pl-row{margin:.4rem 0}
+.plan-xp .pl-date{text-transform:none}
+.pl-it.trp{padding-left:28px}
 .today .td-list{margin:.3rem 0 .6rem}
 
 /* ===== Vídeos ===== */

@@ -4,7 +4,7 @@ Tu plan se hace solo con tus fechas. Dime cuándo es el examen, qué días estud
 
 El plan se **recalcula cada día con lo que ya has hecho**: lo que marcas como hecho (con las comprobaciones, «Ya lo sé hacer» o «Lo he resuelto») desaparece de los días que vienen. Si un día no puedes, no pasa nada: mañana el plan se reparte otra vez.
 
-Si quedan muy pocos días y no da tiempo a todo, el plan pasa solo a **modo exprés**: repaso exprés, examen modelo y simulacro tipo test. Si prefieres el plan completo, se puede cambiar con un clic.
+Si quedan pocos días y el plan completo no cabe, pasa solo a **modo exprés**. **Entra lo mismo**: el vídeo, el repaso, los ejercicios clave del boletín y las preguntas del examen modelo de cada tema, y al final la respuesta corta, las preguntas de Excel sin ordenador y el simulacro tipo test. Lo único que cambia es cuántas horas toca cada día. Cada tarea tiene su casilla: márcala al terminarla. Lo de hoy no cambia aunque vayas tachando; lo que quede se reparte entre los días siguientes. Si prefieres el plan completo, se puede cambiar con un clic.
 
 ::: {.plan-app}
 :::

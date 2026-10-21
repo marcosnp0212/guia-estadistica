@@ -1,25 +1,63 @@
-# Repaso exprés: el examen en 3 días
+# Repaso exprés: el examen en pocos días
 
 ::: {custom-style="Idea"}
 **🧠 Si te quedan pocos días, empieza aquí.** El examen es como el modelo de la profesora: 30 preguntas tipo test y 10 de respuesta corta. Casi todo consiste en **saber qué es cada cosa, qué fórmula va en cada caso y qué trampa evitar**. No hace falta leer la guía entera. Aquí tienes lo imprescindible de cada tema, explicado con calma y con un ejemplo. Si algo no se entiende, al final de cada tema hay un enlace al apartado completo.
 :::
 
-## El plan de 3 días
+## El plan
 
-Unas 2 horas al día. Mejor en bloques de 25 minutos con 5 de descanso.
+Da igual si empiezas cinco días antes o dos: **lo que hay que estudiar es lo mismo**. Lo único que cambia es cuántas horas toca cada día. En total son unas **13 horas**.
 
-| Día | Qué hacer | Tiempo |
+Cada tema se estudia siempre igual, en este orden:
+
+1. **El vídeo.** Te lo cuenta con voz y animaciones. Puedes ponerlo a 1,25×.
+2. **El repaso** de esta página. Lo imprescindible, con un ejemplo.
+3. **«Comprueba que sabes hacer».** La lista del final del tema: marca lo que ya sabes.
+4. **Los ejercicios clave del boletín.** Son las cuentas que más se parecen a las del examen. Intenta cada paso antes de verlo.
+5. **Las preguntas del examen modelo** de ese tema. Decide tu respuesta antes de abrir la solución.
+
+Cuando terminas los cuatro temas, llega la parte final: la respuesta corta del modelo, las preguntas de Excel sin ordenador y el simulacro tipo test con reloj. Después lo corriges y refuerzas el tema que peor te haya salido.
+
+| Parte | Qué hay | Tiempo |
 |:---|:---|---:|
-| **Día 1** | Lee **Tema 1** y **Tema 2** de este repaso. Después, haz las **preguntas 1 a 15 del examen modelo**: decide tu respuesta antes de abrir la solución. | 2 h |
-| **Día 2** | Lee **Tema 3** y **Tema 4** de este repaso. Después, las **preguntas 16 a 30 y P1 a P10 del examen modelo**. | 2 h |
-| **Día 3** | Haz el **Simulacro tipo test** con reloj (90 minutos). Al entregar, lee la explicación de cada fallo y vuelve aquí al tema que peor te haya salido. | 2 h |
-| **Mañana del examen** | Solo **«Las 15 trampas del test»**, al final de este repaso. Nada nuevo. | 15 min |
+| **Tema 1** | Cómo es el examen, vídeo, repaso, comprobación, 5 ejercicios y preguntas 1 a 10 del modelo | 3 h 30 min |
+| **Tema 2** | Vídeo, repaso, comprobación, 1 ejercicio y preguntas 11 a 15 | 1 h 15 min |
+| **Tema 3** | Vídeo, repaso, comprobación, 3 ejercicios y preguntas 16 a 23 | 2 h 05 min |
+| **Tema 4** | Vídeo, repaso, comprobación, 4 ejercicios y preguntas 24 a 30 | 2 h 30 min |
+| **Final** | Respuesta corta (P1 a P10), Excel sin ordenador, simulacro, corrección y refuerzo | 3 h 45 min |
+| **Cada día, desde el segundo** | Las 15 trampas, tapando la respuesta | 10 min |
 
-::: {custom-style="Truco"}
-**💡 Los vídeos.** Si te cuesta leer de seguido, el vídeo de cada tema cuenta lo mismo con voz y animaciones. Puedes ponerlo a 1,25× y leer después este repaso para fijarlo.
+Repartido entre los días que tengas, sin contar los descansos:
+
+| Si tienes… | Te toca al día |
+|:---|---:|
+| 5 días | unas 2 h 45 min |
+| 4 días | unas 3 h 25 min |
+| 3 días | unas 4 h 30 min |
+| 2 días | unas 6 h 40 min |
+
+Aquí puedes ver qué toca cada día. Para que lo reparta con tus fechas y vaya tachando lo que haces, pon el día del examen en el [Plan de estudio](#plan-de-estudio).
+
+::: {.plan-xp}
 :::
 
-## Tema 1 en 20 minutos
+::: {custom-style="Idea"}
+**🧠 Bloques cortos.** Estudia en bloques de 25 minutos y descansa 5. Cada dos horas, un descanso largo, de 20 o 30 minutos, lejos de la pantalla. Al terminar cada tarea, márcala: ver cómo se va llenando la lista ayuda a seguir.
+:::
+
+::: {custom-style="Ojo"}
+**⚠️ Si solo tienes dos días.** Son días largos, pero se puede. Parte cada día en tres tandas (mañana, tarde y noche) con un descanso largo entre ellas. No te saltes los ejercicios: son lo que más se parece a las cuentas del examen.
+:::
+
+::: {custom-style="Truco"}
+**💡 Si un día te cuesta concentrarte leyendo,** empieza por el vídeo del tema que toca. Y si te atascas más de 10 minutos en un ejercicio, abre el paso siguiente de la solución y sigue desde ahí.
+:::
+
+::: {custom-style="Truco"}
+**💡 Si los porcentajes o la calculadora te dan miedo,** dedica antes 30 minutos a la [Parte 0](#parte-0.-repaso-de-base-números-y-calculadora). En el Plan de estudio puedes añadirla con el botón «Parte 0 (base)».
+:::
+
+## Tema 1: lo imprescindible
 
 ### Qué tipo de variable es
 
@@ -79,7 +117,7 @@ Es lo primero que hay que mirar, y cae casi seguro en el test.
 
 [Ver el Tema 1 completo](#tema-1.-análisis-descriptivo-de-una-variable)
 
-## Tema 2 en 10 minutos
+## Tema 2: lo imprescindible
 
 Ahora miramos **dos características a la vez** de cada persona, en una tabla de doble entrada: una variable en las filas y otra en las columnas.
 
@@ -107,7 +145,7 @@ Para dos variables cualitativas: barras agrupadas o apiladas, y el **mosaico**. 
 
 [Ver el Tema 2 completo](#tema-2.-análisis-descriptivo-de-dos-variables)
 
-## Tema 3 en 15 minutos
+## Tema 3: lo imprescindible
 
 Dos variables numéricas de cada persona, por ejemplo antigüedad y salario. Queremos saber si van juntas y predecir una con la otra.
 
@@ -147,7 +185,7 @@ La **covarianza** (S_XY) lo dice con un número: S_XY = Σxᵢyᵢ / n − x̄·
 
 [Ver el Tema 3 completo](#tema-3.-regresión-y-correlación)
 
-## Tema 4 en 15 minutos
+## Tema 4: lo imprescindible
 
 Un índice dice **cuánto ha cambiado algo** respecto a un año de referencia, el año base, que vale 100.
 
@@ -192,23 +230,99 @@ Para quitar el efecto de la inflación, **se divide** entre el IPC: valor real =
 
 ## Las 15 trampas del test
 
-Para leer la mañana del examen. Cada una es un error que se repite mucho.
+Cada una es un error que se repite mucho. Están en forma de pregunta para que **te las preguntes tú**: lee la pregunta, contesta en voz alta o en un papel y después ábrela para ver si acertaste.
 
-1. **Intervalos de distinto ancho:** la moda va por **densidad**, no por el que tiene más datos.
-2. **VAR.P** divide entre n (varianza); **VAR.S**, entre n − 1 (cuasivarianza).
-3. **¿Te dan S o S²?** Para la pendiente hace falta la varianza: si te dan S, elévala al cuadrado.
-4. Para comparar grupos con medias o unidades distintas, se usa el **CV**, no S.
-5. La suma de las desviaciones a la media es **siempre 0**.
-6. **Sumar una cantidad** a todos no cambia la varianza; multiplicar por a la multiplica por a².
-7. Varianza total = dentro **+** entre. Se suman.
-8. CA > 0 = cola a la **derecha**.
-9. Atípicos: más allá de **1,5 · IQR** por fuera de C₁ o de C₃.
-10. Independencia = todas las condicionadas **iguales a la marginal**.
-11. r = 0 → no hay relación **lineal**, pero puede haber una curva. r no cambia con las unidades.
-12. R² es r al cuadrado: pierde el signo. r lleva el signo de la pendiente.
-13. b = S_XY / S²ₓ (la X abajo) y a = ȳ − b · x̄.
-14. Los porcentajes se **multiplican**; la tasa media es la **geométrica**; 6 % anual no es 0,5 % al mes.
-15. Laspeyres = cantidades del año **base**. Deflactar = **dividir** entre el IPC.
+Desde el segundo día de estudio, dedícales 10 minutos al empezar. Las que falles, apúntalas y repítelas al día siguiente. La mañana del examen, una última vuelta y nada más.
+
+<details><summary>1\. Intervalos de distinto ancho: ¿cuál es el intervalo modal?</summary>
+
+El que tiene más **densidad** (nᵢ / aᵢ), no el que tiene más datos.
+
+</details>
+
+<details><summary>2\. ¿Qué diferencia hay entre VAR.P y VAR.S?</summary>
+
+**VAR.P** divide entre n: es la varianza. **VAR.S** divide entre n − 1: es la cuasivarianza.
+
+</details>
+
+<details><summary>3\. Para la pendiente te dan S, no S². ¿Qué haces?</summary>
+
+La elevas al cuadrado. La pendiente lleva la **varianza**: b = S_XY / S²ₓ.
+
+</details>
+
+<details><summary>4\. Dos grupos con medias o unidades distintas: ¿cómo comparas su dispersión?</summary>
+
+Con el **CV** (S / x̄), no con S. El que tiene el CV más pequeño es el más homogéneo.
+
+</details>
+
+<details><summary>5\. ¿Cuánto suman las desviaciones de los datos a la media?</summary>
+
+**Siempre 0.** Lo que sobra por arriba compensa lo que falta por abajo.
+
+</details>
+
+<details><summary>6\. Si sumas 50 € a todos los datos, ¿qué le pasa a la varianza? ¿Y si los multiplicas por a?</summary>
+
+Sumar **no la cambia**: todos se mueven lo mismo. Multiplicar por a la multiplica por **a²**.
+
+</details>
+
+<details><summary>7\. ¿Cómo se juntan la varianza dentro y la varianza entre?</summary>
+
+**Se suman**: varianza total = dentro + entre.
+
+</details>
+
+<details><summary>8\. CA > 0: ¿hacia qué lado va la cola?</summary>
+
+Hacia la **derecha**. Hay unos pocos valores muy altos y la media queda por encima de la mediana.
+
+</details>
+
+<details><summary>9\. ¿Cuándo es atípico un dato?</summary>
+
+Cuando queda por debajo de **C₁ − 1,5 · IQR** o por encima de **C₃ + 1,5 · IQR**.
+
+</details>
+
+<details><summary>10\. ¿Cómo sabes en una tabla de doble entrada que dos variables son independientes?</summary>
+
+Todas las condicionadas son **iguales entre sí e iguales a la marginal**.
+
+</details>
+
+<details><summary>11\. r = 0: ¿quiere decir que no hay ninguna relación? ¿Y r cambia si cambias las unidades?</summary>
+
+No hay relación **lineal**, pero puede haber una curva. Y r **no cambia** con las unidades.
+
+</details>
+
+<details><summary>12\. ¿Qué signo tienen r y R²?</summary>
+
+R² = r², así que **nunca es negativo**. r lleva el **mismo signo que la pendiente** b.
+
+</details>
+
+<details><summary>13\. ¿Cómo se calculan b y a en la recta Ŷ = a + b · X?</summary>
+
+b = S_XY / S²ₓ (la varianza de la **X** abajo) y a = ȳ − b · x̄.
+
+</details>
+
+<details><summary>14\. Sube un 10 % y luego un 20 %: ¿cuánto ha subido en total? ¿Y cuánto es un 6 % anual al mes?</summary>
+
+1,10 · 1,20 = 1,32: **+32 %**, no +30 %. Los porcentajes se multiplican y la tasa media es la **geométrica**. Un 6 % anual es 1,06^(1/12) − 1 = **0,487 % al mes**, no 0,5 %.
+
+</details>
+
+<details><summary>15\. ¿De qué año son las cantidades de Laspeyres? ¿Y cómo se deflacta?</summary>
+
+Laspeyres usa las cantidades del año **base**. Deflactar es **dividir** entre el IPC (en tanto por uno).
+
+</details>
 
 ::: {custom-style="Truco"}
 **💡 En el test, descarta primero.** Lee las cuatro opciones antes de elegir. Muchas veces dos se descartan solas porque dicen algo **imposible**: un CV negativo, un R² mayor que 1, una varianza negativa, "la suma de desviaciones es siempre positiva". Entre las dos que quedan, piensa en un ejemplo pequeño con números.

@@ -388,7 +388,7 @@ var TS=D.tests||{};
 });
 
 /* ---------- 2d. Zonas del índice y enlaces de la portada ---------- */
-[['tema-1.-análisis-descriptivo-de-una-variable','Aprender'],['repaso-exprés-el-examen-en-3-días','Examen'],['chuleta-de-fórmulas','Herramientas'],['por-si-el-examen-fuera-con-ordenador','Por si acaso']].forEach(function(z){
+[['tema-1.-análisis-descriptivo-de-una-variable','Aprender'],['repaso-exprés-el-examen-en-pocos-días','Examen'],['chuleta-de-fórmulas','Herramientas'],['por-si-el-examen-fuera-con-ordenador','Por si acaso']].forEach(function(z){
   var a=document.querySelector('.toc a[href="#'+z[0]+'"]');if(!a)return;var li=a.closest('li');var lab=el('li','zone',z[1]);lab.setAttribute('aria-hidden','true');li.parentNode.insertBefore(lab,li);if(z[1]==='Por si acaso')li.classList.add('psa');});
 (function(){var on=false;[].forEach.call(document.querySelectorAll('.toc > ul > li'),function(li){if(li.classList.contains('zone')){on=/Examen|Herramientas/.test(li.textContent);return;}if(on)li.classList.add('notab');});})();
 [].forEach.call(document.querySelectorAll('.hero a[href^="#"]'),function(a){a.addEventListener('click',function(e){var t=document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));if(!t)return;e.preventDefault();A.goTo(t);});});

@@ -90,6 +90,9 @@ def build_zh():
           '-V','tbar='+tb,'-V','htmllang=zh-CN','-M','pagetitle=统计学（Tema 1 到 4）','-V','shorttitle=统计学','-V','endnote=统计学学习指南，Tema 1 到 4（RRLL y RRHH，UVigo）。非官方学习资料。','-V','guide=alumna',
           '--include-before-body','zh/hero_zh.html','-o','/home/claude/web/alumna_zh.html']
     subprocess.run(args,check=True,cwd='/home/claude/web',env=env)
+    h=open('/home/claude/web/alumna_zh.html',encoding='utf-8').read()
+    for a,c in [('>Saltar al contenido<','>跳到正文<'),('class="to-top">Volver al principio<','class="to-top">回到顶部<'),('aria-label="Cambiar entre modo claro y oscuro"','aria-label="切换浅色或深色模式"')]:h=h.replace(a,c)
+    open('/home/claude/web/alumna_zh.html','w',encoding='utf-8').write(h)
 if __name__=='__main__':
     data_script()
     sheet_lib()

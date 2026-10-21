@@ -152,3 +152,8 @@ UI=[
 ('">Seguir donde lo dejaste</a><span>','">从上次的地方继续</a><span>'),
 ('Apartados','小节'),('Partes','部分'),('Secciones','栏目'),('Examen, ','考试，'),('Examen','考试'),('Herramientas','工具'),
 ]
+
+# añadidos: contadores, botones y etiquetas sueltas
+UI+=[(' de ',' / '),('Entregar','交卷'),('Respuesta P','答案 P'),('Siguiente: ','下一节：'),(' fila ',' 第 '),('Llevas ','已做 '),(' aria-label="Hecho: ',' aria-label="完成：')]
+RAW+=[("Vídeo del '+(/^b/.test(vk)?'boletín':'tema')+'","视频 · '+(/^b/.test(vk)?'练习题':'Tema')+'"),
+      ('placeholder="Buscar (por ejemplo, varianza)" aria-label="Buscar en la guía"','placeholder="搜索（例如：方差 或 varianza）" aria-label="在指南中搜索"')]

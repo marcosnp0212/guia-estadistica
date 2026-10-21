@@ -849,3 +849,4 @@ details[open]{padding-bottom:.4rem}
 
 .pre-route .hero{visibility:hidden}
 .tabs-mode .binder{grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}
+.tb-lang{width:auto;padding:0 11px;text-decoration:none;font-weight:700;font-size:.85rem}

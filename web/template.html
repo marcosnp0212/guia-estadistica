@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="$if(htmllang)$$htmllang$$else$es$endif$">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,8 @@
 <script>
 try{var t=localStorage.getItem('guia-tema');document.documentElement.setAttribute('data-theme',t||'light');if(localStorage.getItem('guia-sb')==='0')document.documentElement.classList.add('sb-off');}catch(e){}
 if(location.hash&&location.hash!=='#inicio')document.documentElement.classList.add('pre-route');
+$if(tbar)$window.guiaLangUrl=function(to){var p=location.pathname,f=p.slice(p.lastIndexOf('/')+1)||'index.html',zh=/_zh\.html$$/.test(f),b=f.replace(/_zh\.html$$/,'.html');if(to==='zh'&&!zh)return b.replace(/\.html$$/,'_zh.html');if(to==='es'&&zh)return b;return null;};
+try{if(!localStorage.getItem('guia-lang')&&/^zh/i.test(navigator.language||'')){var u=guiaLangUrl('zh');if(u)location.replace(u+location.hash);}}catch(e){}$endif$
 </script>
 $for(css)$
 <link rel="stylesheet" href="$css$">

@@ -4,18 +4,23 @@ local labels = {
   Truco = "Truco", Ojo = "Ojo", Excel = "En Excel", Resultado = "Resultado",
   Idea = "La idea", Enunciado = "Enunciado", Mano = "A mano, con calculadora"
 }
+local ZH = os.getenv("GUIA_LANG") == "zh"
+if ZH then
+  labels = { Truco = "小技巧", Ojo = "注意", Excel = "在 Excel 里", Resultado = "结果",
+    Idea = "核心思想", Enunciado = "题目", Mano = "手算，用计算器" }
+end
 
 local function strip_lead(s)
   local out, started = {}, false
   for _, cp in utf8.codes(s) do
     if not started then
-      local letter = (cp >= 65 and cp <= 90) or (cp >= 97 and cp <= 122) or (cp >= 0xC0 and cp <= 0x24F) or cp == 0xBF or cp == 0xA1
+      local letter = (cp >= 65 and cp <= 90) or (cp >= 97 and cp <= 122) or (cp >= 0xC0 and cp <= 0x24F) or cp == 0xBF or cp == 0xA1 or (cp >= 0x4E00 and cp <= 0x9FFF) or (cp >= 0x3400 and cp <= 0x4DBF)
       if letter then started = true end
     end
     if started then out[#out+1] = utf8.char(cp) end
   end
   local r = table.concat(out)
-  r = r:gsub("[%.:]%s*$", "")
+  r = r:gsub("[%.:]%s*$", ""):gsub("。$", ""):gsub("：$", "")
   return r
 end
 
@@ -97,7 +102,7 @@ end
 function Div(d)
   local cs = d.attributes["custom-style"]
   if cs == "Otra" then
-    local out = { pandoc.RawBlock("html", '<details class="otra"><summary>No lo entiendo: explícamelo de otra forma</summary><div class="otra-body">') }
+    local out = { pandoc.RawBlock("html", '<details class="otra"><summary>' .. (ZH and "看不懂？换一种方式讲" or "No lo entiendo: explícamelo de otra forma") .. '</summary><div class="otra-body">') }
     for _, b in ipairs(d.content) do out[#out + 1] = b end
     out[#out + 1] = pandoc.RawBlock("html", "</div></details>")
     return out

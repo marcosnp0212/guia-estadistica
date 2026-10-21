@@ -41,6 +41,8 @@ body.classList.add('tabs-mode');
 var ICON=function(d,fill){return'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="'+(fill?'currentColor':'none')+'" stroke="'+(fill?'none':'currentColor')+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="'+d+'"/></svg>';};
 /* la barra viene ya escrita en la página (tbar_alumna.html), para que se vea desde el primer momento */
 var bar=document.querySelector('.tbar');
+var lb=bar.querySelector('.tb-lang');if(lb)lb.addEventListener('click',function(e){e.preventDefault();var to=lb.getAttribute('data-to'),u=window.guiaLangUrl&&window.guiaLangUrl(to);
+  try{localStorage.setItem('guia-lang',to);}catch(x){}if(u)location.href=u+location.hash;});
 /* buscador: se mueve del índice lateral a la barra */
 var sp=bar.querySelector('.tb-search'),sw=document.querySelector('.sidebar .search'),sr=document.querySelector('.sidebar .search-res');
 if(sw)sp.appendChild(sw);if(sr)sp.appendChild(sr);

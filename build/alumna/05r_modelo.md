@@ -64,7 +64,7 @@ D) `=SUMA(A2:A10)*SUMAPRODUCTO(B2:B10)/CONTAR(A2:A10)`
 En un estudio se registra el nivel de *satisfacción laboral* (Bajo, Medio, Alto) y el *salario bruto anual* (en euros). ¿Cómo se clasifican?
 
 A) Satisfacción cualitativa nominal y salario cuantitativo discreto
-B) Satisfacción cualitativa **ordinal** y salario cuantitativo **continuo**
+B) Satisfacción cualitativa ordinal y salario cuantitativo continuo
 C) Ambas cuantitativas continuas
 D) Satisfacción cualitativa ordinal y salario cualitativo nominal
 
@@ -87,7 +87,7 @@ Sea X una variable con media x̄. Si aplicamos Y = aX + b, ¿qué propiedad es c
 A) La suma de las desviaciones a la media es siempre positiva
 B) ȳ = x̄ + b y la varianza no se altera
 C) El CV no cambia aunque haya cambio de origen b ≠ 0
-D) **ȳ = a·x̄ + b y S²ᵧ = a²·S²ₓ**
+D) ȳ = a·x̄ + b y S²ᵧ = a²·S²ₓ
 
 <details><summary>Ver la solución</summary>
 
@@ -106,7 +106,7 @@ D) **ȳ = a·x̄ + b y S²ᵧ = a²·S²ₓ**
 ¿En qué caso es especialmente preferible la mediana o la media truncada en lugar de la media aritmética?
 
 A) Distribución perfectamente simétrica y sin atípicos
-B) **Datos con valores extremos (outliers) que distorsionan la tendencia central**
+B) Datos con valores extremos (outliers) que distorsionan la tendencia central
 C) Solo cuando la variable es cualitativa nominal
 D) Cuando hay más de un millón de datos agrupados
 
@@ -127,7 +127,7 @@ D) Cuando hay más de un millón de datos agrupados
 En datos agrupados en intervalos de **distinta amplitud**, ¿cómo se determina el intervalo modal?
 
 A) El de mayor frecuencia absoluta nᵢ
-B) **El de mayor densidad dᵢ = nᵢ / aᵢ**
+B) El de mayor densidad dᵢ = nᵢ / aᵢ
 C) El que contiene la mediana
 D) El de mayor marca de clase
 
@@ -148,7 +148,7 @@ Respecto al coeficiente de variación (CV = S / x̄), señala la afirmación cor
 
 A) Expresa la dispersión en las mismas unidades que la variable
 B) Es negativo cuando la dispersión es muy alta
-C) **Permite comparar la variabilidad relativa de poblaciones con unidades o escalas distintas**
+C) Permite comparar la variabilidad relativa de poblaciones con unidades o escalas distintas
 D) Mide la asimetría respecto a la moda
 
 <details><summary>Ver la solución</summary>
@@ -169,7 +169,7 @@ Al descomponer la varianza total de una población dividida en k grupos se cumpl
 
 A) Total = dentro × entre
 B) La varianza dentro mide la diferencia de las medias de los grupos
-C) **Varianza total = varianza dentro (intrapoblacional) + varianza entre (interpoblacional)**
+C) Varianza total = varianza dentro (intrapoblacional) + varianza entre (interpoblacional)
 D) Si el 95 % es interpoblacional, los grupos son idénticos
 
 <details><summary>Ver la solución</summary>
@@ -189,7 +189,7 @@ D) Si el 95 % es interpoblacional, los grupos son idénticos
 Si el coeficiente de asimetría de Fisher es CA > 0, esto indica que:
 
 A) Es simétrica y mesocúrtica
-B) **Asimetría positiva o a la derecha: hay una cola de valores altos hacia la derecha**
+B) Asimetría positiva o a la derecha: hay una cola de valores altos hacia la derecha
 C) Asimetría negativa, con los datos concentrados a la derecha
 D) La moda coincide con el máximo
 
@@ -209,7 +209,7 @@ D) La moda coincide con el máximo
 
 En un diagrama de caja, ¿qué datos se consideran atípicos?
 
-A) **x < C₁ − 1,5·IQR o x > C₃ + 1,5·IQR, con IQR = C₃ − C₁**
+A) x < C₁ − 1,5·IQR o x > C₃ + 1,5·IQR, con IQR = C₃ − C₁
 B) x < x̄ − S o x > x̄ + S
 C) Cualquier valor por debajo de P₁₀ o por encima de P₉₀
 D) x < C₂ − IQR o x > C₂ + IQR
@@ -232,7 +232,7 @@ D) x < C₂ − IQR o x > C₂ + IQR
 
 En una tabla de doble entrada, la celda (i, j) tiene nᵢⱼ. ¿Cómo se obtiene la frecuencia marginal nᵢ. de la categoría xᵢ?
 
-A) **Sumando las frecuencias de la fila i a lo largo de todas las columnas: nᵢ. = Σⱼ nᵢⱼ**
+A) Sumando las frecuencias de la fila i a lo largo de todas las columnas: nᵢ. = Σⱼ nᵢⱼ
 B) Dividiendo nᵢⱼ entre n
 C) Multiplicando las marginales de xᵢ y yⱼ
 D) Restando la suma de la columna j al total n
@@ -253,7 +253,7 @@ D) Restando la suma de la columna j al total n
 
 X e Y son estadísticamente independientes si y solo si, para todas las casillas:
 
-A) **fᵢⱼ = fᵢ. · f.ⱼ**
+A) fᵢⱼ = fᵢ. · f.ⱼ
 B) Todas las nᵢⱼ son iguales
 C) S_XY > 0
 D) Las condicionadas de Y varían mucho según X
@@ -276,7 +276,7 @@ Si X e Y son independientes, ¿qué relación hay entre las condicionadas Y | X 
 
 A) Son inversamente proporcionales
 B) No se pueden calcular
-C) **Todas las condicionadas son iguales entre sí e iguales a la marginal de Y**
+C) Todas las condicionadas son iguales entre sí e iguales a la marginal de Y
 D) Suman 0
 
 <details><summary>Ver la solución</summary>
@@ -291,7 +291,7 @@ D) Suman 0
 
 En un gráfico de mosaico de dos variables cualitativas, ¿qué refleja la frecuencia marginal de la variable principal?
 
-A) **El ancho de las columnas**
+A) El ancho de las columnas
 B) La intensidad del color
 C) La inclinación de las diagonales
 D) El número de sectores
@@ -309,7 +309,7 @@ D) El número de sectores
 Género (Hombre, Mujer) y jornada (Completa, Parcial) en 200 empleados. La proporción marginal de jornada completa es 0,70 y las variables son **independientes**. ¿Qué proporción de hombres tiene jornada completa en la condicionada Y | Hombre?
 
 A) 0,30
-B) **0,70**
+B) 0,70
 C) 0,35
 D) Depende del número de hombres
 
@@ -331,7 +331,7 @@ D) Depende del número de hombres
 
 En una nube de puntos de antigüedad (X) y salario (Y), los puntos forman una nube alargada que sube de izquierda a derecha. ¿Qué relación hay?
 
-A) **Lineal directa o positiva (S_XY > 0)**
+A) Lineal directa o positiva (S_XY > 0)
 B) Lineal inversa (S_XY < 0)
 C) Ninguna relación
 D) No lineal cuadrática con correlación nula
@@ -348,13 +348,20 @@ D) No lineal cuadrática con correlación nula
 
 ¿Qué expresión es la covarianza entre X e Y?
 
-A) **S_XY = (1/n) · Σᵢ Σⱼ xᵢ · yⱼ · nᵢⱼ − x̄ · ȳ** · (las otras opciones son fórmulas incorrectas)
+A) S_XY = (1/n) · Σᵢ Σⱼ xᵢ · yⱼ · nᵢⱼ − x̄ · ȳ
+B) S_XY = (Sₓ / Sᵧ) · x̄ · ȳ
+C) S_XY = Σ (xᵢ − x̄)² / n
+D) S_XY = r / (Sₓ · Sᵧ)
 
 <details><summary>Ver la solución</summary>
 
 **Correcta: A.** Es la fórmula práctica para una tabla de doble entrada: la media de los productos menos el producto de las medias. Con datos sueltos es lo mismo sin las nᵢⱼ: Σxᵢyᵢ / n − x̄·ȳ.
 
-Recuerda las otras fórmulas para distinguirlas: r = S_XY / (Sₓ·Sᵧ) y b = S_XY / S²ₓ.
+- B) No existe esa fórmula: mezcla desviaciones típicas con medias.
+- C) Eso es la varianza de X: solo mira una variable.
+- D) Está al revés: es r = S_XY / (Sₓ·Sᵧ), así que S_XY = r · Sₓ · Sᵧ.
+
+(En la foto del modelo solo se leían bien la A y parte de la B; las otras opciones son del mismo estilo.)
 
 *En la guía:* apartado 3.2 (covarianza, también con tabla de frecuencias).
 
@@ -367,7 +374,7 @@ Para la recta de Y sobre X, Ŷ = a + bX, ¿cómo se calculan b y a?
 A) b = S_XY/S²ᵧ y a = x̄ − bȳ
 B) b = r·Sₓ y a = ȳ + bx̄
 C) b = S²ₓ/S_XY y a = ȳ·x̄
-D) **b = S_XY/S²ₓ y a = ȳ − b·x̄**
+D) b = S_XY/S²ₓ y a = ȳ − b·x̄
 
 <details><summary>Ver la solución</summary>
 
@@ -386,7 +393,7 @@ D) **b = S_XY/S²ₓ y a = ȳ − b·x̄**
 ¿Qué propiedad comparten la recta de Y sobre X y la de X sobre Y?
 
 A) Tienen la misma pendiente
-B) **Se cortan siempre en el punto de medias (x̄, ȳ)**
+B) Se cortan siempre en el punto de medias (x̄, ȳ)
 C) Son perpendiculares
 D) Sus términos independientes suman 0
 
@@ -405,7 +412,7 @@ D) Sus términos independientes suman 0
 
 El coeficiente de correlación de Pearson r = S_XY / (Sₓ·Sᵧ) cumple:
 
-A) **Está entre −1 y 1 y no tiene unidades (es adimensional)**
+A) Está entre −1 y 1 y no tiene unidades (es adimensional)
 B) Cambia según las unidades de X e Y
 C) r = 0 garantiza que no hay ninguna relación, ni lineal ni curva
 D) Si r = −1, la pendiente es positiva
@@ -428,7 +435,7 @@ Si en un ajuste por regresión R² = 0,81, ¿cómo se interpreta?
 
 A) La pendiente es 0,81
 B) La covarianza es 0,81
-C) **El 81 % de la variabilidad de Y queda explicada por la recta**
+C) El 81 % de la variabilidad de Y queda explicada por la recta
 D) Hay un error del 81 %
 
 <details><summary>Ver la solución</summary>
@@ -443,7 +450,7 @@ D) Hay un error del 81 %
 
 Si S_XY = 0, ¿qué forma tienen las rectas de Y sobre X y de X sobre Y?
 
-A) **La de Y sobre X es horizontal (Ŷ = ȳ) y la de X sobre Y es vertical (X̂ = x̄)**
+A) La de Y sobre X es horizontal (Ŷ = ȳ) y la de X sobre Y es vertical (X̂ = x̄)
 B) Las dos coinciden con la diagonal de 45°
 C) Sus pendientes tienden a infinito
 D) R² vale 1
@@ -465,7 +472,7 @@ Con el modelo Salario = 1390 + 78,5 · Antigüedad (R² = 0,92), ¿qué salario 
 A) 1390 €
 B) 785 €
 C) 2310,5 €
-D) **2175 €**
+D) 2175 €
 
 <details><summary>Ver la solución</summary>
 
@@ -490,7 +497,7 @@ Un índice simple de salarios vale I₂₀₁₅²⁰²⁵ = 125,4 con base 2015
 A) El salario bajó un 25,4 %
 B) El salario en 2025 es 125,4 €
 C) El poder adquisitivo subió un 125,4 %
-D) **El salario subió un 25,4 % en 2025 respecto a 2015**
+D) El salario subió un 25,4 % en 2025 respecto a 2015
 
 <details><summary>Ver la solución</summary>
 
@@ -507,7 +514,7 @@ D) **El salario subió un 25,4 % en 2025 respecto a 2015**
 
 Según la propiedad de **inversión** de los índices simples:
 
-A) **I_t^0 = 1 / I_0^t**
+A) I_t^0 = 1 / I_0^t
 B) I_t^0 = I_t^k + I_k^0
 C) I_t^0 = 100 − I_0^t
 D) I_t^0 = (I_0^t)²
@@ -528,7 +535,7 @@ Para calcular la tasa media anual de algo que crece con porcentajes encadenados 
 
 A) La media aritmética de las tasas
 B) La mediana de los incrementos en euros
-C) **La media geométrica: ⁿ√((1+t₁)(1+t₂)···(1+tₙ)) − 1**
+C) La media geométrica: ⁿ√((1+t₁)(1+t₂)···(1+tₙ)) − 1
 D) La moda de las tasas
 
 <details><summary>Ver la solución</summary>
@@ -547,7 +554,7 @@ Si la tasa anual es del 6 %, ¿cómo se obtiene la tasa mensual equivalente?
 
 A) 0,06/12 = 0,5 %
 B) (1 + 0,06)¹² − 1
-C) **(1 + 0,06)^(1/12) − 1 ≈ 0,486 %**
+C) (1 + 0,06)^(1/12) − 1 ≈ 0,486 %
 D) √0,06 ≈ 24,49 %
 
 <details><summary>Ver la solución</summary>
@@ -565,7 +572,7 @@ D) √0,06 ≈ 24,49 %
 
 En el índice de precios de **Laspeyres**, ¿qué ponderación tienen los precios?
 
-A) **Las cantidades del periodo base (q₀)**
+A) Las cantidades del periodo base (q₀)
 B) Las cantidades del periodo actual (qₜ)
 C) El promedio de los precios
 D) La tasa de variación de las ventas
@@ -584,7 +591,7 @@ D) La tasa de variación de las ventas
 
 ¿Qué diferencia fundamental hay entre Laspeyres y Paasche?
 
-A) **Laspeyres tiende a sobreestimar la subida de precios porque mantiene fijas las cantidades de la cesta base; Paasche usa las del periodo actual**
+A) Laspeyres tiende a sobreestimar la subida de precios porque mantiene fijas las cantidades de la cesta base; Paasche usa las del periodo actual
 B) Laspeyres mide cantidades y Paasche tipos de interés
 C) Paasche no se puede calcular con más de tres bienes
 D) Laspeyres es una media geométrica y Paasche una armónica
@@ -604,7 +611,7 @@ Deflactar una serie de salarios nominales consiste en:
 A) Multiplicar por la tasa de desempleo
 B) Sumar la inflación al salario
 C) Restar la cuasivarianza de los precios
-D) **Dividir el salario nominal de cada periodo entre el índice de precios (IPC) en base 1, para obtener el salario real a poder adquisitivo constante**
+D) Dividir el salario nominal de cada periodo entre el índice de precios (IPC) en base 1, para obtener el salario real a poder adquisitivo constante
 
 <details><summary>Ver la solución</summary>
 
